@@ -24,9 +24,9 @@
                 var seasonNamesList = document.getElementById('seasonNamesList');
 
                 // Agregar cada nombre de temporada como un elemento de la lista
-                seasonNames.forEach(seasonName => {
+                seasonNames.forEach((seasonName,index) => {
                     var listItem = document.createElement('li');
-                    listItem.textContent = seasonName;
+                    listItem.textContent = index + 1 + ' => ' + seasonName;
                     seasonNamesList.appendChild(listItem);
                 });
             })
