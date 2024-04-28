@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualización de Datos JSON</title>
+    <title>Visualización de Datos JSON en Tabla</title>
 </head>
 <body>
-    <h1>Season Names</h1>
-    <ul id="seasonNamesList"></ul>
+    <h1>Temporadas y Nombres de Pistas</h1>
+    <table id="seasonsTable">
+        <thead>
+            <tr>
+                <th>Temporada</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 
     <script>
         // Función para cargar y procesar el archivo JSON
@@ -17,17 +25,41 @@
             fetch(jsonUrl)
             .then(response => response.json())
             .then(data => {
-                // Obtener la lista de season_names
-                var seasonNames = data.map(obj => obj.season_name);
-                
-                // Obtener el elemento de la lista donde se mostrarán los nombres de las temporadas
-                var seasonNamesList = document.getElementById('seasonNamesList');
+                // Obtener la tabla donde se agregarán los datos
+                var table = document.querySelector('#seasonsTable');
 
-                // Agregar cada nombre de temporada como un elemento de la lista
-                seasonNames.forEach((seasonName,index) => {
-                    var listItem = document.createElement('li');
-                    listItem.textContent = index + 1 + ' => ' + seasonName;
-                    seasonNamesList.appendChild(listItem);
+                // Crear la fila de cabecera con números de columna secuenciales
+                var headerRow = table.querySelector('thead tr');
+                for (var i = 0; i < data[0].schedules.length; i++) {
+                    var th = document.createElement('th');
+                    th.textContent = 'Pista ' + (i + 1);
+                    headerRow.appendChild(th);
+                }
+
+                // Iterar sobre cada objeto del JSON
+                var tableBody = table.querySelector('tbody');
+                data.forEach(obj => {
+                    // Obtener el nombre de la temporada
+                    var seasonName = obj.season_name;
+
+                    // Crear una nueva fila en la tabla
+                    var newRow = document.createElement('tr');
+
+                    // Crear una celda para el nombre de la temporada
+                    var seasonCell = document.createElement('td');
+                    seasonCell.textContent = seasonName;
+                    newRow.appendChild(seasonCell);
+
+                    // Iterar sobre las pistas y agregar una celda para cada una
+                    obj.schedules.forEach(schedule => {
+                        var trackName = schedule.track.track_name;
+                        var trackCell = document.createElement('td');
+                        trackCell.textContent = trackName;
+                        newRow.appendChild(trackCell);
+                    });
+
+                    // Agregar la fila a la tabla
+                    tableBody.appendChild(newRow);
                 });
             })
             .catch(error => console.error('Error al cargar el JSON:', error));
