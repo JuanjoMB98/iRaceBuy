@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de Datos JSON</title>
+</head>
+<body>
+    <h1>Season Names</h1>
+    <ul id="seasonNamesList"></ul>
+
+    <script>
+        // Función para cargar y procesar el archivo JSON
+        function cargarDatos() {
+            var jsonUrl = "../src/data/season_24.json";
+
+            fetch(jsonUrl)
+            .then(response => response.json())
+            .then(data => {
+                // Obtener la lista de season_names
+                var seasonNames = data.map(obj => obj.season_name);
+                
+                // Obtener el elemento de la lista donde se mostrarán los nombres de las temporadas
+                var seasonNamesList = document.getElementById('seasonNamesList');
+
+                // Agregar cada nombre de temporada como un elemento de la lista
+                seasonNames.forEach(seasonName => {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = seasonName;
+                    seasonNamesList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Error al cargar el JSON:', error));
+        }
+
+        // Llamar a la función para cargar los datos cuando la página se cargue completamente
+        window.onload = cargarDatos;
+    </script>
+</body>
+</html>
