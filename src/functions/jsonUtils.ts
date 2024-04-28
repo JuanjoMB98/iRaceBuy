@@ -44,6 +44,7 @@ function getSeasonSchedule(season): any {
             raceWeek: week.race_week_num,
             startDate: week.start_date,
             series_name: week.series_name,
+            track_id: week.track.track_id,
             track: week.track.track_name + (week.track.config_name ? (" - " + week.track.config_name) : "") ,
         });
         

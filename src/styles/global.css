@@ -68,9 +68,19 @@
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-body: 'Public Sans', var(--font-system);
 	--font-brand: Rubik, var(--font-system);
+	
 
 	/* Transitions */
 	--theme-transition: 0.2s ease-in-out;
+}
+
+@font-face {
+    font-family: 'AddCityboy';
+    src: url('/fonts/AddCityboyNormal.woff2') format('woff2'),
+        url('/fonts/AddCityboyNormal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 :root.theme-dark {
