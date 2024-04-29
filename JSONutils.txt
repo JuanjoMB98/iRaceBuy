@@ -1,0 +1,23 @@
+
+1)
+cat season_24_resumen.json | jq '.'
+-> Imprime del archivo json todo
+
+2)
+cat season_24_resumen.json | jq '.[] | select(.license_group == 2)'
+-> Imprime del archivo json todos los grupos que tengan licencia 2
+
+3)
+cat season_24_resumen.json | jq '.[] | select(.license_group == 2 and .season_id==4865)'
+->Imprime del archivo json todos los grupos que tengan licencia 2 y el season_id=4865
+
+4) 
+cat season_24_resumen.json | jq '.[] | select(.license_group == 2 and .season_id==4865)| limit(10; .)'
+->Igual que el 3 pero limitando a 10 salidas.
+
+5) 
+cat season_24_resumen.json | jq '.[] | .schedules[] | select(.license_group == 2 and .race_week_num==0) | limit(10; .)'
+-> Imprime las que tienen licencia 2 y las que tienen race_week_num == 0. ( El límite creo que se lo traga)
+
+
+
