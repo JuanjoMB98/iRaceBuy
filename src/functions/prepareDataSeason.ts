@@ -72,7 +72,7 @@ export function prepararDB(datos: any[]): void {
 
     console.log(db);
 
-    guardarJSON("src/data/seasonIDs.json", db);
+    guardarJSON("src/data/seasonData.json", db);
 }
 
 
@@ -83,5 +83,5 @@ export function contarObjetos(datos: any[]): number {
 
 // Función para guardar datos en un archivo JSON
 export function test(): void {
-    prepararDB(data);
+    // prepararDB(data);
 }
