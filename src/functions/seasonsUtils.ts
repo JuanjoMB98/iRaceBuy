@@ -1,6 +1,6 @@
 import { leerJSON, guardarJSON } from "./prepareDataSeason";
 
-function getSeason(newParams = {}): any {
+export function getSeason(newParams = {}): any {
     const season = leerJSON("src/data/seasonData.json");
 
     const defaultParams = {
@@ -45,6 +45,8 @@ function getSeason(newParams = {}): any {
             filter +
             ` && element.calendario.some(cal => cal.track == "${params.track}")`;
     }
+
+    // poder ordenar por lo que quieras
 
     filteredSeasons = season.filter((element) => eval(filter));
 
