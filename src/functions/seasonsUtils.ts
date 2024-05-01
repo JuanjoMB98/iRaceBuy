@@ -1,4 +1,4 @@
-import { leerJSON } from "./prepareDataSeason";
+import { leerJSON, guardarJSON } from "./prepareDataSeason";
 
 function getSeason( newParams = {} ):any{
 
@@ -50,8 +50,12 @@ function getSeason( newParams = {} ):any{
 
 // Función para guardar datos en un archivo JSON
 export function test(): void {
-    // prepararDB(data);
     console.log(
-        JSON.parse(getSeason({id:"4799"}))
+        (getSeason({track_id:"498"}))
     );
+    guardarJSON("src/data/seasonResultado.json", getSeason({licencia:1})) 
 }
+
+
+// Crear función para agrupar por licencias
+// Crear función para contar circuitos ( Trackid ) 
