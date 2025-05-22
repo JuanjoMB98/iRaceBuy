@@ -55,7 +55,7 @@ export function getSeason(newParams = {}): any {
 
 // Función para guardar datos en un archivo JSON
 export function test(): void {
-    console.log(getSeason({ track: 'Volusia Speedway Park' }));
+    // console.log(getSeason({ track: 'Volusia Speedway Park' }));
     // guardarJSON("src/data/seasonResultado.json", getSeason({licencia:1}))
 }
 

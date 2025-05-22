@@ -3,6 +3,7 @@
         "id": 4865,
         "nombre": "Rain Master - 2024 Season 2 - Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/Rain Master - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -66,6 +67,7 @@
         "id": 4699,
         "nombre": "NASCAR iRacing Series - 2024 Season Open",
         "licencia": 3,
+        "logo": "/assets/logos/oval/NASCAR iRacing Series - Open.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -325,6 +327,7 @@
         "id": 4701,
         "nombre": "NASCAR iRacing Class B Series - 2024 Season",
         "licencia": 4,
+        "logo": "/assets/logos/oval/NASCAR iRacing Class B.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -605,6 +608,7 @@
         "id": 4702,
         "nombre": "NASCAR iRacing Class C Series - 2024 Season",
         "licencia": 3,
+        "logo": "/assets/logos/oval/NASCAR iRacing Class C.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -885,6 +889,7 @@
         "id": 4703,
         "nombre": "NASCAR iRacing Series - 2024 Season Fixed",
         "licencia": 3,
+        "logo": "/assets/logos/oval/NASCAR iRacing Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -1144,6 +1149,7 @@
         "id": 4704,
         "nombre": "eNASCAR Road To Pro Qual Series Round 1 - 2024 Season",
         "licencia": 5,
+        "logo": "/assets/logos/oval/eNASCAR Road to Pro Qual Series - Round 1.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -1207,6 +1213,7 @@
         "id": 4705,
         "nombre": "Racing Prodigy Mazda MX-5 Golden Ticket Series - 2024 Season 1",
         "licencia": 1,
+        "logo": "/assets/logos/sports_car/Racing Prodigy Mazda Spec MX-5 Golden Ticket Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -1263,6 +1270,7 @@
         "id": 4706,
         "nombre": "Rookie Legends Cup  - 2024 Season 2",
         "licencia": 1,
+        "logo": "/assets/logos/oval/Rookie Legends VRS Cup.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -1354,6 +1362,7 @@
         "id": 4707,
         "nombre": "Street Stock Fanatec Series - R - 2024 Season 2 Fixed",
         "licencia": 1,
+        "logo": "/assets/logos/oval/Street Stock Fanatec Series - R.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -1445,6 +1454,7 @@
         "id": 4708,
         "nombre": "Advanced Legends Cup - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/oval/Advanced Legends Cup.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -1536,6 +1546,7 @@
         "id": 4709,
         "nombre": "CARS Late Model Stock Tour - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/oval/CARS Late Model Stock Tour.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -1627,6 +1638,7 @@
         "id": 4710,
         "nombre": "CARS Late Model Stock Tour - Fixed - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/oval/CARS Late Model Stock Tour - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -1718,6 +1730,7 @@
         "id": 4711,
         "nombre": "ARCA Menards Series - 2024 Season 2 - Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/oval/ARCA Menards Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -1809,6 +1822,7 @@
         "id": 4712,
         "nombre": "SK Modified Weekly Series - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/oval/SK Modified Weekly Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -1900,6 +1914,7 @@
         "id": 4713,
         "nombre": "SK Modified Series - 2024 Season 2 - Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/oval/SK Modified Weekly Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -1991,6 +2006,7 @@
         "id": 4714,
         "nombre": "Street Stock Next Level Racing Series - C - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/oval/Street Stock Next Level Racing Series - C.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -2082,6 +2098,7 @@
         "id": 4715,
         "nombre": "NASCAR Tour Modified Series - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/oval/NASCAR Tour Modified Series   .png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -2173,6 +2190,7 @@
         "id": 4716,
         "nombre": "NASCAR Tour Modified Series - Fixed - 2024 Season 2 - Fixed",
         "licencia": 3,
+        "logo": "/assets/logos/oval/NASCAR Tour Modified Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -2264,6 +2282,7 @@
         "id": 4717,
         "nombre": "Super Late Model Series - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/oval/Super Late Model Series   .png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -2355,6 +2374,7 @@
         "id": 4718,
         "nombre": "Super Late Model Series - Fixed - 2024 Season 2 - Fixed",
         "licencia": 3,
+        "logo": "/assets/logos/oval/Super Late Model Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -2446,6 +2466,7 @@
         "id": 4719,
         "nombre": "NASCAR Class C Maconi Series - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/oval/NASCAR Class C Maconi Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -2537,6 +2558,7 @@
         "id": 4720,
         "nombre": "Gen 4 Cup - Fixed - 2024 Season 2 Fixed",
         "licencia": 3,
+        "logo": "/assets/logos/oval/Gen 4 Cup - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -2628,6 +2650,7 @@
         "id": 4721,
         "nombre": "NASCAR Legends Series - 2024 Season 2 Fixed",
         "licencia": 4,
+        "logo": "/assets/logos/oval/NASCAR Legends Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -2719,6 +2742,7 @@
         "id": 4722,
         "nombre": "NASCAR Class B Fixed - 2024 Season 2 Fixed ",
         "licencia": 4,
+        "logo": "/assets/logos/oval/NASCAR Class B Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -2810,6 +2834,7 @@
         "id": 4723,
         "nombre": "Silver Crown Cup - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/oval/Silver Crown Cup.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -2901,6 +2926,7 @@
         "id": 4724,
         "nombre": "Sprint Car Cup - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/oval/Sprint Car Cup.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -2992,6 +3018,7 @@
         "id": 4725,
         "nombre": "NASCAR Class A - 2024 Season 2",
         "licencia": 5,
+        "logo": "/assets/logos/oval/NASCAR Class A.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -3083,6 +3110,7 @@
         "id": 4726,
         "nombre": "NASCAR Class A Fixed - 2024 Season 2 Fixed",
         "licencia": 5,
+        "logo": "/assets/logos/oval/NASCAR Class A Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -3174,6 +3202,7 @@
         "id": 4727,
         "nombre": "PickUp Cup - 2024 Season 2",
         "licencia": 1,
+        "logo": "/assets/logos/oval/PickUp Cup.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -3272,6 +3301,7 @@
         "id": 4728,
         "nombre": "Carburetor Cup - 2024 Season 2",
         "licencia": 1,
+        "logo": "/assets/logos/oval/Carburetor Cup.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -3370,6 +3400,7 @@
         "id": 4729,
         "nombre": "Dallara Dash - 2024 Season 2",
         "licencia": 1,
+        "logo": "/assets/logos/oval/Dallara Dash.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -3468,6 +3499,7 @@
         "id": 4730,
         "nombre": "Global Mazda MX-5 Fanatec Cup - 2024 Season 2 Fixed",
         "licencia": 1,
+        "logo": "/assets/logos/sports_car/Global Mazda MX-5 Fanatec Cup.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -3559,6 +3591,7 @@
         "id": 4731,
         "nombre": "Formula Vee SIMAGIC Series - 2024 Season 2 Fixed",
         "licencia": 1,
+        "logo": "/assets/logos/formula_car/Formula Vee SIMAGIC Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -3650,6 +3683,7 @@
         "id": 4732,
         "nombre": "Formula 1600 Rookie Sim-Motion Series - 2024 Season 2 Fixed",
         "licencia": 1,
+        "logo": "/assets/logos/formula_car/Formula 1600 Rookie Sim-Motion Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -3741,6 +3775,7 @@
         "id": 4733,
         "nombre": "US Open Wheel D - USF 2000 Series  - 2024 Season 2 - Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/formula_car/US Open Wheel D - USF 2000 Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -3832,6 +3867,7 @@
         "id": 4734,
         "nombre": "GR Buttkicker Cup - 2024 Season 2 - Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/GR Buttkicker Cup - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -3923,6 +3959,7 @@
         "id": 4735,
         "nombre": "Formula 1600 Thrustmaster Trophy - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/formula_car/Formula 1600 Thrustmaster Trophy.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -4014,6 +4051,7 @@
         "id": 4736,
         "nombre": "Clio Cup - 2024 Season 2 - Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/Clio Cup - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -4105,6 +4143,7 @@
         "id": 4737,
         "nombre": "Production Car Sim-Lab Challenge - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/Production Car Sim-Lab Challenge.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -4196,6 +4235,7 @@
         "id": 4738,
         "nombre": "Ferrari GT3 Challenge - 2024 Season 2 - Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/Ferrari GT3 Challenge - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -4287,6 +4327,7 @@
         "id": 4739,
         "nombre": "FIA Formula 4 Challenge- 2024 Season 2 - Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/formula_car/FIA Formula 4 Challenge - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -4378,6 +4419,7 @@
         "id": 4740,
         "nombre": "FIA Formula 4 Challenge - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/formula_car/FIA Formula 4 Challenge.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -4469,6 +4511,7 @@
         "id": 4741,
         "nombre": "Skip Barber Race Series - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/formula_car/Skip Barber Race Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -4560,6 +4603,7 @@
         "id": 4742,
         "nombre": "Mustang Skip Barber  Challenge - 2024 Season 2 - Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/Mustang Skip Barber Challenge - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -4651,6 +4695,7 @@
         "id": 4743,
         "nombre": "Mission R Challenge - 2024 Season 2 - Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/Mission R Challenge - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -4742,6 +4787,7 @@
         "id": 4744,
         "nombre": "Spec Racer Ford Challenge - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/Spec Racer Ford Challenge.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -4833,6 +4879,7 @@
         "id": 4745,
         "nombre": "Global Fanatec Challenge - 2024 Season 2 - Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/Global Fanatec Challenge.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -4924,6 +4971,7 @@
         "id": 4746,
         "nombre": "FIA F4 Esports Regional Tour  - Asia Pacific - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/formula_car/FIA F4 Esports Regional Tour  - Asia Pacific.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -5015,6 +5063,7 @@
         "id": 4747,
         "nombre": "FIA F4 Esports Regional Tour  - Americas - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/formula_car/FIA F4 Esports Regional Tour  - Americas.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -5106,6 +5155,7 @@
         "id": 4748,
         "nombre": "FIA F4 Esports Regional Tour - Europe - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/formula_car/FIA F4 Esports Regional Tour - Europe.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -5197,6 +5247,7 @@
         "id": 4750,
         "nombre": "TCR Virtual Challenge - Fixed - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/TCR Virtual Challenge - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -5288,6 +5339,7 @@
         "id": 4751,
         "nombre": "TCR Virtual Challenge - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/TCR Virtual Challenge.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -5379,6 +5431,7 @@
         "id": 4752,
         "nombre": "GT4 Falken Tyre Challenge - 2024 Season 2 Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/GT4 Falken Tyre Challenge - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -5470,6 +5523,7 @@
         "id": 4753,
         "nombre": "Falken Tyre Sports Car Challenge - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/Falken Tyre Sports Car Challenge.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -5561,6 +5615,7 @@
         "id": 4754,
         "nombre": "LMP3 Trophy - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/LMP3 Trophy - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -5652,6 +5707,7 @@
         "id": 4755,
         "nombre": "IMSA Michelin Pilot Challenge - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/IMSA Michelin Pilot Challenge Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -5701,6 +5757,7 @@
         "id": 4756,
         "nombre": "Radical Esports Cup - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/Radical Esports Cup - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -5792,6 +5849,7 @@
         "id": 4757,
         "nombre": "IMSA Vintage Series - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/IMSA Vintage Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -5883,6 +5941,7 @@
         "id": 4758,
         "nombre": "Stock Car Brasil - 2024 Season 2 - Fixed",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/Stock Car Brasil - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -5974,6 +6033,7 @@
         "id": 4759,
         "nombre": "Dallara Formula iR - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/formula_car/Dallara Formula iR - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -6065,6 +6125,7 @@
         "id": 4760,
         "nombre": "Advanced Mazda MX-5 Cup Series - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/Advanced Mazda MX-5 Cup Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -6156,6 +6217,7 @@
         "id": 4761,
         "nombre": "Formula C - DOF Reality Dallara F3 Series - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/formula_car/Formula C - DOF Reality Dallara F3 Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -6247,6 +6309,7 @@
         "id": 4762,
         "nombre": "Formula C - Thrustmaster Dallara F3 Series -2024 Season 2-Fixed",
         "licencia": 3,
+        "logo": "/assets/logos/formula_car/Formula C - Thrustmaster Dallara F3 Series- Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -6338,6 +6401,7 @@
         "id": 4763,
         "nombre": "US Open Wheel C - Indy Pro 2000 Series - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/formula_car/US Open Wheel C - Indy Pro 2000 Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -6429,6 +6493,7 @@
         "id": 4764,
         "nombre": "Supercars Series - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/Supercars Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -6520,6 +6585,7 @@
         "id": 4765,
         "nombre": "Supercars Series - Australian Servers - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/Supercars Series - Australian Server Only.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -6611,6 +6677,7 @@
         "id": 4766,
         "nombre": "iRacing Porsche Cup By Coach Dave Delta - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/iRacing Porsche Cup By Coach Dave Delta.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -6702,6 +6769,7 @@
         "id": 4767,
         "nombre": "iRacing Porsche Cup By Coach Dave Delta - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/iRacing Porsche Cup By Coach Dave Delta - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -6793,6 +6861,7 @@
         "id": 4768,
         "nombre": "Proto-GT Thrustmaster Challenge - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/Proto-GT Thrustmaster Challenge.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -6884,6 +6953,7 @@
         "id": 4769,
         "nombre": "Grand Prix Legends - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/formula_car/Grand Prix Legends.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -6975,6 +7045,7 @@
         "id": 4770,
         "nombre": "INDYCAR Series - Oval - Fixed - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/oval/INDYCAR Series - Oval - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -7066,6 +7137,7 @@
         "id": 4771,
         "nombre": "INDYCAR Series - Fixed - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/formula_car/INDYCAR Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -7157,6 +7229,7 @@
         "id": 4772,
         "nombre": "INDYCAR Series - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/formula_car/INDYCAR Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -7248,6 +7321,7 @@
         "id": 4773,
         "nombre": "iRacing Classic Lotus Grand Prix- 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/formula_car/Classic Lotus Grand Prix.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -7339,6 +7413,7 @@
         "id": 4774,
         "nombre": "GT Endurance Series  - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/GT Endurance Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -7430,6 +7505,7 @@
         "id": 4775,
         "nombre": "GT Sprint Series  - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/sports_car/GT Sprint Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -7521,6 +7597,7 @@
         "id": 4776,
         "nombre": "GT3 Fanatec Challenge - Fixed - 2024 Season 2 - Fixed",
         "licencia": 4,
+        "logo": "/assets/logos/sports_car/GT3 Fanatec Challenge - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -7612,6 +7689,7 @@
         "id": 4777,
         "nombre": "GTE Sprint CONSPIT Series - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/sports_car/GTE Sprint CONSPIT Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -7703,6 +7781,7 @@
         "id": 4778,
         "nombre": "Global Endurance CONSPIT Tour - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/sports_car/Global Endurance CONSPIT Tour.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -7752,6 +7831,7 @@
         "id": 4779,
         "nombre": "Formula B - Super Formula IMSIM Series - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/formula_car/Formula B - Super Formula IMSIM Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -7843,6 +7923,7 @@
         "id": 4780,
         "nombre": "Formula B - Super Formula IMSIM Series - Fixed - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/formula_car/Formula B - Super Formula IMSIM Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -7934,6 +8015,7 @@
         "id": 4781,
         "nombre": "LMP2 Prototype Challenge  - 2024 Season 2 - Fixed",
         "licencia": 4,
+        "logo": "/assets/logos/sports_car/LMP2 Prototype  Challenge – Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -8025,6 +8107,7 @@
         "id": 4782,
         "nombre": "IMSA Endurance Series - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/sports_car/IMSA Endurance Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -8074,6 +8157,7 @@
         "id": 4783,
         "nombre": "IMSA iRacing Series - 2024 Season 2",
         "licencia": 5,
+        "logo": "/assets/logos/sports_car/IMSA iRacing Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -8165,6 +8249,7 @@
         "id": 4784,
         "nombre": "IMSA iRacing Series - Fixed - 2024 Season 2",
         "licencia": 5,
+        "logo": "/assets/logos/sports_car/IMSA iRacing Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -8256,6 +8341,7 @@
         "id": 4785,
         "nombre": "Formula A - Grand Prix Series - 2024 Season 2",
         "licencia": 5,
+        "logo": "/assets/logos/formula_car/Formula A - Grand Prix Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -8347,6 +8433,7 @@
         "id": 4786,
         "nombre": "Formula A - Grand Prix Series - Fixed - 2024 Season 2",
         "licencia": 5,
+        "logo": "/assets/logos/formula_car/Formula A - Grand Prix Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -8438,6 +8525,7 @@
         "id": 4787,
         "nombre": "Rookie - DIRTcar SS MOZA Racing - Fixed - 2024 Season 2",
         "licencia": 1,
+        "logo": "/assets/logos/dirt_oval/Rookie - DIRTcar SS MOZA Racing - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -8529,6 +8617,7 @@
         "id": 4788,
         "nombre": "Rookie Micro Winged Sprint Car Series - Fixed - 2024 Season 2",
         "licencia": 1,
+        "logo": "/assets/logos/dirt_oval/Rookie Micro Winged Sprint Car Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -8620,6 +8709,7 @@
         "id": 4789,
         "nombre": "Dirt Legends Cup - 2024 Season 2",
         "licencia": 1,
+        "logo": "/assets/logos/dirt_oval/Dirt Legends Cup.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -8711,6 +8801,7 @@
         "id": 4790,
         "nombre": "DIRTcar 305 Sprint Car Fanatec Series - 2024 Season 2 Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/dirt_oval/DIRTcar 305 Sprint Car Fanatec Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -8802,6 +8893,7 @@
         "id": 4791,
         "nombre": "DIRTcar Limited Late Model Series - 2024 Season 2 Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/dirt_oval/DIRTcar Limited Late Model Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -8893,6 +8985,7 @@
         "id": 4792,
         "nombre": "DIRTcar 358 Modified Engine Ice Series - 2024 Season 2 Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/dirt_oval/DIRTcar 358 Modified Engine Ice Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -8984,6 +9077,7 @@
         "id": 4793,
         "nombre": "DIRTcar 360 Sprint Car Carquest Series - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_oval/DIRTcar 360 Sprint Car Carquest Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -9075,6 +9169,7 @@
         "id": 4794,
         "nombre": "DIRTcar 360 Sprint Car Carquest Series - Fixed 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_oval/DIRTcar 360 Sprint Car Carquest Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -9166,6 +9261,7 @@
         "id": 4795,
         "nombre": "USAC 360 Sprint Car Series - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_oval/USAC 360 Sprint Car Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -9257,6 +9353,7 @@
         "id": 4796,
         "nombre": "DIRTcar Class C Dirt Street Stock Series - 2024 Season 2 Fixed",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_oval/DIRTcar Class C Street Stock Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -9348,6 +9445,7 @@
         "id": 4797,
         "nombre": "Dirt Midget Cup - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_oval/Dirt Midget Cup.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -9439,6 +9537,7 @@
         "id": 4798,
         "nombre": "Dirt Midget Cup - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_oval/Dirt Midget Cup - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -9530,6 +9629,7 @@
         "id": 4799,
         "nombre": "DIRTcar Pro Late Model Series - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_oval/DIRTcar Pro Late Model Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -9621,6 +9721,7 @@
         "id": 4800,
         "nombre": "DIRTcar Pro Late Model Series - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_oval/DIRTcar Pro Late Model Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -9712,6 +9813,7 @@
         "id": 4801,
         "nombre": "DIRTcar UMP Modified Series - 2024 Season 2 - Fixed",
         "licencia": 4,
+        "logo": "/assets/logos/dirt_oval/DIRTcar UMP Modified Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -9803,6 +9905,7 @@
         "id": 4802,
         "nombre": "Big Block Modified Series - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_oval/SUPER DIRTcar Big Block Modified Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -9894,6 +9997,7 @@
         "id": 4803,
         "nombre": "Big Block Modified Series - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_oval/SUPER DIRTcar Big Block Modified Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -9985,6 +10089,7 @@
         "id": 4804,
         "nombre": "World of Outlaws Sprint Car Series - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/dirt_oval/World of Outlaws Sprint Car Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -10076,6 +10181,7 @@
         "id": 4805,
         "nombre": "World of Outlaws Sprint Car Series - 2024 Season 2 - Fixed",
         "licencia": 4,
+        "logo": "/assets/logos/dirt_oval/World of Outlaws Sprint Car Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -10167,6 +10273,7 @@
         "id": 4806,
         "nombre": "Dirt 410 Sprint Car Tour - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_oval/Dirt 410 Sprint Car Tour - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 2,
@@ -10244,6 +10351,7 @@
         "id": 4807,
         "nombre": "AMSOIL USAC Sprint Car - Fixed 2024 - Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/dirt_oval/AMSOIL USAC Sprint Car - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -10335,6 +10443,7 @@
         "id": 4808,
         "nombre": "World of Outlaws Late Model Series - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/dirt_oval/World of Outlaws Late Model Series .png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -10426,6 +10535,7 @@
         "id": 4809,
         "nombre": "World of Outlaws Late Model Series - 2024 Season 2 - Fixed",
         "licencia": 4,
+        "logo": "/assets/logos/dirt_oval/World of Outlaws Late Model Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -10517,6 +10627,7 @@
         "id": 4810,
         "nombre": "Dirt Super Late Model Tour - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_oval/Dirt Super Late Model Tour - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -10608,6 +10719,7 @@
         "id": 4811,
         "nombre": "Rookie iRX Volkswagen Beetle Lite - Fixed - 2024 Season 2",
         "licencia": 1,
+        "logo": "/assets/logos/dirt_road/Rookie iRX Volkswagen Beetle Lite - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -10699,6 +10811,7 @@
         "id": 4812,
         "nombre": "iRX Volkswagen Beetle Lite - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/dirt_road/iRX Volkswagen Beetle Lite.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -10790,6 +10903,7 @@
         "id": 4813,
         "nombre": "Rallycross Series - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_road/Rallycross Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -10881,6 +10995,7 @@
         "id": 4814,
         "nombre": "Rallycross Series - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/dirt_road/Rallycross Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -10972,6 +11087,7 @@
         "id": 4815,
         "nombre": "Rookie Pro 2 Lite Off-Road Racing Series - Fixed - 2024 Season 2",
         "licencia": 1,
+        "logo": "/assets/logos/dirt_road/Rookie Pro 2 Lite Off-Road Racing Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -11063,6 +11179,7 @@
         "id": 4816,
         "nombre": "Pro 4 Off-Road Racing Series - Fixed - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/dirt_road/Pro 4 Off-Road Racing Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -11154,6 +11271,7 @@
         "id": 4817,
         "nombre": "Pro 2 Off-Road Racing Series - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_road/Pro 2 Off-Road Racing Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -11245,6 +11363,7 @@
         "id": 4818,
         "nombre": "Pro 4 Off-Road Racing Series - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/dirt_road/Pro 4 Off Road Racing Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -11336,6 +11455,7 @@
         "id": 4819,
         "nombre": "Pro 2 Off-Road Racing Series - 2024 Season 2",
         "licencia": 4,
+        "logo": "/assets/logos/dirt_road/Pro 2 Off Road Racing Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -11427,6 +11547,7 @@
         "id": 4820,
         "nombre": "Ring Meister Ricmotech Series - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/formula_car/Ring Meister Ricmotech Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -11518,6 +11639,7 @@
         "id": 4821,
         "nombre": "Weekly Race Challenge - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/Weekly Race Challenge.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -11609,6 +11731,7 @@
         "id": 4822,
         "nombre": "Draft Master - Fixed - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/oval/Draft Master - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -11700,6 +11823,7 @@
         "id": 4823,
         "nombre": "Formula C - Super Formula Lights - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/formula_car/Formula C - Super Formula Lights.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -11791,6 +11915,7 @@
         "id": 4824,
         "nombre": "Formula C - Super Formula Lights - Fixed - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/formula_car/Formula C - Super Formula Lights - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -11882,6 +12007,7 @@
         "id": 4825,
         "nombre": "BMW M Power Tour - Fixed - 2024 Season 2 - Fixed",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/BMW M Power Tour - Fixed .png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -11973,6 +12099,7 @@
         "id": 4826,
         "nombre": "SRX Series - Fixed - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/oval/SRX Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -12064,6 +12191,7 @@
         "id": 4827,
         "nombre": "Millbridge Micro Showdown - 2024 Season 2",
         "licencia": 3,
+        "logo": "/assets/logos/dirt_oval/Millbridge Micro Showdown.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -12155,6 +12283,7 @@
         "id": 4828,
         "nombre": "iRacing Formula A - Grand Prix Tour - 2024 Season ",
         "licencia": 3,
+        "logo": "/assets/logos/formula_car/Formula A - Grand Prix Tour.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -12330,6 +12459,7 @@
         "id": 4829,
         "nombre": "Formula A - Grand Prix Tour - Fixed - 2024 Season ",
         "licencia": 3,
+        "logo": "/assets/logos/formula_car/Formula A - Grand Prix Tour - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -12505,6 +12635,7 @@
         "id": 4831,
         "nombre": "INDYCAR iRacing Series - 2024 Season",
         "licencia": 3,
+        "logo": "/assets/logos/oval/INDYCAR iRacing Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -12624,6 +12755,7 @@
         "id": 4861,
         "nombre": "Creventic Endurance Series - 2024 Season",
         "licencia": 3,
+        "logo": "/assets/logos/sports_car/Creventic Endurance Series.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -12659,6 +12791,7 @@
         "id": 4862,
         "nombre": "Nurburgring Endurance Championship - 2024 Season",
         "licencia": 2,
+        "logo": "/assets/logos/sports_car/Nurburgring Endurance Championship.png",
         "calendario": [
             {
                 "raceWeek": 0,
@@ -12729,6 +12862,7 @@
         "id": 4863,
         "nombre": "Rookie Micro Non Wing Sprint Car Series - Fixed - 2024 Season 2",
         "licencia": 2,
+        "logo": "/assets/logos/dirt_oval/Rookie Micro Non Wing Sprint Car Series - Fixed.png",
         "calendario": [
             {
                 "raceWeek": 0,

@@ -1,5 +1,5 @@
 import * as fs from "fs";
-
+import path from 'path';
 
 //CONTROLADOR DE ARCHIVOS
 
@@ -14,6 +14,7 @@ export function guardarJSON(path: string, data: any[]): void {
 }
 
 const data = leerJSON("src/data/season_24.json")
+const week =  leerJSON("src/data/season_2024_1race.json")
 
 function getSeasonID(season): number {
     return season.season_id;
@@ -53,6 +54,34 @@ function getSeasonSchedule(season): any {
     return weaklySerie;
 }
 
+export function getTrackMapActiveUrl(trackId: number): string | null {
+    const jsonPath = path.resolve(`./public/assets/tracks/${trackId}/assets.json`);
+    if (!fs.existsSync(jsonPath)) return null;
+
+    const rawData = fs.readFileSync(jsonPath, 'utf-8');
+    const data = JSON.parse(rawData);
+
+    if (!data.track_map || !data.track_map_layers?.active) return null;
+
+    return `${data.track_map}${data.track_map_layers.active}`;
+}
+
+
+function getSeasonLogo(season): any {
+    const seasonSchedule = season.schedules;
+
+    let imgPath = "";
+
+    seasonSchedule.forEach(week => {
+        // Acceder a la propiedad "category" de cada objeto
+        imgPath = "/assets/logos/" + week.category + "/" + week.series_name + ".png";
+
+    });
+
+    return imgPath;
+}
+
+
 // Función para preparar la base de datos con nombres e IDs relacionados
 export function prepararDB(datos: any[]): void {
     // Inicializamos la base de datos
@@ -64,6 +93,7 @@ export function prepararDB(datos: any[]): void {
         aux["id"] = getSeasonID(season);
         aux["nombre"] = getSeasonName(season);
         aux["licencia"] = getLicenseGroup(season);
+        aux["logo"] = getSeasonLogo(season);
         aux["calendario"] = getSeasonSchedule(season);
 
         db.push(aux);
@@ -81,7 +111,9 @@ export function contarObjetos(datos: any[]): number {
     return datos.length;
 }
 
+
 // Función para guardar datos en un archivo JSON
 export function test(): void {
     // prepararDB(data);
+    // getSeasonLogo(week);
 }

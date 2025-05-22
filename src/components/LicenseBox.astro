@@ -1,152 +1,233 @@
 ---
 import Icon from "./Icon.astro";
-import { getSeason } from '../functions/seasonsUtils.ts';
+import { getSeason } from "../functions/seasonsUtils.ts";
+import { getTrackMapActiveUrl } from "../functions/prepareDataSeason.ts";
 
 // btener los datos
 
-const seasonsID = ["4805", "4810" ,"4795"];
-const season = getSeason({ id: seasonsID })
+const seasonsID = ["4734", "4737", "4752", "4738", "4735", "4739", "4740"];
+const season = getSeason({ id: seasonsID });
 
-const maxRaceWeek = season.reduce((maxWeeks, trofeo) => Math.max(maxWeeks, trofeo.calendario.length), 0);
+const maxRaceWeek = season.reduce(
+    (maxWeeks, trofeo) => Math.max(maxWeeks, trofeo.calendario.length),
+    0
+);
 
+// console.log(season);
 
-console.log(season);
+const trackMap = new Map();
 
+// Recorremos todos los campeonatos
+for (const trofeo of season) {
+    for (const week of trofeo.calendario) {
+        const nombreCircuito = week.track;
+        const idTrack = week.track_id;
 
+        if (trackMap.has(nombreCircuito)) {
+            trackMap.get(nombreCircuito).timesThisSeason += 1;
+        } else {
+            trackMap.set(nombreCircuito, {
+                track: nombreCircuito,
+                track_id: idTrack,
+                timesThisSeason: 1,
+                mapUrl: getTrackMapActiveUrl(idTrack),
+            });
+        }
+    }
+}
+
+// console.log(trackMap);
+
+// Ordenamos por cantidad de repeticiones y tomamos los top 5
+// Convertimos a array y ordenamos por `timesThisSeason`
+const topTracks = Array.from(trackMap.values())
+    .sort((a, b) => b.timesThisSeason - a.timesThisSeason)
+    .slice(0, 8); // Top 5
 ---
-<!-- HOLA RAUL MIRA A VER SI PUEDESLO AQUI la idea es -->
 
-
-<!-- cada licencia es una tabal de estas un section class="box skills -->
+<!-- HOLA RAUL MIRA A VER SI PUEDESLO AQUI la idea es --><!-- cada licencia es una tabal de estas un section class="box skills -->
 <section class="box skills o-licenseBox">
     <div class="m-boxHeader">
         <!-- imprimir la categoria que corresponda en este div -->
-        <div class="a-classPill">CLASE D</div>
+        <div class="a-classPill">
+            <span>CLASE D</span>
+        </div>
 
-            <div class="m-weeksContainer">
-                {/* <!-- hacer un bucle por el mayor numero de semanas 
-                    que tengan la seasons seleccionadas y imprimir "week 1" , Week 2 --> */}
-                    {Array.from({ length: maxRaceWeek }).map((_, index) => (
-                        <div class="m-weekItem">
-                            <span>Semana {index + 1}</span>
-                        </div>
-                    ))}
-                    
-            </div>
-
+        <div class="m-weeksContainer">
+            {
+                /* <!-- hacer un bucle por el mayor numero de semanas 
+                    que tengan la seasons seleccionadas y imprimir "week 1" , Week 2 --> */
+            }
+            {
+                Array.from({ length: maxRaceWeek }).map((_, index) => (
+                    <div class="m-weekItem">
+                        <span>Semana {index + 1}</span>
+                    </div>
+                ))
+            }
+        </div>
     </div>
 
     <div class="m-boxContainer">
         <!-- por cada season seleccionada crear el siguiente div class="m-seasonContainer-->
-        {season.map((trofeo) => 
-        <div class="m-seasonContainer">
+        {
+            season.map((trofeo) => (
+                <div class="m-seasonContainer">
+                    <div class="m-season__info">
+                        {/* <!-- imprimir el season name y el season logo(tenenmos que ver como hacerlo) --> */}
+                        <img class="m-season__logo" src={trofeo.logo} alt="" />
+                        <span class="m-season__name">{trofeo.nombre}</span>
+                    </div>
 
-
-            <div class="m-season__info">
-                {/* <!-- imprimir el season name y el season logo(tenenmos que ver como hacerlo) --> */}
-                <span>image</span>
-                <span>{trofeo.nombre}</span>
-            </div>
-
-            {trofeo.calendario.map((week) => 
-			<div class="m-season__track">
-                {/* <!-- bucle de div class="m-seasonTrack__item por cada una de las semanas que tenga el 
-                    season e imprimimos el nombre del circuito correspondiente  --> */}
-				<div class="m-seasonTrack__item" data-trackId="idDelCircuito">
-					<span class="m-seasonTrackItem__title">
-                        {week.track}
-                    </span>
-				</div>
-
-			</div>
-            )}
-            </div>
-
-        )}
-
+                    {trofeo.calendario.map((week, i) => {
+                        return (
+                            <div class="m-season__track">
+                                <div
+                                    class="m-seasonTrack__item"
+                                    data-trackId={week.track_id}
+                                >
+                                    <span class="m-seasonTrackItem__title">
+                                        {week.track}
+                                    </span>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+            ))
+        }
     </div>
 </section>
 
+<section class="m-mostUsedTracks">
+    <h2>Recomended buy</h2>
+    <p>
+        Estos son los circuitos que más se juegan esta temporada en las
+        categorías con más participación actual
+    </p>
+    <ul class="m-featuredTracks">
+        {
+            /* <!-- hacer un bucle por el mayor numero de semanas 
+                    que tengan la seasons seleccionadas y imprimir "week 1" , Week 2 --> */
+        }
+        {
+            topTracks.map((item) => (
+                <li class="m-featuredTrack__item" data-trackId={item.track_id}>
+                    <div class="a-featuredTrack__map">
+                        <object type="image/svg+xml" data={item.mapUrl} alt={item.track} />
+                    </div>
+                    <span class="m-featuredTrack__times">
+                        {item.timesThisSeason}
+                    </span>
+                    <span class="m-featuredTrack__title">{item.track}</span>
+                </li>
+            ))
+        }
+    </ul>
+</section>
 
 <style>
-
-    .o-licenseBox{
+    .o-licenseBox {
         border: 1px solid var(--gray-800);
         border-radius: 0.75rem;
-        padding: 1.5rem;
         background-color: var(--gray-999_40);
         box-shadow: var(--shadow-sm);
         display: flex;
         flex-direction: row;
     }
 
-    .a-classPill{
-        height: 120px;
-        border-bottom: 1px solid #2E2E33;
-
+    .a-classPill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        padding: 0 24px;
+        border-bottom: 1px solid #2e2e33;
+    }
+    .a-classPill span {
+        display: flex;
+        background-color: #6d2a03;
+        color: #e8a177;
+        padding: 4px 12px;
+        font-size: 18px;
+        border-radius: 12px;
+        border: 2px solid #b06433;
     }
 
-    .m-weeksContainer{
+    .m-weeksContainer {
         display: flex;
         flex-direction: column;
     }
-    .m-weekItem{
+    .m-weekItem {
         display: flex;
         align-items: center;
-        height: 100px;
+        height: 60px;
         min-width: 100px;
-        border-bottom: 1px solid #2E2E33;
-
+        border-bottom: 1px solid #2e2e33;
+        font-size: 20px;
+        padding: 24px;
+        font-weight: lighter;
     }
 
-    .m-boxContainer{
+    .m-boxContainer {
         display: flex;
         flex-direction: row;
         flex: 1;
     }
 
-    .m-seasonContainer{
+    .m-seasonContainer {
         flex: 1;
     }
 
-    .m-season__info{
+    .m-season__info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid #2E2E33;
+        border-bottom: 1px solid #2e2e33;
         padding: 16px;
-        height: 120px;
+        min-height: 150px;
         text-align: center;
     }
-    .m-season__track{
+    .m-season__logo {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        width: 80px;
+    }
+    .m-season__name {
+        font-size: 12px;
+    }
+    .m-season__track {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 16px 24px;
+        padding: 8px 10px;
         text-align: center;
-        height: 100px;
-        border-bottom: 1px solid #2E2E33;
+        height: 60px;
+        border-bottom: 1px solid #2e2e33;
     }
 
-    .m-seasonTrack__item{
+    .m-seasonTrack__item {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 8px;
         width: 100%;
-        padding: 18px 16px;
-        background-color: #ecf4f0ea;
+        padding: 8px 16px;
         border-radius: 200px;
+        border: 1px solid var(--gray-800);
+        border-radius: 1.5rem;
+        background-color: #ffffff1f;
+        box-shadow: var(--shadow-sm);
+        height: 100%;
     }
-    .m-seasonTrackItem__title{
+    .m-seasonTrackItem__title {
         text-align: center;
-        color: #288556;
+        color: var(--gray-300);
         font-weight: 500;
-        font-size: 14px;
+        font-size: 13px;
     }
-
 
     .skills h2 {
         font-size: var(--text-lg);
@@ -156,7 +237,51 @@ console.log(season);
         color: var(--gray-400);
     }
 
-    @media (min-width: 50em) {
+    .is-hovered {
+        background: #ffe0b2;
+        border-color: #ff9800;
+        transition:
+            background 0.2s,
+            border-color 0.2s;
+    }
 
+    /* 2nda seccion */
+    .m-featuredTracks{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        gap: 32px;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+    }
+    .m-featuredTrack__times{
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .m-featuredTrack__title{
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        text-wrap-style: pretty;
+        text-align: center;
+    }
+    .m-featuredTrack__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 300px;
+        padding: 8px 16px;
+        border-radius: 16px;
+    }
+    .a-featuredTrack__map {
+        width: 150px;
+    }
+
+    @media (min-width: 50em) {
     }
 </style>
