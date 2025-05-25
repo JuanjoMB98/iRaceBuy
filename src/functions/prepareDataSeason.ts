@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import path from 'path';
+import path from "path";
 
 //CONTROLADOR DE ARCHIVOS
 
@@ -13,8 +13,16 @@ export function guardarJSON(path: string, data: any[]): void {
     fs.writeFileSync(path, JSON.stringify(data), "utf8");
 }
 
-const data = leerJSON("src/data/season_24.json")
-const week =  leerJSON("src/data/season_2024_1race.json")
+const week = leerJSON("src/data/season_2024_1race.json");
+
+// https://members-ng.iracing.com/data/series/seasons
+const data = leerJSON("src/data/season_24.json");
+
+// https://members-ng.iracing.com/data/track/assets
+const tracksData = leerJSON("src/data/tracksData.json");
+
+//https://members-ng.iracing.com/data/series/assets/
+const seriesLogos = leerJSON("src/data/seriesLogos.json");
 
 function getSeasonID(season): number {
     return season.season_id;
@@ -40,47 +48,40 @@ function getSeasonSchedule(season): any {
 
     const weaklySerie = [];
 
-    seasonSchedule.forEach(week => {
+    seasonSchedule.forEach((week) => {
         weaklySerie.push({
             raceWeek: week.race_week_num,
             startDate: week.start_date,
             series_name: week.series_name,
             track_id: week.track.track_id,
-            track: week.track.track_name + (week.track.config_name ? (" - " + week.track.config_name) : "") ,
+            track:
+                week.track.track_name +
+                (week.track.config_name ? " - " + week.track.config_name : ""),
+            mapUrl: getTrackMapActiveUrl(week.track.track_id),
         });
-        
     });
 
     return weaklySerie;
 }
 
 export function getTrackMapActiveUrl(trackId: number): string | null {
-    const jsonPath = path.resolve(`./public/assets/tracks/${trackId}/assets.json`);
-    if (!fs.existsSync(jsonPath)) return null;
 
-    const rawData = fs.readFileSync(jsonPath, 'utf-8');
-    const data = JSON.parse(rawData);
+    let actualTrack = tracksData[trackId];
+    let trackMapUrl = actualTrack.track_map + actualTrack.track_map_layers.active;
 
-    if (!data.track_map || !data.track_map_layers?.active) return null;
-
-    return `${data.track_map}${data.track_map_layers.active}`;
+    return trackMapUrl;
 }
-
 
 function getSeasonLogo(season): any {
-    const seasonSchedule = season.schedules;
 
-    let imgPath = "";
+    let serieId = season.series_id;
+    let iracingLink = "https://images-static.iracing.com/img/logos/series/";
+    let actualSerie = seriesLogos[serieId];
+    
+    let logoFilename = iracingLink + actualSerie.logo;
 
-    seasonSchedule.forEach(week => {
-        // Acceder a la propiedad "category" de cada objeto
-        imgPath = "/assets/logos/" + week.category + "/" + week.series_name + ".png";
-
-    });
-
-    return imgPath;
+    return logoFilename;
 }
-
 
 // Función para preparar la base de datos con nombres e IDs relacionados
 export function prepararDB(datos: any[]): void {
@@ -95,25 +96,21 @@ export function prepararDB(datos: any[]): void {
         aux["licencia"] = getLicenseGroup(season);
         aux["logo"] = getSeasonLogo(season);
         aux["calendario"] = getSeasonSchedule(season);
-
         db.push(aux);
     });
-
 
     console.log(db);
 
     guardarJSON("src/data/seasonData.json", db);
 }
 
-
 // Función para contar objetos de primer nivel
 export function contarObjetos(datos: any[]): number {
     return datos.length;
 }
 
-
 // Función para guardar datos en un archivo JSON
 export function test(): void {
-    // prepararDB(data);
+    prepararDB(data);
     // getSeasonLogo(week);
 }

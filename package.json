@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
+    "@astrojs/react": "^4.3.0",
     "@iracing-data/sync-track-assets": "^0.0.2-alpha.2",
     "@types/node": "^20.12.7",
     "astro": "^4.7.0",
     "dotenv": "^16.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "typescript": "^5.4.5"
   }
 }

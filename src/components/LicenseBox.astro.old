@@ -1,0 +1,143 @@
+---
+import Icon from "./Icon.astro";
+import { getSeason } from "../functions/seasonsUtils.ts";
+import { getTrackMapActiveUrl } from "../functions/prepareDataSeason.ts";
+import SeasonFilter from "../components/SeasonFilter.jsx";
+import SeasonViewer from "../components/SeasonViewer.jsx";
+
+// btener los datos
+
+const allSeasons = getSeason();
+
+const seasonsID = ["4734", "4737", "4752", "4738", "4735", "4739", "4740"];
+const season = getSeason({ id: seasonsID });
+
+const maxRaceWeek = season.reduce(
+    (maxWeeks, trofeo) => Math.max(maxWeeks, trofeo.calendario.length),
+    0
+);
+
+// console.log(season);
+
+const trackMap = new Map();
+
+// Recorremos todos los campeonatos
+for (const trofeo of season) {
+    for (const week of trofeo.calendario) {
+        const nombreCircuito = week.track;
+        const idTrack = week.track_id;
+
+        if (trackMap.has(nombreCircuito)) {
+            trackMap.get(nombreCircuito).timesThisSeason += 1;
+        } else {
+            trackMap.set(nombreCircuito, {
+                track: nombreCircuito,
+                track_id: idTrack,
+                timesThisSeason: 1,
+                mapUrl: getTrackMapActiveUrl(idTrack),
+            });
+        }
+    }
+}
+
+// console.log(trackMap);
+
+// Ordenamos por cantidad de repeticiones y tomamos los top 5
+// Convertimos a array y ordenamos por `timesThisSeason`
+const topTracks = Array.from(trackMap.values())
+    .sort((a, b) => b.timesThisSeason - a.timesThisSeason)
+    .slice(0, 8); // Top 5
+
+
+
+
+
+// Temporadas cargadas
+const seasonList = allSeasons.map(({ id, nombre }) => ({ id, nombre }))
+---
+<SeasonViewer
+  client:load
+  seasonList={seasonList}
+  allSeasonData={allSeasons}
+/>
+
+HOLA RAUL MIRA A VER SI PUEDESLO AQUI la idea es<!-- cada licencia es una tabal de estas un section class="box skills -->
+<section class="box skills o-licenseBox">
+    <div class="m-boxHeader">
+        <!-- imprimir la categoria que corresponda en este div -->
+        <div class="a-classPill">
+            <span>CLASE D</span>
+        </div>
+
+        <div class="m-weeksContainer">
+            {
+                /* <!-- hacer un bucle por el mayor numero de semanas 
+                    que tengan la seasons seleccionadas y imprimir "week 1" , Week 2 --> */
+            }
+            {
+                Array.from({ length: maxRaceWeek }).map((_, index) => (
+                    <div class="m-weekItem">
+                        <span>Semana {index + 1}</span>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+
+    <div class="m-boxContainer">
+        <!-- por cada season seleccionada crear el siguiente div class="m-seasonContainer-->
+        {
+            season.map((trofeo) => (
+                <div class="m-seasonContainer">
+                    <div class="m-season__info">
+                        {/* <!-- imprimir el season name y el season logo(tenenmos que ver como hacerlo) --> */}
+                        <img class="m-season__logo" src={trofeo.logo} alt="" />
+                        <span class="m-season__name">{trofeo.nombre}</span>
+                    </div>
+
+                    {trofeo.calendario.map((week, i) => {
+                        return (
+                            <div class="m-season__track">
+                                <div
+                                    class="m-seasonTrack__item"
+                                    data-trackId={week.track_id}
+                                >
+                                    <span class="m-seasonTrackItem__title">
+                                        {week.track}
+                                    </span>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+            ))
+        }
+    </div>
+</section>
+
+<section class="m-mostUsedTracks">
+    <h2>Recomended buy</h2>
+    <p>
+        Estos son los circuitos que más se juegan esta temporada en las
+        categorías con más participación actual
+    </p>
+    <ul class="m-featuredTracks">
+        {
+            /* <!-- hacer un bucle por el mayor numero de semanas 
+                    que tengan la seasons seleccionadas y imprimir "week 1" , Week 2 --> */
+        }
+        {
+            topTracks.map((item) => (
+                <li class="m-featuredTrack__item" data-trackId={item.track_id}>
+                    <div class="a-featuredTrack__map">
+                        <object type="image/svg+xml" data={item.mapUrl} alt={item.track} />
+                    </div>
+                    <span class="m-featuredTrack__times">
+                        {item.timesThisSeason}
+                    </span>
+                    <span class="m-featuredTrack__title">{item.track}</span>
+                </li>
+            ))
+        }
+    </ul>
+</section>
