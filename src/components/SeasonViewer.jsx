@@ -1,8 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SeasonFilter from "./SeasonFilter";
 
-export default function SeasonViewerWrapper({ seasonList, allSeasonData, licenciaId }) {
-    const [activeSeasonIds, setActiveSeasonIds] = useState([]);
+export default function SeasonViewerWrapper({
+    seasonList,
+    allSeasonData,
+    licenciaId,
+    defaultSelectedIds = [], // Ahora es una prop
+}) {
+    const [activeSeasonIds, setActiveSeasonIds] = useState(defaultSelectedIds);
+
+    useEffect(() => {
+        setActiveSeasonIds(defaultSelectedIds);
+    }, [JSON.stringify(defaultSelectedIds)]);
+
+    // Renderizar SeasonFilter solo en cliente para evitar errores de hidratación
+    const [isClient, setIsClient] = useState(false);
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const filteredSeasons =
         activeSeasonIds.length === 0
@@ -17,7 +32,6 @@ export default function SeasonViewerWrapper({ seasonList, allSeasonData, licenci
     const trackMap = new Map();
     // Recorremos todos los campeonatos
     for (const trofeo of filteredSeasons) {
-        
         for (const week of trofeo.calendario) {
             const nombreCircuito = week.track;
             const idTrack = week.track_id;
@@ -39,7 +53,6 @@ export default function SeasonViewerWrapper({ seasonList, allSeasonData, licenci
         .sort((a, b) => b.timesThisSeason - a.timesThisSeason)
         .slice(0, 8); // Top 5
 
-
     let license = "";
     switch (licenciaId) {
         case 1:
@@ -60,11 +73,16 @@ export default function SeasonViewerWrapper({ seasonList, allSeasonData, licenci
     }
     return (
         <>
-            <SeasonFilter
-                seasonList={seasonList}
-                onChange={setActiveSeasonIds}
-                licenciaId={licenciaId}
-            />
+            {isClient && (
+                <SeasonFilter
+                    seasonList={seasonList}
+                    onChange={setActiveSeasonIds}
+                    licenciaId={licenciaId}
+                    selectedIds={activeSeasonIds} // CONTROLADO
+                />
+            )}
+
+            <div>
 
             <section className="box skills o-licenseBox">
                 <div className="m-boxHeader">
@@ -122,7 +140,8 @@ export default function SeasonViewerWrapper({ seasonList, allSeasonData, licenci
                     {/* <!-- hacer un bucle por el mayor numero de semanas 
                     que tengan la seasons seleccionadas y imprimir "week 1" , Week 2 --> */}
                     {topTracks.map((item) => (
-                        <li key={item.track_id}
+                        <li
+                            key={item.track_id}
                             className="m-featuredTrack__item"
                             data-trackid={item.track_id}
                         >
@@ -143,6 +162,8 @@ export default function SeasonViewerWrapper({ seasonList, allSeasonData, licenci
                     ))}
                 </ul>
             </section>
+            </div>
+
         </>
     );
 }

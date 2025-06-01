@@ -32,6 +32,10 @@ function getSeasonName(season): string {
     return season.season_name;
 }
 
+function getSeasonType(season): string {
+    return season.track_types[0].track_type;
+}
+
 function getLicenseGroup(season): string {
     return season.license_group;
 
@@ -93,6 +97,7 @@ export function prepararDB(datos: any[]): void {
 
         aux["id"] = getSeasonID(season);
         aux["nombre"] = getSeasonName(season);
+        aux["tipo"] = getSeasonType(season);
         aux["licencia"] = getLicenseGroup(season);
         aux["logo"] = getSeasonLogo(season);
         aux["calendario"] = getSeasonSchedule(season);

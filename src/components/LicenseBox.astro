@@ -8,7 +8,7 @@ import SeasonViewer from "../components/SeasonViewer.jsx";
 const allSeasons = getSeason();
 
 // Temporadas cargadas
-const seasonList = allSeasons.map(({ id, nombre, licencia}) => ({ id, nombre, licencia }))
+const seasonList = allSeasons.map(({ id, nombre, licencia, tipo, logo}) => ({ id, nombre, licencia, tipo, logo }))
 ---
 
 <SeasonViewer
@@ -16,6 +16,7 @@ const seasonList = allSeasons.map(({ id, nombre, licencia}) => ({ id, nombre, li
   seasonList={seasonList}
   allSeasonData={allSeasons}
   licenciaId={1}
+  defaultSelectedIds={[5428]}
 />
 <SeasonViewer
   client:load
