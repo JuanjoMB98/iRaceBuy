@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import SeasonFilter from "./SeasonFilter";
+import CategoryPill from '/src/components/CategoryPill/CategoryPill.jsx';
+
 
 export default function SeasonViewerWrapper({
     seasonList,
@@ -53,26 +55,14 @@ export default function SeasonViewerWrapper({
         .sort((a, b) => b.timesThisSeason - a.timesThisSeason)
         .slice(0, 8); // Top 5
 
-    let license = "";
-    switch (licenciaId) {
-        case 1:
-            license = "CLASE D";
-            break;
-        case 2:
-            license = "CLASE C";
-            break;
-        case 3:
-            license = "CLASE B";
-            break;
-        case 4:
-            license = "CLASE A";
-            break;
-        case 5:
-            license = "CLASE PRO";
-            break;
-    }
     return (
         <>
+
+        
+
+        <CategoryPill licenseID={licenciaId} />
+
+
             {isClient && (
                 <SeasonFilter
                     seasonList={seasonList}
@@ -84,10 +74,11 @@ export default function SeasonViewerWrapper({
 
             <div>
 
+
             <section className="box skills o-licenseBox">
                 <div className="m-boxHeader">
                     <div className="a-classPill">
-                        <span>{license}</span>
+                        <span>week</span>
                     </div>
 
                     <div className="m-weeksContainer">

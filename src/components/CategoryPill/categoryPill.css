@@ -1,0 +1,31 @@
+.o-categoryPill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+            180deg,
+            rgba(8, 8, 33, 0) 0%,
+            hsla(var(--licenseColorHSLA), 0.2) 100%
+        ),
+        url(/assets/backgrounds/bentoContainerBg.png), #02021b;
+        
+    background-blend-mode: normal, screen, normal;
+}
+.o-categoryPill .pill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: 2px solid hsla(var(--licenseColorHSLA), 1);
+    width: 100%;
+}
+.o-categoryPill .pill .text {
+    font-family: "Instrument Sans";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.9);
+}

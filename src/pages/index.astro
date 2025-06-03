@@ -9,11 +9,14 @@ import CallToAction from '../components/CallToAction.astro';
 import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
 import Icon from '../components/Icon.astro';
-import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
 import Skills from '../components/LicenseBox.astro';
+
+
+// Fuentes
+import '@fontsource/instrument-sans';
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('work'))
@@ -30,8 +33,7 @@ import { test } from '../functions/prepareDataSeason.ts';
 // https://docs.astro.build/basics/astro-components/
 ---
 <script is:inline src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-
-<script src="../../public/scripts/main.js"></script>
+<script is:inline src="/scripts/main.js"></script>
 
 <BaseLayout>
 
