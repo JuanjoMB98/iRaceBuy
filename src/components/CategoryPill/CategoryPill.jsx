@@ -30,13 +30,16 @@ export default function CategoryPill({ licenseID }) {
       licenseColorHSLA = "";
   }
 
+  if (!license) return null;
+
   return (
-    <div className="o-categoryPill -bentoContainer" style={{ "--licenseColorHSLA": licenseColorHSLA  }}>
-      <span className="pill">
-        <span className="text">
-          {license}
-        </span>
-      </span>
-    </div>
+      <div
+          className="o-categoryPill -bentoContainer"
+          style={{ "--licenseColorHSLA": licenseColorHSLA }}
+      >
+          <span className="pill">
+              <span className="text">{license}</span>
+          </span>
+      </div>
   );
 }

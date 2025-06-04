@@ -1,9 +1,11 @@
+import "./SeasonFilter.css";
+
 import Select, { components } from "react-select";
 
 export default function SeasonFilter({
     seasonList = [],
     onChange,
-    licenciaId,
+    licenciaId = [],
     selectedIds = [], // Recibe los seleccionados del padre
 }) {
     const tipoLabels = {
@@ -31,7 +33,11 @@ export default function SeasonFilter({
     );
     const groupedOptions = Object.entries(
         seasonList
-            .filter((season) => season.licencia === licenciaId)
+            .filter((season) =>
+                !licenciaId || licenciaId.length === 0
+                    ? true
+                    : season.licencia === licenciaId
+            )
             .reduce((groups, season) => {
                 if (!groups[season.tipo]) {
                     groups[season.tipo] = [];
@@ -64,13 +70,12 @@ export default function SeasonFilter({
             borderColor: "#ccc",
             minHeight: "38px",
             boxShadow: "none",
-            fontSize: "1rem",
         }),
         multiValue: (provided) => ({
             ...provided,
             backgroundColor: "transparent",
             borderRadius: "4px",
-            width:"200px"
+            width: "200px",
         }),
         multiValueLabel: (provided) => ({
             ...provided,
@@ -96,7 +101,7 @@ export default function SeasonFilter({
     };
     const formatGroupLabel = (data) => (
         <div className="m-groupStyles">
-            <span>{data.label}</span>
+            <span className="a-groupStyles__label">{data.label}</span>
             <span className="a-groupBadgeStyles">{data.options.length}</span>
         </div>
     );
@@ -104,24 +109,40 @@ export default function SeasonFilter({
         <components.MenuList {...props} className="o-menuList" />
     );
     return (
-        <div className="season-filter">
-            <h3>Filtrar por temporada</h3>
-            <Select
-                isMulti
-                options={groupedOptions}
-                value={selectedOptions}
-                onChange={handleChange}
-                placeholder="Selecciona temporadas..."
-                closeMenuOnSelect={false}
-                classNamePrefix="season-select"
-                formatGroupLabel={formatGroupLabel}
-                styles={customStyles}
-                components={{
-                    Option: OptionWithLogo,
-                    MultiValue: MultiValueWithLogo,
-                    MenuList: MenuListWithClass,
-                }}
-            />
-        </div>
+        <>
+            <div className="o-filterContainer -bentoContainer">
+                <div className="m-bentoContainer__header">
+                    <h2 className="m-bentoContainerHeader__title">
+                        🔎 Select the seasons you want to play
+                    </h2>
+                    <span className="m-bentoContainerHeader__subtitle">
+                        These are the circuits with the most competition this
+                        season in the categories with the most current
+                        participation.
+                    </span>
+                </div>
+
+                <hr className="a-separator" />
+
+                <div className="m-bentoContainer__content">
+                    <Select
+                        isMulti
+                        options={groupedOptions}
+                        value={selectedOptions}
+                        onChange={handleChange}
+                        placeholder="Select series..."
+                        closeMenuOnSelect={false}
+                        classNamePrefix="season-select"
+                        formatGroupLabel={formatGroupLabel}
+                        styles={customStyles}
+                        components={{
+                            Option: OptionWithLogo,
+                            MultiValue: MultiValueWithLogo,
+                            MenuList: MenuListWithClass,
+                        }}
+                    />
+                </div>
+            </div>
+        </>
     );
 }

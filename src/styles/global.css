@@ -167,6 +167,7 @@ body {
 *,
 *::after,
 *::before {
+    position: relative;
     box-sizing: border-box;
     margin: 0;
 }
@@ -272,119 +273,7 @@ h5 {
 }
 
 /* Components */
-.o-licenseBox {
-    border-radius: 0.75rem;
-    display: flex;
-    flex-direction: row;
-}
 
-.a-classPill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    padding: 0 24px;
-    border-bottom: 1px solid #2e2e33;
-}
-.a-classPill span {
-    display: flex;
-    background-color: #6d2a03;
-    color: #e8a177;
-    padding: 4px 12px;
-    font-size: 18px;
-    border-radius: 12px;
-    border: 2px solid #b06433;
-}
-
-.m-weeksContainer {
-    display: flex;
-    flex-direction: column;
-}
-.m-weekItem {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    min-width: 100px;
-    border-bottom: 1px solid #2e2e33;
-    font-size: 20px;
-    padding: 24px;
-    font-weight: lighter;
-}
-
-.m-boxContainer {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    overflow-x: auto;
-    overflow-y: clip;
-}
-
-.m-seasonContainer {
-    flex: 1;
-    max-width: 300px;
-}
-
-.m-season__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #2e2e33;
-    padding: 16px;
-    min-height: 150px;
-    text-align: center;
-    user-select: none; /* evita la selección de texto */
-}
-.m-season__logo {
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    width: 80px;
-}
-.m-season__name {
-    font-size: 12px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-}
-.m-season__track {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 10px;
-    text-align: center;
-    height: 60px;
-    border-bottom: 1px solid #2e2e33;
-}
-
-.m-seasonTrack__item {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-    padding: 8px 16px;
-    border-radius: 200px;
-    border: 1px solid var(--gray-800);
-    border-radius: 1.5rem;
-    background-color: #ffffff1f;
-    box-shadow: var(--shadow-sm);
-    height: 100%;
-}
-.m-seasonTrackItem__title {
-    text-align: center;
-    color: var(--gray-300);
-    font-weight: 500;
-    font-size: 13px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    user-select: none; /* evita la selección de texto */
-}
 
 .skills h2 {
     font-size: var(--text-lg);
@@ -395,206 +284,11 @@ h5 {
 }
 
 .is-hovered {
-    background: #ffe0b2;
     border-color: #ff9800;
     transition: background 0.2s, border-color 0.2s;
 }
 
 /* 2nda seccion */
-.m-featuredTracks {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    gap: 32px;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-}
-.m-featuredTrack__times {
-    font-family: "Segoe UI";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 48px;
-}
-.m-featuredTrack__title {
-    font-family: "Segoe UI";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    text-wrap-style: pretty;
-    text-align: center;
-}
-.m-featuredTrack__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    width: 300px;
-    padding: 8px 16px;
-    border-radius: 16px;
-}
-.a-featuredTrack__map {
-    width: 150px;
-}
-
-/* Filtros */
-.m-groupStyles {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.a-groupBadgeStyles {
-    background-color: #ebecf0;
-    border-radius: 2em;
-    color: #172b4d;
-    font-weight: normal;
-    line-height: 1;
-    min-height: 1;
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.o-menuList {
-    display: flex;
-    flex-direction: row;
-    background-color: #10111a;
-    max-height: 500px !important;
-}
-.season-select__menu-list {
-    padding: 16px;
-    gap: 32px;
-}
-.o-menuList > div {
-    flex: 1;
-}
-.season-select__option {
-    --chipBg: #036efc;
-    border-radius: 4px;
-    position: relative;
-    height: 100%;
-    background-color: transparent !important;
-    border: 1px solid #ffffff2c;
-    overflow: hidden;
-    transition: all ease-in-out 0.3s;
-    margin: 16px 0;
-}
-.season-select__option::before {
-    content: "Add to filter";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    display: flex;
-    font-size: 12px;
-    line-height: 10px;
-    flex-direction: column;
-    padding: 8px 4px;
-    text-align: center;
-    border: 1px solid var(--chipBg);
-    background-color: var(--chipBg);
-    border-radius: 0px 0 3px 0;
-    color: white;
-    transition: all ease-in-out 0.3s;
-}
-.season-select__option:hover {
-    border: 1px solid var(--chipBg);
-}
-.season-select__option:hover::before {
-    left: 0;
-}
-.m-optionSelect {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-.m-optionSelect span {
-    text-align: center;
-    font-size: 12px;
-}
-
-/* Item seleccionado */
-.season-select__control {
-    background-color: transparent !important;
-    border-color: #1e1e1e !important;
-    padding: 16px;
-    border-radius: 10px !important;
-}
-.season-select__value-container {
-    gap: 16px;
-    align-items: initial !important;
-}
-.season-select__multi-value {
-    --chipBg: #288556;
-    border-radius: 4px;
-    position: relative;
-    border: 1px solid #288556;
-    max-width: 180px;
-    height: 100%;
-}
-.season-select__multi-value__remove {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    border-radius: 0 3px 0 4px !important;
-    background-color: #da272771;
-    color: white !important;
-    cursor: pointer;
-}
-.m-multiValueItem {
-    display: flex;
-    flex-direction: column;
-    padding: 16px 8px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white !important;
-}
-.m-multiValueItem::before {
-    content: "Selected";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    font-size: 12px;
-    line-height: 10px;
-    flex-direction: column;
-    padding: 8px 4px;
-    text-align: center;
-    border: 1px solid var(--chipBg);
-    background-color: var(--chipBg);
-    border-radius: 3px 0 3px 0;
-    color: white;
-}
-.m-multiValueItem span {
-    font-size: 12px;
-    line-height: 16px;
-    text-wrap: pretty;
-    font-weight: 500;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-
-    color: var(--gray-200);
-}
-.m-optionSelect img,
-.m-multiValueItem img {
-    --size: 98px;
-    width: var(--size);
-    height: var(--size);
-    object-fit: contain;
-}
 
 /* #region Header Styles */
 .-bentoContainer {
@@ -609,19 +303,44 @@ h5 {
     background: linear-gradient(
             180deg,
             rgba(8, 8, 33, 0) 0%,
-            rgba(206, 133, 8, 0.28) 100%
+            hsl(240, 61%, 7%) 100%
         ),
-        url('/assets/backgrounds/bentoContainerBg.png'), #02021b;
+        url("/assets/backgrounds/bentoContainerBg.png"), #02021b;
     background-blend-mode: normal, screen, normal;
     border: 1px solid #10102d;
     border-radius: 20px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
 }
+
+.m-bentoContainerHeader__title {
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #f1f1f3;
+}
+.m-bentoContainerHeader__subtitle {
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #aeaeb8;
+}
+
+.a-separator {
+    width: 100%;
+    height: 1px;
+    background-color: #222244;
+    border: none;
+}
+
+.m-bentoContainer__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 /* #endregion */
 
 @media (min-width: 50em) {

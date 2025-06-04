@@ -1,0 +1,101 @@
+.o-recomendedTracks * {
+    transition: all 0.3s ease-out !important;
+}
+.o-recomendedTracks {
+    flex: 4;
+    transition: all 0.3s ease-in-out;
+}
+.o-recomendedTracks.-collapsed {
+    flex: 1;
+}
+.o-recomendedTracks.-collapsed .m-featuredTracks {
+    gap: 8px;
+}
+.o-recomendedTracks.-collapsed .m-bentoContainerHeader__title {
+    font-size: 14px;
+}
+.o-recomendedTracks.-collapsed .m-bentoContainerHeader__subtitle {
+    display: none;
+}
+.o-recomendedTracks.-collapsed .m-featuredTrack__times {
+    right: 8px;
+    top: 8px;
+    font-size: 16px;
+}
+.o-recomendedTracks.-collapsed .m-featuredTrack__title {
+    font-size: 10px;
+}
+.o-recomendedTracks.-collapsed .m-featuredTrack__item {
+    gap: 4px;
+}
+
+.m-featuredTracks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0;
+}
+.m-featuredTrack__times {
+    font-family: "Instrument Sans";
+
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-color: #134c923d;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.m-featuredTrack__title {
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-wrap-style: pretty;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-featuredTrack__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    border-radius: 16px;
+}
+.a-featuredTrack__map {
+    background-color: #134c9217;
+    border-radius: 16px;
+    flex: 1;
+    width: 100%;
+    min-width: 150px;
+    border: 1px solid transparent;
+}
+
+
+.is-hovered .a-featuredTrack__map{
+    background: linear-gradient(
+        220deg,
+        rgba(0, 0, 0, 0.1) 0%,
+        #134C92 100%
+    );
+    border: 1px solid #134C92;
+    transition: background 0.2s, border-color 0.2s;
+}
+.is-hovered .m-featuredTrack__times{
+    background-color: #134c92;
+
+    backdrop-filter: 0px 0px 10px rgba(255, 255, 255, 0.5);	
+}

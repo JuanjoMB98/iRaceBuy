@@ -12,7 +12,8 @@ import Icon from '../components/Icon.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
-import Skills from '../components/LicenseBox.astro';
+
+import LicenseBox from '../components/LicenseBox.astro';
 
 
 // Fuentes
@@ -38,7 +39,7 @@ import { test } from '../functions/prepareDataSeason.ts';
 <BaseLayout>
 
 	<div class="wrap">
-			<Skills />
+			<LicenseBox />
 	</div>
 
 	<div class="stack gap-20 lg:gap-48">
@@ -190,6 +191,7 @@ import { test } from '../functions/prepareDataSeason.ts';
 		background-blend-mode: overlay, normal, normal, normal;
 		mix-blend-mode: var(--bg-blend-mode);
 		z-index: -1;
+
 	}
 
 	.with-background.bg-variant::before {

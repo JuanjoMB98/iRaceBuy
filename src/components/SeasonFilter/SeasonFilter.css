@@ -1,0 +1,229 @@
+.o-filterContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+}
+.o-filterContainer * {
+    font-family: "Instrument Sans";
+}
+
+/* Filtros */
+.season-select__menu {
+    border-radius: 16px;
+}
+.season-select__control {
+    background-color: #000017 !important;
+    border-color: #ffffff10 !important;
+    padding: 10px;
+    border-radius: 10px !important;
+    flex: 1;
+    display: flex;
+}
+
+.season-select__placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.season-select__value-container {
+    gap: 8px;
+    align-items: initial !important;
+    padding: 0px !important;
+}
+
+.season-select__indicator-separator {
+    opacity: 0.2;
+}
+
+.o-menuList {
+    display: flex;
+    flex-direction: row;
+    background-color: #000017;
+    max-height: 500px !important;
+    position: relative;
+    padding: 0 8px !important;
+    box-shadow: rgb(0, 0, 0, 0.5) 0 0 471px 485px;
+}
+.o-menuList::-webkit-scrollbar {
+    width: 6px; /* Grosor de la barra vertical */
+    height: 2px; /* Grosor de la barra horizontal (si aplica) */
+    background: transparent;
+}
+.o-menuList::-webkit-scrollbar-thumb {
+    background: #134c92; /* Color de la barra */
+    border-radius: 1px; /* Opcional: bordes redondeados */
+}
+.o-menuList::-webkit-scrollbar-track {
+    background: transparent; /* Fondo transparente para solo mostrar la línea */
+}
+
+.season-select__group-heading {
+    position: sticky;
+    top: 0px;
+    background-color: #000017;
+    padding: 8px 0;
+    z-index: 3;
+}
+
+.m-groupStyles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+        position: sticky;
+    top: 0px;
+}
+.a-groupStyles__label {
+    font-weight: 800;
+}
+
+.a-groupBadgeStyles {
+    background-color: #ebecf0;
+    border-radius: 2em;
+    color: #172b4d;
+    font-weight: normal;
+    line-height: 1;
+    min-height: 1;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.season-select__menu-list {
+    padding: 16px;
+    gap: 16px;
+}
+.o-menuList > div {
+    flex: 1;
+}
+.season-select__option {
+    --chipBg: #036efc;
+    border-radius: 4px;
+    position: relative;
+    height: 100%;
+    background-color: transparent !important;
+    border: 1px solid #ffffff2c;
+    overflow: hidden;
+    transition: all ease-in-out 0.3s;
+    margin: 8px 0;
+}
+.season-select__option::before {
+    content: "Add to filter";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: flex;
+    font-size: 12px;
+    line-height: 10px;
+    flex-direction: column;
+    padding: 8px 4px;
+    text-align: center;
+    border: 1px solid var(--chipBg);
+    background-color: var(--chipBg);
+    border-radius: 0px 0 3px 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+.season-select__option:hover {
+    border: 1px solid var(--chipBg);
+}
+.season-select__option:hover::before {
+    left: 0;
+}
+.m-optionSelect {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+.m-optionSelect span {
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    user-select: none; /* evita la selección de texto */
+    height: 28px;
+    color: #aeaeb8;
+    font-family: "Instrument Sans";
+    font-weight: 500;
+}
+
+/* Item seleccionado */
+
+.season-select__multi-value {
+    --chipBg: #288556;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid #288556;
+    max-width: 175px;
+    height: 100%;
+}
+.season-select__multi-value__remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 0 3px 0 4px !important;
+    background-color: #da272771;
+    color: white !important;
+    cursor: pointer;
+}
+.m-multiValueItem {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white !important;
+}
+.m-multiValueItem::before {
+    content: "Selected";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    font-size: 12px;
+    line-height: 10px;
+    flex-direction: column;
+    padding: 8px 4px;
+    text-align: center;
+    border: 1px solid var(--chipBg);
+    background-color: var(--chipBg);
+    border-radius: 3px 0 3px 0;
+    color: white;
+}
+.m-multiValueItem span {
+    font-size: 12px;
+    line-height: 16px;
+    text-wrap: pretty;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    color: var(--gray-200);
+}
+.m-optionSelect img,
+.m-multiValueItem img {
+    --size: 98px;
+    width: var(--size);
+    height: var(--size);
+    object-fit: contain;
+}
