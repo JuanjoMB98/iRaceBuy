@@ -7,11 +7,19 @@ import RaceTable from "../RaceTable/RaceTable.jsx";
 import RecomendedTracks from "../RecomendedTracks/RecomendedTracks.jsx";
 
 export default function SeasonViewerWrapper({
-    seasonList,
     allSeasonData,
     licenciaId,
     defaultSelectedIds = [], // Ahora es una prop
 }) {
+
+    const seasonList = allSeasonData.map(({ id, nombre, licencia, tipo, logo }) => ({
+        id,
+        nombre,
+        licencia,
+        tipo,
+        logo,
+    }));
+
     const [activeSeasonIds, setActiveSeasonIds] = useState(defaultSelectedIds);
 
     useEffect(() => {

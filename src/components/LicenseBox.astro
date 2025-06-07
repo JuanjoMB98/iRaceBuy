@@ -1,51 +1,16 @@
 ---
 import { getSeason } from "../functions/seasonsUtils.ts";
-import SeasonViewer from "./SeasonViewer/SeasonViewer.jsx";
+import SeasonWrap from "./SeasonWrap/SeasonWrap.jsx";
 
 // btener los datos
 
 const allSeasons = getSeason();
 
 // Temporadas cargadas
-const seasonList = allSeasons.map(({ id, nombre, licencia, tipo, logo }) => ({
-    id,
-    nombre,
-    licencia,
-    tipo,
-    logo,
-}));
+
 ---
 
-<SeasonViewer
+<SeasonWrap
     client:load
-    seasonList={seasonList}
-    allSeasonData={allSeasons}
-    licenciaId={1}
-    defaultSelectedIds={[5428]}
-/>
-<SeasonViewer
-    client:load
-    seasonList={seasonList}
-    allSeasonData={allSeasons}
-    licenciaId={2}
-/>
-<SeasonViewer
-    client:load
-    seasonList={seasonList}
-    allSeasonData={allSeasons}
-    licenciaId={3}
-/>
-<SeasonViewer
-    client:load
-    seasonList={seasonList}
-    allSeasonData={allSeasons}
-    licenciaId={4}
-/>
-
-
-<SeasonViewer
-    client:load
-    seasonList={seasonList}
-    allSeasonData={allSeasons}
-    licenciaId={}
+    allSeasons={allSeasons}
 />

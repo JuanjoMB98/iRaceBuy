@@ -93,6 +93,7 @@ export default function RaceTable({ filteredSeasons }) {
                                     <div
                                         className="m-seasonTrack__item"
                                         data-trackid={week.track_id}
+                                        data-isfreetrack={week.isFreeTrack}
                                     >
                                         <span className="m-seasonTrackItem__title">
                                             {week.track}

@@ -21,8 +21,12 @@ const data = leerJSON("src/data/season_24.json");
 // https://members-ng.iracing.com/data/track/assets
 const tracksData = leerJSON("src/data/tracksData.json");
 
+// https://members-ng.iracing.com/data/track/get
+const tracksAllInfo = leerJSON("src/data/tracksAllInfo.json");
+
 //https://members-ng.iracing.com/data/series/assets/
 const seriesLogos = leerJSON("src/data/seriesLogos.json");
+
 
 function getSeasonID(season): number {
     return season.season_id;
@@ -59,8 +63,9 @@ function getSeasonSchedule(season): any {
             series_name: week.series_name,
             track_id: week.track.track_id,
             track:
-                week.track.track_name +
-                (week.track.config_name ? " - " + week.track.config_name : ""),
+            week.track.track_name +
+            (week.track.config_name ? " - " + week.track.config_name : ""),
+            isFreeTrack: isFreeContent(week.track.track_id),
             mapUrl: getTrackMapActiveUrl(week.track.track_id),
         });
     });
@@ -75,6 +80,12 @@ export function getTrackMapActiveUrl(trackId: number): string | null {
 
     return trackMapUrl;
 }
+
+export function isFreeContent(trackId: number): boolean {
+
+    const track = tracksAllInfo.find(t => t.track_id === trackId);
+    return track?.free_with_subscription;
+}   
 
 function getSeasonLogo(season): any {
 

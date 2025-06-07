@@ -6,22 +6,26 @@ export default function CategoryPill({ licenseID }) {
 
   switch (licenseID) {
     case 1:
-      license = "Class D";
-      licenseColorHSLA = "38, 93%, 42%";
+      license = "Rookie";
+      licenseColorHSLA = "4, 100%, 50%";
       break;
     case 2:
+      license = "Class D";
+      licenseColorHSLA = "24, 100%, 50%";
+      break;
+    case 3:
       license = "Class C";
       licenseColorHSLA = "48, 96%, 48%";
       break;
-    case 3:
+    case 4:
       license = "Class B";
       licenseColorHSLA = "110, 100%, 29%";
       break;
-    case 4:
+    case 5:
       license = "Class A";
       licenseColorHSLA = "214, 98%, 50%";
       break;
-    case 5:
+    case 6:
       license = "Class PRO";
       licenseColorHSLA = "";
       break;

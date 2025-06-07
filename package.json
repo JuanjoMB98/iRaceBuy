@@ -12,6 +12,8 @@
   "dependencies": {
     "@astrojs/check": "^0.5.10",
     "@astrojs/react": "^4.3.0",
+    "@coreui/coreui": "^5.4.0",
+    "@coreui/react": "^5.7.0",
     "@fontsource/instrument-sans": "^5.2.5",
     "@iracing-data/sync-track-assets": "^0.0.2-alpha.2",
     "@types/node": "^20.12.7",

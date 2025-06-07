@@ -72,7 +72,7 @@
     align-items: center;
     justify-content: space-between;
     flex: 1;
-        position: sticky;
+    position: sticky;
     top: 0px;
 }
 .a-groupStyles__label {
@@ -165,7 +165,7 @@
     border-radius: 4px;
     position: relative;
     border: 1px solid #288556;
-    max-width: 175px;
+    max-width: 170px;
     height: 100%;
 }
 .season-select__multi-value__remove {

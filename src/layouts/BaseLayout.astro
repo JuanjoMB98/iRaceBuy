@@ -21,9 +21,7 @@ const { title, description } = Astro.props;
 	</head>
 	<body>
 		<div class="stack backgrounds">
-			<Nav />
 			<slot />
-			<Footer />
 		</div>
 
 		<script>
@@ -105,7 +103,9 @@ const { title, description } = Astro.props;
 					/*header2*/ normal,
 					/*base*/ normal;
     background: #000017 !important;
-
+	display: flex;
+				flex-direction: column;
+				gap: 124px;padding-top: 64px;
 			}
 			@media (forced-colors: active) {
 				/* Deactivate custom backgrounds for high contrast users. */

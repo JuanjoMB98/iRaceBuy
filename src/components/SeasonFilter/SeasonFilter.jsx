@@ -61,6 +61,7 @@ export default function SeasonFilter({
     const handleChange = (selected) => {
         if (onChange) {
             onChange((selected || []).map((opt) => opt.value));
+            console.log("Selected options:", selected);
         }
     };
     const customStyles = {

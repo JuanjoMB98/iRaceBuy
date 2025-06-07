@@ -1,0 +1,26 @@
+.tab-pane {
+    display: none;
+}
+.tab-pane.show {
+    display: flex;
+}
+
+.nav-enclosed-pills{
+    border: 1px solid #222244;
+    width: fit-content;
+    border-radius: 48px;
+    padding: 6px 8px;
+    margin: auto;
+    margin-bottom: 64px;
+}
+.nav-link{
+    padding: 12px 24px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 40px;
+}
+.nav-link.active{
+    background-color: white;
+    color: #000017 ;
+}
