@@ -6,6 +6,7 @@ export default defineConfig({
     integrations: [react()],
     output: 'static',
     base: '/iRaceBuy/',
+    site: 'https://juanjomb98.github.io/'
   })
 
 
