@@ -135,7 +135,6 @@
     border-radius: 16px;
     border: 2px solid hsla(var(--licenseColorHSLA), 1);
     background-color: #134C92;
-    z-index: 3;
     cursor: pointer;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     margin: 2px 0;
