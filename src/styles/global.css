@@ -290,6 +290,10 @@ h5 {
 
 /* 2nda seccion */
 
+.a-siteLogo{
+    filter: drop-shadow(0px 0px 53.1px rgba(255, 255, 255, 0.15));
+}
+
 /* #region Header Styles */
 .-bentoContainer {
     /* Auto layout */

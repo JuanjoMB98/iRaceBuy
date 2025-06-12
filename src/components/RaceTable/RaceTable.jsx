@@ -40,8 +40,8 @@ export default function RaceTable({ filteredSeasons }) {
             <div className="m-bentoContainer__header">
                 <h2 className="m-bentoContainerHeader__title">📅 Calendar</h2>
                 <span className="m-bentoContainerHeader__subtitle">
-                    Here you can see the schedule for selected seasons. Hover
-                    over the schedule to highlight the circuits.
+                    Here you can see the schedule for the selected seasons.
+Hover over the schedule to highlight the circuits, and click on them to mark which ones you own or are considering buying — helping you organize your planning more easily.
                 </span>
             </div>
 

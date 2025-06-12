@@ -100,6 +100,7 @@
     box-shadow: var(--shadow-sm);
     height: 100%;
     overflow: hidden;
+    cursor: pointer !important;
 }
 
 .m-seasonTrack__item[data-isfreetrack="true"] {
@@ -117,7 +118,7 @@
     height: 100%;
     font-size: 8px;
     padding: 0px 4px 0 2px;
-    background-color: #288556;
+    background: #288556;
     border: 1px solid #288556;
     color: #ecf4f0 !important;
     writing-mode: vertical-lr; /* o vertical-lr */
@@ -136,6 +137,11 @@
     user-select: none; /* evita la selección de texto */
 }
 
+.-suggestedBuy.m-seasonTrack__item {
+    background: linear-gradient(220deg, rgba(0, 0, 0, 0.1) 0%, #4f187c 100%);
+    border: 1px solid #134c92;
+    transition: background 0.2s, border-color 0.2s;
+}
 .is-hovered.m-seasonTrack__item {
     background: linear-gradient(220deg, rgba(0, 0, 0, 0.1) 0%, #134c92 100%);
     border: 1px solid #134c92;

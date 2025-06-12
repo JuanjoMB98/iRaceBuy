@@ -5,11 +5,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 // Component Imports
-import CallToAction from "../components/CallToAction.astro";
-import Grid from "../components/Grid.astro";
 import Hero from "../components/Hero.astro";
-import Icon from "../components/Icon.astro";
-import PortfolioPreview from "../components/PortfolioPreview.astro";
 // Page section components
 import ContactCTA from "../components/ContactCTA.astro";
 
@@ -18,10 +14,6 @@ import LicenseBox from "../components/LicenseBox.astro";
 // Fuentes
 import "@fontsource/instrument-sans";
 
-// Content Fetching: List four most recent work projects
-const projects = (await getCollection("work"))
-    .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
-    .slice(0, 4);
 
 import { test } from "../functions/prepareDataSeason.ts";
 
@@ -33,30 +25,31 @@ import { test } from "../functions/prepareDataSeason.ts";
 
 <script is:inline src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script is:inline src="/scripts/main.js"></script>
+<script is:inline src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js">
+</script>
+
+<script>
+    kofiWidgetOverlay.draw("juanjomb98", {
+        type: "floating-chat",
+        "floating-chat.donateButton.text": "Support me",
+        "floating-chat.donateButton.background-color": "#ff5f5f",
+        "floating-chat.donateButton.text-color": "#fff",
+    });
+</script>
 
 <BaseLayout>
     <div class="wrap">
-            <header class="hero">
-                <Hero
-                    title="Hello, my name is Jeanine White"
-                    tagline="I am a Creative Developer who is currently based in Portland, Oregon."
-                    align="start"
-                />
 
-                <img
-                    alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
-                    width="480"
-                    height="620"
-                    src="/assets/portrait.jpg"
-                />
-            </header>
+
+        <Hero
+            title="Plan Your iRacing Season Smarter"
+            tagline=" Explore the schedule, highlight circuits, and mark which tracks you own or plan to buy."
+            align="center"
+        />
 
         <LicenseBox />
-
-		
     </div>
-	<ContactCTA />
-	
+    <ContactCTA />
 </BaseLayout>
 
 <style>

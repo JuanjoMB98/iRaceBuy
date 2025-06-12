@@ -94,8 +94,59 @@
     border: 1px solid #134C92;
     transition: background 0.2s, border-color 0.2s;
 }
+
+
+.-suggestedBuy .a-featuredTrack__map {
+    background: linear-gradient(220deg, rgba(0, 0, 0, 0.1) 0%, #4f187c 100%);
+    border: 1px solid #134c92;
+    transition: background 0.2s, border-color 0.2s;
+}
+
 .is-hovered .m-featuredTrack__times{
     background-color: #134c92;
-
     backdrop-filter: 0px 0px 10px rgba(255, 255, 255, 0.5);	
+}
+.is-hovered .a-featuredTrack__map{
+    background-color: #134c9286 !important;
+}
+
+
+.m-featuredTrack__item[data-isfreetrack="true"] .a-featuredTrack__map::after {
+    content: "Free";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 8px;
+    top: 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 0px 4px 0 2px;
+    background-color: #288556;
+    border: 1px solid #288556;
+    color: #ecf4f0 !important;
+}
+
+.a-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 16px;
+    border: 2px solid hsla(var(--licenseColorHSLA), 1);
+    background-color: #134C92;
+    z-index: 3;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin: 2px 0;
+}
+
+.o-recomendedTracks.-collapsed .a-button{
+    transform: rotate(180deg);
+}
+
+.m-bentoContainerHeader__title{
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
