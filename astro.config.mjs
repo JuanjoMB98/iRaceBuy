@@ -5,8 +5,8 @@ import react from '@astrojs/react';
 export default defineConfig({
     integrations: [react()],
     output: 'static',
-    base: '/iRaceBuy',
-    site: 'https://juanjomb98.github.io/'
+    base: '/',
+    site: 'https://iracebuy.com'
   })
 
 
