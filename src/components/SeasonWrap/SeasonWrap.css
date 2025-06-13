@@ -12,6 +12,8 @@
     padding: 6px 8px;
     margin: auto;
     margin-bottom: 64px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .nav-link{
     padding: 12px 24px;

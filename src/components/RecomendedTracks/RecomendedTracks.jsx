@@ -44,7 +44,7 @@ export default function RaceTable({ filteredSeasons }) {
         >
             <div className="m-bentoContainer__header">
                 <h2 className="m-bentoContainerHeader__title">
-                    <button onClick={handleToggle} className="a-button">
+                    <button onClick={handleToggle} className="a-button" aria-label="Compress Recomended Tracks">
                         <svg
                             width="15"
                             height="14"
@@ -83,6 +83,7 @@ export default function RaceTable({ filteredSeasons }) {
                                 type="image/svg+xml"
                                 src={item.mapUrl}
                                 alt={item.track}
+                                loading="lazy"
                             />
                         </div>
                         <span className="m-featuredTrack__times">

@@ -11,8 +11,8 @@ const { align = "center", tagline, title } = Astro.props;
 <div class:list={["hero stack gap-4", align]}>
     <img
 		class="a-siteLogo"
-		width="400"
         src="./assets/siteLogoText.png"
+        alt="iRaceBuy logo with text"
     />
     <div class="stack gap-2">
         <h1 class="title">{title}</h1>
@@ -21,8 +21,12 @@ const { align = "center", tagline, title } = Astro.props;
 </div>
 
 <style>
+
+    .a-siteLogo{
+        padding: 16px;
+        max-width: 600px;
+    }
     .hero {
-	    font-family: "Instrument Sans";
         font-size: var(--text-lg);
         text-align: center;
 		margin: auto;
@@ -40,10 +44,12 @@ const { align = "center", tagline, title } = Astro.props;
     }
 
     .title {
-	    font-weight: 900;
-	    font-family: "Instrument Sans";
+        font-family: "Michroma", sans-serif;
+        font-weight: 700;
+        line-height: 90%;
         font-size: var(--text-3xl);
         color: var(--gray-0);
+        margin-bottom: 16px;
     }
 
     @media (min-width: 50em) {

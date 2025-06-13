@@ -18,3 +18,18 @@
 .m-seasonContainer__content{
     flex-direction: row;
 }
+
+
+@media (max-width: 768px) {
+    .m-seasonContainer__header {
+        padding: 16px;
+        flex-direction: column;
+    }
+    .m-seasonContainer__content {
+        padding: 16px;
+        flex-direction: column;
+    }
+    .-bentoContainer{
+        width: auto;
+    }
+}

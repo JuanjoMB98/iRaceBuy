@@ -18,7 +18,7 @@ export default function SeasonFilter({
     const OptionWithLogo = (props) => (
         <components.Option {...props}>
             <div className="m-optionSelect">
-                {props.data.logo && <img src={props.data.logo} alt="logo" />}
+                {props.data.logo && <img src={props.data.logo} alt={props.data.label} loading="lazy"/>}
                 <span>{props.data.label}</span>
             </div>
         </components.Option>
@@ -26,7 +26,7 @@ export default function SeasonFilter({
     const MultiValueWithLogo = (props) => (
         <components.MultiValue {...props}>
             <div className="m-multiValueItem">
-                {props.data.logo && <img src={props.data.logo} alt="logo" />}
+                {props.data.logo && <img src={props.data.logo} alt={props.data.label} loading="lazy"/>}
                 <span>{props.data.label}</span>
             </div>
         </components.MultiValue>

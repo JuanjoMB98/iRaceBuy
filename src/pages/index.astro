@@ -21,29 +21,12 @@ import { test } from "../functions/prepareDataSeason.ts";
 // https://docs.astro.build/basics/astro-components/
 ---
 
-<script is:inline src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script is:inline src="./scripts/main.js"></script>
-<script is:inline src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
-
-<script is:inline>
-  window.addEventListener("DOMContentLoaded", function () {
-    if (window.kofiWidgetOverlay) {
-      window.kofiWidgetOverlay.draw("juanjomb98", {
-        type: "floating-chat",
-        "floating-chat.donateButton.text": "Support me",
-        "floating-chat.donateButton.background-color": "#ff5f5f",
-        "floating-chat.donateButton.text-color": "#fff",
-      });
-    }
-  });
-</script>
-
 <BaseLayout>
     <div class="wrap">
 
 
         <Hero
-            title="Plan Your iRacing Season Smarter"
+            title="Plan your iRacing season smarter"
             tagline=" Explore the schedule, highlight circuits, and mark which tracks you own or plan to buy."
             align="center"
         />
