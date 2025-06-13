@@ -8,7 +8,7 @@
             rgba(8, 8, 33, 0) 0%,
             hsla(var(--licenseColorHSLA), 0.2) 100%
         ),
-        url(/iRaceBuy/assets/backgrounds/bentoContainerBg.png), #02021b;
+        url(/assets/backgrounds/bentoContainerBg.png), #02021b;
         
     background-blend-mode: normal, screen, normal;
     min-width: 160px;

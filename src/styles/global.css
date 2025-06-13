@@ -309,7 +309,7 @@ h5 {
             rgba(8, 8, 33, 0) 0%,
             hsl(240, 61%, 7%) 100%
         ),
-        url("/iRaceBuy/assets/backgrounds/bentoContainerBg.png"), #02021b;
+        url("/assets/backgrounds/bentoContainerBg.png"), #02021b;
     background-blend-mode: normal, screen, normal;
     border: 1px solid #10102d;
     border-radius: 20px;
