@@ -74,6 +74,7 @@
     gap: 8px;
     flex: 1;
     border-radius: 16px;
+    cursor: pointer;
 }
 .a-featuredTrack__map {
     background-color: #134c9217;

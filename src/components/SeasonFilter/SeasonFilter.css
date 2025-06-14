@@ -19,6 +19,7 @@
     border-radius: 10px !important;
     flex: 1;
     display: flex;
+    cursor: pointer !important;
 }
 
 .season-select__placeholder {

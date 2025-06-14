@@ -21,6 +21,11 @@
     color: white;
     border: none;
     border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.nav-link:hover{
+    background-color: rgba(240, 248, 255, 0.103);
 }
 .nav-link.active{
     background-color: white;
