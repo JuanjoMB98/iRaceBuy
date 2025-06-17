@@ -13,10 +13,9 @@ export function guardarJSON(path: string, data: any[]): void {
     fs.writeFileSync(path, JSON.stringify(data), "utf8");
 }
 
-const week = leerJSON("src/data/season_2024_1race.json");
 
 // https://members-ng.iracing.com/data/series/seasons
-const data = leerJSON("src/data/season_24.json");
+const data = leerJSON("src/data/actualSeason.json");
 
 // https://members-ng.iracing.com/data/track/assets
 const tracksData = leerJSON("src/data/tracksData.json");
@@ -76,7 +75,11 @@ function getSeasonSchedule(season): any {
 export function getTrackMapActiveUrl(trackId: number): string | null {
 
     let actualTrack = tracksData[trackId];
-    let trackMapUrl = actualTrack.track_map + actualTrack.track_map_layers.active;
+    let trackMapUrl = "";
+
+    if (actualTrack) {
+        trackMapUrl = actualTrack.track_map + actualTrack.track_map_layers.active;
+    }
 
     return trackMapUrl;
 }
@@ -93,8 +96,11 @@ function getSeasonLogo(season): any {
     let iracingLink = "https://images-static.iracing.com/img/logos/series/";
     let actualSerie = seriesLogos[serieId];
     
-    let logoFilename = iracingLink + actualSerie.logo;
+    let logoFilename = "";
 
+    if (actualSerie) {
+        logoFilename = iracingLink + actualSerie.logo;
+    }
     return logoFilename;
 }
 
@@ -115,7 +121,7 @@ export function prepararDB(datos: any[]): void {
         db.push(aux);
     });
 
-    console.log(db);
+    // console.log(db);
 
     guardarJSON("src/data/seasonData.json", db);
 }

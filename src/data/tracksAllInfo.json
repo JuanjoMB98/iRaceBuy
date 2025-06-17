@@ -8,12 +8,12 @@
     "category": "road",
     "category_id": 2,
     "closes": "2018-10-31",
-    "config_name": "Full Course",
+    "config_name": "[Retired] Full Course",
     "corners_per_lap": 7,
     "created": "2006-04-04T19:10:00Z",
     "first_sale": "2008-02-04T00:00:00Z",
     "folder": "/img/tracks/limerockpark",
-    "free_with_subscription": true,
+    "free_with_subscription": false,
     "fully_lit": false,
     "grid_stalls": 62,
     "has_opt_path": false,
@@ -22,7 +22,7 @@
     "has_svg_map": true,
     "is_dirt": false,
     "is_oval": false,
-    "is_ps_purchasable": true,
+    "is_ps_purchasable": false,
     "lap_scoring": 0,
     "latitude": 41.9282105,
     "location": "Lakeville, Connecticut, USA",
@@ -30,22 +30,20 @@
     "longitude": -73.3839642,
     "max_cars": 66,
     "night_lighting": false,
-    "nominal_lap_time": 53.627365,
     "number_pitstalls": 34,
     "opens": "2018-04-01",
     "package_id": 9,
     "pit_road_speed_limit": 45,
     "price": 0,
-    "price_display": "$0.00",
     "priority": 1,
     "purchasable": true,
     "qualify_laps": 2,
     "rain_enabled": true,
     "restart_on_left": false,
-    "retired": false,
+    "retired": true,
     "search_filters": "road,lrp",
     "site_url": "http://www.limerock.com/",
-    "sku": 10021,
+    "sku": 0,
     "small_image": "limerockpark-small.jpg",
     "solo_laps": 8,
     "start_on_left": false,
@@ -55,7 +53,9 @@
     "track_config_length": 1.53,
     "track_dirpath": "limerock\\full",
     "track_id": 1,
-    "track_name": "[Legacy] Lime Rock Park - 2008",
+    "track_name": "[Retired] Lime Rock Park - 2008",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -118,6 +118,8 @@
     "track_dirpath": "virginia\\full",
     "track_id": 2,
     "track_name": "[Retired] Virginia International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -180,6 +182,8 @@
     "track_dirpath": "virginia\\patriot",
     "track_id": 3,
     "track_name": "[Retired] Virginia International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -242,6 +246,8 @@
     "track_dirpath": "virginia\\north",
     "track_id": 4,
     "track_name": "[Retired] Virginia International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -304,6 +310,8 @@
     "track_dirpath": "virginia\\east",
     "track_id": 5,
     "track_name": "[Retired] Virginia International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -366,6 +374,8 @@
     "track_dirpath": "virginia\\west",
     "track_id": 6,
     "track_name": "[Retired] Virginia International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -428,6 +438,8 @@
     "track_dirpath": "virginia\\south",
     "track_id": 7,
     "track_name": "[Retired] Virginia International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -491,6 +503,8 @@
     "track_dirpath": "summit\\jefferson",
     "track_id": 8,
     "track_name": "Summit Point Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -554,6 +568,8 @@
     "track_dirpath": "summit\\summit\\raceway",
     "track_id": 9,
     "track_name": "Summit Point Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -618,6 +634,8 @@
     "track_dirpath": "stafford\\oval",
     "track_id": 11,
     "track_name": "Stafford Motor Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -681,6 +699,8 @@
     "track_dirpath": "oxford\\oval",
     "track_id": 12,
     "track_name": "Oxford Plains Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -744,6 +764,8 @@
     "track_dirpath": "southboston",
     "track_id": 14,
     "track_name": "South Boston Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -806,6 +828,8 @@
     "track_dirpath": "concordhalf",
     "track_id": 15,
     "track_name": "Concord Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -870,6 +894,8 @@
     "track_dirpath": "lakeland",
     "track_id": 16,
     "track_name": "USA International Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -934,6 +960,8 @@
     "track_dirpath": "lanier",
     "track_id": 17,
     "track_name": "Lanier National Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -997,6 +1025,8 @@
     "track_dirpath": "roadamerica\\full",
     "track_id": 18,
     "track_name": "Road America",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -1061,6 +1091,8 @@
     "track_dirpath": "irwindale\\inner",
     "track_id": 19,
     "track_name": "Irwindale Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -1125,6 +1157,8 @@
     "track_dirpath": "homestead\\oval",
     "track_id": 20,
     "track_name": "Homestead Miami Speedway",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -1188,6 +1222,8 @@
     "track_dirpath": "homestead\\roada",
     "track_id": 21,
     "track_name": "Homestead Miami Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -1251,6 +1287,8 @@
     "track_dirpath": "homestead\\roadb",
     "track_id": 22,
     "track_name": "Homestead Miami Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -1315,6 +1353,8 @@
     "track_dirpath": "irwindale\\outer",
     "track_id": 23,
     "track_name": "Irwindale Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -1378,6 +1418,8 @@
     "track_dirpath": "summit\\summit\\short",
     "track_id": 24,
     "track_name": "Summit Point Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -1441,6 +1483,8 @@
     "track_dirpath": "daytona\\road",
     "track_id": 26,
     "track_name": "Daytona International Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -1505,6 +1549,8 @@
     "track_dirpath": "daytona\\oval",
     "track_id": 27,
     "track_name": "Daytona International Speedway",
+    "track_type": 4,
+    "track_type_text": "Superspeedway",
     "track_types": [
       {
         "track_type": "oval"
@@ -1512,7 +1558,7 @@
     ]
   },
   {
-    "ai_enabled": false,
+    "ai_enabled": true,
     "allow_pitlane_collisions": true,
     "allow_rolling_start": false,
     "allow_standing_start": true,
@@ -1568,6 +1614,8 @@
     "track_dirpath": "daytona\\bike",
     "track_id": 28,
     "track_name": "Daytona International Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -1575,7 +1623,7 @@
     ]
   },
   {
-    "ai_enabled": false,
+    "ai_enabled": true,
     "allow_pitlane_collisions": true,
     "allow_rolling_start": true,
     "allow_standing_start": true,
@@ -1631,6 +1679,8 @@
     "track_dirpath": "daytona\\short",
     "track_id": 29,
     "track_name": "Daytona International Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -1695,6 +1745,8 @@
     "track_dirpath": "irwindale\\outerinner",
     "track_id": 30,
     "track_name": "Irwindale Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -1711,6 +1763,7 @@
     "category": "oval",
     "category_id": 1,
     "closes": "2022-11-30",
+    "config_name": "[Retired] Richmond - 2007",
     "corners_per_lap": 4,
     "created": "2008-06-30T17:58:56Z",
     "first_sale": "2008-02-03T00:00:00Z",
@@ -1732,7 +1785,6 @@
     "longitude": -77.421653,
     "max_cars": 64,
     "night_lighting": true,
-    "nominal_lap_time": 23.619305,
     "number_pitstalls": 43,
     "opens": "2022-03-01",
     "package_id": 23,
@@ -1744,7 +1796,7 @@
     "qualify_laps": 2,
     "rain_enabled": false,
     "restart_on_left": true,
-    "retired": false,
+    "retired": true,
     "search_filters": "oval",
     "site_url": "http://www.richmondraceway.com/",
     "sku": 10024,
@@ -1758,6 +1810,8 @@
     "track_dirpath": "richmond",
     "track_id": 31,
     "track_name": "Richmond Raceway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -1795,7 +1849,7 @@
     "longitude": -79.8538533,
     "max_cars": 64,
     "night_lighting": true,
-    "nominal_lap_time": 21.16994,
+    "nominal_lap_time": 21.16958,
     "number_pitstalls": 43,
     "opens": "2018-02-15",
     "package_id": 26,
@@ -1821,6 +1875,8 @@
     "track_dirpath": "martinsville",
     "track_id": 33,
     "track_name": "Martinsville Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -1836,12 +1892,12 @@
     "category": "road",
     "category_id": 2,
     "closes": "2018-10-31",
-    "config_name": "Chicane",
+    "config_name": "[Retired] Chicane",
     "corners_per_lap": 8,
     "created": "2006-04-04T19:10:00Z",
     "first_sale": "2008-02-04T00:00:00Z",
     "folder": "/img/tracks/limerockpark",
-    "free_with_subscription": true,
+    "free_with_subscription": false,
     "fully_lit": false,
     "grid_stalls": 62,
     "has_opt_path": false,
@@ -1850,7 +1906,7 @@
     "has_svg_map": true,
     "is_dirt": false,
     "is_oval": false,
-    "is_ps_purchasable": true,
+    "is_ps_purchasable": false,
     "lap_scoring": 0,
     "latitude": 41.9282105,
     "location": "Lakeville, Connecticut, USA",
@@ -1858,22 +1914,20 @@
     "longitude": -73.3839642,
     "max_cars": 66,
     "night_lighting": false,
-    "nominal_lap_time": 56.866535,
     "number_pitstalls": 34,
     "opens": "2018-04-01",
     "package_id": 9,
     "pit_road_speed_limit": 45,
     "price": 0,
-    "price_display": "$0.00",
     "priority": 2,
     "purchasable": true,
     "qualify_laps": 2,
     "rain_enabled": true,
     "restart_on_left": false,
-    "retired": false,
+    "retired": true,
     "search_filters": "road,lrp",
     "site_url": "http://www.limerock.com/",
-    "sku": 10021,
+    "sku": 0,
     "small_image": "limerockpark-small.jpg",
     "solo_laps": 8,
     "start_on_left": false,
@@ -1883,7 +1937,9 @@
     "track_config_length": 1.54,
     "track_dirpath": "limerock\\chicane",
     "track_id": 34,
-    "track_name": "[Legacy] Lime Rock Park - 2008",
+    "track_name": "[Retired] Lime Rock Park - 2008",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -1947,6 +2003,8 @@
     "track_dirpath": "charlotte\\fullroadcourse",
     "track_id": 37,
     "track_name": "[Legacy] Charlotte Motor Speedway - 2008",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -2010,6 +2068,8 @@
     "track_dirpath": "charlotte\\infieldrc",
     "track_id": 38,
     "track_name": "[Legacy] Charlotte Motor Speedway - 2008",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -2073,6 +2133,8 @@
     "track_dirpath": "charlotte\\legendsoval",
     "track_id": 39,
     "track_name": "[Legacy] Charlotte Motor Speedway - 2008",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -2137,6 +2199,8 @@
     "track_dirpath": "charlotte\\quadoval",
     "track_id": 40,
     "track_name": "[Legacy] Charlotte Motor Speedway - 2008",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -2200,6 +2264,8 @@
     "track_dirpath": "silverstone\\gp",
     "track_id": 41,
     "track_name": "[Legacy] Silverstone Circuit - 2008",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -2263,6 +2329,8 @@
     "track_dirpath": "silverstone\\historicgp",
     "track_id": 42,
     "track_name": "[Legacy] Silverstone Circuit - 2008",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -2326,6 +2394,8 @@
     "track_dirpath": "silverstone\\international",
     "track_id": 43,
     "track_name": "[Legacy] Silverstone Circuit - 2008",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -2389,6 +2459,8 @@
     "track_dirpath": "silverstone\\national",
     "track_id": 44,
     "track_name": "[Legacy] Silverstone Circuit - 2008",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -2452,6 +2524,8 @@
     "track_dirpath": "silverstone\\southern",
     "track_id": 45,
     "track_name": "[Legacy] Silverstone Circuit - 2008",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -2515,6 +2589,8 @@
     "track_dirpath": "barber\\full",
     "track_id": 46,
     "track_name": "Barber Motorsports Park",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -2578,6 +2654,8 @@
     "track_dirpath": "lagunaseca",
     "track_id": 47,
     "track_name": "WeatherTech Raceway at Laguna Seca",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -2641,6 +2719,8 @@
     "track_dirpath": "sonoma\\cup",
     "track_id": 48,
     "track_name": "Sonoma Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -2704,6 +2784,8 @@
     "track_dirpath": "sonoma\\irl",
     "track_id": 49,
     "track_name": "Sonoma Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -2767,6 +2849,8 @@
     "track_dirpath": "roadamerica\\bend",
     "track_id": 50,
     "track_name": "Road America",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -2820,7 +2904,7 @@
     "search_filters": "road,ams",
     "site_url": "http://www.atlantamotorspeedway.com/",
     "sku": 10039,
-    "small_image": "atlantamotorspeedway-small.jpg",
+    "small_image": "echoparkspeedway-small.jpg",
     "solo_laps": 6,
     "start_on_left": true,
     "supports_grip_compound": false,
@@ -2829,7 +2913,9 @@
     "track_config_length": 2.55,
     "track_dirpath": "atlanta\\roadcourse",
     "track_id": 51,
-    "track_name": "Atlanta Motor Speedway",
+    "track_name": "EchoPark Speedway (Atlanta)",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -2883,7 +2969,7 @@
     "search_filters": "oval,ams",
     "site_url": "http://www.atlantamotorspeedway.com/",
     "sku": 10039,
-    "small_image": "atlantamotorspeedway-small.jpg",
+    "small_image": "echoparkspeedway-small.jpg",
     "solo_laps": 10,
     "start_on_left": true,
     "supports_grip_compound": false,
@@ -2892,7 +2978,9 @@
     "track_config_length": 0.25,
     "track_dirpath": "atlanta\\legendsoval",
     "track_id": 52,
-    "track_name": "Atlanta Motor Speedway",
+    "track_name": "EchoPark Speedway (Atlanta)",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -2947,7 +3035,7 @@
     "search_filters": "oval,ams",
     "site_url": "http://www.atlantamotorspeedway.com/",
     "sku": 10039,
-    "small_image": "atlantamotorspeedway-small.jpg",
+    "small_image": "echoparkspeedway-small.jpg",
     "solo_laps": 10,
     "start_on_left": true,
     "supports_grip_compound": false,
@@ -2956,7 +3044,9 @@
     "track_config_length": 1.54,
     "track_dirpath": "atlanta\\quadoval",
     "track_id": 53,
-    "track_name": "Atlanta Motor Speedway",
+    "track_name": "EchoPark Speedway (Atlanta)",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -3020,6 +3110,8 @@
     "track_dirpath": "milwaukee",
     "track_id": 94,
     "track_name": "The Milwaukee Mile",
+    "track_type": 1,
+    "track_type_text": "Mile Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -3083,6 +3175,8 @@
     "track_dirpath": "sebring\\international",
     "track_id": 95,
     "track_name": "Sebring International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -3146,6 +3240,8 @@
     "track_dirpath": "sebring\\modified",
     "track_id": 96,
     "track_name": "Sebring International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -3209,6 +3305,8 @@
     "track_dirpath": "sebring\\club",
     "track_id": 97,
     "track_name": "Sebring International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -3272,6 +3370,8 @@
     "track_dirpath": "sonoma\\long",
     "track_id": 98,
     "track_name": "Sonoma Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -3335,6 +3435,8 @@
     "track_dirpath": "barber\\shorta",
     "track_id": 99,
     "track_name": "Barber Motorsports Park",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -3398,6 +3500,8 @@
     "track_dirpath": "barber\\shortb",
     "track_id": 100,
     "track_name": "Barber Motorsports Park",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -3462,6 +3566,8 @@
     "track_dirpath": "bristol",
     "track_id": 101,
     "track_name": "Bristol Motor Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -3525,6 +3631,8 @@
     "track_dirpath": "sonoma\\irl2",
     "track_id": 102,
     "track_name": "Sonoma Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -3563,7 +3671,7 @@
     "longitude": -115.0124701,
     "max_cars": 64,
     "night_lighting": true,
-    "nominal_lap_time": 34.22222,
+    "nominal_lap_time": 34.220295,
     "number_pitstalls": 43,
     "opens": "2018-01-01",
     "package_id": 54,
@@ -3589,6 +3697,8 @@
     "track_dirpath": "vegas\\oval",
     "track_id": 103,
     "track_name": "Las Vegas Motor Speedway",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -3652,6 +3762,8 @@
     "track_dirpath": "phoenix\\oval",
     "track_id": 104,
     "track_name": "[Legacy] Phoenix Raceway - 2008",
+    "track_type": 1,
+    "track_type_text": "Mile Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -3715,6 +3827,8 @@
     "track_dirpath": "phoenix\\road",
     "track_id": 105,
     "track_name": "[Legacy] Phoenix Raceway - 2008",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -3777,6 +3891,8 @@
     "track_dirpath": "watkinsglen\\cupcircuit",
     "track_id": 106,
     "track_name": "[Retired] Watkins Glen International",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -3839,6 +3955,8 @@
     "track_dirpath": "watkinsglen\\fullcourse",
     "track_id": 107,
     "track_name": "[Retired] Watkins Glen International",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -3901,6 +4019,8 @@
     "track_dirpath": "watkinsglen\\fullnoloop",
     "track_id": 108,
     "track_name": "[Retired] Watkins Glen International",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -3963,6 +4083,8 @@
     "track_dirpath": "watkinsglen\\classic",
     "track_id": 109,
     "track_name": "[Retired] Watkins Glen International",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -4026,6 +4148,8 @@
     "track_dirpath": "vegas\\legends",
     "track_id": 110,
     "track_name": "Las Vegas Motor Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -4089,6 +4213,8 @@
     "track_dirpath": "vegas\\roadlong",
     "track_id": 111,
     "track_name": "Las Vegas Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -4152,6 +4278,8 @@
     "track_dirpath": "vegas\\roadshort",
     "track_id": 112,
     "track_name": "Las Vegas Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -4215,9 +4343,11 @@
     "track_dirpath": "vegas\\inflegends",
     "track_id": 113,
     "track_name": "Las Vegas Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
-        "track_type": "oval"
+        "track_type": "road"
       }
     ]
   },
@@ -4278,6 +4408,8 @@
     "track_dirpath": "vegas\\roadcombined",
     "track_id": 114,
     "track_name": "Las Vegas Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -4341,6 +4473,8 @@
     "track_dirpath": "darlington",
     "track_id": 115,
     "track_name": "Darlington Raceway",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -4404,6 +4538,8 @@
     "track_dirpath": "talladega",
     "track_id": 116,
     "track_name": "Talladega Superspeedway",
+    "track_type": 4,
+    "track_type_text": "Superspeedway",
     "track_types": [
       {
         "track_type": "oval"
@@ -4467,6 +4603,8 @@
     "track_dirpath": "texas\\infieldrclong",
     "track_id": 117,
     "track_name": "[Legacy] Texas Motor Speedway - 2009",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -4530,6 +4668,8 @@
     "track_dirpath": "texas\\infieldrcshorta",
     "track_id": 118,
     "track_name": "[Legacy] Texas Motor Speedway - 2009",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -4593,6 +4733,8 @@
     "track_dirpath": "texas\\infieldrcshortb",
     "track_id": 119,
     "track_name": "[Legacy] Texas Motor Speedway - 2009",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -4656,6 +4798,8 @@
     "track_dirpath": "texas\\legendsoval",
     "track_id": 120,
     "track_name": "[Legacy] Texas Motor Speedway - 2009",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -4720,6 +4864,8 @@
     "track_dirpath": "texas\\oval",
     "track_id": 121,
     "track_name": "[Legacy] Texas Motor Speedway - 2009",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -4783,6 +4929,8 @@
     "track_dirpath": "texas\\roadcourse",
     "track_id": 122,
     "track_name": "[Legacy] Texas Motor Speedway - 2009",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -4846,6 +4994,8 @@
     "track_dirpath": "chicagoland",
     "track_id": 123,
     "track_name": "Chicagoland Speedway",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -4909,6 +5059,8 @@
     "track_dirpath": "michigan",
     "track_id": 124,
     "track_name": "[Legacy] Michigan International Speedway - 2009",
+    "track_type": 3,
+    "track_type_text": "Long Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -4972,6 +5124,8 @@
     "track_dirpath": "roadatlanta\\club",
     "track_id": 126,
     "track_name": "Road Atlanta",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -5035,6 +5189,8 @@
     "track_dirpath": "roadatlanta\\full",
     "track_id": 127,
     "track_name": "Road Atlanta",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -5098,6 +5254,8 @@
     "track_dirpath": "roadatlanta\\short",
     "track_id": 128,
     "track_name": "Road Atlanta",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -5161,6 +5319,8 @@
     "track_dirpath": "newhampshire\\chicane",
     "track_id": 129,
     "track_name": "New Hampshire Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -5224,6 +5384,8 @@
     "track_dirpath": "newhampshire\\northoval",
     "track_id": 130,
     "track_name": "New Hampshire Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -5287,6 +5449,8 @@
     "track_dirpath": "newhampshire\\oval",
     "track_id": 131,
     "track_name": "New Hampshire Motor Speedway",
+    "track_type": 1,
+    "track_type_text": "Mile Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -5350,6 +5514,8 @@
     "track_dirpath": "newhampshire\\southoval",
     "track_id": 132,
     "track_name": "New Hampshire Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -5414,6 +5580,8 @@
     "track_dirpath": "indianapolis\\oval",
     "track_id": 133,
     "track_name": "Indianapolis Motor Speedway",
+    "track_type": 3,
+    "track_type_text": "Long Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -5477,6 +5645,8 @@
     "track_dirpath": "indianapolis\\road",
     "track_id": 134,
     "track_name": "Indianapolis Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -5540,6 +5710,8 @@
     "track_dirpath": "indianapolis\\motogp",
     "track_id": 135,
     "track_name": "Indianapolis Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -5603,6 +5775,8 @@
     "track_dirpath": "pocono\\oval",
     "track_id": 136,
     "track_name": "[Legacy] Pocono Raceway - 2009",
+    "track_type": 3,
+    "track_type_text": "Long Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -5666,6 +5840,8 @@
     "track_dirpath": "pocono\\east",
     "track_id": 137,
     "track_name": "[Legacy] Pocono Raceway - 2009",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -5729,6 +5905,8 @@
     "track_dirpath": "pocono\\south",
     "track_id": 138,
     "track_name": "[Legacy] Pocono Raceway - 2009",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -5792,6 +5970,8 @@
     "track_dirpath": "pocono\\north",
     "track_id": 139,
     "track_name": "[Legacy] Pocono Raceway - 2009",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -5855,6 +6035,8 @@
     "track_dirpath": "pocono\\international",
     "track_id": 140,
     "track_name": "[Legacy] Pocono Raceway - 2009",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -5917,6 +6099,8 @@
     "track_dirpath": "virginia\\patriot\\rev",
     "track_id": 141,
     "track_name": "[Retired] Virginia International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -5980,6 +6164,8 @@
     "track_dirpath": "summit\\jefferson\\rev",
     "track_id": 142,
     "track_name": "Summit Point Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -6043,6 +6229,8 @@
     "track_dirpath": "skidpad",
     "track_id": 143,
     "track_name": "Centripetal Circuit",
+    "track_type": 1,
+    "track_type_text": "Mile Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -6105,6 +6293,8 @@
     "track_dirpath": "mosport",
     "track_id": 144,
     "track_name": "Canadian Tire Motorsports Park",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -6168,6 +6358,8 @@
     "track_dirpath": "brandshatch\\grandprix",
     "track_id": 145,
     "track_name": "Brands Hatch Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -6231,6 +6423,8 @@
     "track_dirpath": "brandshatch\\indy",
     "track_id": 146,
     "track_name": "Brands Hatch Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -6294,6 +6488,8 @@
     "track_dirpath": "zandvoort\\chicane",
     "track_id": 147,
     "track_name": "Circuit Park Zandvoort",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -6357,6 +6553,8 @@
     "track_dirpath": "zandvoort\\club",
     "track_id": 148,
     "track_name": "Circuit Park Zandvoort",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -6420,6 +6618,8 @@
     "track_dirpath": "zandvoort\\grandprix",
     "track_id": 149,
     "track_name": "Circuit Park Zandvoort",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -6483,6 +6683,8 @@
     "track_dirpath": "zandvoort\\national",
     "track_id": 150,
     "track_name": "Circuit Park Zandvoort",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -6546,6 +6748,8 @@
     "track_dirpath": "zandvoort\\oostelijk",
     "track_id": 151,
     "track_name": "Circuit Park Zandvoort",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -6608,6 +6812,8 @@
     "track_dirpath": "phillipisland",
     "track_id": 152,
     "track_name": "Phillip Island Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -6671,6 +6877,8 @@
     "track_dirpath": "midohio\\full",
     "track_id": 153,
     "track_name": "Mid-Ohio Sports Car Course",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -6734,6 +6942,8 @@
     "track_dirpath": "midohio\\chicane",
     "track_id": 154,
     "track_name": "Mid-Ohio Sports Car Course",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -6797,6 +7007,8 @@
     "track_dirpath": "midohio\\short",
     "track_id": 155,
     "track_name": "Mid-Ohio Sports Car Course",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -6860,9 +7072,11 @@
     "track_dirpath": "midohio\\oval",
     "track_id": 156,
     "track_name": "Mid-Ohio Sports Car Course",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
-        "track_type": "oval"
+        "track_type": "road"
       }
     ]
   },
@@ -6923,9 +7137,11 @@
     "track_dirpath": "midohio\\altoval",
     "track_id": 157,
     "track_name": "Mid-Ohio Sports Car Course",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
-        "track_type": "oval"
+        "track_type": "road"
       }
     ]
   },
@@ -6986,6 +7202,8 @@
     "track_dirpath": "lagunaseca\\school",
     "track_id": 158,
     "track_name": "WeatherTech Raceway at Laguna Seca",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -7049,6 +7267,8 @@
     "track_dirpath": "summit\\summit\\raceway\\school",
     "track_id": 159,
     "track_name": "Summit Point Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -7064,12 +7284,12 @@
     "category": "road",
     "category_id": 2,
     "closes": "2018-10-31",
-    "config_name": "School",
+    "config_name": "[Retired] School",
     "corners_per_lap": 7,
     "created": "2010-06-09T14:07:13Z",
     "first_sale": "2010-06-22T00:00:00Z",
     "folder": "/img/tracks/limerockpark",
-    "free_with_subscription": true,
+    "free_with_subscription": false,
     "fully_lit": false,
     "grid_stalls": 44,
     "has_opt_path": false,
@@ -7078,7 +7298,7 @@
     "has_svg_map": true,
     "is_dirt": false,
     "is_oval": false,
-    "is_ps_purchasable": true,
+    "is_ps_purchasable": false,
     "lap_scoring": 0,
     "latitude": 41.9282105,
     "location": "Lakeville, Connecticut, USA",
@@ -7086,22 +7306,20 @@
     "longitude": -73.3839642,
     "max_cars": 52,
     "night_lighting": false,
-    "nominal_lap_time": 53.627365,
     "number_pitstalls": 34,
     "opens": "2018-04-01",
     "package_id": 9,
     "pit_road_speed_limit": 45,
     "price": 0,
-    "price_display": "$0.00",
     "priority": 3,
     "purchasable": true,
     "qualify_laps": 2,
     "rain_enabled": true,
     "restart_on_left": false,
-    "retired": false,
+    "retired": true,
     "search_filters": "road,lrp",
     "site_url": "http://www.limerock.com",
-    "sku": 10021,
+    "sku": 0,
     "small_image": "limerockpark-small.jpg",
     "solo_laps": 5,
     "start_on_left": false,
@@ -7111,7 +7329,9 @@
     "track_config_length": 1.53,
     "track_dirpath": "limerock\\full\\school",
     "track_id": 160,
-    "track_name": "[Legacy] Lime Rock Park - 2008",
+    "track_name": "[Retired] Lime Rock Park - 2008",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -7176,6 +7396,8 @@
     "track_dirpath": "thompson",
     "track_id": 161,
     "track_name": "Thompson Speedway Motorsports Park",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -7239,6 +7461,8 @@
     "track_dirpath": "dover",
     "track_id": 162,
     "track_name": "Dover Motor Speedway",
+    "track_type": 1,
+    "track_type_text": "Mile Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -7302,6 +7526,8 @@
     "track_dirpath": "spa\\up",
     "track_id": 163,
     "track_name": "Circuit de Spa-Francorchamps",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -7365,6 +7591,8 @@
     "track_dirpath": "spa\\low",
     "track_id": 164,
     "track_name": "Circuit de Spa-Francorchamps",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -7428,6 +7656,8 @@
     "track_dirpath": "spa\\combined",
     "track_id": 165,
     "track_name": "Circuit de Spa-Francorchamps",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -7491,6 +7721,8 @@
     "track_dirpath": "okayama\\full",
     "track_id": 166,
     "track_name": "Okayama International Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -7554,6 +7786,8 @@
     "track_dirpath": "okayama\\short",
     "track_id": 167,
     "track_name": "Okayama International Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -7617,6 +7851,8 @@
     "track_dirpath": "suzuka\\grandprix",
     "track_id": 168,
     "track_name": "Suzuka International Racing Course",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -7632,7 +7868,7 @@
     "category": "oval",
     "category_id": 1,
     "closes": "2018-10-31",
-    "config_name": "Oval",
+    "config_name": "Oval - 2011",
     "corners_per_lap": 4,
     "created": "2011-06-15T14:23:10Z",
     "first_sale": "2011-07-29T00:00:00Z",
@@ -7661,7 +7897,7 @@
     "pit_road_speed_limit": 40,
     "price": 14.95,
     "price_display": "$14.95",
-    "priority": 0,
+    "priority": 1,
     "purchasable": true,
     "qualify_laps": 2,
     "rain_enabled": false,
@@ -7679,7 +7915,9 @@
     "track_config_length": 0.857,
     "track_dirpath": "iowa\\oval",
     "track_id": 169,
-    "track_name": "Iowa Speedway",
+    "track_name": "Iowa Speedway - Oval - 2011",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -7695,7 +7933,7 @@
     "category": "road",
     "category_id": 2,
     "closes": "2018-10-31",
-    "config_name": "Road Course",
+    "config_name": "Road Course - 2011",
     "corners_per_lap": 8,
     "created": "2011-06-15T14:23:10Z",
     "first_sale": "2011-07-29T00:00:00Z",
@@ -7724,7 +7962,7 @@
     "pit_road_speed_limit": 40,
     "price": 14.95,
     "price_display": "$14.95",
-    "priority": 0,
+    "priority": 1,
     "purchasable": true,
     "qualify_laps": 2,
     "rain_enabled": true,
@@ -7743,6 +7981,8 @@
     "track_dirpath": "iowa\\road",
     "track_id": 170,
     "track_name": "Iowa Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -7758,7 +7998,7 @@
     "category": "oval",
     "category_id": 1,
     "closes": "2018-10-31",
-    "config_name": "Legends",
+    "config_name": "Legends - 2011",
     "corners_per_lap": 4,
     "created": "2011-06-15T14:23:10Z",
     "first_sale": "2011-07-29T00:00:00Z",
@@ -7787,7 +8027,7 @@
     "pit_road_speed_limit": 20,
     "price": 14.95,
     "price_display": "$14.95",
-    "priority": 0,
+    "priority": 1,
     "purchasable": true,
     "qualify_laps": 2,
     "rain_enabled": false,
@@ -7806,6 +8046,8 @@
     "track_dirpath": "iowa\\legends",
     "track_id": 171,
     "track_name": "Iowa Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -7821,7 +8063,7 @@
     "category": "oval",
     "category_id": 1,
     "closes": "2018-10-31",
-    "config_name": "Infield Legends",
+    "config_name": "Infield Legends - 2011",
     "corners_per_lap": 4,
     "created": "2011-06-15T14:23:10Z",
     "first_sale": "2011-07-29T00:00:00Z",
@@ -7850,7 +8092,7 @@
     "pit_road_speed_limit": 20,
     "price": 14.95,
     "price_display": "$14.95",
-    "priority": 0,
+    "priority": 1,
     "purchasable": true,
     "qualify_laps": 2,
     "rain_enabled": false,
@@ -7869,6 +8111,8 @@
     "track_dirpath": "iowa\\inflegends",
     "track_id": 172,
     "track_name": "Iowa Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -7932,6 +8176,8 @@
     "track_dirpath": "suzuka\\moto",
     "track_id": 173,
     "track_name": "Suzuka International Racing Course",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -7995,6 +8241,8 @@
     "track_dirpath": "suzuka\\east",
     "track_id": 174,
     "track_name": "Suzuka International Racing Course",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -8058,6 +8306,8 @@
     "track_dirpath": "suzuka\\west",
     "track_id": 175,
     "track_name": "Suzuka International Racing Course",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -8121,6 +8371,8 @@
     "track_dirpath": "suzuka\\westchicane",
     "track_id": 176,
     "track_name": "Suzuka International Racing Course",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -8185,6 +8437,8 @@
     "track_dirpath": "indianapolis\\ovalindypit",
     "track_id": 178,
     "track_name": "Indianapolis Motor Speedway",
+    "track_type": 3,
+    "track_type_text": "Long Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -8247,6 +8501,8 @@
     "track_dirpath": "longbeach",
     "track_id": 179,
     "track_name": "Long Beach Street Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -8310,6 +8566,8 @@
     "track_dirpath": "oulton\\international",
     "track_id": 180,
     "track_name": "Oulton Park Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -8373,6 +8631,8 @@
     "track_dirpath": "oulton\\fosters",
     "track_id": 181,
     "track_name": "Oulton Park Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -8436,6 +8696,8 @@
     "track_dirpath": "oulton\\island",
     "track_id": 182,
     "track_name": "Oulton Park Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -8499,6 +8761,8 @@
     "track_dirpath": "oulton\\intbrittens",
     "track_id": 183,
     "track_name": "Oulton Park Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -8562,6 +8826,8 @@
     "track_dirpath": "oulton\\inthislop",
     "track_id": 184,
     "track_name": "Oulton Park Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -8625,6 +8891,8 @@
     "track_dirpath": "oulton\\intnochicane",
     "track_id": 185,
     "track_name": "Oulton Park Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -8688,6 +8956,8 @@
     "track_dirpath": "oulton\\fosterswithhislop",
     "track_id": 186,
     "track_name": "Oulton Park Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -8751,6 +9021,8 @@
     "track_dirpath": "oulton\\islandhistoric",
     "track_id": 187,
     "track_name": "Oulton Park Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -8815,6 +9087,8 @@
     "track_dirpath": "kentucky\\oval",
     "track_id": 188,
     "track_name": "[Legacy] Kentucky Speedway - 2011",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -8878,6 +9152,8 @@
     "track_dirpath": "kentucky\\legend",
     "track_id": 189,
     "track_name": "[Legacy] Kentucky Speedway - 2011",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -8941,6 +9217,8 @@
     "track_dirpath": "newsmyrna",
     "track_id": 190,
     "track_name": "New Smyrna Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -9005,6 +9283,8 @@
     "track_dirpath": "daytona\\2011\\oval",
     "track_id": 191,
     "track_name": "Daytona International Speedway",
+    "track_type": 4,
+    "track_type_text": "Superspeedway",
     "track_types": [
       {
         "track_type": "oval"
@@ -9068,6 +9348,8 @@
     "track_dirpath": "daytona\\2011\\road",
     "track_id": 192,
     "track_name": "Daytona International Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -9131,6 +9413,8 @@
     "track_dirpath": "daytona\\2011\\bike",
     "track_id": 193,
     "track_name": "Daytona International Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -9194,6 +9478,8 @@
     "track_dirpath": "daytona\\2011\\short",
     "track_id": 194,
     "track_name": "Daytona International Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -9257,6 +9543,8 @@
     "track_dirpath": "twinring\\fullrc",
     "track_id": 195,
     "track_name": "Mobility Resort Motegi",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -9320,6 +9608,8 @@
     "track_dirpath": "twinring\\east",
     "track_id": 196,
     "track_name": "Mobility Resort Motegi",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -9383,6 +9673,8 @@
     "track_dirpath": "twinring\\west",
     "track_id": 197,
     "track_name": "Mobility Resort Motegi",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -9446,6 +9738,8 @@
     "track_dirpath": "twinring\\oval",
     "track_id": 198,
     "track_name": "Mobility Resort Motegi",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -9509,6 +9803,8 @@
     "track_dirpath": "zolder\\gp",
     "track_id": 199,
     "track_name": "Circuit Zolder",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -9572,6 +9868,8 @@
     "track_dirpath": "zolder\\alt",
     "track_id": 200,
     "track_name": "Circuit Zolder",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -9635,6 +9933,8 @@
     "track_dirpath": "langley",
     "track_id": 201,
     "track_name": "Langley Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -9698,6 +9998,8 @@
     "track_dirpath": "oran\\gp",
     "track_id": 202,
     "track_name": "Oran Park Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -9761,6 +10063,8 @@
     "track_dirpath": "rockingham\\oval",
     "track_id": 203,
     "track_name": "Rockingham Speedway",
+    "track_type": 1,
+    "track_type_text": "Mile Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -9824,6 +10128,8 @@
     "track_dirpath": "rockingham\\road",
     "track_id": 204,
     "track_name": "Rockingham Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -9887,6 +10193,8 @@
     "track_dirpath": "rockingham\\infroad",
     "track_id": 205,
     "track_name": "Rockingham Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -9950,6 +10258,8 @@
     "track_dirpath": "rockingham\\shortroad",
     "track_id": 206,
     "track_name": "Rockingham Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10013,6 +10323,8 @@
     "track_dirpath": "oran\\north",
     "track_id": 207,
     "track_name": "Oran Park Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10076,6 +10388,8 @@
     "track_dirpath": "oran\\south",
     "track_id": 208,
     "track_name": "Oran Park Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10139,6 +10453,8 @@
     "track_dirpath": "oran\\northa",
     "track_id": 209,
     "track_name": "Oran Park Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10202,6 +10518,8 @@
     "track_dirpath": "oran\\northb",
     "track_id": 210,
     "track_name": "Oran Park Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10265,6 +10583,8 @@
     "track_dirpath": "oran\\moto",
     "track_id": 211,
     "track_name": "Oran Park Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10328,6 +10648,8 @@
     "track_dirpath": "interlagos\\gp",
     "track_id": 212,
     "track_name": "Autódromo José Carlos Pace",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10391,6 +10713,8 @@
     "track_dirpath": "interlagos\\moto",
     "track_id": 213,
     "track_name": "Autódromo José Carlos Pace",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10454,6 +10778,8 @@
     "track_dirpath": "kansas\\oval",
     "track_id": 214,
     "track_name": "Kansas Speedway",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -10517,6 +10843,8 @@
     "track_dirpath": "kansas\\full",
     "track_id": 215,
     "track_name": "Kansas Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10580,6 +10908,8 @@
     "track_dirpath": "kansas\\short",
     "track_id": 216,
     "track_name": "Kansas Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10643,9 +10973,11 @@
     "track_dirpath": "irwindale\\figureeight",
     "track_id": 217,
     "track_name": "Irwindale Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
-        "track_type": "road"
+        "track_type": "oval"
       }
     ]
   },
@@ -10705,6 +11037,8 @@
     "track_dirpath": "montreal",
     "track_id": 218,
     "track_name": "Circuit Gilles Villeneuve",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10767,6 +11101,8 @@
     "track_dirpath": "bathurst",
     "track_id": 219,
     "track_name": "Mount Panorama Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10830,6 +11166,8 @@
     "track_dirpath": "newjersey\\full",
     "track_id": 220,
     "track_name": "New Jersey Motorsports Park",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10893,6 +11231,8 @@
     "track_dirpath": "newjersey\\chicane",
     "track_id": 221,
     "track_name": "New Jersey Motorsports Park",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -10956,6 +11296,8 @@
     "track_dirpath": "newhampshire\\legends",
     "track_id": 222,
     "track_name": "New Hampshire Motor Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -11019,6 +11361,8 @@
     "track_dirpath": "newjersey\\firstchicane",
     "track_id": 223,
     "track_name": "New Jersey Motorsports Park",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -11082,6 +11426,8 @@
     "track_dirpath": "newjersey\\secondchicane",
     "track_id": 224,
     "track_name": "New Jersey Motorsports Park",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -11145,6 +11491,8 @@
     "track_dirpath": "california\\oval",
     "track_id": 225,
     "track_name": "Auto Club Speedway",
+    "track_type": 3,
+    "track_type_text": "Long Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -11208,6 +11556,8 @@
     "track_dirpath": "california\\competition",
     "track_id": 226,
     "track_name": "Auto Club Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -11271,6 +11621,8 @@
     "track_dirpath": "california\\moto",
     "track_id": 227,
     "track_name": "Auto Club Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -11334,6 +11686,8 @@
     "track_dirpath": "california\\interiora",
     "track_id": 228,
     "track_name": "Auto Club Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -11397,6 +11751,8 @@
     "track_dirpath": "cota\\gp",
     "track_id": 229,
     "track_name": "Circuit of the Americas",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -11460,6 +11816,8 @@
     "track_dirpath": "cota\\east",
     "track_id": 230,
     "track_name": "Circuit of the Americas",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -11523,6 +11881,8 @@
     "track_dirpath": "cota\\west",
     "track_id": 231,
     "track_name": "Circuit of the Americas",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -11560,8 +11920,8 @@
     "longitude": -86.340527,
     "max_cars": 64,
     "night_lighting": true,
-    "nominal_lap_time": 24.612623,
-    "number_pitstalls": 43,
+    "nominal_lap_time": 24.612633,
+    "number_pitstalls": 38,
     "opens": "2018-03-01",
     "package_id": 159,
     "pit_road_speed_limit": 40,
@@ -11586,6 +11946,8 @@
     "track_dirpath": "irp",
     "track_id": 232,
     "track_name": "Lucas Oil Indianapolis Raceway Park",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -11649,6 +12011,8 @@
     "track_dirpath": "donington\\gp",
     "track_id": 233,
     "track_name": "Donington Park Racing Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -11712,6 +12076,8 @@
     "track_dirpath": "donington\\national",
     "track_id": 234,
     "track_name": "Donington Park Racing Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -11773,11 +12139,9 @@
     "track_dirpath": "phoenix\\2012\\oval",
     "track_id": 235,
     "track_name": "[Retired] Phoenix Raceway",
-    "track_types": [
-      {
-        "track_type": "oval"
-      }
-    ]
+    "track_type": 1,
+    "track_type_text": "Mile Oval",
+    "track_types": []
   },
   {
     "ai_enabled": true,
@@ -11834,11 +12198,9 @@
     "track_dirpath": "phoenix\\2012\\ovalopen",
     "track_id": 236,
     "track_name": "[Retired] Phoenix Raceway",
-    "track_types": [
-      {
-        "track_type": "oval"
-      }
-    ]
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
+    "track_types": []
   },
   {
     "ai_enabled": true,
@@ -11897,6 +12259,8 @@
     "track_dirpath": "gateway\\oval",
     "track_id": 237,
     "track_name": "World Wide Technology Raceway (Gateway)",
+    "track_type": 1,
+    "track_type_text": "Mile Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -11960,6 +12324,8 @@
     "track_dirpath": "gateway\\road",
     "track_id": 238,
     "track_name": "World Wide Technology Raceway (Gateway)",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -12023,6 +12389,8 @@
     "track_dirpath": "monza\\full",
     "track_id": 239,
     "track_name": "Autodromo Nazionale Monza",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -12086,6 +12454,8 @@
     "track_dirpath": "monza\\historic",
     "track_id": 240,
     "track_name": "Autodromo Nazionale Monza",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -12149,6 +12519,8 @@
     "track_dirpath": "monza\\junior",
     "track_id": 241,
     "track_name": "Autodromo Nazionale Monza",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -12212,6 +12584,8 @@
     "track_dirpath": "monza\\nochicane",
     "track_id": 242,
     "track_name": "Autodromo Nazionale Monza",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -12275,6 +12649,8 @@
     "track_dirpath": "monza\\oval",
     "track_id": 243,
     "track_name": "Autodromo Nazionale Monza",
+    "track_type": 3,
+    "track_type_text": "Long Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -12338,6 +12714,8 @@
     "track_dirpath": "monza\\gpsecondchicane",
     "track_id": 244,
     "track_name": "Autodromo Nazionale Monza",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -12401,6 +12779,8 @@
     "track_dirpath": "monza\\ovalleft",
     "track_id": 245,
     "track_name": "Autodromo Nazionale Monza",
+    "track_type": 3,
+    "track_type_text": "Long Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -12464,6 +12844,8 @@
     "track_dirpath": "monza\\historicsecondchicane",
     "track_id": 246,
     "track_name": "Autodromo Nazionale Monza",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -12527,6 +12909,8 @@
     "track_dirpath": "monza\\combinedchicanes",
     "track_id": 247,
     "track_name": "Autodromo Nazionale Monza",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -12589,6 +12973,8 @@
     "track_dirpath": "fiveflags",
     "track_id": 248,
     "track_name": "Five Flags Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -12652,6 +13038,8 @@
     "track_dirpath": "nurburgring\\nordschleife",
     "track_id": 249,
     "track_name": "Nürburgring Nordschleife",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -12715,6 +13103,8 @@
     "track_dirpath": "nurburgring\\gp",
     "track_id": 250,
     "track_name": "Nürburgring Grand-Prix-Strecke",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -12777,6 +13167,8 @@
     "track_dirpath": "nurburgring\\combined",
     "track_id": 252,
     "track_name": "Nürburgring Combined",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -12840,6 +13232,8 @@
     "track_dirpath": "nurburgring\\nordschleifetourist",
     "track_id": 253,
     "track_name": "Nürburgring Nordschleife",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -12903,6 +13297,8 @@
     "track_dirpath": "nurburgring\\gpnochicane",
     "track_id": 255,
     "track_name": "Nürburgring Grand-Prix-Strecke",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -12965,6 +13361,8 @@
     "track_dirpath": "southernnational",
     "track_id": 256,
     "track_name": "Southern National Motorsports Park",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -13028,6 +13426,8 @@
     "track_dirpath": "nurburgring\\gpshort",
     "track_id": 257,
     "track_name": "Nürburgring Grand-Prix-Strecke",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -13091,6 +13491,8 @@
     "track_dirpath": "nurburgring\\sprintchicane",
     "track_id": 259,
     "track_name": "Nürburgring Grand-Prix-Strecke",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -13154,6 +13556,8 @@
     "track_dirpath": "nurburgring\\sprintshort",
     "track_id": 260,
     "track_name": "Nürburgring Grand-Prix-Strecke",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -13217,6 +13621,8 @@
     "track_dirpath": "nurburgring\\mullenbachschleife",
     "track_id": 261,
     "track_name": "Nürburgring Grand-Prix-Strecke",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -13279,6 +13685,8 @@
     "track_dirpath": "nurburgring\\combinedshortb",
     "track_id": 262,
     "track_name": "Nürburgring Combined",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -13341,6 +13749,8 @@
     "track_dirpath": "nurburgring\\combinedshorta",
     "track_id": 263,
     "track_name": "Nürburgring Combined",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -13403,6 +13813,8 @@
     "track_dirpath": "nurburgring\\combinedlong",
     "track_id": 264,
     "track_name": "Nürburgring Combined",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -13466,6 +13878,8 @@
     "track_dirpath": "imola\\gp",
     "track_id": 266,
     "track_name": "Autodromo Internazionale Enzo e Dino Ferrari",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -13529,6 +13943,8 @@
     "track_dirpath": "imola\\moto",
     "track_id": 267,
     "track_name": "Autodromo Internazionale Enzo e Dino Ferrari",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -13592,6 +14008,8 @@
     "track_dirpath": "lemans\\full",
     "track_id": 268,
     "track_name": "Circuit des 24 Heures du Mans",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -13655,6 +14073,8 @@
     "track_dirpath": "lemans\\nochicane",
     "track_id": 269,
     "track_name": "Circuit des 24 Heures du Mans",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -13717,6 +14137,8 @@
     "track_dirpath": "bullring",
     "track_id": 271,
     "track_name": "The Bullring",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -13779,6 +14201,8 @@
     "track_dirpath": "eldora",
     "track_id": 273,
     "track_name": "Eldora Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -13841,6 +14265,8 @@
     "track_dirpath": "williamsgrove",
     "track_id": 274,
     "track_name": "Williams Grove Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -13905,6 +14331,8 @@
     "track_dirpath": "lakeland\\dirt",
     "track_id": 275,
     "track_name": "USA International Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -13941,7 +14369,7 @@
     "longitude": -84.2470556,
     "max_cars": 60,
     "night_lighting": false,
-    "nominal_lap_time": 44.335354,
+    "nominal_lap_time": 44.33565,
     "number_pitstalls": 43,
     "opens": "2018-04-01",
     "package_id": 224,
@@ -13967,6 +14395,8 @@
     "track_dirpath": "michigan\\2018",
     "track_id": 276,
     "track_name": "Michigan International Speedway",
+    "track_type": 3,
+    "track_type_text": "Long Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -14003,7 +14433,7 @@
     "longitude": -75.513473,
     "max_cars": 60,
     "night_lighting": false,
-    "nominal_lap_time": 59.920437,
+    "nominal_lap_time": 59.91136,
     "number_pitstalls": 43,
     "opens": "2018-03-01",
     "package_id": 225,
@@ -14029,6 +14459,8 @@
     "track_dirpath": "pocono\\2016",
     "track_id": 277,
     "track_name": "Pocono Raceway",
+    "track_type": 3,
+    "track_type_text": "Long Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -14091,6 +14523,8 @@
     "track_dirpath": "volusia",
     "track_id": 279,
     "track_name": "Volusia Speedway Park",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -14153,6 +14587,8 @@
     "track_dirpath": "myrtlebeach",
     "track_id": 286,
     "track_name": "Myrtle Beach Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -14216,6 +14652,8 @@
     "track_dirpath": "bristol\\dirt",
     "track_id": 287,
     "track_name": "Bristol Motor Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -14279,6 +14717,8 @@
     "track_dirpath": "lanier\\dirt",
     "track_id": 288,
     "track_name": "Lanier National Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -14341,6 +14781,8 @@
     "track_dirpath": "brandshatch\\rallycross",
     "track_id": 290,
     "track_name": "Brands Hatch Circuit",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -14403,6 +14845,8 @@
     "track_dirpath": "daytona\\rallycross\\long",
     "track_id": 293,
     "track_name": "Daytona Rallycross and Dirt Road",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -14418,7 +14862,7 @@
     "category": "dirt_road",
     "category_id": 4,
     "closes": "2018-10-31",
-    "config_name": "Rallycross",
+    "config_name": "Rallycross - 2017",
     "corners_per_lap": 8,
     "created": "2017-06-29T11:36:23Z",
     "first_sale": "2017-12-04T00:00:00Z",
@@ -14446,7 +14890,7 @@
     "package_id": 115,
     "price": 14.95,
     "price_display": "$14.95",
-    "priority": 0,
+    "priority": 1,
     "purchasable": true,
     "qualify_laps": 2,
     "rain_enabled": false,
@@ -14465,6 +14909,8 @@
     "track_dirpath": "iowa\\rallycross",
     "track_id": 295,
     "track_name": "Iowa Speedway",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -14527,6 +14973,8 @@
     "track_dirpath": "daytona\\rallycross\\short",
     "track_id": 296,
     "track_name": "Daytona Rallycross and Dirt Road",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -14590,6 +15038,8 @@
     "track_dirpath": "snetterton\\300",
     "track_id": 297,
     "track_name": "Snetterton Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -14653,6 +15103,8 @@
     "track_dirpath": "snetterton\\200",
     "track_id": 298,
     "track_name": "Snetterton Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -14716,6 +15168,8 @@
     "track_dirpath": "snetterton\\100",
     "track_id": 299,
     "track_name": "Snetterton Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -14778,6 +15232,8 @@
     "track_dirpath": "limaland",
     "track_id": 303,
     "track_name": "Limaland Motorsports Park",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -14799,7 +15255,7 @@
     "first_sale": "2017-12-04T00:00:00Z",
     "folder": "/img/tracks/lucasoilraceway",
     "free_with_subscription": false,
-    "fully_lit": true,
+    "fully_lit": false,
     "grid_stalls": 16,
     "has_opt_path": true,
     "has_short_parade_lap": false,
@@ -14814,7 +15270,7 @@
     "logo": "/img/logos/tracks/lucasoilraceway-logo.png",
     "longitude": -86.340527,
     "max_cars": 16,
-    "night_lighting": true,
+    "night_lighting": false,
     "nominal_lap_time": 59.68763,
     "number_pitstalls": 7,
     "opens": "2018-03-01",
@@ -14840,6 +15296,8 @@
     "track_dirpath": "irp\\rallycross",
     "track_id": 304,
     "track_name": "Lucas Oil Indianapolis Raceway Park",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -14902,6 +15360,8 @@
     "track_dirpath": "knoxville",
     "track_id": 305,
     "track_name": "Knoxville Raceway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -14964,6 +15424,8 @@
     "track_dirpath": "phoenix\\rallycross",
     "track_id": 306,
     "track_name": "[Legacy] Phoenix Raceway - 2008",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -15026,6 +15488,8 @@
     "track_dirpath": "sonoma\\rallycross",
     "track_id": 312,
     "track_name": "Sonoma Raceway",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -15088,6 +15552,8 @@
     "track_dirpath": "charlottedirt",
     "track_id": 314,
     "track_name": "The Dirt Track at Charlotte",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -15151,6 +15617,8 @@
     "track_dirpath": "belleisle",
     "track_id": 319,
     "track_name": "Detroit Grand Prix at Belle Isle",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -15214,6 +15682,8 @@
     "track_dirpath": "kokomo",
     "track_id": 320,
     "track_name": "Kokomo Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -15266,7 +15736,7 @@
     "search_filters": "dirt,dirtroad,ams",
     "site_url": "http://www.atlantamotorspeedway.com/",
     "sku": 10039,
-    "small_image": "atlantamotorspeedway-small.jpg",
+    "small_image": "echoparkspeedway-small.jpg",
     "solo_laps": 10,
     "start_on_left": false,
     "supports_grip_compound": false,
@@ -15275,7 +15745,9 @@
     "track_config_length": 0.68,
     "track_dirpath": "atlanta\\rallycross\\short",
     "track_id": 322,
-    "track_name": "Atlanta Motor Speedway",
+    "track_name": "EchoPark Speedway (Atlanta)",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -15328,7 +15800,7 @@
     "search_filters": "dirt,dirtroad,ams",
     "site_url": "http://www.atlantamotorspeedway.com/",
     "sku": 10039,
-    "small_image": "atlantamotorspeedway-small.jpg",
+    "small_image": "echoparkspeedway-small.jpg",
     "solo_laps": 10,
     "start_on_left": false,
     "supports_grip_compound": false,
@@ -15337,7 +15809,9 @@
     "track_config_length": 0.97,
     "track_dirpath": "atlanta\\rallycross\\long",
     "track_id": 323,
-    "track_name": "Atlanta Motor Speedway",
+    "track_name": "EchoPark Speedway (Atlanta)",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -15401,6 +15875,8 @@
     "track_dirpath": "tsukuba\\2kfull",
     "track_id": 324,
     "track_name": "Tsukuba Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -15464,6 +15940,8 @@
     "track_dirpath": "tsukuba\\2kchicane",
     "track_id": 325,
     "track_name": "Tsukuba Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -15527,6 +16005,8 @@
     "track_dirpath": "tsukuba\\2kshort",
     "track_id": 326,
     "track_name": "Tsukuba Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -15590,6 +16070,8 @@
     "track_dirpath": "tsukuba\\1kfull",
     "track_id": 327,
     "track_name": "Tsukuba Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -15653,6 +16135,8 @@
     "track_dirpath": "tsukuba\\1kouter",
     "track_id": 328,
     "track_name": "Tsukuba Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -15716,6 +16200,8 @@
     "track_dirpath": "tsukuba\\1kchicane",
     "track_id": 329,
     "track_name": "Tsukuba Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -15779,6 +16265,8 @@
     "track_dirpath": "charlotte\\2018\\roval",
     "track_id": 330,
     "track_name": "Charlotte Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -15841,6 +16329,8 @@
     "track_dirpath": "chilibowl",
     "track_id": 331,
     "track_name": "Chili Bowl",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -15903,6 +16393,8 @@
     "track_dirpath": "wildwest\\full",
     "track_id": 332,
     "track_name": "Wild West Motorsports Park",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -15966,6 +16458,8 @@
     "track_dirpath": "tsukuba\\1kfullreverse",
     "track_id": 333,
     "track_name": "Tsukuba Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -16028,6 +16522,8 @@
     "track_dirpath": "wildhorse",
     "track_id": 334,
     "track_name": "Firebird Motorsports Park",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -16091,6 +16587,8 @@
     "track_dirpath": "charlotte\\2018\\legendsoval",
     "track_id": 335,
     "track_name": "Charlotte Motor Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -16154,6 +16652,8 @@
     "track_dirpath": "charlotte\\2018\\legendsrclong",
     "track_id": 336,
     "track_name": "Charlotte Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -16217,6 +16717,8 @@
     "track_dirpath": "charlotte\\2018\\legendsrcmed",
     "track_id": 337,
     "track_name": "Charlotte Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -16280,6 +16782,8 @@
     "track_dirpath": "charlotte\\2018\\legendsrcshort",
     "track_id": 338,
     "track_name": "Charlotte Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -16343,6 +16847,8 @@
     "track_dirpath": "charlotte\\2018\\oval",
     "track_id": 339,
     "track_name": "Charlotte Motor Speedway",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -16406,6 +16912,8 @@
     "track_dirpath": "charlotte\\2018\\rovallong",
     "track_id": 340,
     "track_name": "Charlotte Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -16469,6 +16977,8 @@
     "track_dirpath": "silverstone\\2019\\gp",
     "track_id": 341,
     "track_name": "Silverstone Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -16532,6 +17042,8 @@
     "track_dirpath": "silverstone\\2019\\international",
     "track_id": 342,
     "track_name": "Silverstone Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -16595,6 +17107,8 @@
     "track_dirpath": "silverstone\\2019\\national",
     "track_id": 343,
     "track_name": "Silverstone Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -16657,6 +17171,8 @@
     "track_dirpath": "fairbury",
     "track_id": 344,
     "track_name": "Fairbury Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -16720,6 +17236,8 @@
     "track_dirpath": "barcelona\\gp",
     "track_id": 345,
     "track_name": "Circuit de Barcelona Catalunya",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -16783,6 +17301,8 @@
     "track_dirpath": "barcelona\\national",
     "track_id": 346,
     "track_name": "Circuit de Barcelona Catalunya",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -16846,6 +17366,8 @@
     "track_dirpath": "barcelona\\club",
     "track_id": 347,
     "track_name": "Circuit de Barcelona Catalunya",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -16909,6 +17431,8 @@
     "track_dirpath": "barcelona\\moto",
     "track_id": 348,
     "track_name": "Circuit de Barcelona Catalunya",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -16972,6 +17496,8 @@
     "track_dirpath": "barcelona\\historic",
     "track_id": 349,
     "track_name": "Circuit de Barcelona Catalunya",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -17035,6 +17561,8 @@
     "track_dirpath": "charlotte\\2018\\2019\\roval",
     "track_id": 350,
     "track_name": "Charlotte Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -17097,6 +17625,8 @@
     "track_dirpath": "lernerville",
     "track_id": 351,
     "track_name": "Lernerville Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -17159,6 +17689,8 @@
     "track_dirpath": "limerock\\2019\\classic",
     "track_id": 352,
     "track_name": "Lime Rock Park",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -17221,6 +17753,8 @@
     "track_dirpath": "limerock\\2019\\gp",
     "track_id": 353,
     "track_name": "Lime Rock Park",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -17283,6 +17817,8 @@
     "track_dirpath": "limerock\\2019\\chicanes",
     "track_id": 354,
     "track_name": "Lime Rock Park",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -17345,6 +17881,8 @@
     "track_dirpath": "limerock\\2019\\chicanewestb",
     "track_id": 355,
     "track_name": "Lime Rock Park",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -17408,6 +17946,8 @@
     "track_dirpath": "texas\\2020\\oval",
     "track_id": 357,
     "track_name": "Texas Motor Speedway",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -17470,6 +18010,8 @@
     "track_dirpath": "lankebanen\\hellrx",
     "track_id": 358,
     "track_name": "Lånkebanen (Hell RX)",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -17533,6 +18075,8 @@
     "track_dirpath": "lankebanen\\club",
     "track_id": 359,
     "track_name": "Lånkebanen (Hell RX)",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -17596,6 +18140,8 @@
     "track_dirpath": "lankebanen\\rallyshort",
     "track_id": 360,
     "track_name": "Lånkebanen (Hell RX)",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -17659,9 +18205,11 @@
     "track_dirpath": "lankebanen\\road\\roadshort",
     "track_id": 361,
     "track_name": "Lånkebanen (Hell RX)",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
-        "track_type": "road"
+        "track_type": "dirt_road"
       }
     ]
   },
@@ -17722,6 +18270,8 @@
     "track_dirpath": "homestead\\ovalindy",
     "track_id": 362,
     "track_name": "Homestead Miami Speedway",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -17785,9 +18335,11 @@
     "track_dirpath": "lankebanen\\road\\roadlong",
     "track_id": 363,
     "track_name": "Lånkebanen (Hell RX)",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
-        "track_type": "road"
+        "track_type": "dirt_road"
       }
     ]
   },
@@ -17848,6 +18400,8 @@
     "track_dirpath": "texas\\2020\\legendsoval",
     "track_id": 364,
     "track_name": "Texas Motor Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -17911,6 +18465,8 @@
     "track_dirpath": "bristol\\fullpit",
     "track_id": 365,
     "track_name": "Bristol Motor Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -17974,6 +18530,8 @@
     "track_dirpath": "northwilkesboro",
     "track_id": 366,
     "track_name": "North Wilkesboro Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -18037,6 +18595,8 @@
     "track_dirpath": "kentucky\\2020\\oval",
     "track_id": 371,
     "track_name": "Kentucky Speedway",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -18099,6 +18659,8 @@
     "track_dirpath": "weedsport",
     "track_id": 373,
     "track_name": "Weedsport Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -18162,6 +18724,8 @@
     "track_dirpath": "nashville\\oval",
     "track_id": 374,
     "track_name": "Nashville Fairgrounds Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -18225,6 +18789,8 @@
     "track_dirpath": "nashville\\mini",
     "track_id": 380,
     "track_name": "Nashville Fairgrounds Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -18288,6 +18854,8 @@
     "track_dirpath": "daytona\\2011\\roadnascar2020",
     "track_id": 381,
     "track_name": "Daytona International Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -18351,6 +18919,8 @@
     "track_dirpath": "crandon\\full",
     "track_id": 382,
     "track_name": "Crandon International Raceway",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -18414,6 +18984,8 @@
     "track_dirpath": "crandon\\short",
     "track_id": 383,
     "track_name": "Crandon International Raceway",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -18476,6 +19048,8 @@
     "track_dirpath": "iracingss",
     "track_id": 384,
     "track_name": "iRacing Superspeedway",
+    "track_type": 4,
+    "track_type_text": "Superspeedway",
     "track_types": [
       {
         "track_type": "oval"
@@ -18538,6 +19112,8 @@
     "track_dirpath": "charlotte\\2018\\2019\\rallycrosslong",
     "track_id": 385,
     "track_name": "Charlotte Motor Speedway",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -18600,6 +19176,8 @@
     "track_dirpath": "barcelona\\rallycross",
     "track_id": 386,
     "track_name": "Circuit de Barcelona Catalunya",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -18662,6 +19240,8 @@
     "track_dirpath": "cedarlake",
     "track_id": 387,
     "track_name": "Cedar Lake Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -18725,9 +19305,11 @@
     "track_dirpath": "irwindale\\figureeightjump",
     "track_id": 388,
     "track_name": "Irwindale Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
-        "track_type": "road"
+        "track_type": "oval"
       }
     ]
   },
@@ -18788,6 +19370,8 @@
     "track_dirpath": "hockenheim\\gp",
     "track_id": 390,
     "track_name": "Hockenheimring Baden-Württemberg",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -18851,6 +19435,8 @@
     "track_dirpath": "hockenheim\\nationala",
     "track_id": 391,
     "track_name": "Hockenheimring Baden-Württemberg",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -18914,6 +19500,8 @@
     "track_dirpath": "hockenheim\\nationalb",
     "track_id": 392,
     "track_name": "Hockenheimring Baden-Württemberg",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -18977,6 +19565,8 @@
     "track_dirpath": "hockenheim\\shorta",
     "track_id": 393,
     "track_name": "Hockenheimring Baden-Württemberg",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -19040,6 +19630,8 @@
     "track_dirpath": "hockenheim\\shortb",
     "track_id": 394,
     "track_name": "Hockenheimring Baden-Württemberg",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -19103,6 +19695,8 @@
     "track_dirpath": "hockenheim\\outer",
     "track_id": 395,
     "track_name": "Hockenheimring Baden-Württemberg",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -19165,6 +19759,8 @@
     "track_dirpath": "barkriver",
     "track_id": 396,
     "track_name": "Bark River International Raceway",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -19228,6 +19824,8 @@
     "track_dirpath": "sonoma\\indycar",
     "track_id": 397,
     "track_name": "Sonoma Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -19290,9 +19888,11 @@
     "track_dirpath": "mtwashington\\climb",
     "track_id": 398,
     "track_name": "Mount Washington Hillclimb",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
-        "track_type": "road"
+        "track_type": "dirt_road"
       }
     ]
   },
@@ -19352,9 +19952,11 @@
     "track_dirpath": "mtwashington\\reverse",
     "track_id": 399,
     "track_name": "Mount Washington Hillclimb",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
-        "track_type": "road"
+        "track_type": "dirt_road"
       }
     ]
   },
@@ -19388,7 +19990,7 @@
     "longitude": -86.412149,
     "max_cars": 60,
     "night_lighting": true,
-    "nominal_lap_time": 33.2747,
+    "nominal_lap_time": 33.274704,
     "number_pitstalls": 44,
     "opens": "2021-03-01",
     "package_id": 353,
@@ -19414,6 +20016,8 @@
     "track_dirpath": "nashvilless",
     "track_id": 400,
     "track_name": "Nashville Superspeedway",
+    "track_type": 2,
+    "track_type_text": "Intermediate Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -19477,6 +20081,8 @@
     "track_dirpath": "spielberg\\gp",
     "track_id": 403,
     "track_name": "Red Bull Ring",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -19540,6 +20146,8 @@
     "track_dirpath": "spielberg\\national",
     "track_id": 404,
     "track_name": "Red Bull Ring",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -19602,6 +20210,8 @@
     "track_dirpath": "chicago",
     "track_id": 405,
     "track_name": "Chicago Street Course",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -19665,6 +20275,8 @@
     "track_dirpath": "spielberg\\north",
     "track_id": 407,
     "track_name": "Red Bull Ring",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -19727,6 +20339,8 @@
     "track_dirpath": "hungaroring",
     "track_id": 413,
     "track_name": "Hungaroring",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -19789,6 +20403,8 @@
     "track_dirpath": "hickory",
     "track_id": 414,
     "track_name": "Hickory Motor Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -19852,6 +20468,8 @@
     "track_dirpath": "phoenix\\2021\\oval",
     "track_id": 418,
     "track_name": "Phoenix Raceway",
+    "track_type": 1,
+    "track_type_text": "Mile Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -19915,6 +20533,8 @@
     "track_dirpath": "phoenix\\2021\\ovalopen",
     "track_id": 419,
     "track_name": "Phoenix Raceway",
+    "track_type": 1,
+    "track_type_text": "Mile Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -19978,6 +20598,8 @@
     "track_dirpath": "knockhill\\international",
     "track_id": 423,
     "track_name": "Knockhill Racing Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -20041,6 +20663,8 @@
     "track_dirpath": "knockhill\\internationalrev",
     "track_id": 424,
     "track_name": "Knockhill Racing Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -20104,6 +20728,8 @@
     "track_dirpath": "knockhill\\national",
     "track_id": 425,
     "track_name": "Knockhill Racing Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -20167,6 +20793,8 @@
     "track_dirpath": "knockhill\\nationalrev",
     "track_id": 426,
     "track_name": "Knockhill Racing Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -20230,6 +20858,8 @@
     "track_dirpath": "knockhill\\rallycross",
     "track_id": 427,
     "track_name": "Knockhill Racing Circuit",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -20293,6 +20923,8 @@
     "track_dirpath": "hockenheim\\pec\\peceast",
     "track_id": 428,
     "track_name": "Hockenheimring Baden-Württemberg",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -20356,6 +20988,8 @@
     "track_dirpath": "hockenheim\\pec\\pecouter",
     "track_id": 429,
     "track_name": "Hockenheimring Baden-Württemberg",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -20419,6 +21053,8 @@
     "track_dirpath": "hockenheim\\pec\\pecwest",
     "track_id": 430,
     "track_name": "Hockenheimring Baden-Württemberg",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -20482,6 +21118,8 @@
     "track_dirpath": "hockenheim\\pec\\pechandling",
     "track_id": 431,
     "track_name": "Hockenheimring Baden-Württemberg",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -20545,6 +21183,8 @@
     "track_dirpath": "watkinsglen\\2021\\classic",
     "track_id": 432,
     "track_name": "Watkins Glen International",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -20608,6 +21248,8 @@
     "track_dirpath": "watkinsglen\\2021\\cupcircuit",
     "track_id": 433,
     "track_name": "Watkins Glen International",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -20671,6 +21313,8 @@
     "track_dirpath": "watkinsglen\\2021\\fullcourse",
     "track_id": 434,
     "track_name": "Watkins Glen International",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -20734,6 +21378,8 @@
     "track_dirpath": "watkinsglen\\2021\\fullnoloop",
     "track_id": 435,
     "track_name": "Watkins Glen International",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -20797,6 +21443,8 @@
     "track_dirpath": "knockhill\\trioval",
     "track_id": 436,
     "track_name": "Knockhill Racing Circuit",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -20859,6 +21507,8 @@
     "track_dirpath": "lacoliseum",
     "track_id": 437,
     "track_name": "LA Coliseum Raceway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -20920,6 +21570,8 @@
     "track_dirpath": "pevely",
     "track_id": 438,
     "track_name": "Federated Auto Parts Raceway at I-55",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -20982,6 +21634,8 @@
     "track_dirpath": "winton\\national",
     "track_id": 439,
     "track_name": "Winton Motor Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -21044,6 +21698,8 @@
     "track_dirpath": "winton\\club",
     "track_id": 440,
     "track_name": "Winton Motor Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -21107,6 +21763,8 @@
     "track_dirpath": "bristol\\dirt\\2022",
     "track_id": 442,
     "track_name": "Bristol Motor Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -21168,6 +21826,8 @@
     "track_dirpath": "sandown",
     "track_id": 443,
     "track_name": "Sandown International Motor Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -21231,6 +21891,8 @@
     "track_dirpath": "fuji\\gp",
     "track_id": 444,
     "track_name": "Fuji International Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -21294,6 +21956,8 @@
     "track_dirpath": "fuji\\nochicane",
     "track_id": 445,
     "track_name": "Fuji International Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -21356,6 +22020,8 @@
     "track_dirpath": "portroyal",
     "track_id": 446,
     "track_name": "Port Royal Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -21410,7 +22076,7 @@
     "search_filters": "oval,ams",
     "site_url": "http://www.atlantamotorspeedway.com/",
     "sku": 10039,
-    "small_image": "atlantamotorspeedway-small.jpg",
+    "small_image": "echoparkspeedway-small.jpg",
     "solo_laps": 10,
     "start_on_left": true,
     "supports_grip_compound": false,
@@ -21419,7 +22085,9 @@
     "track_config_length": 1.54,
     "track_dirpath": "atlanta\\2022\\oval",
     "track_id": 447,
-    "track_name": "Atlanta Motor Speedway",
+    "track_name": "EchoPark Speedway (Atlanta)",
+    "track_type": 4,
+    "track_type_text": "Superspeedway",
     "track_types": [
       {
         "track_type": "oval"
@@ -21483,6 +22151,8 @@
     "track_dirpath": "indianapolis\\2022\\road",
     "track_id": 448,
     "track_name": "Indianapolis Motor Speedway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -21546,6 +22216,8 @@
     "track_dirpath": "oschersleben\\gp",
     "track_id": 449,
     "track_name": "Motorsport Arena Oschersleben",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -21608,6 +22280,8 @@
     "track_dirpath": "rudskogen",
     "track_id": 451,
     "track_name": "Rudskogen Motorsenter",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -21670,6 +22344,8 @@
     "track_dirpath": "wheatland",
     "track_id": 452,
     "track_name": "Lucas Oil Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -21733,6 +22409,8 @@
     "track_dirpath": "indianapolis\\2022\\oval",
     "track_id": 453,
     "track_name": "Indianapolis Motor Speedway",
+    "track_type": 3,
+    "track_type_text": "Long Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -21796,6 +22474,8 @@
     "track_dirpath": "oschersleben\\alt",
     "track_id": 454,
     "track_name": "Motorsport Arena Oschersleben",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -21859,6 +22539,8 @@
     "track_dirpath": "oschersleben\\bcourse",
     "track_id": 455,
     "track_name": "Motorsport Arena Oschersleben",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -21922,6 +22604,8 @@
     "track_dirpath": "oschersleben\\ccourse",
     "track_id": 456,
     "track_name": "Motorsport Arena Oschersleben",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -21984,6 +22668,8 @@
     "track_dirpath": "lincoln",
     "track_id": 462,
     "track_name": "Lincoln Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -22047,6 +22733,8 @@
     "track_dirpath": "magnycours\\gp",
     "track_id": 463,
     "track_name": "Circuit de Nevers Magny-Cours",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -22110,6 +22798,8 @@
     "track_dirpath": "virginia\\2022\\full",
     "track_id": 465,
     "track_name": "Virginia International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -22173,6 +22863,8 @@
     "track_dirpath": "virginia\\2022\\grand",
     "track_id": 466,
     "track_name": "Virginia International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -22236,6 +22928,8 @@
     "track_dirpath": "virginia\\2022\\north",
     "track_id": 467,
     "track_name": "Virginia International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -22299,6 +22993,8 @@
     "track_dirpath": "virginia\\2022\\south",
     "track_id": 468,
     "track_name": "Virginia International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -22362,6 +23058,8 @@
     "track_dirpath": "virginia\\2022\\patriot",
     "track_id": 469,
     "track_name": "Virginia International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -22424,6 +23122,8 @@
     "track_dirpath": "daytona\\rallycross\\long\\nojoker",
     "track_id": 470,
     "track_name": "Daytona Rallycross and Dirt Road",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -22486,6 +23186,8 @@
     "track_dirpath": "daytona\\rallycross\\short\\nojoker",
     "track_id": 471,
     "track_name": "Daytona Rallycross and Dirt Road",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -22548,6 +23250,8 @@
     "track_dirpath": "phoenix\\rallycross\\nojoker",
     "track_id": 472,
     "track_name": "[Legacy] Phoenix Raceway - 2008",
+    "track_type": 6,
+    "track_type_text": "Dirt Road Course",
     "track_types": [
       {
         "track_type": "dirt_road"
@@ -22610,6 +23314,8 @@
     "track_dirpath": "jerez\\gp",
     "track_id": 473,
     "track_name": "Circuito de Jerez - Ángel Nieto",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -22672,6 +23378,8 @@
     "track_dirpath": "jerez\\moto",
     "track_id": 474,
     "track_name": "Circuito de Jerez - Ángel Nieto",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -22735,6 +23443,8 @@
     "track_dirpath": "aragon\\gp",
     "track_id": 475,
     "track_name": "MotorLand Aragón",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -22798,6 +23508,8 @@
     "track_dirpath": "aragon\\national",
     "track_id": 476,
     "track_name": "MotorLand Aragón",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -22861,6 +23573,8 @@
     "track_dirpath": "aragon\\west",
     "track_id": 477,
     "track_name": "MotorLand Aragón",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -22924,6 +23638,8 @@
     "track_dirpath": "aragon\\moto",
     "track_id": 478,
     "track_name": "MotorLand Aragón",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -22987,6 +23703,8 @@
     "track_dirpath": "aragon\\nationalmoto",
     "track_id": 479,
     "track_name": "MotorLand Aragón",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -23050,6 +23768,8 @@
     "track_dirpath": "aragon\\outer",
     "track_id": 480,
     "track_name": "MotorLand Aragón",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -23112,6 +23832,8 @@
     "track_dirpath": "willow\\international",
     "track_id": 481,
     "track_name": "Willow Springs International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -23175,6 +23897,8 @@
     "track_dirpath": "aragon\\tc",
     "track_id": 482,
     "track_name": "MotorLand Aragón",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -23237,6 +23961,8 @@
     "track_dirpath": "chicago\\2023",
     "track_id": 483,
     "track_name": "Chicago Street Course",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -23300,6 +24026,8 @@
     "track_dirpath": "zandvoort\\2023\\gp",
     "track_id": 485,
     "track_name": "Circuit Zandvoort",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -23363,6 +24091,8 @@
     "track_dirpath": "zandvoort\\2023\\gpchicane",
     "track_id": 486,
     "track_name": "Circuit Zandvoort",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -23426,6 +24156,8 @@
     "track_dirpath": "zandvoort\\2023\\nationaal",
     "track_id": 487,
     "track_name": "Circuit Zandvoort",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -23489,6 +24221,8 @@
     "track_dirpath": "zandvoort\\2023\\oostelijk",
     "track_id": 488,
     "track_name": "Circuit Zandvoort",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -23551,6 +24285,8 @@
     "track_dirpath": "ledenon",
     "track_id": 489,
     "track_name": "Circuit de Lédenon",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -23614,6 +24350,8 @@
     "track_dirpath": "kern\\oval",
     "track_id": 493,
     "track_name": "Kevin Harvick's Kern Raceway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -23677,6 +24415,8 @@
     "track_dirpath": "kern\\dirt",
     "track_id": 494,
     "track_name": "Kevin Harvick's Kern Raceway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -23740,6 +24480,8 @@
     "track_dirpath": "kern\\legends",
     "track_id": 496,
     "track_name": "Kevin Harvick's Kern Raceway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -23803,6 +24545,8 @@
     "track_dirpath": "kern\\dirtmini",
     "track_id": 497,
     "track_name": "Kevin Harvick's Kern Raceway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -23866,6 +24610,8 @@
     "track_dirpath": "mugello\\gp",
     "track_id": 498,
     "track_name": "Autodromo Internazionale del Mugello",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -23929,6 +24675,8 @@
     "track_dirpath": "mugello\\short",
     "track_id": 499,
     "track_name": "Autodromo Internazionale del Mugello",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -23992,6 +24740,8 @@
     "track_dirpath": "slinger\\oval",
     "track_id": 500,
     "track_name": "Slinger Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -24055,6 +24805,8 @@
     "track_dirpath": "misano\\gp",
     "track_id": 501,
     "track_name": "Misano World Circuit Marco Simoncelli",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -24118,6 +24870,8 @@
     "track_dirpath": "misano\\gp2007",
     "track_id": 502,
     "track_name": "Misano World Circuit Marco Simoncelli",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -24181,6 +24935,8 @@
     "track_dirpath": "misano\\historicgp",
     "track_id": 503,
     "track_name": "Misano World Circuit Marco Simoncelli",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -24244,6 +25000,8 @@
     "track_dirpath": "misano\\club",
     "track_id": 504,
     "track_name": "Misano World Circuit Marco Simoncelli",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -24307,6 +25065,8 @@
     "track_dirpath": "misano\\truck",
     "track_id": 505,
     "track_name": "Misano World Circuit Marco Simoncelli",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -24370,9 +25130,11 @@
     "track_dirpath": "slinger\\figure8",
     "track_id": 506,
     "track_name": "Slinger Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
-        "track_type": "road"
+        "track_type": "oval"
       }
     ]
   },
@@ -24432,6 +25194,8 @@
     "track_dirpath": "limerock\\2019\\school",
     "track_id": 508,
     "track_name": "Lime Rock Park",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -24495,6 +25259,8 @@
     "track_dirpath": "algarve\\gp",
     "track_id": 509,
     "track_name": "Algarve International Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -24558,6 +25324,8 @@
     "track_dirpath": "algarve\\gpchicane",
     "track_id": 510,
     "track_name": "Algarve International Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -24621,6 +25389,8 @@
     "track_dirpath": "algarve\\moto",
     "track_id": 511,
     "track_name": "Algarve International Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -24684,6 +25454,8 @@
     "track_dirpath": "algarve\\motochicane",
     "track_id": 512,
     "track_name": "Algarve International Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -24746,6 +25518,8 @@
     "track_dirpath": "millbridge",
     "track_id": 513,
     "track_name": "Millbridge Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -24808,6 +25582,8 @@
     "track_dirpath": "kokomo\\tiresout",
     "track_id": 514,
     "track_name": "Kokomo Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -24871,6 +25647,8 @@
     "track_dirpath": "navarra\\speedlong",
     "track_id": 515,
     "track_name": "Circuito de Navarra",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -24934,6 +25712,8 @@
     "track_dirpath": "navarra\\speedmedium",
     "track_id": 516,
     "track_name": "Circuito de Navarra",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -24997,6 +25777,8 @@
     "track_dirpath": "navarra\\speedshort",
     "track_id": 517,
     "track_name": "Circuito de Navarra",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -25060,6 +25842,8 @@
     "track_dirpath": "oswego\\oval",
     "track_id": 518,
     "track_name": "Oswego Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -25123,6 +25907,8 @@
     "track_dirpath": "oswego\\mini",
     "track_id": 519,
     "track_name": "Oswego Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -25186,6 +25972,8 @@
     "track_dirpath": "oswego\\dirt",
     "track_id": 520,
     "track_name": "Oswego Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -25248,6 +26036,8 @@
     "track_dirpath": "sachsenring",
     "track_id": 521,
     "track_name": "Sachsenring",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -25311,6 +26101,8 @@
     "track_dirpath": "indianapolis\\2022\\ovalnascar",
     "track_id": 522,
     "track_name": "Indianapolis Motor Speedway",
+    "track_type": 3,
+    "track_type_text": "Long Oval",
     "track_types": [
       {
         "track_type": "oval"
@@ -25374,6 +26166,8 @@
     "track_dirpath": "spa\\2024\\up",
     "track_id": 523,
     "track_name": "Circuit de Spa-Francorchamps",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -25437,6 +26231,8 @@
     "track_dirpath": "spa\\2024\\low",
     "track_id": 524,
     "track_name": "Circuit de Spa-Francorchamps",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -25500,6 +26296,8 @@
     "track_dirpath": "spa\\2024\\combined",
     "track_id": 525,
     "track_name": "Circuit de Spa-Francorchamps",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -25563,6 +26361,8 @@
     "track_dirpath": "spa\\2024\\bike",
     "track_id": 526,
     "track_name": "Circuit de Spa-Francorchamps",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -25626,6 +26426,8 @@
     "track_dirpath": "cadwell\\full",
     "track_id": 527,
     "track_name": "Cadwell Park Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -25689,6 +26491,8 @@
     "track_dirpath": "cadwell\\club",
     "track_id": 528,
     "track_name": "Cadwell Park Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -25752,6 +26556,8 @@
     "track_dirpath": "cadwell\\moto",
     "track_id": 529,
     "track_name": "Cadwell Park Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -25815,6 +26621,8 @@
     "track_dirpath": "cadwell\\woodlands",
     "track_id": 530,
     "track_name": "Cadwell Park Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -25877,6 +26685,8 @@
     "track_dirpath": "husets",
     "track_id": 531,
     "track_name": "Huset's Speedway",
+    "track_type": 7,
+    "track_type_text": "Dirt Oval Course",
     "track_types": [
       {
         "track_type": "dirt_oval"
@@ -25939,6 +26749,8 @@
     "track_dirpath": "thruxton",
     "track_id": 532,
     "track_name": "Thruxton Circuit",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -26002,6 +26814,8 @@
     "track_dirpath": "portland\\full",
     "track_id": 536,
     "track_name": "Portland International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
@@ -26065,9 +26879,595 @@
     "track_dirpath": "portland\\nochicane",
     "track_id": 537,
     "track_name": "Portland International Raceway",
+    "track_type": 5,
+    "track_type_text": "Road Course",
     "track_types": [
       {
         "track_type": "road"
+      }
+    ]
+  },
+  {
+    "ai_enabled": true,
+    "allow_pitlane_collisions": true,
+    "allow_rolling_start": true,
+    "allow_standing_start": true,
+    "award_exempt": false,
+    "category": "road",
+    "category_id": 2,
+    "closes": "2025-12-31",
+    "config_name": "GT Circuit",
+    "corners_per_lap": 35,
+    "created": "2025-04-15T16:24:45Z",
+    "first_sale": "2025-06-10T00:00:00Z",
+    "folder": "/img/tracks/thebendmotorsportpark",
+    "free_with_subscription": false,
+    "fully_lit": false,
+    "grid_stalls": 60,
+    "has_opt_path": false,
+    "has_short_parade_lap": true,
+    "has_start_zone": false,
+    "has_svg_map": true,
+    "is_dirt": false,
+    "is_oval": true,
+    "is_ps_purchasable": true,
+    "lap_scoring": 0,
+    "latitude": -35.308313,
+    "location": "Tailem Bend, Australia",
+    "logo": "/img/logos/tracks/thebendmotorsportpark-logo.png",
+    "longitude": 139.511143,
+    "max_cars": 60,
+    "night_lighting": false,
+    "nominal_lap_time": 192.325,
+    "number_pitstalls": 37,
+    "opens": "2025-01-01",
+    "package_id": 519,
+    "pit_road_speed_limit": 25,
+    "price": 14.95,
+    "price_display": "$14.95",
+    "priority": 1,
+    "purchasable": true,
+    "qualify_laps": 2,
+    "rain_enabled": true,
+    "restart_on_left": false,
+    "retired": false,
+    "search_filters": "road",
+    "site_url": "https://www.thebend.com.au/",
+    "sku": 10604,
+    "small_image": "thebendmotorsportpark-small.jpg",
+    "solo_laps": 4,
+    "start_on_left": true,
+    "supports_grip_compound": false,
+    "tech_track": false,
+    "time_zone": "Australia/Adelaide",
+    "track_config_length": 4.828,
+    "track_dirpath": "thebend\\gt",
+    "track_id": 540,
+    "track_name": "Shell V-Power Motorsport Park at The Bend",
+    "track_type": 5,
+    "track_type_text": "Road Course",
+    "track_types": [
+      {
+        "track_type": "road"
+      }
+    ]
+  },
+  {
+    "ai_enabled": true,
+    "allow_pitlane_collisions": true,
+    "allow_rolling_start": true,
+    "allow_standing_start": true,
+    "award_exempt": false,
+    "category": "road",
+    "category_id": 2,
+    "closes": "2025-12-31",
+    "config_name": "International Circuit",
+    "corners_per_lap": 18,
+    "created": "2025-04-15T16:28:35Z",
+    "first_sale": "2025-06-10T00:00:00Z",
+    "folder": "/img/tracks/thebendmotorsportpark",
+    "free_with_subscription": false,
+    "fully_lit": false,
+    "grid_stalls": 60,
+    "has_opt_path": false,
+    "has_short_parade_lap": true,
+    "has_start_zone": false,
+    "has_svg_map": true,
+    "is_dirt": false,
+    "is_oval": true,
+    "is_ps_purchasable": true,
+    "lap_scoring": 0,
+    "latitude": -35.308313,
+    "location": "Tailem Bend, Australia",
+    "logo": "/img/logos/tracks/thebendmotorsportpark-logo.png",
+    "longitude": 139.511143,
+    "max_cars": 60,
+    "night_lighting": false,
+    "nominal_lap_time": 117.086044,
+    "number_pitstalls": 37,
+    "opens": "2025-01-01",
+    "package_id": 519,
+    "pit_road_speed_limit": 25,
+    "price": 14.95,
+    "price_display": "$14.95",
+    "priority": 2,
+    "purchasable": true,
+    "qualify_laps": 2,
+    "rain_enabled": true,
+    "restart_on_left": false,
+    "retired": false,
+    "search_filters": "road",
+    "site_url": "https://www.thebend.com.au/",
+    "sku": 10604,
+    "small_image": "thebendmotorsportpark-small.jpg",
+    "solo_laps": 5,
+    "start_on_left": true,
+    "supports_grip_compound": false,
+    "tech_track": false,
+    "time_zone": "Australia/Adelaide",
+    "track_config_length": 3.076,
+    "track_dirpath": "thebend\\international",
+    "track_id": 541,
+    "track_name": "Shell V-Power Motorsport Park at The Bend",
+    "track_type": 5,
+    "track_type_text": "Road Course",
+    "track_types": [
+      {
+        "track_type": "road"
+      }
+    ]
+  },
+  {
+    "ai_enabled": true,
+    "allow_pitlane_collisions": true,
+    "allow_rolling_start": true,
+    "allow_standing_start": true,
+    "award_exempt": false,
+    "category": "road",
+    "category_id": 2,
+    "closes": "2025-12-31",
+    "config_name": "East Circuit",
+    "corners_per_lap": 22,
+    "created": "2025-04-15T16:30:22Z",
+    "first_sale": "2025-06-10T00:00:00Z",
+    "folder": "/img/tracks/thebendmotorsportpark",
+    "free_with_subscription": false,
+    "fully_lit": false,
+    "grid_stalls": 60,
+    "has_opt_path": false,
+    "has_short_parade_lap": true,
+    "has_start_zone": false,
+    "has_svg_map": true,
+    "is_dirt": false,
+    "is_oval": true,
+    "is_ps_purchasable": true,
+    "lap_scoring": 0,
+    "latitude": -35.308313,
+    "location": "Tailem Bend, Australia",
+    "logo": "/img/logos/tracks/thebendmotorsportpark-logo.png",
+    "longitude": 139.511143,
+    "max_cars": 60,
+    "night_lighting": false,
+    "nominal_lap_time": 99.67207,
+    "number_pitstalls": 10,
+    "opens": "2025-01-01",
+    "package_id": 519,
+    "pit_road_speed_limit": 25,
+    "price": 14.95,
+    "price_display": "$14.95",
+    "priority": 3,
+    "purchasable": true,
+    "qualify_laps": 2,
+    "rain_enabled": true,
+    "restart_on_left": false,
+    "retired": false,
+    "search_filters": "road",
+    "site_url": "https://www.thebend.com.au/",
+    "sku": 10604,
+    "small_image": "thebendmotorsportpark-small.jpg",
+    "solo_laps": 5,
+    "start_on_left": true,
+    "supports_grip_compound": false,
+    "tech_track": false,
+    "time_zone": "Australia/Adelaide",
+    "track_config_length": 2.442,
+    "track_dirpath": "thebend\\east",
+    "track_id": 542,
+    "track_name": "Shell V-Power Motorsport Park at The Bend",
+    "track_type": 5,
+    "track_type_text": "Road Course",
+    "track_types": [
+      {
+        "track_type": "road"
+      }
+    ]
+  },
+  {
+    "ai_enabled": true,
+    "allow_pitlane_collisions": true,
+    "allow_rolling_start": true,
+    "allow_standing_start": true,
+    "award_exempt": false,
+    "category": "road",
+    "category_id": 2,
+    "closes": "2025-12-31",
+    "config_name": "West Circuit",
+    "corners_per_lap": 12,
+    "created": "2025-04-15T16:32:27Z",
+    "first_sale": "2025-06-10T00:00:00Z",
+    "folder": "/img/tracks/thebendmotorsportpark",
+    "free_with_subscription": false,
+    "fully_lit": false,
+    "grid_stalls": 60,
+    "has_opt_path": false,
+    "has_short_parade_lap": true,
+    "has_start_zone": false,
+    "has_svg_map": true,
+    "is_dirt": false,
+    "is_oval": true,
+    "is_ps_purchasable": true,
+    "lap_scoring": 0,
+    "latitude": -35.308313,
+    "location": "Tailem Bend, Australia",
+    "logo": "/img/logos/tracks/thebendmotorsportpark-logo.png",
+    "longitude": 139.511143,
+    "max_cars": 60,
+    "night_lighting": false,
+    "nominal_lap_time": 81.13958,
+    "number_pitstalls": 37,
+    "opens": "2025-01-01",
+    "package_id": 519,
+    "pit_road_speed_limit": 25,
+    "price": 14.95,
+    "price_display": "$14.95",
+    "priority": 4,
+    "purchasable": true,
+    "qualify_laps": 2,
+    "rain_enabled": true,
+    "restart_on_left": false,
+    "retired": false,
+    "search_filters": "road",
+    "site_url": "https://www.thebend.com.au/",
+    "sku": 10604,
+    "small_image": "thebendmotorsportpark-small.jpg",
+    "solo_laps": 5,
+    "start_on_left": true,
+    "supports_grip_compound": false,
+    "tech_track": false,
+    "time_zone": "Australia/Adelaide",
+    "track_config_length": 2.119,
+    "track_dirpath": "thebend\\west",
+    "track_id": 543,
+    "track_name": "Shell V-Power Motorsport Park at The Bend",
+    "track_type": 5,
+    "track_type_text": "Road Course",
+    "track_types": [
+      {
+        "track_type": "road"
+      }
+    ]
+  },
+  {
+    "ai_enabled": true,
+    "allow_pitlane_collisions": true,
+    "allow_rolling_start": true,
+    "allow_standing_start": true,
+    "award_exempt": false,
+    "category": "road",
+    "category_id": 2,
+    "closes": "2025-12-31",
+    "config_name": "West Plus Circuit",
+    "corners_per_lap": 17,
+    "created": "2025-04-15T16:34:44Z",
+    "first_sale": "2025-06-10T00:00:00Z",
+    "folder": "/img/tracks/thebendmotorsportpark",
+    "free_with_subscription": false,
+    "fully_lit": false,
+    "grid_stalls": 60,
+    "has_opt_path": false,
+    "has_short_parade_lap": true,
+    "has_start_zone": false,
+    "has_svg_map": true,
+    "is_dirt": false,
+    "is_oval": true,
+    "is_ps_purchasable": true,
+    "lap_scoring": 0,
+    "latitude": -35.308313,
+    "location": "Tailem Bend, Australia",
+    "logo": "/img/logos/tracks/thebendmotorsportpark-logo.png",
+    "longitude": 139.511143,
+    "max_cars": 60,
+    "night_lighting": false,
+    "nominal_lap_time": 96.72079,
+    "number_pitstalls": 37,
+    "opens": "2025-01-01",
+    "package_id": 519,
+    "pit_road_speed_limit": 25,
+    "price": 14.95,
+    "price_display": "$14.95",
+    "priority": 5,
+    "purchasable": true,
+    "qualify_laps": 2,
+    "rain_enabled": true,
+    "restart_on_left": false,
+    "retired": false,
+    "search_filters": "road",
+    "site_url": "https://www.thebend.com.au/",
+    "sku": 10604,
+    "small_image": "thebendmotorsportpark-small.jpg",
+    "solo_laps": 5,
+    "start_on_left": true,
+    "supports_grip_compound": false,
+    "tech_track": false,
+    "time_zone": "Australia/Adelaide",
+    "track_config_length": 2.27,
+    "track_dirpath": "thebend\\westplus",
+    "track_id": 544,
+    "track_name": "Shell V-Power Motorsport Park at The Bend",
+    "track_type": 5,
+    "track_type_text": "Road Course",
+    "track_types": [
+      {
+        "track_type": "road"
+      }
+    ]
+  },
+  {
+    "ai_enabled": true,
+    "allow_pitlane_collisions": true,
+    "allow_rolling_start": true,
+    "allow_standing_start": true,
+    "award_exempt": false,
+    "category": "road",
+    "category_id": 2,
+    "closes": "2025-12-31",
+    "config_name": "Sprint Circuit",
+    "corners_per_lap": 11,
+    "created": "2025-04-15T16:36:00Z",
+    "first_sale": "2025-06-10T00:00:00Z",
+    "folder": "/img/tracks/thebendmotorsportpark",
+    "free_with_subscription": false,
+    "fully_lit": false,
+    "grid_stalls": 60,
+    "has_opt_path": false,
+    "has_short_parade_lap": true,
+    "has_start_zone": false,
+    "has_svg_map": true,
+    "is_dirt": false,
+    "is_oval": true,
+    "is_ps_purchasable": true,
+    "lap_scoring": 0,
+    "latitude": -35.308313,
+    "location": "Tailem Bend, Australia",
+    "logo": "/img/logos/tracks/thebendmotorsportpark-logo.png",
+    "longitude": 139.511143,
+    "max_cars": 60,
+    "night_lighting": false,
+    "nominal_lap_time": 72.306656,
+    "number_pitstalls": 37,
+    "opens": "2025-01-01",
+    "package_id": 519,
+    "pit_road_speed_limit": 25,
+    "price": 14.95,
+    "price_display": "$14.95",
+    "priority": 6,
+    "purchasable": true,
+    "qualify_laps": 2,
+    "rain_enabled": true,
+    "restart_on_left": false,
+    "retired": false,
+    "search_filters": "road",
+    "site_url": "https://www.thebend.com.au/",
+    "sku": 10604,
+    "small_image": "thebendmotorsportpark-small.jpg",
+    "solo_laps": 5,
+    "start_on_left": true,
+    "supports_grip_compound": false,
+    "tech_track": false,
+    "time_zone": "Australia/Adelaide",
+    "track_config_length": 1.72,
+    "track_dirpath": "thebend\\sprint",
+    "track_id": 545,
+    "track_name": "Shell V-Power Motorsport Park at The Bend",
+    "track_type": 5,
+    "track_type_text": "Road Course",
+    "track_types": [
+      {
+        "track_type": "road"
+      }
+    ]
+  },
+  {
+    "ai_enabled": true,
+    "allow_pitlane_collisions": true,
+    "allow_rolling_start": true,
+    "allow_standing_start": true,
+    "award_exempt": false,
+    "category": "road",
+    "category_id": 2,
+    "closes": "2025-12-31",
+    "config_name": "South West Circuit",
+    "corners_per_lap": 7,
+    "created": "2025-04-15T16:37:24Z",
+    "first_sale": "2025-06-10T00:00:00Z",
+    "folder": "/img/tracks/thebendmotorsportpark",
+    "free_with_subscription": false,
+    "fully_lit": false,
+    "grid_stalls": 60,
+    "has_opt_path": false,
+    "has_short_parade_lap": true,
+    "has_start_zone": false,
+    "has_svg_map": true,
+    "is_dirt": false,
+    "is_oval": true,
+    "is_ps_purchasable": true,
+    "lap_scoring": 0,
+    "latitude": -35.308313,
+    "location": "Tailem Bend, Australia",
+    "logo": "/img/logos/tracks/thebendmotorsportpark-logo.png",
+    "longitude": 139.511143,
+    "max_cars": 60,
+    "night_lighting": false,
+    "nominal_lap_time": 46.072197,
+    "number_pitstalls": 37,
+    "opens": "2025-01-01",
+    "package_id": 519,
+    "pit_road_speed_limit": 25,
+    "price": 14.95,
+    "price_display": "$14.95",
+    "priority": 7,
+    "purchasable": true,
+    "qualify_laps": 2,
+    "rain_enabled": true,
+    "restart_on_left": false,
+    "retired": false,
+    "search_filters": "road",
+    "site_url": "https://www.thebend.com.au/",
+    "sku": 10604,
+    "small_image": "thebendmotorsportpark-small.jpg",
+    "solo_laps": 5,
+    "start_on_left": true,
+    "supports_grip_compound": false,
+    "tech_track": false,
+    "time_zone": "Australia/Adelaide",
+    "track_config_length": 1.13,
+    "track_dirpath": "thebend\\southwest",
+    "track_id": 546,
+    "track_name": "Shell V-Power Motorsport Park at The Bend",
+    "track_type": 5,
+    "track_type_text": "Road Course",
+    "track_types": [
+      {
+        "track_type": "road"
+      }
+    ]
+  },
+  {
+    "ai_enabled": true,
+    "allow_pitlane_collisions": true,
+    "allow_rolling_start": true,
+    "allow_standing_start": true,
+    "award_exempt": false,
+    "category": "oval",
+    "category_id": 1,
+    "closes": "2025-10-31",
+    "config_name": "Oval",
+    "corners_per_lap": 4,
+    "created": "2025-05-08T15:32:03Z",
+    "first_sale": "2025-06-10T00:00:00Z",
+    "folder": "/img/tracks/iowaspeedway",
+    "free_with_subscription": false,
+    "fully_lit": true,
+    "grid_stalls": 60,
+    "has_opt_path": false,
+    "has_short_parade_lap": false,
+    "has_start_zone": true,
+    "has_svg_map": true,
+    "is_dirt": false,
+    "is_oval": true,
+    "is_ps_purchasable": true,
+    "lap_scoring": 0,
+    "latitude": 41.674667,
+    "location": "Newton, Iowa, USA",
+    "logo": "/img/logos/tracks/iowaspeedway-logo.png",
+    "longitude": -93.015162,
+    "max_cars": 60,
+    "night_lighting": true,
+    "nominal_lap_time": 25.988096,
+    "number_pitstalls": 44,
+    "opens": "2025-04-01",
+    "package_id": 115,
+    "pit_road_speed_limit": 40,
+    "price": 14.95,
+    "price_display": "$14.95",
+    "priority": 0,
+    "purchasable": true,
+    "qualify_laps": 2,
+    "rain_enabled": false,
+    "restart_on_left": true,
+    "retired": false,
+    "search_filters": "oval,iowa",
+    "site_url": "http://www.iowaspeedway.com/",
+    "sku": 10283,
+    "small_image": "iowaspeedway-small.jpg",
+    "solo_laps": 10,
+    "start_on_left": true,
+    "supports_grip_compound": false,
+    "tech_track": false,
+    "time_zone": "America/Chicago",
+    "track_config_length": 0.857,
+    "track_dirpath": "iowa\\2025\\oval",
+    "track_id": 559,
+    "track_name": "Iowa Speedway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
+    "track_types": [
+      {
+        "track_type": "oval"
+      }
+    ]
+  },
+  {
+    "ai_enabled": true,
+    "allow_pitlane_collisions": true,
+    "allow_rolling_start": true,
+    "allow_standing_start": false,
+    "award_exempt": true,
+    "category": "oval",
+    "category_id": 1,
+    "closes": "2025-11-30",
+    "corners_per_lap": 4,
+    "created": "2025-05-08T15:38:31Z",
+    "first_sale": "2025-06-10T00:00:00Z",
+    "folder": "/img/tracks/richmondraceway",
+    "free_with_subscription": false,
+    "fully_lit": true,
+    "grid_stalls": 60,
+    "has_opt_path": false,
+    "has_short_parade_lap": false,
+    "has_start_zone": true,
+    "has_svg_map": true,
+    "is_dirt": false,
+    "is_oval": true,
+    "is_ps_purchasable": true,
+    "lap_scoring": 0,
+    "latitude": 37.592392,
+    "location": "Richmond, Virginia, USA",
+    "logo": "/img/logos/tracks/richmondraceway-logo.png",
+    "longitude": -77.421653,
+    "max_cars": 64,
+    "night_lighting": true,
+    "nominal_lap_time": 23.35316,
+    "number_pitstalls": 40,
+    "opens": "2025-03-01",
+    "package_id": 23,
+    "pit_road_speed_limit": 40,
+    "price": 14.95,
+    "price_display": "$14.95",
+    "priority": 0,
+    "purchasable": true,
+    "qualify_laps": 2,
+    "rain_enabled": false,
+    "restart_on_left": true,
+    "retired": false,
+    "search_filters": "oval,richmond",
+    "site_url": "http://www.richmondraceway.com/",
+    "sku": 10024,
+    "small_image": "richmondraceway-small.jpg",
+    "solo_laps": 10,
+    "start_on_left": true,
+    "supports_grip_compound": false,
+    "tech_track": false,
+    "time_zone": "America/New_York",
+    "track_config_length": 0.75,
+    "track_dirpath": "richmond\\2025",
+    "track_id": 561,
+    "track_name": "Richmond Raceway",
+    "track_type": 0,
+    "track_type_text": "Short Oval",
+    "track_types": [
+      {
+        "track_type": "oval"
       }
     ]
   }

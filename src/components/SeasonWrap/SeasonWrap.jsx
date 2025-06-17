@@ -21,7 +21,7 @@ export default function TabsEnclosedPillsExample({ allSeasons }) {
                         client:load
                         allSeasonData={allSeasons}
                         licenciaId={1}
-                        defaultSelectedIds={[5389, 5390, 5428, 5429]}
+                        defaultSelectedIds={[5559, 5599, 5600, 5560]}
                     />
                 </CTabPanel>
                 <CTabPanel className="p-3" itemKey="classd">
@@ -29,9 +29,7 @@ export default function TabsEnclosedPillsExample({ allSeasons }) {
                         client:load
                         allSeasonData={allSeasons}
                         licenciaId={2}
-                        defaultSelectedIds={[
-                            5391, 5394, 5395, 5432, 5433, 5396,
-                        ]}
+                        defaultSelectedIds={[5561, 5566, 5567, 5573, 5576, 5604]}
                     />
                 </CTabPanel>
                 <CTabPanel className="p-3" itemKey="classc">
@@ -39,9 +37,7 @@ export default function TabsEnclosedPillsExample({ allSeasons }) {
                         client:load
                         allSeasonData={allSeasons}
                         licenciaId={3}
-                        defaultSelectedIds={[
-                            5413, 5416, 5417, 5442, 5443, 5406,
-                        ]}
+                        defaultSelectedIds={[5579, 5584, 5587, 5588, 5612, 5613, 5577]}
                     />
                 </CTabPanel>
                 <CTabPanel className="p-3" itemKey="classb">
@@ -49,9 +45,7 @@ export default function TabsEnclosedPillsExample({ allSeasons }) {
                         client:load
                         allSeasonData={allSeasons}
                         licenciaId={4}
-                        defaultSelectedIds={[
-                            5420, 5421, 5422, 5450, 5451, 5424,
-                        ]}
+                        defaultSelectedIds={[5591, 5592, 5593, 5595, 5620, 5621]}
                     />
                 </CTabPanel>
                 <CTabPanel className="p-3" itemKey="classa">
@@ -59,16 +53,14 @@ export default function TabsEnclosedPillsExample({ allSeasons }) {
                         client:load
                         allSeasonData={allSeasons}
                         licenciaId={5}
-                        defaultSelectedIds={[5426, 5427, 5452, 5453]}
+                        defaultSelectedIds={[5597, 5598, 5622, 5623]}
                     />
                 </CTabPanel>
                 <CTabPanel className="p-3" itemKey="all">
                     <SeasonViewer
                         client:load
                         allSeasonData={allSeasons}
-                        defaultSelectedIds={[
-                            5395, 5420, 5421, 5426, 5427, 5433, 5396,
-                        ]}
+                        defaultSelectedIds={[5566, 5567, 5591, 5592, 5597, 5598, 5604]}
                     />
                 </CTabPanel>
             </CTabContent>

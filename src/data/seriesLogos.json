@@ -218,7 +218,7 @@
     },
     "231": {
         "large_image": null,
-        "logo": "advancedmazdamx5cupseries-logo.png",
+        "logo": "seriesid_231.png",
         "series_copy": "Just as its name implies, the Advanced Mazda Cup ain't for beginners. Rather, it's for iRacers who are fully familiar with the art and the science of road racing . . . and who'd rather race the Mazda MX-5 Cup than any other car on the service. \r\n<br><br>\r\nBy \"art\" we mean the craft of sim-racing on some of the most demanding road courses available on iRacing. The \"science\" part refers to the fact that this is an \"open\" series, where careful tuning of the set-up is every bit as much of the winning formula as fast, aggressive and safe driving.",
         "series_id": 231,
         "small_image": null
@@ -375,13 +375,6 @@
         "logo": "seriesid_374.png",
         "series_copy": "The IndyCar Series is the world's most diverse professional race series. With a schedule that includes road courses and ovals of all shapes and sizes, the series emphasizes the ability of drivers and teams to adapt to a vast array of different circumstances from sweeping, banked, baby's-bottom-smooth 220 mph turns to corrugated hairpins that rattle your molars at 35 mph.\r\n<br><br>\r\nFortunately those drivers and teams have the infinitely adaptable Dallara IR18 at their disposal.  With 700 horsepower on tap and a wide selection of downforce options, short oval, speedway and road course chassis setups, the Dallara is just the car to handle the multi-faceted challenges of the  IndyCar Series.",
         "series_id": 374,
-        "small_image": null
-    },
-    "391": {
-        "large_image": null,
-        "logo": "pro4offroadracingseries-logo.png",
-        "series_copy": "The biggest and baddest that short course off-road racing has to offer, the Off Road Racing Series Pro 4 truck boasts more than 700 horsepower going to its four driven wheels. Only the best of the best are able to tackle these trucks in the real world, and full-contact racing is a prerequisite of the series. See if you have what it takes to soar over massive jumps and conquer tight dirt corners on iRacing’s muddiest discipline!<br>\r\n<br>\r\nFor 2023 Season 2, this series will serve as the qualifying series for the 2023 iRacing Off-Road Championship Series. The top 12 finishers in points will be eligible to be invited to participate in the pro series.",
-        "series_id": 391,
         "small_image": null
     },
     "399": {
@@ -629,13 +622,6 @@
         "series_id": 484,
         "small_image": null
     },
-    "490": {
-        "large_image": null,
-        "logo": "pro2offroadracingseries-logo.png",
-        "series_copy": "The biggest and baddest that short course off-road racing has to offer, the Off Road Racing Series Pro 2 truck boasts more than 700 horsepower and the additional challenge of rear-wheel drive. Only the best of the best are able to tackle these trucks in the real world, and full-contact racing is a prerequisite of the series. See if you have what it takes to soar over massive jumps and conquer tight dirt corners on iRacing’s muddiest discipline!",
-        "series_id": 490,
-        "small_image": null
-    },
     "491": {
         "large_image": null,
         "logo": "gt4falkentirechallenge-logo.png",
@@ -835,21 +821,21 @@
     "540": {
         "large_image": null,
         "logo": "seriesid_540.png",
-        "series_copy": "iRacing and the FIA are pleased to announce the latest step in their collaboration centered around Formula 4: the iRacing FIA F4 Esports Regional Tour. Each region features a diverse selection of tracks that are local and relevant to each region’s geography. Races will take place every even hour at :45 after. While all iRacers are eligible to run in any region’s event, the servers will always be set to the most appropriate iRacing server for each region.",
+        "series_copy": "iRacing and the FIA are pleased to announce the latest step in their collaboration centered around Formula 4: the iRacing FIA F4 Esports Regional Tour. Each region features a diverse selection of tracks that are local and relevant to each region’s geography. While all iRacers are eligible to run in any region’s event, the servers will always be set to the most appropriate iRacing server for each region. This series also serves as a qualifier for the FIA F4 eSports Global Championship in select seasons.",
         "series_id": 540,
         "small_image": null
     },
     "541": {
         "large_image": null,
         "logo": "seriesid_541.png",
-        "series_copy": "iRacing and the FIA are pleased to announce the latest step in their collaboration centered around Formula 4: the iRacing FIA F4 Esports Regional Tour. Each region features a diverse selection of tracks that are local and relevant to each region’s geography. Races will take place every odd hour at :15 after. While all iRacers are eligible to run in any region’s event, the servers will always be set to the most appropriate iRacing server for each region.",
+        "series_copy": "iRacing and the FIA are pleased to announce the latest step in their collaboration centered around Formula 4: the iRacing FIA F4 Esports Regional Tour. Each region features a diverse selection of tracks that are local and relevant to each region’s geography. While all iRacers are eligible to run in any region’s event, the servers will always be set to the most appropriate iRacing server for each region. This series also serves as a qualifier for the FIA F4 eSports Global Championship in select seasons.",
         "series_id": 541,
         "small_image": null
     },
     "542": {
         "large_image": null,
         "logo": "seriesid_542.png",
-        "series_copy": "iRacing and the FIA are pleased to announce the latest step in their collaboration centered around Formula 4: the iRacing FIA F4 Esports Regional Tour. Each region features a diverse selection of tracks that are local and relevant to each region’s geography. Races will take place every even hour at :15 after. While all iRacers are eligible to run in any region’s event, the servers will always be set to the most appropriate iRacing server for each region.",
+        "series_copy": "iRacing and the FIA are pleased to announce the latest step in their collaboration centered around Formula 4: the iRacing FIA F4 Esports Regional Tour. Each region features a diverse selection of tracks that are local and relevant to each region’s geography. While all iRacers are eligible to run in any region’s event, the servers will always be set to the most appropriate iRacing server for each region. This series also serves as a qualifier for the FIA F4 eSports Global Championship in select seasons.",
         "series_id": 542,
         "small_image": null
     },
@@ -979,18 +965,18 @@
         "series_id": 579,
         "small_image": null
     },
-    "580": {
+    "584": {
         "large_image": null,
-        "logo": "seriesid_580.png",
-        "series_copy": "Get your team together for this 4 hour endurance race in the Touring Cars around Thruxton, which has been referred to as \"The fastest circuit in the UK.\"",
-        "series_id": 580,
+        "logo": "seriesid_584.png",
+        "series_copy": "Like the iRacing Production Car Challenge, but looking for longer races? The Production Endurance Challenge preserves the lineup of the Global Mazda MX-5 Cup, the Renault Clio R.S. V, BMW M2 CS Racing, and Toyota GR86, but extends your time on track.",
+        "series_id": 584,
         "small_image": null
     },
-    "583": {
+    "588": {
         "large_image": null,
-        "logo": "seriesid_583.png",
-        "series_copy": "Two Prodigy Passes are up for grabs in the official iRacing Radical SR8 Cup series, featuring the Radical SR8. This fourth iRacing event of Season 2 runs from April 22 to June 9, ending with a three-race Final on June 22. Don’t miss your chance to win an all-expenses-paid trip to Prodigy Week and compete for a pro driver spot in the Prodigy Three Championship.</br>\r\n</br>\r\nThere are two qualifying paths to reach the Finals. The top 24 point finishers with a Racing Prodigy Membership (RPM) in the iRacing Racing Prodigy Radical SR8 Cup official series will advance to the Finals hosted by Racing Prodigy. The top 6 point finishers with a Racing Prodigy Membership (RPM) in the Williams Gaming Club-hosted Racing Prodigy Radical SR8 Series of Time Attacks, which runs concurrently with the official iRacing series, starting April 22, will advance to the same Finals hosted by Racing Prodigy.</br>\r\n</br>\r\nOne Prodigy Pass will be awarded to the driver with the most total points in the Finals. One additional Prodigy Passes will be awarded by the Prodigy Search Committee to a standout driver among the top 25% of the series points who submits a video and answers to a questionnaire.</br>\r\n</br>\r\nTo secure a Racing Prodigy Membership and be eligible to compete, visit racingprodigy.com/membership.",
-        "series_id": 583,
+        "logo": "seriesid_588.png",
+        "series_copy": "Take on an expanded set of short course off-road tracks with the Lucas Oil Off Road Racing Series Pro 2 Lite! With Crandon, Bark River, and Firebird joining the schedule, now's your chance to apply your skill sets from the Rookie level on the premier venues in off-road racing.",
+        "series_id": 588,
         "small_image": null
     }
 }
