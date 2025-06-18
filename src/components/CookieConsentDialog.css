@@ -1,0 +1,72 @@
+.cookie-dialog__backdrop {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.cookie-dialog {
+    background: #121212e8;
+    color: #fff;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 0 16px #0002;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    max-width: 800px;
+    width: 100vw;
+    margin-bottom: 0;
+    animation: slideUp 0.3s;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.cookie-dialog__actions {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+.cookie-dialog__actions button {
+    flex: 1 1 0;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    background: #134c92;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.cookie-dialog__actions button:hover {
+    background: #0d3566;
+}
+.cookie-dialog__customize {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.cookie-dialog__customize label {
+    color: #fff;
+    font-size: 0.95rem;
+}
+.cookie-dialog a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #134c92;
+    text-decoration: underline;
+    font-size: 0.95rem;
+}

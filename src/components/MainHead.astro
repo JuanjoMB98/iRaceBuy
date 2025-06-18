@@ -1,14 +1,17 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
+import CookieConsentDialog from "../components/CookieConsentDialog.jsx";
 
 interface Props {
-	title?: string | undefined;
-	description?: string | undefined;
+    title?: string | undefined;
+    description?: string | undefined;
+    canonical?: string | undefined;
 }
 
 const {
-	title = 'iRaceBuy',
-	description = 'Select the series you plan to race and instantly discover the 8 most repeated tracks across them. Save money by buying only the content you’ll actually use—race smarter, not pricier.',
+    title = "iRaceBuy",
+    description = "Select the series you plan to race and instantly discover the 8 most repeated tracks across them. Save money by buying only the content you’ll actually use.",
+    canonical = 'https://iracebuy.com/',
 } = Astro.props;
 ---
 
@@ -17,51 +20,71 @@ const {
 <meta name="viewport" content="width=device-width" />
 <meta name="generator" content={Astro.generator} />
 
+<!-- Canonical -->
+<link rel="canonical" href={canonical} />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+<link rel="shortcut icon" href="/assets/icons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="MyWebSite" />
+<link rel="manifest" href="/assets/icons/site.webmanifest" />
+
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="" />
 <meta property="og:title" content="iRaceBuy" />
-<meta property="og:description" content="Select the series you plan to race and instantly discover the 8 most repeated tracks across them. Save money by buying only the content you’ll actually use | Race smarter, not pricier." />
+<meta
+    property="og:description"
+    content="Select the series you plan to race and instantly discover the 8 most repeated tracks across them. Save money by buying only the content you’ll actually use | Race smarter, not pricier."
+/>
 <meta property="og:image" content="https://iracebuy.com/assets/ogImagen.png" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://iracebuy.com/" />
 <meta property="twitter:title" content="iRaceBuy" />
-<meta property="twitter:description" content="Select the series you plan to race and instantly discover the 8 most repeated tracks across them. Save money by buying only the content you’ll actually use | Race smarter, not pricier." />
-<meta property="twitter:image" content="https://iracebuy.com/assets/ogImagen.png" />
+<meta
+    property="twitter:description"
+    content="Select the series you plan to race and instantly discover the 8 most repeated tracks across them. Save money by buying only the content you’ll actually use | Race smarter, not pricier."
+/>
+<meta
+    property="twitter:image"
+    content="https://iracebuy.com/assets/ogImagen.png"
+/>
 
 <title>{title}</title>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C8V7DKH871"></script>
-<script is:inline>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-C8V7DKH871');
+<script defer is:inline src="https://code.jquery.com/jquery-3.7.0.min.js">
 </script>
-
-<script defer is:inline src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script is:inline defer src="./scripts/main.js"></script>
-<script async is:inline src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+<script
+    async
+    is:inline
+    src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
+>
+</script>
 <script is:inline>
-  window.addEventListener("DOMContentLoaded", function () {
-    if (window.kofiWidgetOverlay) {
-      window.kofiWidgetOverlay.draw("juanjomb98", {
-        type: "floating-chat",
-        "floating-chat.donateButton.text": "Support me",
-        "floating-chat.donateButton.background-color": "#ff5f5f",
-        "floating-chat.donateButton.text-color": "#fff",
-      });
-    }
-  });
+    window.addEventListener("DOMContentLoaded", function () {
+        if (window.kofiWidgetOverlay) {
+            window.kofiWidgetOverlay.draw("juanjomb98", {
+                type: "floating-chat",
+                "floating-chat.donateButton.text": "Support me",
+                "floating-chat.donateButton.background-color": "#ff5f5f",
+                "floating-chat.donateButton.text-color": "#fff",
+            });
+        }
+    });
 </script>
 
 <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+    rel="stylesheet"
+/>
 
+<CookieConsentDialog client:only="react" />

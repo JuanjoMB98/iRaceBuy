@@ -9,11 +9,13 @@ const { align = "center", tagline, title } = Astro.props;
 ---
 
 <div class:list={["hero stack gap-4", align]}>
-    <img
-		class="a-siteLogo"
-        src="./assets/siteLogoText.png"
-        alt="iRaceBuy logo with text"
-    />
+    <a href="/">
+        <img
+            class="a-siteLogo"
+            src="/assets/siteLogoText.png"
+            alt="iRaceBuy logo with text"
+        />
+    </a>
     <div class="stack gap-2">
         <h1 class="title">{title}</h1>
         {tagline && <p class="tagline">{tagline}</p>}
@@ -21,20 +23,19 @@ const { align = "center", tagline, title } = Astro.props;
 </div>
 
 <style>
-
-    .a-siteLogo{
+    .a-siteLogo {
         padding: 16px;
         max-width: 600px;
     }
     .hero {
         font-size: var(--text-lg);
         text-align: center;
-		margin: auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		max-width: 800px;
-		gap: 64px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+        gap: 64px;
     }
 
     .title,
