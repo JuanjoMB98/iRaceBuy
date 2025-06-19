@@ -1,7 +1,6 @@
 import "./SeasonWrap.css";
 
 import React from "react";
-import { CTab, CTabContent, CTabList, CTabPanel, CTabs } from "@coreui/react";
 import SeasonViewer from "../SeasonViewer/SeasonViewer.jsx";
 import {
   Tabs,
