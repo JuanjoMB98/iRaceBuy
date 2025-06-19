@@ -1,4 +1,6 @@
 ---
+import { WritingText } from './animate-ui/text/writing';
+
 interface Props {
     title: string;
     tagline?: string;
@@ -17,7 +19,8 @@ const { align = "center", tagline, title } = Astro.props;
         />
     </a>
     <div class="stack gap-2">
-        <h1 class="title">{title}</h1>
+        <WritingText text={title} className="title" spacing={20} client:load />
+
         {tagline && <p class="tagline">{tagline}</p>}
     </div>
 </div>
@@ -46,11 +49,17 @@ const { align = "center", tagline, title } = Astro.props;
 
     .title {
         font-family: "Michroma", sans-serif;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 90%;
         font-size: var(--text-3xl);
         color: var(--gray-0);
         margin-bottom: 16px;
+    }
+    .tagline {
+        font-family: "Instrument Sans";
+        font-size: var(--text-1xl);
+        opacity: 0.8;
+        font-weight: 100;
     }
 
     @media (min-width: 50em) {

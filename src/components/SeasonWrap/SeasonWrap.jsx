@@ -3,67 +3,75 @@ import "./SeasonWrap.css";
 import React from "react";
 import { CTab, CTabContent, CTabList, CTabPanel, CTabs } from "@coreui/react";
 import SeasonViewer from "../SeasonViewer/SeasonViewer.jsx";
+import {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  TabsContent,
+  TabsContents,
+} from '../animate-ui/components/tabs';
+
 
 export default function TabsEnclosedPillsExample({ allSeasons }) {
     return (
-        <CTabs defaultActiveItemKey="classd">
-            <CTabList variant="enclosed-pills">
-                <CTab itemKey="rookie">Rookie</CTab>
-                <CTab itemKey="classd">Class D</CTab>
-                <CTab itemKey="classc">Class C</CTab>
-                <CTab itemKey="classb">Class B</CTab>
-                <CTab itemKey="classa">Class A</CTab>
-                <CTab itemKey="all">All Categories</CTab>
-            </CTabList>
-            <CTabContent>
-                <CTabPanel className="p-3" itemKey="rookie">
-                    <SeasonViewer
-                        client:load
-                        allSeasonData={allSeasons}
-                        licenciaId={1}
-                        defaultSelectedIds={[5559, 5599, 5600, 5560]}
-                    />
-                </CTabPanel>
-                <CTabPanel className="p-3" itemKey="classd">
-                    <SeasonViewer
-                        client:load
-                        allSeasonData={allSeasons}
-                        licenciaId={2}
-                        defaultSelectedIds={[5561, 5566, 5567, 5573, 5576, 5604]}
-                    />
-                </CTabPanel>
-                <CTabPanel className="p-3" itemKey="classc">
-                    <SeasonViewer
-                        client:load
-                        allSeasonData={allSeasons}
-                        licenciaId={3}
-                        defaultSelectedIds={[5579, 5584, 5587, 5588, 5612, 5613, 5577]}
-                    />
-                </CTabPanel>
-                <CTabPanel className="p-3" itemKey="classb">
-                    <SeasonViewer
-                        client:load
-                        allSeasonData={allSeasons}
-                        licenciaId={4}
-                        defaultSelectedIds={[5591, 5592, 5593, 5595, 5620, 5621]}
-                    />
-                </CTabPanel>
-                <CTabPanel className="p-3" itemKey="classa">
-                    <SeasonViewer
-                        client:load
-                        allSeasonData={allSeasons}
-                        licenciaId={5}
-                        defaultSelectedIds={[5597, 5598, 5622, 5623]}
-                    />
-                </CTabPanel>
-                <CTabPanel className="p-3" itemKey="all">
-                    <SeasonViewer
-                        client:load
-                        allSeasonData={allSeasons}
-                        defaultSelectedIds={[5566, 5567, 5591, 5592, 5597, 5598, 5604]}
-                    />
-                </CTabPanel>
-            </CTabContent>
-        </CTabs>
+    <Tabs defaultValue="classd">
+      <TabsList className="nav-enclosed-pills">
+        <TabsTrigger className="nav-link" value="rookie">Rookie</TabsTrigger>
+        <TabsTrigger className="nav-link" value="classd">Class D</TabsTrigger>
+        <TabsTrigger className="nav-link" value="classc">Class C</TabsTrigger>
+        <TabsTrigger className="nav-link" value="classb">Class B</TabsTrigger>
+        <TabsTrigger className="nav-link" value="classa">Class A</TabsTrigger>
+        <TabsTrigger className="nav-link" value="all">All Categories</TabsTrigger>
+      </TabsList>
+      <TabsContents>
+        <TabsContent value="rookie">
+          <SeasonViewer
+            client:load
+            allSeasonData={allSeasons}
+            licenciaId={1}
+            defaultSelectedIds={[5559, 5599, 5600, 5560]}
+          />
+        </TabsContent>
+        <TabsContent value="classd">
+          <SeasonViewer
+            client:load
+            allSeasonData={allSeasons}
+            licenciaId={2}
+            defaultSelectedIds={[5561, 5566, 5567, 5573, 5576, 5604]}
+          />
+        </TabsContent>
+        <TabsContent value="classc">
+          <SeasonViewer
+            client:load
+            allSeasonData={allSeasons}
+            licenciaId={3}
+            defaultSelectedIds={[5579, 5584, 5587, 5588, 5612, 5613, 5577]}
+          />
+        </TabsContent>
+        <TabsContent value="classb">
+          <SeasonViewer
+            client:load
+            allSeasonData={allSeasons}
+            licenciaId={4}
+            defaultSelectedIds={[5591, 5592, 5593, 5595, 5620, 5621]}
+          />
+        </TabsContent>
+        <TabsContent value="classa">
+          <SeasonViewer
+            client:load
+            allSeasonData={allSeasons}
+            licenciaId={5}
+            defaultSelectedIds={[5597, 5598, 5622, 5623]}
+          />
+        </TabsContent>
+        <TabsContent value="all">
+          <SeasonViewer
+            client:load
+            allSeasonData={allSeasons}
+            defaultSelectedIds={[5566, 5567, 5591, 5592, 5597, 5598, 5604]}
+          />
+        </TabsContent>
+      </TabsContents>
+    </Tabs>
     );
 }

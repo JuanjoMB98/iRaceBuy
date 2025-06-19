@@ -16,12 +16,28 @@
     "@coreui/react": "^5.7.0",
     "@fontsource/instrument-sans": "^5.2.5",
     "@iracing-data/sync-track-assets": "^0.0.2-alpha.2",
+    "@tailwindcss/vite": "^4.1.10",
     "@types/node": "^20.12.7",
-    "astro": "^4.7.0",
+    "animate-ui": "^0.0.4",
+    "animate.css": "^4.1.1",
+    "astro": "^5.10.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "dotenv": "^16.5.0",
+    "lucide-react": "^0.518.0",
+    "motion": "^12.18.1",
+    "radix-ui": "^1.4.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-select": "^5.10.1",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.3"
   }
 }

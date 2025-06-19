@@ -13,21 +13,26 @@
     margin: auto;
     margin-bottom: 64px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: transparent;
+    height: fit-content;
 }
 .nav-link{
+    display: flex;
+    width: fit-content;
     padding: 12px 24px;
     background-color: transparent;
     color: white;
     border: none;
     border-radius: 40px;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
 }
 .nav-link:hover{
     background-color: rgba(240, 248, 255, 0.103);
 }
-.nav-link.active{
+
+.nav-link[data-active=true]{
     background-color: white;
     color: #000017 ;
+    width: fit-content;
 }

@@ -1,4 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Global variables */
+
 :root {
     /* Colors */
     --gray-0: #090b11;
