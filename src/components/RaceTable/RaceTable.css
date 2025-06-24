@@ -1,6 +1,7 @@
 .o-raceTable {
     flex: 8;
     min-width: 0;
+    min-height: 500px;
 }
 .o-raceTable * {
     user-select: none;
@@ -106,7 +107,7 @@
 .m-seasonTrack__item[data-isfreetrack="true"] {
     background-color: #ecf4f0;
     border: 1px solid #288556;
-    color: #288556 !important;
+    color: #1D7754 !important;
 }
 .m-seasonTrack__item[data-isfreetrack="true"]::after {
     content: "Free";

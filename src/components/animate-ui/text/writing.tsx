@@ -39,7 +39,7 @@ function WritingText({
   const words = React.useMemo(() => text.split(' '), [text]);
 
   return (
-    <span ref={localRef} data-slot="writing-text" {...props}>
+    <h1 ref={localRef} data-slot="writing-text" {...props}>
       {words.map((word, index) => (
         <motion.span
           key={index}
@@ -55,7 +55,7 @@ function WritingText({
           {word}{' '}
         </motion.span>
       ))}
-    </span>
+    </h1>
   );
 }
 

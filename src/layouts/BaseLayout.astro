@@ -31,7 +31,9 @@ const { title, description, canonical} = Astro.props;
                     tagline=" Explore the schedule, highlight circuits, and mark which tracks you own or plan to buy."
                     align="center"
                 />
-                <slot />
+                <main>
+                    <slot />
+                </main>
             </div>
             <ContactCTA />
         </div>

@@ -63,8 +63,7 @@ const {
     async
     is:inline
     src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
->
-</script>
+></script>
 <script is:inline>
     window.addEventListener("DOMContentLoaded", function () {
         if (window.kofiWidgetOverlay) {
@@ -75,15 +74,29 @@ const {
                 "floating-chat.donateButton.text-color": "#fff",
             });
         }
+        // Espera un poco a que el iframe se genere
+        setTimeout(function () {
+            var kofiIframe = document.querySelector("iframe[id^='kofi-wo-container']");
+            if (kofiIframe) {
+                kofiIframe.setAttribute("title", "Ko-fi Support Chat Widget");
+            }
+        }, 1000); // 1 segundo suele ser suficiente, ajusta si es necesario
     });
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
 <link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+  onload="this.onload=null;this.rel='stylesheet'"
+/>
+<noscript>
+  <link
     href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
     rel="stylesheet"
-/>
+  />
+</noscript>
 
 <CookieConsentDialog client:only="react" />

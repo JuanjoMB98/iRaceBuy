@@ -18,7 +18,7 @@ export default function SeasonFilter({
     const OptionWithLogo = (props) => (
         <components.Option {...props}>
             <div className="m-optionSelect">
-                {props.data.logo && <img src={props.data.logo} alt={props.data.label} loading="lazy"/>}
+                {props.data.logo && <img src={props.data.logo} alt="" loading="lazy"/>}
                 <span>{props.data.label}</span>
             </div>
         </components.Option>
@@ -26,7 +26,7 @@ export default function SeasonFilter({
     const MultiValueWithLogo = (props) => (
         <components.MultiValue {...props}>
             <div className="m-multiValueItem">
-                {props.data.logo && <img src={props.data.logo} alt={props.data.label} loading="lazy"/>}
+                {props.data.logo && <img src={props.data.logo} alt="" loading="lazy"/>}
                 <span>{props.data.label}</span>
             </div>
         </components.MultiValue>
@@ -111,16 +111,16 @@ export default function SeasonFilter({
     );
     return (
         <>
-            <div className="o-filterContainer -bentoContainer">
+            <section className="o-filterContainer -bentoContainer">
                 <div className="m-bentoContainer__header">
-                    <h2 className="m-bentoContainerHeader__title">
+                    <h3 className="m-bentoContainerHeader__title">
                         🔎 Select the seasons you want to play
-                    </h2>
-                    <span className="m-bentoContainerHeader__subtitle">
+                    </h3>
+                    <p className="m-bentoContainerHeader__subtitle">
                         These are the circuits with the most competition this
                         season in the categories with the most current
                         participation.
-                    </span>
+                    </p>
                 </div>
 
                 <hr className="a-separator" />
@@ -128,6 +128,7 @@ export default function SeasonFilter({
                 <div className="m-bentoContainer__content">
                     <Select
                         isMulti
+                        aria-label="Select series"
                         options={groupedOptions}
                         value={selectedOptions}
                         onChange={handleChange}
@@ -143,7 +144,7 @@ export default function SeasonFilter({
                         }}
                     />
                 </div>
-            </div>
+            </section>
         </>
     );
 }

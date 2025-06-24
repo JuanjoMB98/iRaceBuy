@@ -39,7 +39,7 @@ export default function SeasonViewerWrapper({
 
     return (
         <>
-            <div className="m-seasonContainer">
+            <section className="m-seasonContainer">
                 <div className="m-seasonContainer__header">
                     <CategoryPill licenseID={licenciaId} />
 
@@ -58,7 +58,7 @@ export default function SeasonViewerWrapper({
 
                     <RecomendedTracks filteredSeasons={filteredSeasons} />
                 </div>
-            </div>
+            </section>
         </>
     );
 }

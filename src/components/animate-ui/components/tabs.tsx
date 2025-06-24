@@ -139,7 +139,7 @@ function TabsList({
       value={activeValue}
       transition={transition}
     >
-      <div
+      <nav
         role="tablist"
         data-slot="tabs-list"
         className={cn(
@@ -149,7 +149,7 @@ function TabsList({
         {...props}
       >
         {children}
-      </div>
+      </nav>
     </MotionHighlight>
   );
 }

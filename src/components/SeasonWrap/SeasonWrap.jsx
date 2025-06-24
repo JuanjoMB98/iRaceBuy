@@ -15,12 +15,12 @@ export default function TabsEnclosedPillsExample({ allSeasons }) {
     return (
     <Tabs defaultValue="classd">
       <TabsList className="nav-enclosed-pills">
-        <TabsTrigger className="nav-link" value="rookie">Rookie</TabsTrigger>
-        <TabsTrigger className="nav-link" value="classd">Class D</TabsTrigger>
-        <TabsTrigger className="nav-link" value="classc">Class C</TabsTrigger>
-        <TabsTrigger className="nav-link" value="classb">Class B</TabsTrigger>
-        <TabsTrigger className="nav-link" value="classa">Class A</TabsTrigger>
-        <TabsTrigger className="nav-link" value="all">All Categories</TabsTrigger>
+        <TabsTrigger role="tab" className="nav-link" value="rookie">Rookie</TabsTrigger>
+        <TabsTrigger role="tab" className="nav-link" value="classd">Class D</TabsTrigger>
+        <TabsTrigger role="tab" className="nav-link" value="classc">Class C</TabsTrigger>
+        <TabsTrigger role="tab" className="nav-link" value="classb">Class B</TabsTrigger>
+        <TabsTrigger role="tab" className="nav-link" value="classa">Class A</TabsTrigger>
+        <TabsTrigger role="tab" className="nav-link" value="all">All Categories</TabsTrigger>
       </TabsList>
       <TabsContents>
         <TabsContent value="rookie">

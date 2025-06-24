@@ -11,13 +11,13 @@
     justify-content: center;
 }
 .cookie-dialog {
-    background: #121212e8;
+    background: #121212;
     color: #fff;
     border-radius: 12px 12px 0 0;
     box-shadow: 0 0 16px #0002;
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    padding: 24px 48px;
     max-width: 800px;
-    width: 100vw;
+    width: 100dvw;
     margin-bottom: 0;
     animation: slideUp 0.3s;
     backdrop-filter: blur(10px);

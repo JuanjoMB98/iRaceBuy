@@ -41,9 +41,9 @@ export default function CategoryPill({ licenseID }) {
           className="o-categoryPill -bentoContainer"
           style={{ "--licenseColorHSLA": licenseColorHSLA }}
       >
-          <span className="pill">
-              <span className="text">{license}</span>
-          </span>
+          <div className="pill">
+              <h2 className="text">{license}</h2>
+          </div>
       </div>
   );
 }

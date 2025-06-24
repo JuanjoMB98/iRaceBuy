@@ -37,13 +37,13 @@ export default function RaceTable({ filteredSeasons }) {
     };
 
     return (
-        <section
+        <aside
             className={`o-recomendedTracks -bentoContainer js-recomendedTracks ${
                 collapsed ? " -collapsed" : ""
             }`}
         >
             <div className="m-bentoContainer__header">
-                <h2 className="m-bentoContainerHeader__title">
+                <h3 className="m-bentoContainerHeader__title">
                     <button onClick={handleToggle} className="a-button" aria-label="Compress Recomended Tracks">
                         <svg
                             width="15"
@@ -59,11 +59,11 @@ export default function RaceTable({ filteredSeasons }) {
                         </svg>
                     </button>
                     Recomended buy
-                </h2>
-                <span className="m-bentoContainerHeader__subtitle">
+                </h3>
+                <p className="m-bentoContainerHeader__subtitle">
                     These are the circuits with the most competition this season
                     in the categories with the most current participation.
-                </span>
+                </p>
             </div>
 
             <hr className="a-separator" />
@@ -82,7 +82,7 @@ export default function RaceTable({ filteredSeasons }) {
                             <img
                                 type="image/svg+xml"
                                 src={item.mapUrl}
-                                alt={item.track}
+                                alt=""
                                 loading="lazy"
                             />
                         </div>
@@ -95,6 +95,6 @@ export default function RaceTable({ filteredSeasons }) {
                     </li>
                 ))}
             </ul>
-        </section>
+        </aside>
     );
 }

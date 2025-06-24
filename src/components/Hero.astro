@@ -10,7 +10,7 @@ interface Props {
 const { align = "center", tagline, title } = Astro.props;
 ---
 
-<div class:list={["hero stack gap-4", align]}>
+<header class:list={["hero stack gap-4", align]}>
     <a href="/">
         <img
             class="a-siteLogo"
@@ -23,7 +23,7 @@ const { align = "center", tagline, title } = Astro.props;
 
         {tagline && <p class="tagline">{tagline}</p>}
     </div>
-</div>
+</header>
 
 <style>
     .a-siteLogo {

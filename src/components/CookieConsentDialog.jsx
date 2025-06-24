@@ -67,30 +67,23 @@ export default function CookieConsentDialog() {
                     continuing to maintain and improve it. No personal data is
                     collected or stored beyond basic visit counts.
                 </p>
-                <p>
-                    We use cookies to improve your experience and analyze
-                    traffic. You can accept, reject, or customize your
-                    preferences..
-                </p>
                 {showCustomize ? (
                     <div className="cookie-dialog__customize">
                         <label>
-                            <input type="checkbox" checked disabled /> Cookies
-                            necesarias (siempre activas)
+                            <input type="checkbox" checked disabled /> Necessary (always on)
                         </label>
                         <label>
-                            <input type="checkbox" defaultChecked /> Cookies de
-                            analítica
+                            <input type="checkbox" defaultChecked /> Analytics
                         </label>
                         <button onClick={handleAccept}>
-                            Guardar preferencias
+                            Save my preferences
                         </button>
                     </div>
                 ) : (
                     <div className="cookie-dialog__actions">
-                        <button onClick={handleAccept}>Aceptar todas</button>
-                        <button onClick={handleReject}>Rechazar</button>
-                        <button onClick={handleCustomize}>Personalizar</button>
+                        <button onClick={handleAccept}>Accept All</button>
+                        <button onClick={handleReject}>Reject All</button>
+                        <button onClick={handleCustomize}>Customize</button>
                     </div>
                 )}
                 <a
@@ -98,7 +91,7 @@ export default function CookieConsentDialog() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Política de cookies
+                    Cookie Policy
                 </a>
             </div>
         </div>
