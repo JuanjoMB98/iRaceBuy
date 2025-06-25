@@ -19,9 +19,7 @@ const { align = "center", tagline, title } = Astro.props;
         />
     </a>
     <div class="stack gap-2">
-        <h1>
-            <WritingText text={title} className="title" spacing={20} client:load />
-        </h1>
+        <WritingText text={title} className="title" spacing={20} client:load />
 
         {tagline && <p class="tagline">{tagline}</p>}
     </div>

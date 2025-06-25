@@ -223,7 +223,6 @@ function MotionHighlight<T extends string>({
                         <AnimatePresence initial={false}>
                             {boundsState && (
                                 <motion.div
-                                    role='tab'
                                     data-slot="motion-highlight"
                                     animate={{
                                         top: boundsState.top,
@@ -493,7 +492,6 @@ function MotionHighlightItem({
               <motion.div
                 layoutId={`transition-background-${contextId}`}
                 data-slot="motion-highlight"
-                role='tab'
                 className={cn(
                   'absolute inset-0 bg-muted z-0',
                   contextClassName,
@@ -553,7 +551,6 @@ function MotionHighlightItem({
             <motion.div
               layoutId={`transition-background-${contextId}`}
               data-slot="motion-highlight"
-              role='tab'
               className={cn(
                 'absolute inset-0 bg-muted z-0',
                 contextClassName,
