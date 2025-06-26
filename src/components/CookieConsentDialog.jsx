@@ -19,9 +19,7 @@ export default function CookieConsentDialog() {
     }, []);
 
     useEffect(() => {
-        const storedConsent = localStorage.getItem(COOKIE_KEY);
-        setConsent(storedConsent);
-        setReady(true);
+        let timeoutId;
         if (
             ready &&
             !open &&
@@ -32,6 +30,7 @@ export default function CookieConsentDialog() {
         } else {
             setShowTour(false);
         }
+        return () => clearTimeout(timeoutId);
     }, [ready, open, consent]);
 
     const handleAccept = () => {
