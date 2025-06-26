@@ -9,6 +9,7 @@ export default function CookieConsentDialog() {
     const [showCustomize, setShowCustomize] = useState(false);
     const [consent, setConsent] = useState(undefined);
     const [ready, setReady] = useState(false);
+    const [showTour, setShowTour] = useState(false);
 
     useEffect(() => {
         const storedConsent = localStorage.getItem(COOKIE_KEY);
@@ -16,6 +17,22 @@ export default function CookieConsentDialog() {
         setReady(true);
         if (!storedConsent) setOpen(true);
     }, []);
+
+    useEffect(() => {
+        const storedConsent = localStorage.getItem(COOKIE_KEY);
+        setConsent(storedConsent);
+        setReady(true);
+        if (
+            ready &&
+            !open &&
+            (consent === "accepted" || consent === "rejected") &&
+            localStorage.getItem("virtualTourDone") !== "true"
+        ) {
+            timeoutId = setTimeout(() => setShowTour(true), 2000);
+        } else {
+            setShowTour(false);
+        }
+    }, [ready, open, consent]);
 
     const handleAccept = () => {
         localStorage.setItem(COOKIE_KEY, "accepted");
@@ -114,11 +131,7 @@ export default function CookieConsentDialog() {
                 </div>
             )}
             {/* Renderiza el tour solo si el panel ya no está y hay consentimiento explícito */}
-            {ready &&
-                !open &&
-                (consent === "accepted" || consent === "rejected") && (
-                    <VirtualTour />
-                )}
+            {showTour && <VirtualTour />}
         </>
     );
 }
