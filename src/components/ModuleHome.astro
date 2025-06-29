@@ -43,19 +43,19 @@ const {
 
     <div class="m-moduleHome__content">
         <div class="m-moduleHome__headerContainer">
-            <h2 class="m-moduleHome__title">{t(title)}</h2>
-            <h3 class="m-moduleHome__subtitle">{t(subtitle)}</h3>
+            <h2 class="m-moduleHome__title">{t(title as any)}</h2>
+            <h3 class="m-moduleHome__subtitle">{t(subtitle as any)}</h3>
         </div>
 
         <div class="m-moduleHome__textContainer">
-            <p class="m-moduleHome__text">{t(content)}</p>
+            <p class="m-moduleHome__text">{t(content as any)}</p>
             <ul class="m-moduleHome__list">
                 {list.map((item) => 
                     <li>
                         <div class="iconList" >
             			<Icon icon="trophy" size="1.2em" />
                         </div>
-                        {t(item)}
+                        {t(item as any)}
                     </li>
                 )}
             </ul>
