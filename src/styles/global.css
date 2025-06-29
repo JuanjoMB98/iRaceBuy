@@ -283,6 +283,18 @@ h5 {
 
 /* #endregion */
 
+.o-seoText{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin: 100px auto;
+    max-width: 800px;
+    padding: 0 16px;
+    opacity: 0.8;
+    font-size: 12px;
+    text-align: justify;
+}
 
 .a-button.purchase{
     --btnBackground: var(--purchaseColor);

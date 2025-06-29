@@ -11,6 +11,7 @@
 
     "cta.purchase": "Optimiza tus compras",
     "cta.planner": "Organiza tu calendario",
+    "cta.tutorial": "Explicame cómo usarlo",
     "coomingSoon": "¡El planificador llegará pronto!",
 
     "partners.title": "Gracias por el apoyo",
@@ -33,6 +34,12 @@
     "contact.title": "Conectemos",
     "contact.content": "¡Hola! Mi nombre es Juanjo Mengual. Soy la persona detrás de esta web. Si tienes ideas, sugerencias para mejorar iracebuy.com o simplemente quieres colaborar con el sitio, ¡ponte en contacto conmigo! Tu opinión es muy importante y me ayuda a mejorar este proyecto para todos.",
     "contact.aboutMe": "Soy un apasionado piloto de iRacing que, como muchos otros, pasó mucho tiempo buscando guías de compra y tratando de planificar correctamente el calendario de cada temporada. Fue entonces cuando me di cuenta de que hacía falta una herramienta clara, centralizada y fácil de usar para todo eso, así que decidí crear iRaceBuy.com. No soy especialmente rápido (y mi perfil lo demuestra 😅), pero sí un piloto seguro, constante y, sobre todo, alguien comprometido con la comunidad. Este proyecto nació de la experiencia real en el simracing, creado para quienes compartimos esta pasión, sin otro objetivo que ofrecer algo realmente útil a otros simracers.",
+
+    "buyGuide.description": "Organiza fácilmente tus temporadas de iRacing y realiza compras más inteligentes. ¡Planifica, compara y compite con confianza!",
+    "buyGuide.seoText" : "Guía de compra iRacing, cómo comprar circuitos y coches en iRacing, mejores compras iRacing, optimizar compras iRacing, ahorrar dinero en iRacing, consejos para comprar en iRacing, qué circuitos comprar en iRacing, planificador de compras iRacing, calendario de compras iRacing, recomendaciones de compra iRacing, guía de iRacing para principiantes, planificar temporada iRacing, comprar contenido iRacing barato, evitar compras innecesarias iRacing, maximizar inversión iRacing, comprar solo lo necesario en iRacing, iRacing buy guide, iRacing purchase planner, cómo elegir los mejores circuitos en iRacing, organizar compras iRacing, guía definitiva para comprar en iRacing. ",
+    "buyGuide.seoText1": "En esta página encontrarás toda la información sobre cómo comprar de forma inteligente en iRacing, qué circuitos y coches son más importantes según las series, cómo utilizar el planificador de compras de iRacing para ahorrar dinero y optimizar tu experiencia, y las mejores estrategias para invertir en contenido de iRacing sin gastar de más.",
+    
+
 
     "footer.copyright": "® Diseñado & Desarrollado en España por Juniors Masters 2025"
 }

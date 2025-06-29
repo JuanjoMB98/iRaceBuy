@@ -7,12 +7,11 @@ const t = useTranslations(lang);
 
 import BaseLayout from "../layouts/BaseLayout.astro";
 import LicenseBox from "../components/LicenseBox.astro";
-// import TutorialButton from "../components/TutorialButton.jsx";
+import TutorialButton from "../components/VirtualTour/VirtualTour.jsx";
 ---
 
 <BaseLayout>
     {/* El botón ahora controla la aparición del tour */}
-    <!-- <TutorialButton label={t("cta.tutorial")} client:load /> -->
     <h1 class="-hidden">
         {t("heroTitle")}
     </h1>
@@ -28,8 +27,19 @@ import LicenseBox from "../components/LicenseBox.astro";
         <p class="m-pageHeader__description">
             {t("buyGuide.description")}
         </p>
+        <TutorialButton label={t("cta.tutorial")} client:load />
     </div>
     <LicenseBox />
+
+    <br />
+    <div class="o-seoText">
+        <p>
+            {t("buyGuide.seoText1")}
+        </p>
+        <p>
+            {t("buyGuide.seoText")}
+        </p>
+    </div>
 </BaseLayout>
 
 <style>
@@ -63,6 +73,7 @@ import LicenseBox from "../components/LicenseBox.astro";
     .m-pageHeader__description {
         text-wrap: wrap;
         text-wrap-style: balance;
+        font-size: 20px;
     }
     .o-pageHeader .a-button {
         --btnBackground: #fff;

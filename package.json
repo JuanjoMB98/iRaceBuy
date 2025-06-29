@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.5.10",
     "@astrojs/react": "^4.3.0",
+    "@astrojs/sitemap": "^3.4.1",
     "@coreui/coreui": "^5.4.0",
     "@coreui/react": "^5.7.0",
     "@fontsource/instrument-sans": "^5.2.5",

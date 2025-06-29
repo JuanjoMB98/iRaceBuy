@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./CookieConsentDialog.css";
-import VirtualTour from "./VirtualTour/VirtualTour.jsx";
 
 const COOKIE_KEY = "cookie_consent";
 
@@ -8,8 +7,6 @@ export default function CookieConsentDialog() {
     const [open, setOpen] = useState(false);
     const [showCustomize, setShowCustomize] = useState(false);
     const [consent, setConsent] = useState(undefined);
-    const [ready, setReady] = useState(false);
-    const [showTour, setShowTour] = useState(false);
 
     useEffect(() => {
         const storedConsent = localStorage.getItem(COOKIE_KEY);
@@ -17,21 +14,6 @@ export default function CookieConsentDialog() {
         setReady(true);
         if (!storedConsent) setOpen(true);
     }, []);
-
-    useEffect(() => {
-        let timeoutId;
-        if (
-            ready &&
-            !open &&
-            (consent === "accepted" || consent === "rejected") &&
-            localStorage.getItem("virtualTourDone") !== "true"
-        ) {
-            timeoutId = setTimeout(() => setShowTour(true), 2000);
-        } else {
-            setShowTour(false);
-        }
-        return () => clearTimeout(timeoutId);
-    }, [ready, open, consent]);
 
     const handleAccept = () => {
         localStorage.setItem(COOKIE_KEY, "accepted");
@@ -129,8 +111,6 @@ export default function CookieConsentDialog() {
                     </div>
                 </div>
             )}
-            {/* Renderiza el tour solo si el panel ya no está y hay consentimiento explícito */}
-            {showTour && <VirtualTour />}
         </>
     );
 }
