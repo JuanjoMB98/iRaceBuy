@@ -1,13 +1,16 @@
 ---
-
+// #region Traducciones
+import { getLangFromUrl, useTranslations } from "../locales/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+// endregion
 ---
 
-<div class="o-partnersModule">
-    <h2>Thanks for the support</h2>
-    <p>
-        Without you, this website would probably be just another forgotten page
-        on the internet. Your support is what keeps it alive truly.
-    </p>
+<section class="o-partnersModule">
+    <div class="headerContainer">
+        <h2 class="title">{t("partners.title")}</h2>
+        <p class="subtitle">{t("partners.subtitle")}</p>
+    </div>
 
     <ul class="o-partnerList">
         <li class="m-partnerItem">
@@ -66,8 +69,36 @@
                 />
             </a>
         </li>
+        <li class="m-partnerItem">
+            <a
+                href="https://www.twitch.tv/pablogz205"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img
+                    src="/assets/partners/pgz.jpg"
+                    alt="PGZ logo"
+                    width="200"
+                    height="100"
+                />
+            </a>
+        </li>
+        <li class="m-partnerItem">
+            <a
+                href="https://www.twitch.tv/mattmalone"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img
+                    src="/assets/partners/mattmalone.png"
+                    alt="Matmalone logo"
+                    width="200"
+                    height="100"
+                />
+            </a>
+        </li>
     </ul>
-</div>
+</section>
 
 <style>
     .o-partnersModule {
@@ -76,15 +107,32 @@
         gap: 32px;
         justify-content: center;
         align-items: center;
-        margin: 164px 0;
+        padding: 3vw 0 6vw;
     }
-    .o-partnerList{
+
+    .headerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .subtitle {
+        opacity: 0.5;
+    }
+
+    .o-partnersModule h2 {
+        background: linear-gradient(90deg, #ffffff 0%, #ffffff71 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    .o-partnerList {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 16px;
-
     }
     .m-partnerItem {
         list-style: none;
@@ -93,15 +141,15 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         padding: 16px;
         transition: all 0.3s ease;
-        
+        min-width: 100px;
+        max-width: 300px;
+        flex: 1 1;
     }
-    .m-partnerItem:hover{
+    .m-partnerItem:hover {
         box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
-        
     }
     .m-partnerItem img {
         aspect-ratio: 2 / 1;
         object-fit: contain;
     }
-
 </style>

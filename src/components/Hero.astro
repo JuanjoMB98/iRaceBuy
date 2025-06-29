@@ -1,83 +1,130 @@
 ---
-import { WritingText } from './animate-ui/text/writing';
+// #region Traducciones
+import { getLangFromUrl, useTranslations } from "../locales/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+// endregion
+
+import { WritingText } from "./animate-ui/text/writing";
+import PurchaseButton from "./Buttons/PurchaseButton.astro";
+import PlannerButton from "./Buttons/PlannerButton.astro";
 
 interface Props {
     title: string;
     tagline?: string;
-    align?: "start" | "center";
 }
 
-const { align = "center", tagline, title } = Astro.props;
+const { tagline, title } = Astro.props;
 ---
 
-<header class:list={["hero stack gap-4", align]}>
-    <a href="/">
-        <img
-            class="a-siteLogo"
-            src="/assets/siteLogoText.png"
-            alt="iRaceBuy logo with text"
-        />
-    </a>
-    <div class="stack gap-2">
-        <WritingText text={title} className="title" spacing={20} client:load />
+<header class="o-heroSection">
+    <div class="content">
+        <div class="titleContainer">
+            <WritingText
+                text={title}
+                className="title"
+                spacing={20}
+                client:load
+            />
+
+            <div class="subtitleContainer">
+                <h2 class="-purchase">{t("iRacingPurchasePlanner")}</h2>
+                <p>&</p>
+                <h2 class="-planner">{t("iRacingCalendarPlanner")}</h2>
+            </div>
+        </div>
 
         {tagline && <p class="tagline">{tagline}</p>}
+
+        <div class="heroActions">
+            <PurchaseButton />
+            <PlannerButton text="coomingSoon" buttonClass="-disabled" />
+        </div>
+    </div>
+
+    <div class="img">
+        <img src="/assets/backgrounds/heroImg.png" alt="" />
     </div>
 </header>
 
 <style>
-    .a-siteLogo {
-        padding: 16px;
-        max-width: 600px;
-    }
-    .hero {
-        font-size: var(--text-lg);
-        text-align: center;
-        margin: auto;
+    .o-heroSection {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
-        max-width: 800px;
-        gap: 64px;
+        column-gap: 64px;
+        row-gap: 32px;
+        padding: 3vw 16px 6vw 16px;
+    }
+    .o-heroSection * {
+        font-family: "PT Sans", sans-serif;
     }
 
-    .title,
-    .tagline {
-        max-width: 37ch;
-        margin-inline: auto;
+    .content,
+    .img {
+        flex: 1 1 350px;
     }
 
+    .content {
+        flex: 1.5 1 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .titleContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+    }
     .title {
-        font-family: "Michroma", sans-serif;
-        font-weight: 500;
-        line-height: 90%;
-        font-size: var(--text-3xl);
-        color: var(--gray-0);
-        margin-bottom: 16px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 100%;
+        /* or 48px */
+        letter-spacing: -0.04em;
     }
+
+    .subtitleContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+    .subtitleContainer .-purchase {
+        --moduleColor: #ffd331;
+    }
+    .subtitleContainer .-planner {
+        --moduleColor: #04dd81;
+    }
+    .subtitleContainer h2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+        /* identical to box height, or 24px */
+        letter-spacing: -0.04em;
+        color: var(--moduleColor);
+    }
+
     .tagline {
-        font-family: "Instrument Sans";
-        font-size: var(--text-1xl);
-        opacity: 0.8;
-        font-weight: 100;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        background: linear-gradient(90deg, #ffffff 0%, #ffffff71 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        max-width: 700px;
     }
 
-    @media (min-width: 50em) {
-        .hero {
-            font-size: var(--text-xl);
-        }
-
-        .start {
-            text-align: start;
-        }
-
-        .start .title,
-        .start .tagline {
-            margin-inline: unset;
-        }
-
-        .title {
-            font-size: var(--text-5xl);
-        }
+    .heroActions {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
     }
 </style>

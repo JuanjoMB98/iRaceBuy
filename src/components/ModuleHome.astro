@@ -1,0 +1,146 @@
+---
+// #region Traducciones
+import { getLangFromUrl, useTranslations } from "../locales/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+// endregion
+
+import Icon from './Icon.astro';
+
+
+interface Props {
+    moduleClass?: string;
+    subtitle?: string;
+    title: string;
+    content?: string;
+    list?: string[];
+    img?: string;
+}
+
+const {
+    moduleClass,
+    subtitle,
+    title,
+    content,
+    list = [],
+    img,
+} = Astro.props as Props;
+---
+
+<section class={"o-moduleHome " + moduleClass}>
+    {
+        img && (
+            <div class="m-moduleHome__img">
+                <img
+                    src={img}
+                    alt="iRacing Purchase Captures"
+                    width="100%"
+                    height="auto"
+                />
+            </div>
+        )
+    }
+
+    <div class="m-moduleHome__content">
+        <div class="m-moduleHome__headerContainer">
+            <h2 class="m-moduleHome__title">{t(title)}</h2>
+            <h3 class="m-moduleHome__subtitle">{t(subtitle)}</h3>
+        </div>
+
+        <div class="m-moduleHome__textContainer">
+            <p class="m-moduleHome__text">{t(content)}</p>
+            <ul class="m-moduleHome__list">
+                {list.map((item) => 
+                    <li>
+                        <div class="iconList" >
+            			<Icon icon="trophy" size="1.2em" />
+                        </div>
+                        {t(item)}
+                    </li>
+                )}
+            </ul>
+        </div>
+
+        <slot />
+    </div>
+</section>
+
+<style>
+    .o-moduleHome {
+        --moduleColor: #fff;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 32px;
+        padding: 3vw 0;
+    }
+    .o-moduleHome *{
+        font-family: "PT Sans", sans-serif;
+    }
+    .o-moduleHome.-reverse {
+        flex-direction: row-reverse;
+    }
+    .o-moduleHome.-purchase {
+        --moduleColor: #ffd331;
+    }
+    .o-moduleHome.-planner {
+        --moduleColor: #04dd81;
+    }
+
+    .m-moduleHome__img {
+        flex: 1.5 0 350px;
+    }
+    .m-moduleHome__content {
+        flex: 1 0 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .m-moduleHome__headerContainer {
+        max-width: 550px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .m-moduleHome__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: -0.04em;
+
+        color: var(--moduleColor);
+    }
+    .m-moduleHome__subtitle {
+
+        background: linear-gradient(90deg, #ffffff 0%, #ffffff71 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    .m-moduleHome__textContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 8px;
+        max-width: 600px;
+    }
+    .m-moduleHome__text {
+        opacity: 0.5;
+    }
+    .m-moduleHome__list li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 8px;
+        padding-left: 16px;
+    }
+    .m-moduleHome__list .iconList{
+        color: var(--moduleColor) !important;
+    }
+</style>

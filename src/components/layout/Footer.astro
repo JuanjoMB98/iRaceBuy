@@ -1,5 +1,5 @@
 ---
-import Icon from './Icon.astro';
+import Icon from '../Icon.astro';
 
 const currentYear = new Date().getFullYear();
 ---
@@ -7,13 +7,10 @@ const currentYear = new Date().getFullYear();
 <footer>
 	<div class="group">
 		<p>
-			Designed & Developed in Spain for Juniors Masters 2025
-			<Icon icon="rocket-launch" size="1.2em" />
+			&copy; Designed & Developed in Spain for Juniors Masters 2025
 		</p>
-		<p>&copy; {currentYear} Juniors Masters</p>
 	</div>
 	<p class="socials">
-		<a href="/"> Home</a>
 		<a href="/legalNotice/"> Legal Notice</a>
 		<a href="/privacyPolicy"> Privacy Policy</a>
 		<a href="/cookiePolicy"> Cookie Policy</a>
@@ -21,6 +18,7 @@ const currentYear = new Date().getFullYear();
 </footer>
 <style>
 	footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
 		display: flex;
 		flex-direction: column;
 		gap: 3rem;

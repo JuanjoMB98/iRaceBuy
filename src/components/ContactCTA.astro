@@ -1,46 +1,140 @@
 ---
-import CallToAction from './CallToAction.astro';
-import Icon from './Icon.astro';
+// #region Traducciones
+import { getLangFromUrl, useTranslations } from "../locales/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+// endregion
+
+import Icon from "./Icon.astro";
 ---
 
 <aside>
-	<h2>Interested in working together?</h2>
-	<CallToAction href="mailto:juniorsmastersbrand@gmail.com">
-		Send Me a Message
-		<Icon icon="paper-plane-tilt" size="1.2em" />
-	</CallToAction>
+    <div class="contactWrapper">
+        <div class="content">
+            <div class="text">
+                <h2>{t("contact.title")}</h2>
+                <p>{t("contact.content")}</p>
+            </div>
+
+            <div class="actions">
+                <a class="a-button" href="mailto:juniorsmastersbrand@gmail.com">
+                    Send Me a Message
+                    <Icon icon="paper-plane-tilt" size="1.2em" />
+                </a>
+
+                <a
+                    href="https://www.producthunt.com/products/iracebuy/reviews?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-iracebuy"
+                    target="_blank"
+                >
+                    <img
+                        src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1076214&theme=dark"
+                        alt="iRaceBuy - Plan your iRacing season & optimize your track purchases | Product Hunt"
+                        style="width: 250px; height: 54px; border-radius: 23px; border: none;"
+                        width="250"
+                        height="54"
+                    />
+                </a>
+            </div>
+
+            <div class="aboutMe">
+                <p>{t("contact.aboutMe")}</p>
+                <img src="/assets/modulesHome/iracingProfile.png" alt="" />
+            </div>
+        </div>
+    </div>
 </aside>
 
 <style>
-	aside {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 3rem;
-		border-top: 1px solid var(--gray-800);
-		border-bottom: 1px solid var(--gray-800);
-		padding: 5rem 1.5rem;
-		background-color: var(--gray-999_40);
-		box-shadow: var(--shadow-sm);
-	}
+    aside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        border-top: 1px solid var(--gray-800);
+		padding: 16px;
+    }
 
-	h2 {
-		font-size: var(--text-xl);
-		text-align: center;
-		max-width: 15ch;
-	}
+    .contactWrapper {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        max-width: 800px;
+        gap: 32px;
+        margin: auto;
+    }
 
-	@media (min-width: 50em) {
-		aside {
-			padding: 7.5rem;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
+    .contactWrapper img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
 
-		h2 {
-			font-size: var(--text-3xl);
-			text-align: left;
-		}
-	}
+    .content .text h2 {
+        font-size: var(--text-2xl);
+        font-weight: 600;
+    }
+
+    .content .text p {
+        font-size: var(--text-base);
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .content {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .content .text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .productHunt {
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 23px;
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        opacity: 0.5;
+    }
+
+    .actions {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+    h2 {
+        font-size: var(--text-xl);
+        text-align: center;
+        max-width: 15ch;
+    }
+
+    @media (min-width: 50em) {
+        aside {
+            padding: 7.5rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        h2 {
+            font-size: var(--text-3xl);
+            text-align: left;
+        }
+    }
 </style>

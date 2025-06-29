@@ -1,6 +1,6 @@
 ---
-import "../styles/global.css";
-import CookieConsentDialog from "../components/CookieConsentDialog.jsx";
+import "../../styles/global.css";
+import CookieConsentDialog from "../CookieConsentDialog.jsx";
 
 interface Props {
     title?: string | undefined;
@@ -11,29 +11,52 @@ interface Props {
 const {
     title = "iRaceBuy",
     description = "Select the series you plan to race and instantly discover the 8 most repeated tracks across them. Save money by buying only the content you’ll actually use.",
-    canonical = 'https://iracebuy.com/',
+    canonical = "https://iracebuy.com/",
 } = Astro.props;
 ---
 
 <meta charset="UTF-8" />
-<meta name="description" property="og:description" content={description} />
 <meta name="viewport" content="width=device-width" />
+<title>{title}</title>
+
+<meta name="author" content="Juniors Masters 2025" />
+<meta name="description" property="og:description" content={description} />
 <meta name="generator" content={Astro.generator} />
 
 <!-- Canonical -->
 <link rel="canonical" href={canonical} />
 
 <!-- Favicon -->
-<link rel="icon" type="image/png" href="https://iracebuy.com/assets/icons/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="https://iracebuy.com/assets/icons/favicon.svg" />
-<link rel="shortcut icon" href="https://iracebuy.com/assets/icons/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="https://iracebuy.com/assets/icons/apple-touch-icon.png" />
+<link
+    rel="icon"
+    type="image/png"
+    href="https://iracebuy.com/assets/icons/favicon-96x96.png"
+    sizes="96x96"
+/>
+<link
+    rel="icon"
+    type="image/svg+xml"
+    href="https://iracebuy.com/assets/icons/favicon.svg"
+/>
+<link
+    rel="shortcut icon"
+    href="https://iracebuy.com/assets/icons/favicon.ico"
+/>
+<link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="https://iracebuy.com/assets/icons/apple-touch-icon.png"
+/>
 <meta name="apple-mobile-web-app-title" content="iRaceBuy" />
-<link rel="manifest" href="https://iracebuy.com/assets/icons/site.webmanifest" />
+<link
+    rel="manifest"
+    href="https://iracebuy.com/assets/icons/site.webmanifest"
+/>
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="" />
+<meta property="og:site_name" content="iRaceBuy" />
+<meta property="og:url" content={canonical} />
 <meta property="og:title" content="iRaceBuy" />
 <meta
     property="og:description"
@@ -53,12 +76,9 @@ const {
     property="twitter:image"
     content="https://iracebuy.com/assets/ogImagen.png"
 />
-
-<title>{title}</title>
-
 <script defer is:inline src="https://code.jquery.com/jquery-3.7.0.min.js">
 </script>
-<script is:inline defer src="./scripts/main.js"></script>
+<script is:inline defer src="/scripts/main.js"></script>
 <script
     async
     is:inline
@@ -76,7 +96,9 @@ const {
         }
         // Espera un poco a que el iframe se genere
         setTimeout(function () {
-            var kofiIframe = document.querySelector("iframe[id^='kofi-wo-container']");
+            var kofiIframe = document.querySelector(
+                "iframe[id^='kofi-wo-container']"
+            );
             if (kofiIframe) {
                 kofiIframe.setAttribute("title", "Ko-fi Support Chat Widget");
             }
@@ -87,16 +109,10 @@ const {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  rel="preload"
-  as="style"
-  href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
-  onload="this.onload=null;this.rel='stylesheet'"
-/>
-<noscript>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
     rel="stylesheet"
-  />
-</noscript>
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'"
+/>
 
 <CookieConsentDialog client:only="react" />

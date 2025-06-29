@@ -1,0 +1,44 @@
+{
+    "nav.home": "Home",
+    "nav.buyGuide": "Purchase guide",
+    "nav.planner": "Planner calendar",
+
+    "iRacingPurchasePlanner": "iRacing Purchase Guide",
+    "iRacingCalendarPlanner": "iRacing Calendar Planner",
+
+    "heroTitle": "Organize Your iRacing Schedule & Optimize Your Purchases",
+    "heroDescription": "Discover the easiest way to plan your iRacing seasons, manage your iRace schedule, and save money on tracks. With iracebuy.com, you get the ultimate iRacing planning tool to visualize your calendar and make smarter purchase decisions.",
+
+    "cta.purchase": "Optimize your purchases",
+    "cta.planner": "Organize your calendar",
+    "cta.tutorial": "Explain me how to use it",
+    "coomingSoon": "Planner Coming Soon!",
+
+    "partners.title": "Thanks for the support",
+    "partners.subtitle": "Without you, this website would probably be just another forgotten page on the internet. Your support is what keeps it alive truly.",
+
+    "purchase.subtitle": "Optimize Your Tracks Investments",
+    "purchase.content": "Stop overspending on iRacing content you don’t need. With the iRacing Purchase Planner, you can analyze the series you’ve selected and view the complete calendar with all the tracks for each week. This makes it easy to identify which tracks appear most often, so you can decide which ones are worth buying based on your interests. Plan your iRacing season purchases smartly, save money, and stay competitive.",
+    "purchase.list.1": "Discover which tracks appear most in your iRacing schedule",
+    "purchase.list.2": "Get recommendations on what to buy next",
+    "purchase.list.3": "Optimize your iRacing budget and avoid unnecessary purchases",
+    "purchase.list.4": "Information updated every season",
+
+    "planner.subtitle": "Organize your iRacing calendar",
+    "planner.content": "With the iRacing Calendar Organizer, you can easily select the series you’re interested in and customize your racing season. Hide the weeks from any selected series that you don’t want to race to keep your calendar clean. Instantly check the probability of rain for each week and get ready for changing track conditions. You can also highlight your favorite weeks so you never miss an important race. Take full control of your iRacing season and organize your races efficiently and in a personalized way.",
+    "planner.list.1": "Get a beautiful and clean calendar",
+    "planner.list.2": "See the rain probability for each week instantly",
+    "planner.list.3": "Highlight your favorite weeks from each series",
+    "planner.list.4": "Select only what you want",
+
+    "contact.title": "Let’s Connect",
+    "contact.content": " Hi! My name is Juanjo Mengual. I’m the person behind this website. if you have any ideas, suggestions to make iracebuy.com better or you just want to collaborate with the website, please contact with me! Your feedback means a lot and helps me improve this project for everyone.",
+    "contact.aboutMe": "I'm a passionate iRacing driver who, like many others, spent a lot of time searching for buying guides and trying to properly plan each season's schedule. That's when I realized there was a need for a clear, centralized, and easy-to-use tool for all of that, so I decided to create iRaceBuy.com. I'm not particularly fast (and my profile proves it 😅), but I'm a safe, consistent driver and, above all, someone committed to the community. This project was born out of real simracing experience, created for those of us who share this passion, with no other goal than to offer something genuinely useful to fellow simracers.",
+
+
+
+    "buyGuide.description": "Effortlessly organize your iRacing seasons and make smarter purchases. Plan, compare, and race with confidence!",
+
+
+    "footer.copyright": "® Designed & Developed in Spain for Juniors Masters 2025"
+}

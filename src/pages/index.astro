@@ -1,23 +1,51 @@
 ---
-// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
+// #region Traducciones
+import { getLangFromUrl, useTranslations } from "../locales/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+// endregion
+
 import BaseLayout from "../layouts/BaseLayout.astro";
-import LicenseBox from "../components/LicenseBox.astro";
+import Hero from "../components/Hero.astro";
 import Partners from "../components/Partners.astro";
-
-
-// import { test } from "../functions/prepareDataSeason.ts";
-
-// test();
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import ModuleHome from "../components/ModuleHome.astro";
+import PurchaseButton from "../components/Buttons/PurchaseButton.astro";
+import PlannerButton from "../components/Buttons/PlannerButton.astro";
 ---
 
 <BaseLayout>
+    <Hero title={t("heroTitle")} tagline={t("heroDescription")} />
 
-        <LicenseBox />
-        
-        <Partners />
+    <Partners />
 
+    <ModuleHome
+        moduleClass="-purchase"
+        title="iRacingPurchasePlanner"
+        subtitle="purchase.subtitle"
+        content="purchase.content"
+        list={[
+            "purchase.list.1",
+            "purchase.list.2",
+            "purchase.list.3",
+            "purchase.list.4",
+        ]}
+        img="/assets/modulesHome/purchaseModule.png"
+    >
+        <PurchaseButton />
+    </ModuleHome>
+    <ModuleHome
+        moduleClass="-planner -reverse"
+        title="iRacingCalendarPlanner"
+        subtitle="planner.subtitle"
+        content="planner.content"
+        list={[
+            "planner.list.1",
+            "planner.list.2",
+            "planner.list.3",
+            "planner.list.4",
+        ]}
+        img="/assets/modulesHome/plannerModule.png"
+    >
+        <PlannerButton text="coomingSoon" buttonClass="-disabled" />
+    </ModuleHome>
 </BaseLayout>
-

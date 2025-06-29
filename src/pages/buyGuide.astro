@@ -1,0 +1,71 @@
+---
+// #region Traducciones
+import { getLangFromUrl, useTranslations } from "../locales/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+// endregion
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LicenseBox from "../components/LicenseBox.astro";
+// import TutorialButton from "../components/TutorialButton.jsx";
+---
+
+<BaseLayout>
+    {/* El botón ahora controla la aparición del tour */}
+    <!-- <TutorialButton label={t("cta.tutorial")} client:load /> -->
+    <h1 class="-hidden">
+        {t("heroTitle")}
+    </h1>
+    <div class="o-pageHeader">
+        <div class="o-pageHeader__headerContainer">
+            <h2 class="m-pageHeader__title">
+                {t("iRacingPurchasePlanner")}
+            </h2>
+            <h3 class="m-pageHeader__subtitle">
+                {t("purchase.subtitle")}
+            </h3>
+        </div>
+        <p class="m-pageHeader__description">
+            {t("buyGuide.description")}
+        </p>
+    </div>
+    <LicenseBox />
+</BaseLayout>
+
+<style>
+    .o-pageHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 24px;
+        max-width: 670px;
+        margin: 0 auto;
+        margin-bottom: 3.5rem;
+    }
+    .o-pageHeader__headerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .o-pageHeader .m-pageHeader__title {
+        font-size: 24px;
+        font-weight: 600;
+        color: #ffd331;
+    }
+    .o-pageHeader .m-pageHeader__subtitle {
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+    .m-pageHeader__description {
+        text-wrap: wrap;
+        text-wrap-style: balance;
+    }
+    .o-pageHeader .a-button {
+        --btnBackground: #fff;
+        --btnTextColor: #fff;
+    }
+</style>

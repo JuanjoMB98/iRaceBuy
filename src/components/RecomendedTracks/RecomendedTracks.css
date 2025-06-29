@@ -129,19 +129,6 @@
     color: #ecf4f0 !important;
 }
 
-.a-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    border-radius: 16px;
-    border: 2px solid hsla(var(--licenseColorHSLA), 1);
-    background-color: #134C92;
-    cursor: pointer;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    margin: 2px 0;
-}
-
 .o-recomendedTracks.-collapsed .a-button{
     transform: rotate(180deg);
 }

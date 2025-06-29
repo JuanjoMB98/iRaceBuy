@@ -1,0 +1,38 @@
+{
+    "nav.home": "Inicio",
+    "nav.buyGuide": "Guia de compras",
+    "nav.planner": "Planificador del calendario",
+
+    "iRacingPurchasePlanner": "Guia de Compras de iRacing",
+    "iRacingCalendarPlanner": "Planificador del Calendario iRacing",
+
+    "heroTitle": "Organiza tu calendario de iRacing y optimiza tus compras",
+    "heroDescription": "Descubre la forma más sencilla de planificar tus temporadas de iRacing, gestionar tu calendario y ahorrar dinero en circuitos. Con iracebuy.com, tienes la herramienta definitiva para visualizar tu calendario y tomar decisiones de compra más inteligentes.",
+
+    "cta.purchase": "Optimiza tus compras",
+    "cta.planner": "Organiza tu calendario",
+    "coomingSoon": "¡El planificador llegará pronto!",
+
+    "partners.title": "Gracias por el apoyo",
+    "partners.subtitle": "Sin vosotros, esta web probablemente sería solo otra página olvidada en internet. Vuestro apoyo es lo que realmente la mantiene viva.",
+
+    "purchase.subtitle": "Optimiza tu inversión en circuitos",
+    "purchase.content": "Deja de gastar de más en contenido de iRacing que no necesitas. Con el Planificador de Compras de iRacing puedes analizar las series que has seleccionado y ver el calendario completo con todos los circuitos de cada semana. Así podrás identificar fácilmente qué circuitos aparecen con más frecuencia y decidir cuáles te conviene comprar según tus intereses. Planifica tus compras para la temporada de iRacing de forma inteligente, ahorra dinero y mantente competitivo.",
+    "purchase.list.1": "Descubre qué circuitos aparecen más en tu calendario de iRacing",
+    "purchase.list.2": "Obtén recomendaciones sobre qué comprar a continuación",
+    "purchase.list.3": "Optimiza tu presupuesto en iRacing y evita compras innecesarias",
+    "purchase.list.4": "Información actualizada cada temporada",
+
+    "planner.subtitle": "Organiza tu calendario de iRacing",
+    "planner.content": "Con el Organizador de Calendario de iRacing puedes seleccionar fácilmente las series que te interesan y personalizar tu temporada de carreras. Oculta las semanas de cualquier serie seleccionada que no quieras disputar para mantener tu calendario limpio. Consulta al instante las probabilidades de lluvia para cada semana y prepárate para las condiciones cambiantes en pista. Además, puedes destacar tus semana favoritas y no perderte ninguna carrera importante. Toma el control total de tu temporada en iRacing y organiza tus carreras de forma eficiente y personalizada.",
+    "planner.list.1": "Consigue un calendario bonito y limpio",
+    "planner.list.2": "Observa la probabilidad de lluvia de cada semana al instante",
+    "planner.list.3": "Destaca tus semanas favoritas de cada serie",
+    "planner.list.4": "Selecciona solo lo que tu quieras",
+
+    "contact.title": "Conectemos",
+    "contact.content": "¡Hola! Mi nombre es Juanjo Mengual. Soy la persona detrás de esta web. Si tienes ideas, sugerencias para mejorar iracebuy.com o simplemente quieres colaborar con el sitio, ¡ponte en contacto conmigo! Tu opinión es muy importante y me ayuda a mejorar este proyecto para todos.",
+    "contact.aboutMe": "Soy un apasionado piloto de iRacing que, como muchos otros, pasó mucho tiempo buscando guías de compra y tratando de planificar correctamente el calendario de cada temporada. Fue entonces cuando me di cuenta de que hacía falta una herramienta clara, centralizada y fácil de usar para todo eso, así que decidí crear iRaceBuy.com. No soy especialmente rápido (y mi perfil lo demuestra 😅), pero sí un piloto seguro, constante y, sobre todo, alguien comprometido con la comunidad. Este proyecto nació de la experiencia real en el simracing, creado para quienes compartimos esta pasión, sin otro objetivo que ofrecer algo realmente útil a otros simracers.",
+
+    "footer.copyright": "® Diseñado & Desarrollado en España por Juniors Masters 2025"
+}
