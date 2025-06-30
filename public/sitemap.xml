@@ -1,10 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <!-- Página principal en español -->
   <url>
-    <loc>https://iracebuy.com/</loc>
+    <loc>https://iracebuy.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iracebuy.com/es/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://iracebuy.com/en/" />
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Página principal en inglés -->
+  <url>
+    <loc>https://iracebuy.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iracebuy.com/es/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://iracebuy.com/en/" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- buyGuide en español -->
+  <url>
+    <loc>https://iracebuy.com/es/buyGuide/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iracebuy.com/es/buyGuide/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://iracebuy.com/en/buyGuide/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- buyGuide en inglés -->
+  <url>
+    <loc>https://iracebuy.com/en/buyGuide/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://iracebuy.com/es/buyGuide/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://iracebuy.com/en/buyGuide/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Páginas legales (si solo existen en un idioma, no necesitan hreflang) -->
   <url>
     <loc>https://iracebuy.com/cookiePolicy</loc>
     <changefreq>yearly</changefreq>
