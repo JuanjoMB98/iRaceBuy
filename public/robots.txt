@@ -1,6 +1,3 @@
 User-agent: *
-Disallow: /privacy-policy/
-Disallow: /legal-notice/
-Disallow: /cookie-policy/
 
 Sitemap: https://iracebuy.com/sitemap.xml
