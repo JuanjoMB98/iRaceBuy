@@ -1,51 +1,18 @@
 ---
-// #region Traducciones
-import { getLangFromUrl, useTranslations } from "../locales/utils";
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
-// endregion
-
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Hero from "../components/Hero.astro";
-import Partners from "../components/Partners.astro";
-import ModuleHome from "../components/ModuleHome.astro";
-import PurchaseButton from "../components/Buttons/PurchaseButton.astro";
-import PlannerButton from "../components/Buttons/PlannerButton.astro";
+const fallbackLang = 'en';
 ---
-
-<BaseLayout>
-    <Hero title={t("heroTitle")} tagline={t("heroDescription")} />
-
-    <Partners />
-
-    <ModuleHome
-        moduleClass="-purchase"
-        title="iRacingPurchasePlanner"
-        subtitle="purchase.subtitle"
-        content="purchase.content"
-        list={[
-            "purchase.list.1",
-            "purchase.list.2",
-            "purchase.list.3",
-            "purchase.list.4",
-        ]}
-        img="/assets/modulesHome/purchaseModule.png"
-    >
-        <PurchaseButton />
-    </ModuleHome>
-    <ModuleHome
-        moduleClass="-planner -reverse"
-        title="iRacingCalendarPlanner"
-        subtitle="planner.subtitle"
-        content="planner.content"
-        list={[
-            "planner.list.1",
-            "planner.list.2",
-            "planner.list.3",
-            "planner.list.4",
-        ]}
-        img="/assets/modulesHome/plannerModule.png"
-    >
-        <PlannerButton text="coomingSoon" buttonClass="-disabled" />
-    </ModuleHome>
-</BaseLayout>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      const lang = navigator.language.startsWith('es') ? 'es' : 'en';
+      window.location.replace(`/${lang}/`);
+    </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=/${fallbackLang}/" />
+    </noscript>
+  </head>
+  <body style="margin:0;"></body>
+</html>
