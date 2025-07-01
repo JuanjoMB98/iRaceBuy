@@ -3,8 +3,11 @@ import "./RecomendedTracks.css";
 import Icon from "../Icon.astro";
 import React, { useState } from "react";
 import { toggleCollapse } from "./RecomendedTracks.js";
+import { useTranslations } from "../../locales/utils";
 
-export default function RaceTable({ filteredSeasons }) {
+export default function RaceTable({ filteredSeasons, lang }) {
+    const t = useTranslations(lang);
+
     const [collapsed, setCollapsed] = useState(false);
 
     const trackMap = new Map();
@@ -43,26 +46,46 @@ export default function RaceTable({ filteredSeasons }) {
             }`}
         >
             <div className="m-bentoContainer__header">
-                <h3 className="m-bentoContainerHeader__title">
-                    <button onClick={handleToggle} className="a-button" aria-label="Compress Recomended Tracks">
-                        <svg
-                            width="15"
-                            height="14"
-                            viewBox="0 0 15 14"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
+                <button
+                    onClick={handleToggle}
+                    className="a-button -purple -small"
+                    aria-label="Compress Recomended Tracks"
+                >
+                    <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g clip-path="url(#clip0_186_5122)">
                             <path
-                                d="M8.22355 4.66667V9.33333L10.5569 7L8.22355 4.66667ZM3.84855 12.25C3.52772 12.25 3.25316 12.1359 3.02488 11.9076C2.79661 11.6793 2.68227 11.4046 2.68188 11.0833V2.91667C2.68188 2.59583 2.79622 2.32128 3.02488 2.093C3.25355 1.86472 3.52811 1.75039 3.84855 1.75H12.0152C12.3361 1.75 12.6108 1.86433 12.8395 2.093C13.0681 2.32167 13.1823 2.59622 13.1819 2.91667V11.0833C13.1819 11.4042 13.0677 11.6789 12.8395 11.9076C12.6112 12.1362 12.3364 12.2504 12.0152 12.25H3.84855ZM5.59855 11.0833V2.91667H3.84855V11.0833H5.59855ZM6.76522 11.0833H12.0152V2.91667H6.76522V11.0833Z"
-                                fill="white"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M21.8184 5.625C21.8184 5.32663 21.9369 5.04048 22.1479 4.8295C22.3588 4.61853 22.645 4.5 22.9434 4.5C23.2417 4.5 23.5279 4.61853 23.7389 4.8295C23.9498 5.04048 24.0684 5.32663 24.0684 5.625V18.375C24.0684 18.6734 23.9498 18.9595 23.7389 19.1705C23.5279 19.3815 23.2417 19.5 22.9434 19.5C22.645 19.5 22.3588 19.3815 22.1479 19.1705C21.9369 18.9595 21.8184 18.6734 21.8184 18.375V5.625ZM12.3069 6.33C12.0962 6.54094 11.9778 6.82687 11.9778 7.125C11.9778 7.42313 12.0962 7.70906 12.3069 7.92L15.2619 10.875H1.19336C0.894991 10.875 0.608843 10.9935 0.397864 11.2045C0.186886 11.4155 0.0683594 11.7016 0.0683594 12C0.0683594 12.2984 0.186886 12.5845 0.397864 12.7955C0.608843 13.0065 0.894991 13.125 1.19336 13.125H15.2619L12.3069 16.08C12.1963 16.183 12.1077 16.3072 12.0462 16.4452C11.9847 16.5832 11.9516 16.7322 11.949 16.8832C11.9463 17.0343 11.9741 17.1843 12.0307 17.3244C12.0873 17.4645 12.1715 17.5917 12.2783 17.6986C12.3851 17.8054 12.5124 17.8896 12.6525 17.9462C12.7925 18.0028 12.9426 18.0306 13.0936 18.0279C13.2447 18.0252 13.3937 17.9922 13.5317 17.9307C13.6697 17.8692 13.7939 17.7805 13.8969 17.67L18.7719 12.795L19.5684 12L18.7734 11.205L13.8984 6.33C13.7939 6.22546 13.6698 6.14253 13.5333 6.08594C13.3968 6.02936 13.2504 6.00024 13.1026 6.00024C12.9548 6.00024 12.8085 6.02936 12.6719 6.08594C12.5354 6.14253 12.4113 6.22546 12.3069 6.33Z"
+                                fill="currentColor"
                             />
-                        </svg>
-                    </button>
-                    Recomended buy
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_186_5122">
+                                <rect
+                                    width="24"
+                                    height="24"
+                                    fill="white"
+                                    transform="translate(0.0683594)"
+                                />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span>
+                    {t("smallerContainer")}
+                    </span>
+                </button>
+                <h3 className="m-bentoContainerHeader__title">
+                    {t("recomendedTracks.title")}
                 </h3>
                 <p className="m-bentoContainerHeader__subtitle">
-                    These are the circuits with the most competition this season
-                    in the categories with the most current participation.
+                    {t("recomendedTracks.description")}
                 </p>
             </div>
 
@@ -87,7 +110,12 @@ export default function RaceTable({ filteredSeasons }) {
                             />
                         </div>
                         <span className="m-featuredTrack__times">
+                            <strong>
                             {item.timesThisSeason}
+                            </strong>
+                            <span>
+                             {t("times")}
+                            </span>
                         </span>
                         <span className="m-featuredTrack__title">
                             {item.track}

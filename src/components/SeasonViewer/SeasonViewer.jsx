@@ -9,16 +9,18 @@ import RecomendedTracks from "../RecomendedTracks/RecomendedTracks.jsx";
 export default function SeasonViewerWrapper({
     allSeasonData,
     licenciaId,
-    defaultSelectedIds = [], // Ahora es una prop
+    defaultSelectedIds = [], // Ahora es una prop,
+    lang,
 }) {
-
-    const seasonList = allSeasonData.map(({ id, nombre, licencia, tipo, logo }) => ({
-        id,
-        nombre,
-        licencia,
-        tipo,
-        logo,
-    }));
+    const seasonList = allSeasonData.map(
+        ({ id, nombre, licencia, tipo, logo }) => ({
+            id,
+            nombre,
+            licencia,
+            tipo,
+            logo,
+        })
+    );
 
     const [activeSeasonIds, setActiveSeasonIds] = useState(defaultSelectedIds);
 
@@ -41,10 +43,11 @@ export default function SeasonViewerWrapper({
         <>
             <section className="m-seasonContainer">
                 <div className="m-seasonContainer__header">
-                    <CategoryPill licenseID={licenciaId} />
+                    <CategoryPill lang={lang} licenseID={licenciaId} />
 
                     {isClient && (
                         <SeasonFilter
+                            lang={lang}
                             seasonList={seasonList}
                             onChange={setActiveSeasonIds}
                             licenciaId={licenciaId}
@@ -54,9 +57,12 @@ export default function SeasonViewerWrapper({
                 </div>
 
                 <div className="m-seasonContainer__content">
-                    <RaceTable filteredSeasons={filteredSeasons} />
+                    <RaceTable lang={lang} filteredSeasons={filteredSeasons} />
 
-                    <RecomendedTracks filteredSeasons={filteredSeasons} />
+                    <RecomendedTracks
+                        lang={lang}
+                        filteredSeasons={filteredSeasons}
+                    />
                 </div>
             </section>
         </>

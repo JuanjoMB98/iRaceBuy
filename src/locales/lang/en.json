@@ -14,6 +14,8 @@
     "cta.tutorial": "Explain me how to use it",
     "cta.contactMe": "Contact me",
     "coomingSoon": "Planner Coming Soon!",
+    "smallerContainer" : "Do it smaller",
+    "times": "Times",
 
     "partners.title": "Thanks for the support",
     "partners.subtitle": "Without you, this website would probably be just another forgotten page on the internet. Your support is what keeps it alive truly.",
@@ -24,6 +26,28 @@
     "purchase.list.2": "Get recommendations on what to buy next",
     "purchase.list.3": "Optimize your iRacing budget and avoid unnecessary purchases",
     "purchase.list.4": "Information updated every season",
+
+    "purchase.tutorial.1.title": "1. Choose a category",
+    "purchase.tutorial.1.description": "Select the class you’re most interested in. If you want to see all series together, click on <strong>All Categories</strong>.",
+    "purchase.tutorial.2.title": "2. Add seasons",
+    "purchase.tutorial.2.description": "Here you can add or remove the seasons you want to plan. <strong>Customize it as you like!</strong>",
+    "purchase.tutorial.3.title": "3. Check the schedule",
+    "purchase.tutorial.3.description": "Review all the weeks and tracks for the selected series. <br><em>Click on the tracks to mark them as purchased or pending.</em>",
+    "purchase.tutorial.4.title": "4. Featured tracks",
+    "purchase.tutorial.4.description": "Here you’ll see the tracks that appear most often among all the series you’ve selected. Use this to optimize your purchases!",
+    "purchase.tutorial.5.title": "5. Is it worth buying?",
+    "purchase.tutorial.5.description": "This number shows how many times the track appears in your seasons. This helps you decide better!",
+    "purchase.tutorial.6.title": "All done! 🏁",
+    "purchase.tutorial.6.description": "Now you know how to plan your purchases and seasons. If you found this helpful, <strong> share it with your friends!</strong>",
+
+    "seasonFilter.title" : "🔎 Select the series you want to play",
+    "seasonFilter.description" : "This is just my choice for this season, but you can remove them or add the iRacing series you most enjoy racing.",
+
+    "raceTable.title" : "📅 Calendar",
+    "raceTable.description" : "Here you can see the schedule for the selected seasons. Hover over the schedule to highlight the circuits, and click on them to mark which ones you own or are considering buying — helping you organize your planning more easily.",
+
+    "recomendedTracks.title" : "🏁 Recommended Tracks",
+    "recomendedTracks.description" : "These are the tracks that appear most frequently in the selected series. Use this information to optimize your purchases and focus on the tracks that will give you the best return on investment.",
 
     "planner.subtitle": "Organize your iRacing calendar",
     "planner.content": "With the iRacing Calendar Organizer, you can easily select the series you’re interested in and customize your racing season. Hide the weeks from any selected series that you don’t want to race to keep your calendar clean. Instantly check the probability of rain for each week and get ready for changing track conditions. You can also highlight your favorite weeks so you never miss an important race. Take full control of your iRacing season and organize your races efficiently and in a personalized way.",
@@ -39,6 +63,14 @@
     "buyGuide.description": "Effortlessly organize your iRacing seasons and make smarter purchases. Plan, compare, and race with confidence!",
     "buyGuide.seoText": "iRacing buy guide, how to buy tracks and cars in iRacing, best iRacing purchases, optimize iRacing purchases, save money on iRacing, tips for buying in iRacing, which tracks to buy in iRacing, iRacing purchase planner, iRacing purchase calendar, iRacing purchase recommendations, iRacing guide for beginners, planning your iRacing season, buying cheap iRacing content, avoid unnecessary iRacing purchases, maximize your iRacing investment, buy only what you need in iRacing, iRacing buy guide, iRacing purchase planner, how to choose the best tracks in iRacing, organize iRacing purchases, ultimate guide to buying in iRacing.",
     "buyGuide.seoText1": "On this page, you’ll find all the information about how to buy smart in iRacing, which tracks and cars are most important depending on the series, how to use the iRacing purchase planner to save money and optimize your experience, and the best strategies to invest in iRacing content without overspending.",
+
+    "classD": "Class D",
+    "classC": "Class C",
+    "classB": "Class B",
+    "classA": "Class A",
+    "classAll": "All Categories",
+
+    "cookie.text": "We use cookies to improve your experience and analyze traffic.",
 
     "footer.copyright": "® Designed & Developed in Spain for Juniors Masters 2025"
 }

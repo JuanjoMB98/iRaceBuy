@@ -165,7 +165,6 @@ h5 {
     border-width: 0;
 }
 
-
 .stack {
     display: flex;
     flex-direction: column;
@@ -196,7 +195,7 @@ h5 {
     gap: 12rem;
 }
 
-.-hidden{   
+.-hidden {
     display: none;
 }
 .wrap {
@@ -204,7 +203,7 @@ h5 {
     flex-direction: column;
     margin: auto;
     gap: 32px;
-    max-width: 1440px;
+    max-width: 1500px;
     padding: 0 16px;
     width: 100%;
     flex: 1;
@@ -263,7 +262,7 @@ h5 {
     font-family: "Instrument Sans";
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
     color: #aeaeb8;
 }
@@ -283,7 +282,7 @@ h5 {
 
 /* #endregion */
 
-.o-seoText{
+.o-seoText {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -296,16 +295,25 @@ h5 {
     text-align: justify;
 }
 
-.a-button.purchase{
+.a-button.purchase {
     --btnBackground: var(--purchaseColor);
     --btnTextColor: var(--purchaseColor);
 }
-.a-button.planner{
+.a-button.planner {
     --btnBackground: var(--plannerColor);
     --btnTextColor: var(--plannerColor);
 }
-.a-button{
-    --btnBackground:#0755AA;
+.a-button.-purple {
+    --btnBackground: #7a33ff;
+    --btnTextColor: #7a33ff;
+}
+.a-button.-small {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.a-button {
+    --btnBackground: #0755aa;
     display: flex;
     width: fit-content;
     border-radius: 100px;
@@ -316,23 +324,22 @@ h5 {
     padding: 12px 16px;
     background-color: color-mix(in srgb, var(--btnBackground) 20%, transparent);
     border: 1px solid var(--btnBackground);
-    color:  var(--btnBackground);
+    color: var(--btnBackground);
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     user-select: none;
     transition: all 0.3s ease-in-out;
-    color: var(--btnTextColor, #0755AA );
+    color: var(--btnTextColor, #0755aa);
 }
-.a-button:hover{
+.a-button:hover {
     color: black;
     background-color: color-mix(in srgb, var(--btnBackground) 95%, transparent);
 }
-.a-button.-disabled{
+.a-button.-disabled {
     opacity: 0.2;
     cursor: not-allowed;
     pointer-events: none;
 }
-
 
 @media (min-width: 50em) {
 }

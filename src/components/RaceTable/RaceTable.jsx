@@ -1,7 +1,10 @@
 import "./RaceTable.css";
 import { useRef, useState } from "react";
+import { useTranslations } from "../../locales/utils";
 
-export default function RaceTable({ filteredSeasons }) {
+export default function RaceTable({ filteredSeasons, lang }) {
+    const t = useTranslations(lang);
+
     const maxRaceWeek = filteredSeasons.reduce(
         (max, s) => Math.max(max, s.calendario.length),
         0
@@ -38,10 +41,11 @@ export default function RaceTable({ filteredSeasons }) {
     return (
         <section className="o-raceTable -bentoContainer">
             <div className="m-bentoContainer__header">
-                <h3 className="m-bentoContainerHeader__title">📅 Calendar</h3>
+                <h3 className="m-bentoContainerHeader__title">
+                    {t("raceTable.title")}
+                    </h3>
                 <p className="m-bentoContainerHeader__subtitle">
-                    Here you can see the schedule for the selected seasons.
-Hover over the schedule to highlight the circuits, and click on them to mark which ones you own or are considering buying — helping you organize your planning more easily.
+                    {t("raceTable.description")}
                 </p>
             </div>
 
