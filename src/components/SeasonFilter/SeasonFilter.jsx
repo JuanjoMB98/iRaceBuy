@@ -1,4 +1,5 @@
 import "./SeasonFilter.css";
+import { useTranslations } from "../../locales/utils";
 
 import Select, { components } from "react-select";
 
@@ -7,7 +8,10 @@ export default function SeasonFilter({
     onChange,
     licenciaId = [],
     selectedIds = [], // Recibe los seleccionados del padre
+    lang,
 }) {
+    const t = useTranslations(lang);
+
     const tipoLabels = {
         oval: "Oval",
         dirt_oval: "Dirt Oval",
@@ -18,7 +22,9 @@ export default function SeasonFilter({
     const OptionWithLogo = (props) => (
         <components.Option {...props}>
             <div className="m-optionSelect">
-                {props.data.logo && <img src={props.data.logo} alt="" loading="lazy"/>}
+                {props.data.logo && (
+                    <img src={props.data.logo} alt="" loading="lazy" />
+                )}
                 <span>{props.data.label}</span>
             </div>
         </components.Option>
@@ -26,7 +32,9 @@ export default function SeasonFilter({
     const MultiValueWithLogo = (props) => (
         <components.MultiValue {...props}>
             <div className="m-multiValueItem">
-                {props.data.logo && <img src={props.data.logo} alt="" loading="lazy"/>}
+                {props.data.logo && (
+                    <img src={props.data.logo} alt="" loading="lazy" />
+                )}
                 <span>{props.data.label}</span>
             </div>
         </components.MultiValue>
@@ -95,8 +103,8 @@ export default function SeasonFilter({
             backgroundColor: state.isSelected
                 ? "#6366f1"
                 : state.isFocused
-                ? "#e0e7ff"
-                : "white",
+                  ? "#e0e7ff"
+                  : "white",
             color: state.isSelected ? "white" : "#1e293b",
         }),
     };
@@ -114,12 +122,10 @@ export default function SeasonFilter({
             <section className="o-filterContainer -bentoContainer">
                 <div className="m-bentoContainer__header">
                     <h3 className="m-bentoContainerHeader__title">
-                        🔎 Select the seasons you want to play
+                        {t("seasonFilter.title")}
                     </h3>
                     <p className="m-bentoContainerHeader__subtitle">
-                        These are the circuits with the most competition this
-                        season in the categories with the most current
-                        participation.
+                        {t("seasonFilter.description")}
                     </p>
                 </div>
 

@@ -1,6 +1,9 @@
 import "./categoryPill.css";
+import { useTranslations } from "../../locales/utils";
 
-export default function CategoryPill({ licenseID }) {
+export default function CategoryPill({ licenseID, lang }) {
+  const t = useTranslations(lang);
+
   let license = "";
   let licenseColorHSLA = "";
 
@@ -10,19 +13,19 @@ export default function CategoryPill({ licenseID }) {
       licenseColorHSLA = "4, 100%, 50%";
       break;
     case 2:
-      license = "Class D";
+      license = t("classD");
       licenseColorHSLA = "24, 100%, 50%";
       break;
     case 3:
-      license = "Class C";
+      license =  t("classC");
       licenseColorHSLA = "48, 96%, 48%";
       break;
     case 4:
-      license = "Class B";
+      license = t("classB");
       licenseColorHSLA = "110, 100%, 29%";
       break;
     case 5:
-      license = "Class A";
+      license =  t("classA");
       licenseColorHSLA = "214, 98%, 50%";
       break;
     case 6:

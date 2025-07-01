@@ -2,6 +2,11 @@
 import "../../styles/global.css";
 import CookieConsentDialog from "../CookieConsentDialog.jsx";
 
+// #region Traducciones
+import { getLangFromUrl } from "../../locales/utils";
+const lang = getLangFromUrl(Astro.url);
+// endregion
+
 interface Props {
     title?: string | undefined;
     description?: string | undefined;
@@ -118,4 +123,4 @@ const {
     onload="this.onload=null;this.rel='stylesheet'"
 />
 
-<CookieConsentDialog client:only="react" />
+<CookieConsentDialog lang={lang} client:only="react" />

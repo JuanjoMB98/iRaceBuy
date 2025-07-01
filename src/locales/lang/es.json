@@ -14,6 +14,8 @@
     "cta.tutorial": "Explicame cómo usarlo",
     "cta.contactMe": "Contáctame",
     "coomingSoon": "¡El planificador llegará pronto!",
+    "smallerContainer": "Hacer más pequeño",
+    "times": "Veces",
 
     "partners.title": "Gracias por el apoyo",
     "partners.subtitle": "Sin vosotros, esta web probablemente sería solo otra página olvidada en internet. Vuestro apoyo es lo que realmente la mantiene viva.",
@@ -24,6 +26,28 @@
     "purchase.list.2": "Obtén recomendaciones sobre qué comprar a continuación",
     "purchase.list.3": "Optimiza tu presupuesto en iRacing y evita compras innecesarias",
     "purchase.list.4": "Información actualizada cada temporada",
+
+    "purchase.tutorial.1.title": "1. Elige una categoría",
+    "purchase.tutorial.1.description": "Selecciona la clase que más te interese. Si quieres ver todas las series juntas, haz clic en <strong>Todas las categorías</strong>.",
+    "purchase.tutorial.2.title": "2. Agrega temporadas",
+    "purchase.tutorial.2.description": "Aquí puedes agregar o quitar las temporadas que quieras planear. <strong>¡Personalízalo como prefieras!</strong>",
+    "purchase.tutorial.3.title": "3. Revisa el calendario",
+    "purchase.tutorial.3.description": "Revisa todas las semanas y pistas de las series seleccionadas. <br><em>Haz clic en las pistas para marcarlas como compradas o pendientes.</em>",
+    "purchase.tutorial.4.title": "4. Pistas destacadas",
+    "purchase.tutorial.4.description": "Aquí verás las pistas que aparecen con mayor frecuencia entre todas las series que seleccionaste. ¡Utiliza esto para optimizar tus compras!",
+    "purchase.tutorial.5.title": "5. ¿Vale la pena comprarlo?",
+    "purchase.tutorial.5.description": "Este número muestra cuántas veces aparece la pista en tus temporadas. ¡Esto te ayuda a decidir mejor!",
+    "purchase.tutorial.6.title": "¡Todo listo! 🏁",
+    "purchase.tutorial.6.description": "Ahora sabes cómo planear tus compras y temporadas. Si te resultó útil, <strong>¡compártelo con tus amigos!</strong>",
+
+    "seasonFilter.title": "🔎 Selecciona las temporadas que quieres jugar",
+    "seasonFilter.description": "Esta es solo mi elección para esta temporada, pero puedes quitarlas o añadir las series de iRacing que más te guste correr.",
+
+    "raceTable.title": "📅 Calendario",
+    "raceTable.description": "Aquí puedes ver el calendario de las temporadas seleccionadas. Pasa el cursor sobre el calendario para resaltar los circuitos y haz clic en ellos para marcar cuáles posees o estás considerando comprar — así podrás organizar tu planificación más fácilmente.",
+
+    "recomendedTracks.title": "🏁 Pistas recomendadas",
+    "recomendedTracks.description": "Estas son las pistas que aparecen con mayor frecuencia en las series seleccionadas. Usa esta información para optimizar tus compras y enfocarte en las pistas que te darán el mejor retorno de inversión.",
 
     "planner.subtitle": "Organiza tu calendario de iRacing",
     "planner.content": "Con el Organizador de Calendario de iRacing puedes seleccionar fácilmente las series que te interesan y personalizar tu temporada de carreras. Oculta las semanas de cualquier serie seleccionada que no quieras disputar para mantener tu calendario limpio. Consulta al instante las probabilidades de lluvia para cada semana y prepárate para las condiciones cambiantes en pista. Además, puedes destacar tus semana favoritas y no perderte ninguna carrera importante. Toma el control total de tu temporada en iRacing y organiza tus carreras de forma eficiente y personalizada.",
@@ -37,10 +61,14 @@
     "contact.aboutMe": "Soy un apasionado piloto de iRacing que, como muchos otros, pasó mucho tiempo buscando guías de compra y tratando de planificar correctamente el calendario de cada temporada. Fue entonces cuando me di cuenta de que hacía falta una herramienta clara, centralizada y fácil de usar para todo eso, así que decidí crear iRaceBuy.com. No soy especialmente rápido (y mi perfil lo demuestra 😅), pero sí un piloto seguro, constante y, sobre todo, alguien comprometido con la comunidad. Este proyecto nació de la experiencia real en el simracing, creado para quienes compartimos esta pasión, sin otro objetivo que ofrecer algo realmente útil a otros simracers.",
 
     "buyGuide.description": "Organiza fácilmente tus temporadas de iRacing y realiza compras más inteligentes. ¡Planifica, compara y compite con confianza!",
-    "buyGuide.seoText" : "Guía de compra iRacing, cómo comprar circuitos y coches en iRacing, mejores compras iRacing, optimizar compras iRacing, ahorrar dinero en iRacing, consejos para comprar en iRacing, qué circuitos comprar en iRacing, planificador de compras iRacing, calendario de compras iRacing, recomendaciones de compra iRacing, guía de iRacing para principiantes, planificar temporada iRacing, comprar contenido iRacing barato, evitar compras innecesarias iRacing, maximizar inversión iRacing, comprar solo lo necesario en iRacing, iRacing buy guide, iRacing purchase planner, cómo elegir los mejores circuitos en iRacing, organizar compras iRacing, guía definitiva para comprar en iRacing. ",
+    "buyGuide.seoText": "Guía de compra iRacing, cómo comprar circuitos y coches en iRacing, mejores compras iRacing, optimizar compras iRacing, ahorrar dinero en iRacing, consejos para comprar en iRacing, qué circuitos comprar en iRacing, planificador de compras iRacing, calendario de compras iRacing, recomendaciones de compra iRacing, guía de iRacing para principiantes, planificar temporada iRacing, comprar contenido iRacing barato, evitar compras innecesarias iRacing, maximizar inversión iRacing, comprar solo lo necesario en iRacing, iRacing buy guide, iRacing purchase planner, cómo elegir los mejores circuitos en iRacing, organizar compras iRacing, guía definitiva para comprar en iRacing. ",
     "buyGuide.seoText1": "En esta página encontrarás toda la información sobre cómo comprar de forma inteligente en iRacing, qué circuitos y coches son más importantes según las series, cómo utilizar el planificador de compras de iRacing para ahorrar dinero y optimizar tu experiencia, y las mejores estrategias para invertir en contenido de iRacing sin gastar de más.",
-    
 
+    "classD": "Clase D",
+    "classC": "Clase C",
+    "classB": "Clase B",
+    "classA": "Clase A",
+    "classAll": "Todas las categorías",
 
     "footer.copyright": "® Diseñado & Desarrollado en España por Juniors Masters 2025"
 }

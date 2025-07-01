@@ -1,10 +1,15 @@
+// #region Traducciones
+import { useTranslations } from "../../locales/utils";
+// endregion
+
 import React, { useState, useEffect } from "react";
 import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
 import "./VirtualTour.css";
 
-export default function VirtualTour({ label }) {
+export default function VirtualTour({ label , lang }) {
     const [showTour, setShowTour] = useState(false);
+    const t = useTranslations(lang);
 
     useEffect(() => {
         if (!showTour) return;
@@ -23,41 +28,41 @@ export default function VirtualTour({ label }) {
                 {
                     element: ".nav-enclosed-pills",
                     popover: {
-                        title: "1. Choose a category",
-                        description:
-                            "Select the class you’re most interested in. If you want to see all series together, click on <strong>All Categories</strong>.",
+                        title: t("purchase.tutorial.1.title"),
+                        description: t("purchase.tutorial.1.description"),
                         side: "top",
                         align: "center",
+                        allowHTML: true,
                     },
                 },
                 {
                     element: ".-activeTab .season-select__control",
                     popover: {
-                        title: "2. Add seasons",
-                        description:
-                            "Here you can add or remove the seasons you want to plan. <strong>Customize it as you like!</strong>",
+                        title: t("purchase.tutorial.2.title"),
+                        description: t("purchase.tutorial.2.description"),
                         side: "top",
                         align: "start",
+                        allowHTML: true,
                     },
                 },
                 {
                     element: ".-activeTab .o-raceTable ",
                     popover: {
-                        title: "3. Check the schedule",
-                        description:
-                            "Review all the weeks and tracks for the selected series. <br><em>Click on the tracks to mark them as purchased or pending.</em>",
+                        title: t("purchase.tutorial.3.title"),
+                        description: t("purchase.tutorial.3.description"),
                         side: "top",
                         align: "start",
+                        allowHTML: true,
                     },
                 },
                 {
                     element: ".-activeTab .m-featuredTracks",
                     popover: {
-                        title: "4. Featured tracks",
-                        description:
-                            "Here you’ll see the tracks that appear most often among all the series you’ve selected. Use this to optimize your purchases!",
+                        title: t("purchase.tutorial.4.title"),
+                        description: t("purchase.tutorial.4.description"),
                         side: "left",
                         align: "start",
+                        allowHTML: true,
                     },
                     options: {
                         scrollIntoViewOptions: false,
@@ -67,19 +72,19 @@ export default function VirtualTour({ label }) {
                     element:
                         ".-activeTab .m-featuredTrack__item .m-featuredTrack__times",
                     popover: {
-                        title: "Is it worth buying?",
-                        description:
-                            "This number shows how many times the track appears in your seasons. This helps you decide better!",
+                        title: t("purchase.tutorial.5.title"),
+                        description: t("purchase.tutorial.5.description"),
                         side: "top",
                         align: "start",
+                        allowHTML: true,
                     },
                 },
                 {
                     popover: {
                         popoverClass: "driverjs-theme -centered",
-                        title: "All done! 🏁",
-                        description:
-                            "Now you know how to plan your purchases and seasons. If you found this helpful, share it with your friends!",
+                        title: t("purchase.tutorial.6.title"),
+                        description: t("purchase.tutorial.6.description"),
+                        allowHTML: true,
                     },
                 },
             ],
