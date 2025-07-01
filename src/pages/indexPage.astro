@@ -5,16 +5,21 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 // endregion
 
+
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Partners from "../components/Partners.astro";
 import ModuleHome from "../components/ModuleHome.astro";
 import PurchaseButton from "../components/Buttons/PurchaseButton.astro";
 import PlannerButton from "../components/Buttons/PlannerButton.astro";
+
 ---
 
 <BaseLayout canonical={"https://iracebuy.com/" + lang + "/"}>
+
     <Hero title={t("heroTitle")} tagline={t("heroDescription")} />
+
+
 
     <Partners />
 
@@ -49,3 +54,10 @@ import PlannerButton from "../components/Buttons/PlannerButton.astro";
         <PlannerButton text="coomingSoon" buttonClass="-disabled" />
     </ModuleHome>
 </BaseLayout>
+
+
+<style>
+    .animationContainer div {
+        opacity: 0;
+    }
+</style>

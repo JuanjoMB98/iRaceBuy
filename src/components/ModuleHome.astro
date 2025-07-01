@@ -6,6 +6,7 @@ const t = useTranslations(lang);
 // endregion
 
 import Icon from './Icon.astro';
+import TiltedCard from './reactbits/TiltedCard.jsx';
 
 
 interface Props {
@@ -30,13 +31,21 @@ const {
 <section class={"o-moduleHome " + moduleClass}>
     {
         img && (
+
             <div class="m-moduleHome__img">
-                <img
-                    src={img}
-                    alt="iRacing Purchase Captures"
-                    width="100%"
-                    height="auto"
-                />
+            <TiltedCard
+            client:load
+            imageSrc={img}
+            containerHeight="100%"
+            imageHeight="100%"
+            imageWidth="100%"
+            rotateAmplitude={20}
+            scaleOnHover={1.1}
+            showMobileWarning={false}
+            showTooltip={false}
+            displayOverlayContent={false}
+            }
+            />
             </div>
         )
     }
@@ -72,7 +81,6 @@ const {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
         column-gap: 32px;
         padding: 3vw 0;
     }
@@ -91,6 +99,7 @@ const {
 
     .m-moduleHome__img {
         flex: 1.5 0 350px;
+        height: inherit;
     }
     .m-moduleHome__content {
         flex: 1 0 350px;

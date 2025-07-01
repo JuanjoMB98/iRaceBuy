@@ -5,7 +5,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 // endregion
 
-import Icon from "./Icon.astro";
+import ProfileCard from "./reactbits/ProfileCard.jsx";
 ---
 
 <aside>
@@ -16,30 +16,41 @@ import Icon from "./Icon.astro";
                 <p>{t("contact.content")}</p>
             </div>
 
-            <div class="actions">
-                <a class="a-button" href="mailto:juniorsmastersbrand@gmail.com">
-                    Send Me a Message
-                    <Icon icon="paper-plane-tilt" size="1.2em" />
-                </a>
-
-                <a
-                    href="https://www.producthunt.com/products/iracebuy/reviews?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-iracebuy"
-                    target="_blank"
-                >
-                    <img
-                        src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1076214&theme=dark"
-                        alt="iRaceBuy - Plan your iRacing season & optimize your track purchases | Product Hunt"
-                        style="width: 250px; height: 54px; border-radius: 23px; border: none;"
-                        width="250"
-                        height="54"
-                    />
-                </a>
-            </div>
-
             <div class="aboutMe">
                 <p>{t("contact.aboutMe")}</p>
                 <img src="/assets/modulesHome/iracingProfile.png" alt="" />
             </div>
+        </div>
+
+        <div class="actions">
+            <ProfileCard
+                client:load
+                className="profileCard"
+                name="Juanjo Mengual"
+                handle="juanjomb98"
+                status="Online"
+                contactText={t("cta.contactMe")}
+                avatarUrl="/assets/partners/me2.png"
+                iconUrl="/assets/backgrounds/cheste.svg"
+                showUserInfo={true}
+                enableTilt={true}
+                onContactClick="mailto:juniorsmastersbrand@gmail.com"
+                behindGradient="transparent"
+                
+            />
+
+            <a
+                href="https://www.producthunt.com/products/iracebuy/reviews?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-iracebuy"
+                target="_blank"
+            >
+                <img
+                    src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1076214&theme=dark"
+                    alt="iRaceBuy - Plan your iRacing season & optimize your track purchases | Product Hunt"
+                    style="width: 250px; height: 54px; border-radius: 23px; border: none;"
+                    width="250"
+                    height="54"
+                />
+            </a>
         </div>
     </div>
 </aside>
@@ -51,15 +62,16 @@ import Icon from "./Icon.astro";
         justify-content: center;
         gap: 3rem;
         border-top: 1px solid var(--gray-800);
-		padding: 16px;
+        padding: 16px;
     }
 
     .contactWrapper {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         flex: 1;
-        max-width: 800px;
-        gap: 32px;
+        gap: 6vw;
         margin: auto;
     }
     .contactWrapper * {
@@ -83,9 +95,9 @@ import Icon from "./Icon.astro";
 
     .actions {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        gap: 16px;
+        gap: 32px;
     }
 
     .content {
@@ -93,6 +105,7 @@ import Icon from "./Icon.astro";
         display: flex;
         flex-direction: column;
         gap: 24px;
+        max-width: 800px;
     }
     .content .text {
         display: flex;
@@ -106,20 +119,19 @@ import Icon from "./Icon.astro";
         border-radius: 23px;
     }
 
+
+
     .aboutMe {
         display: flex;
         flex-direction: column;
         gap: 16px;
         opacity: 0.5;
+        font-size: 13px;
+        text-align: justify;
     }
-
-    .actions {
-        flex: 1;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 32px;
+    .aboutMe img{
+        max-width: 700px;
+        margin: auto;
     }
     h2 {
         font-size: var(--text-xl);
