@@ -8,6 +8,11 @@ const t = useTranslations(lang);
 import { WritingText } from "./animate-ui/text/writing";
 import PurchaseButton from "./Buttons/PurchaseButton.astro";
 import PlannerButton from "./Buttons/PlannerButton.astro";
+import BlurText from "./reactbits/BlurText";
+
+const handleAnimationComplete = () => {
+    console.log("All letters have animated!");
+};
 
 interface Props {
     title: string;
@@ -20,13 +25,17 @@ const { tagline, title } = Astro.props;
 <header class="o-heroSection">
     <div class="content">
         <div class="titleContainer">
-            <WritingText
-                text={title}
-                className="title"
-                spacing={20}
-                client:load
-            />
-
+            <h1 class="title">
+                <BlurText
+                    client:load
+                    text={title as any}
+                    delay={50}
+                    animateBy="words"
+                    direction="top"
+                    onAnimationComplete={handleAnimationComplete}
+                    className="title"
+                />
+            </h1>
             <div class="subtitleContainer">
                 <h2 class="-purchase">{t("iRacingPurchasePlanner")}</h2>
                 <p>&</p>
@@ -40,10 +49,6 @@ const { tagline, title } = Astro.props;
             <PurchaseButton />
             <PlannerButton text="coomingSoon" buttonClass="-disabled" />
         </div>
-    </div>
-
-    <div class="img">
-        <img src="/assets/backgrounds/heroImg.png" alt="" />
     </div>
 </header>
 
@@ -70,7 +75,13 @@ const { tagline, title } = Astro.props;
         flex: 1.5 1 350px;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 32px;
+        max-width: 850px;
+        margin: auto;
+    }
+    .content * {
+        text-align: center;
     }
 
     .titleContainer {
@@ -79,6 +90,7 @@ const { tagline, title } = Astro.props;
         gap: 0.5rem;
     }
     .title {
+        text-align: center;
         font-style: normal;
         font-weight: 700;
         font-size: 64px;
@@ -90,6 +102,7 @@ const { tagline, title } = Astro.props;
     .subtitleContainer {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         flex-wrap: wrap;
         align-items: center;
         gap: 8px;

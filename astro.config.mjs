@@ -4,18 +4,21 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [
-        react(),
-        tailwind(),
-    ],
+    integrations: [react(), tailwind()],
 
     i18n: {
-            locales: ["es", "en"],
-            defaultLocale: "en",
-            routing: {
-                prefixDefaultLocale: false,
-            },
+        locales: ["es", "en"],
+        defaultLocale: "en",
+        routing: {
+            prefixDefaultLocale: false,
         },
+    },
+
+    vite: {
+        ssr: {
+            noExternal: ["gsap"],
+        },
+    },
 
     output: "static",
     base: "/",
