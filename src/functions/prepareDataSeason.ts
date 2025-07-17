@@ -126,6 +126,37 @@ export function prepararDB(datos: any[]): void {
     guardarJSON("src/data/seasonData.json", db);
 }
 
+export function prepararTrackDB(datos: any[]): void {
+    // Inicializamos la base de datos
+    const db = [];
+    const folderMap = {};
+
+    datos.forEach(track => {
+        const folder = track.folder.trim();
+
+        if (!folderMap[folder]) {
+            folderMap[folder] = {
+                id: track.track_id, // Primer id como principal
+                name: track.track_name,
+                variantIds: [],
+                isFreeTrack: isFreeContent(track.track_id),
+                price: track.price || 0,
+                track: getTrackMapActiveUrl(track.track_id),
+            };
+        }
+        folderMap[folder].variantIds.push(track.track_id);
+    });
+
+    // Convertimos el objeto a array
+    for (let key in folderMap) {
+        db.push(folderMap[key]);
+    }
+
+    // console.log(db);
+
+    guardarJSON("src/data/tracksFormated.json", db);
+}
+
 // Función para contar objetos de primer nivel
 export function contarObjetos(datos: any[]): number {
     return datos.length;
@@ -133,6 +164,7 @@ export function contarObjetos(datos: any[]): number {
 
 // Función para guardar datos en un archivo JSON
 export function test(): void {
-    prepararDB(data);
+    // prepararDB(data);
+    // prepararTrackDB(tracksAllInfo)
     // getSeasonLogo(week);
 }

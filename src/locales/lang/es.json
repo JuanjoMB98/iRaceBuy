@@ -2,6 +2,7 @@
     "nav.home": "Inicio",
     "nav.buyGuide": "Guia de compras",
     "nav.planner": "Planificador del calendario",
+    "nav.ownedContent": "Gestiona tu contenido",
 
     "iRacingPurchasePlanner": "Guia de Compras de iRacing",
     "iRacingCalendarPlanner": "Planificador del Calendario iRacing",
@@ -55,6 +56,8 @@
     "planner.list.2": "Observa la probabilidad de lluvia de cada semana al instante",
     "planner.list.3": "Destaca tus semanas favoritas de cada serie",
     "planner.list.4": "Selecciona solo lo que tu quieras",
+
+    "ownedContent.title" : "Gestiona tu contenido",
 
     "contact.title": "Conectemos",
     "contact.content": "¡Hola! Mi nombre es Juanjo Mengual. Soy la persona detrás de esta web. Si tienes ideas, sugerencias para mejorar iracebuy.com o simplemente quieres colaborar con el sitio, ¡ponte en contacto conmigo! Tu opinión es muy importante y me ayuda a mejorar este proyecto para todos.",

@@ -1,9 +1,20 @@
 import "./RaceTable.css";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useTranslations } from "../../locales/utils";
 
 export default function RaceTable({ filteredSeasons, lang }) {
     const t = useTranslations(lang);
+
+    // Estado para los IDs de variantes del usuario
+    const [ownedTrackIds, setOwnedTrackIds] = useState([]);
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setOwnedTrackIds(
+                JSON.parse(localStorage.getItem("ownedTracks") || "[]")
+            );
+        }
+    }, []);
 
     const maxRaceWeek = filteredSeasons.reduce(
         (max, s) => Math.max(max, s.calendario.length),
@@ -43,7 +54,7 @@ export default function RaceTable({ filteredSeasons, lang }) {
             <div className="m-bentoContainer__header">
                 <h3 className="m-bentoContainerHeader__title">
                     {t("raceTable.title")}
-                    </h3>
+                </h3>
                 <p className="m-bentoContainerHeader__subtitle">
                     {t("raceTable.description")}
                 </p>
@@ -98,6 +109,9 @@ export default function RaceTable({ filteredSeasons, lang }) {
                                         className="m-seasonTrack__item"
                                         data-trackid={week.track_id}
                                         data-isfreetrack={week.isFreeTrack}
+                                        data-owned={ownedTrackIds.includes(
+                                            week.track_id
+                                        )}
                                     >
                                         <span className="m-seasonTrackItem__title">
                                             {week.track}

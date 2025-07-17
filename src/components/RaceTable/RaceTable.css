@@ -104,6 +104,7 @@
     cursor: pointer !important;
 }
 
+.m-seasonTrack__item[data-owned="true"] ,
 .m-seasonTrack__item[data-isfreetrack="true"] {
     background-color: #ecf4f0;
     border: 1px solid #288556;
