@@ -8,6 +8,7 @@ import tracksFormated from "../../data/tracksFormated.json";
 export default function OwnedContentFilter({
     lang,
     selectedIds = [],
+    onChange,
 }) {
     const t = useTranslations(lang);
 

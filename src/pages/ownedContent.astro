@@ -5,13 +5,13 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 // endregion
 
-import { getTracks } from "../functions/seasonsUtils.ts";
+// import { getTracks } from "../functions/seasonsUtils.ts";
 
 import BaseLayout from "../layouts/BaseLayout.astro";
 import OwnedContentFilter from "../components/OwnedContentFilter/OwnedContentFilter.jsx";
-import TutorialButton from "../components/VirtualTour/VirtualTour.jsx";
+// import TutorialButton from "../components/VirtualTour/VirtualTour.jsx";
 
-import { test } from "../functions/prepareDataSeason";
+// import { test } from "../functions/prepareDataSeason";
 
 // test()
 ---
@@ -35,7 +35,7 @@ import { test } from "../functions/prepareDataSeason";
         <!-- <TutorialButton lang={lang} label={t("cta.tutorial")} client:load /> -->
     </div>
 
-    <OwnedContentFilter lang={lang} client:load>
+    <OwnedContentFilter lang={lang} onChange={() => {}} client:load>
         <br />
         <div class="o-seoText">
             <p>
