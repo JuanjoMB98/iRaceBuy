@@ -1,0 +1,90 @@
+---
+// #region Traducciones
+import { getLangFromUrl, useTranslations } from "../locales/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+// endregion
+
+import { getTracks } from "../functions/seasonsUtils.ts";
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import OwnedContentFilter from "../components/OwnedContentFilter/OwnedContentFilter.jsx";
+import TutorialButton from "../components/VirtualTour/VirtualTour.jsx";
+
+import { test } from "../functions/prepareDataSeason";
+
+// test()
+---
+
+<BaseLayout canonical={"https://iracebuy.com/" + lang + "/ownedContent/"}>
+    <h1 class="-hidden">
+        {t("heroTitle")}
+    </h1>
+    <div class="o-pageHeader">
+        <div class="o-pageHeader__headerContainer">
+            <h1 class="m-pageHeader__title">
+                {t("iRacingOwnedContent")}
+            </h1>
+            <h2 class="m-pageHeader__subtitle">
+                {t("ownedContent.title")}
+            </h2>
+        </div>
+        <p class="m-pageHeader__description">
+            {t("ownedContent.subtitle")}
+        </p>
+        <!-- <TutorialButton lang={lang} label={t("cta.tutorial")} client:load /> -->
+    </div>
+
+    <OwnedContentFilter lang={lang} client:load>
+        <br />
+        <div class="o-seoText">
+            <p>
+                {t("buyGuide.seoText1")}
+            </p>
+            <p>
+                {t("buyGuide.seoText")}
+            </p>
+        </div>
+    </OwnedContentFilter>
+
+    <style>
+        .o-pageHeader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+            margin-bottom: 3.5rem;
+        }
+        .o-pageHeader__headerContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .o-pageHeader .m-pageHeader__title {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            letter-spacing: -0.04em;
+            color: #ffd331;
+        }
+        .o-pageHeader .m-pageHeader__subtitle {
+            font-weight: 600;
+            letter-spacing: -0.04em;
+            font-size: 52px;
+        }
+        .m-pageHeader__description {
+            text-wrap: wrap;
+            text-wrap-style: balance;
+            font-size: 20px;
+        }
+        .o-pageHeader .a-button {
+            --btnBackground: #fff;
+            --btnTextColor: #fff;
+        }
+    </style>
+</BaseLayout>

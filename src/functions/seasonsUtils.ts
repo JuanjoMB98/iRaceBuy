@@ -4,10 +4,10 @@ export function getSeason(newParams = {}): any {
     const season = leerJSON("src/data/seasonData.json");
 
     const defaultParams = {
-        id: [],             // { id: ["4865", "4805"] }
-        licencia: false,    // { licencia: "2" }
-        track_id: false,    // { track_id: "243" }
-        track: false,       // { track: 'Volusia Speedway Park' }
+        id: [], // { id: ["4865", "4805"] }
+        licencia: false, // { licencia: "2" }
+        track_id: false, // { track_id: "243" }
+        track: false, // { track: 'Volusia Speedway Park' }
     };
 
     const params = { ...defaultParams, ...newParams };
@@ -18,7 +18,9 @@ export function getSeason(newParams = {}): any {
     // Devolverá cualquier season que sea de las IDs filtradas
     if (params.id.length > 0) {
         console.log("Filtrando temporadas por IDs:", params.id);
-        const idFilter = params.id.map(id => "element.id == " + id).join(" || ");
+        const idFilter = params.id
+            .map((id) => "element.id == " + id)
+            .join(" || ");
         filter = filter + " && (" + idFilter + ")";
     }
 
@@ -53,9 +55,29 @@ export function getSeason(newParams = {}): any {
     return filteredSeasons;
 }
 
+export function getTracks(newParams = {}): any {
+    const tracks = leerJSON("src/data/tracksData.json");
+
+    const defaultParams = {
+        id: [], // { id: ["4865", "4805"] }
+        track_id: false, // { track_id: "243" }
+        track: false, // { track: 'Volusia Speedway Park' }
+    };
+
+    const params = { ...defaultParams, ...newParams };
+
+    var filter = "1 == 1";
+    var filteredTracks = {};
+
+    filteredTracks = tracks.filter((element) => eval(filter));
+
+    return filteredTracks;
+}
+
 // Función para guardar datos en un archivo JSON
 export function test(): void {
     // console.log(getSeason({ track: 'Volusia Speedway Park' }));
+    // console.log(getTracks());
     // guardarJSON("src/data/seasonResultado.json", getSeason({licencia:1}))
 }
 
