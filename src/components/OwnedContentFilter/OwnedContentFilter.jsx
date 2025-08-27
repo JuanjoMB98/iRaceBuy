@@ -44,7 +44,9 @@ export default function OwnedContentFilter({
     );
 
     // Aseguramos que las opciones tengan la propiedad 'value' para react-select
-    const allOptions = tracksFormated.map((opt) => ({
+    const allOptions = tracksFormated
+    .filter((opt) => opt.isFreeTrack === false)
+    .map((opt) => ({
         ...opt,
         value: opt.id,
         label: opt.name,
@@ -140,10 +142,10 @@ export default function OwnedContentFilter({
             <section className="o-filterContainer -bentoContainer">
                 <div className="m-bentoContainer__header">
                     <h3 className="m-bentoContainerHeader__title">
-                        {t("seasonFilter.title")}
+                        {t("ownedContent.selectTitle")}
                     </h3>
                     <p className="m-bentoContainerHeader__subtitle">
-                        {t("seasonFilter.description")}
+                        {t("ownedContent.selectSubtitle")}
                     </p>
                 </div>
 
@@ -156,7 +158,7 @@ export default function OwnedContentFilter({
                         options={allOptions}
                         value={selectedOptions}
                         onChange={handleChange}
-                        placeholder="Select series..."
+                        placeholder={t("ownedContent.selectPlaceholder")}
                         closeMenuOnSelect={false}
                         classNamePrefix="season-select"
                         styles={customStyles}

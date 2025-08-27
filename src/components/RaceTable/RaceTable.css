@@ -128,6 +128,7 @@
 }
 
 .m-seasonTrackItem__title {
+    line-height: 1.1;
     text-align: left;
     font-weight: 500;
     font-size: 13px;
@@ -137,6 +138,7 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     user-select: none; /* evita la selección de texto */
+    font-family: "Instrument Sans";
 }
 
 .-suggestedBuy.m-seasonTrack__item {

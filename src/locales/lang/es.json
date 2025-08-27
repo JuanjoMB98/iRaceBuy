@@ -6,6 +6,7 @@
 
     "iRacingPurchasePlanner": "Guia de Compras de iRacing",
     "iRacingCalendarPlanner": "Planificador del Calendario iRacing",
+    "iRacingOwnedContent": "Gestiona tu Contenido de iRacing",
 
     "heroTitle": "Organiza tu calendario de iRacing y optimiza tus compras",
     "heroDescription": "Descubre la forma más sencilla de planificar tus temporadas de iRacing, gestionar tu calendario y ahorrar dinero en circuitos. Con iracebuy.com, tienes la herramienta definitiva para visualizar tu calendario y tomar decisiones de compra más inteligentes.",
@@ -57,7 +58,11 @@
     "planner.list.3": "Destaca tus semanas favoritas de cada serie",
     "planner.list.4": "Selecciona solo lo que tu quieras",
 
-    "ownedContent.title" : "Gestiona tu contenido",
+    "ownedContent.title" : "Añade tu contenido comprado",
+    "ownedContent.subtitle" : "Mejora las recomendaciones y la experiencia en la web. Podrás ver en verde el contenido que ya tienes en la guia de compras y tener una mejor visión y planificación.",
+    "ownedContent.selectTitle" : "✨ Gestiona tu contenido",
+    "ownedContent.selectSubtitle" : "El contenido gratuito ya está seleccionado. Añade el contenido que ya has comprado para mejorar las recomendaciones y la experiencia en la web.",
+    "ownedContent.selectPlaceholder" : "Escribe para filtrar",
 
     "contact.title": "Conectemos",
     "contact.content": "¡Hola! Mi nombre es Juanjo Mengual. Soy la persona detrás de esta web. Si tienes ideas, sugerencias para mejorar iracebuy.com o simplemente quieres colaborar con el sitio, ¡ponte en contacto conmigo! Tu opinión es muy importante y me ayuda a mejorar este proyecto para todos.",

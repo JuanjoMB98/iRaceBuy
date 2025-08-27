@@ -116,10 +116,12 @@
     overflow: hidden;
     transition: all ease-in-out 0.3s;
     margin: 8px 0;
+    min-width: 100px;
+    max-width: 300px;
 }
 
 .season-select__option::before {
-    content: "Add to filter";
+    content: "Add to owned";
     position: absolute;
     top: 0;
     left: -100%;
@@ -217,7 +219,7 @@
     color: white !important;
 }
 .m-multiValueItem::before {
-    content: "Selected";
+    content: "Owned";
     position: absolute;
     top: 0;
     left: 0;

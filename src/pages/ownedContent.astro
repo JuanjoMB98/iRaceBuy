@@ -22,20 +22,20 @@ import { test } from "../functions/prepareDataSeason";
     </h1>
     <div class="o-pageHeader">
         <div class="o-pageHeader__headerContainer">
-            <h1 class="m-pageHeader__subtitle">
-                {t("ownedContent.title")}
+            <h1 class="m-pageHeader__title">
+                {t("iRacingOwnedContent")}
             </h1>
+            <h2 class="m-pageHeader__subtitle">
+                {t("ownedContent.title")}
+            </h2>
         </div>
         <p class="m-pageHeader__description">
-            {t("buyGuide.description")}
+            {t("ownedContent.subtitle")}
         </p>
-        <TutorialButton lang={lang} label={t("cta.tutorial")} client:load />
+        <!-- <TutorialButton lang={lang} label={t("cta.tutorial")} client:load /> -->
     </div>
 
-    <OwnedContentFilter
-        lang={lang}
-        client:load
-    >
+    <OwnedContentFilter lang={lang} client:load>
         <br />
         <div class="o-seoText">
             <p>

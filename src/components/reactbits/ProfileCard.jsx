@@ -292,11 +292,7 @@ const ProfileCardComponent = ({
               </div>
             )}
           </div>
-          <div className="pc-content">
-            <div className="pc-details">
-              <h3>{name}</h3>
-            </div>
-          </div>
+          
         </div>
       </section>
     </div>
