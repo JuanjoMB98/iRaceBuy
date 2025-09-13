@@ -1,12 +1,12 @@
-.-caution{
+.-orange{
     --backgroundColor: #261912;
     --textColor: orange;
     --borderColor: #ffa500;
 
-    --svgIcon: "!";
+    --svgIcon: "🚦";
     --iconBgColor:var(--backgroundColor)
 }
-.-danger{
+.-red{
     --backgroundColor: #250d0d;
     --textColor: #ef4343;
     --borderColor: #ef4343;
@@ -14,6 +14,15 @@
     --svgIcon: "🚦";
     --iconBgColor: transparent
 }
+.-green{
+    --backgroundColor: #17250d;
+    --textColor: #43ef60;
+    --borderColor: #43ef60;
+
+    --svgIcon: "🚦";
+    --iconBgColor: transparent
+}
+
 
 .a-alert{
     margin: 0 auto;
@@ -35,6 +44,13 @@
     flex-wrap: wrap;
     text-align: center;
     margin-bottom: 32px;
+}
+.a-alertLabel{
+    font-size: 14px;
+}
+.a-alertText{
+    font-size: 12px;
+    opacity: 0.6;
 }
 
 .a-alert::before{

@@ -80,7 +80,8 @@
     
     "cookie.text": "I use cookies to save your content and analyze traffic.",
 
-    "alert.actualizacionPendiente" : "El contenido todavía no está actualizado, tengo que esperar a que iRacing lo ponga oficialmente en el juego",
+    "alert.calendarioPendiente" : "Calendar pending update",
+    "alert.actualizacionPendiente" : "The content is not yet updated because Iracing has not yet published it in its official API.",
 
     "footer.copyright": "® Designed & Developed in Spain by Juniors Masters 2025"
 }
