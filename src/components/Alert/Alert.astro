@@ -1,0 +1,23 @@
+---
+import "./Alert.css";
+
+// #region Traducciones
+import { getLangFromUrl, useTranslations } from "../../locales/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+// endregion
+
+interface Props {
+    text?: string;
+    alertClass?: string;
+}
+
+const { text, alertClass } = Astro.props as Props;
+---
+
+
+<div class={"a-alert " + alertClass}>
+    <p class="a-alertText">
+        {t(text as any)}
+    </p>
+</div>
