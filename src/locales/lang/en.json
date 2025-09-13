@@ -77,6 +77,10 @@
     "classB": "Class B",
     "classA": "Class A",
     "classAll": "All categories",
+    
+    "cookie.text": "I use cookies to save your content and analyze traffic.",
+
+    "alert.actualizacionPendiente" : "El contenido todavía no está actualizado, tengo que esperar a que iRacing lo ponga oficialmente en el juego",
 
     "footer.copyright": "® Designed & Developed in Spain by Juniors Masters 2025"
 }

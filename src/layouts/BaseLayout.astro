@@ -6,6 +6,7 @@ import Footer from "../components/layout/Footer.astro";
 
 import ContactCTA from "../components/ContactCTA.astro";
 import { getLangFromUrl } from '../locales/utils';
+import Alert from "../components/Alert/Alert.astro";
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -33,6 +34,8 @@ const { title, description, canonical } = Astro.props;
 
         <div class="wrap">
             <main>
+                <Alert text="alert.actualizacionPendiente"  alertClass="-danger"/>
+
                 <slot/>
             </main>
         </div>
