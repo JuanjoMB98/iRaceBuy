@@ -78,9 +78,11 @@
     "classA": "Clase A",
     "classAll": "Todas las categorías",
 
-    "cookie.text": "Utilizo las cookies para guardar tu contenido y analizar el tráfico.",
 
-    "alert.actualizacionPendiente" : "El contenido todavía no está actualizado porque iRacing aún no lo ha publicado en su API oficial. ",
+    "cookie.text": "Utilizo las cookies para guardar tu contenido y analizar el tráfico.",
+    
+    "alert.calendarioPendiente" : "Calendario pendiente de actualizar",
+    "alert.actualizacionPendiente" : "El contenido todavía no está actualizado porque iRacing aún no lo ha publicado en su API oficial.",
 
     "footer.copyright": "® Diseñado & Desarrollado en España por Juniors Masters 2025"
 }

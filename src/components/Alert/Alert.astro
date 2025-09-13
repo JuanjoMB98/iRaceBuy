@@ -8,16 +8,25 @@ const t = useTranslations(lang);
 // endregion
 
 interface Props {
+    label?: string;
     text?: string;
     alertClass?: string;
 }
 
-const { text, alertClass } = Astro.props as Props;
+const { label, text, alertClass } = Astro.props as Props;
 ---
 
-
 <div class={"a-alert " + alertClass}>
-    <p class="a-alertText">
-        {t(text as any)}
-    </p>
+    <div class="a-alertContent">
+        {
+            label && (
+                <p class="a-alertLabel">
+                    <strong>{t(label as any)}</strong>
+                </p>
+            )
+        }
+        <p class="a-alertText">
+            {t(text as any)}
+        </p>
+    </div>
 </div>
