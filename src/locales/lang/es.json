@@ -42,7 +42,7 @@
     "purchase.tutorial.6.title": "¡Todo listo! 🏁",
     "purchase.tutorial.6.description": "Ahora sabes cómo planear tus compras y temporadas. Si te resultó útil, <strong>¡compártelo con tus amigos!</strong>",
 
-    "seasonFilter.title": "🔎 Selecciona las temporadas que quieres jugar",
+    "seasonFilter.title": "🔎 Selecciona las temporadas que quieras correr",
     "seasonFilter.description": "Esta es solo mi elección para esta temporada, pero puedes quitarlas o añadir las series de iRacing que más te guste correr.",
 
     "raceTable.title": "📅 Calendario",
@@ -83,6 +83,8 @@
     
     "alert.calendarioPendiente" : "Calendario pendiente de actualizar",
     "alert.actualizacionPendiente" : "El contenido todavía no está actualizado porque iRacing aún no lo ha publicado en su API oficial.",
+    "alert.calendarioActualizado" : "Calendario actualizado.",
+    "alert.actualizacionCompletada" : "El contenido de la Season 4 de iRacing ya está en iRaceBuy.",
 
     "footer.copyright": "® Diseñado & Desarrollado en España por Juniors Masters 2025"
 }

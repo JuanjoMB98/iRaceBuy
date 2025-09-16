@@ -1,6 +1,6 @@
 import "./RaceTable.css";
 import { useRef, useState, useEffect } from "react";
-import { useTranslations } from "../../locales/utils";
+import { useTranslations } from "@locales/utils";
 
 export default function RaceTable({ filteredSeasons, lang }) {
     const t = useTranslations(lang);

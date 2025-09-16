@@ -4,7 +4,11 @@
         "strict": false,
         "baseUrl": ".",
         "paths": {
-            "@/*": ["./src/*"]
+            "@/*": ["./src/*"],
+             "@locales/*": ["src/locales/*"],
+             "@components/*": ["src/components/*"],
+             "@buyGuide/*": ["src/components/buyGuide/*"],
+             "@planner/*": ["src/components/planner/*"],
         }
     }
 }

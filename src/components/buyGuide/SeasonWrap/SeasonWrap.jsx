@@ -1,7 +1,7 @@
 import "./SeasonWrap.css";
-import { useTranslations } from "../../locales/utils";
 import React from "react";
-import SeasonViewer from "../SeasonViewer/SeasonViewer.jsx";
+import { useTranslations } from "@locales/utils.js";
+import SeasonViewer from "@buyGuide/SeasonViewer/SeasonViewer.jsx";
 
 import {
     Tabs,
@@ -9,7 +9,7 @@ import {
     TabsTrigger,
     TabsContent,
     TabsContents,
-} from "../animate-ui/components/tabs";
+} from "@components/animate-ui/components/tabs.jsx";
 
 export default function TabsEnclosedPillsExample({ allSeasons, lang }) {
     const t = useTranslations(lang);
@@ -40,61 +40,61 @@ export default function TabsEnclosedPillsExample({ allSeasons, lang }) {
                 <TabsContent value="rookie">
                     <SeasonViewer
                         client:load
-                        lang ={lang}
+                        lang={lang}
                         allSeasonData={allSeasons}
                         licenciaId={1}
-                        defaultSelectedIds={[5559, 5599, 5600, 5560]}
+                        defaultSelectedIds={[5727, 5771, 5772, 5728]}
                     />
                 </TabsContent>
                 <TabsContent value="classd">
                     <SeasonViewer
                         client:load
-                        lang ={lang}
+                        lang={lang}
                         allSeasonData={allSeasons}
                         licenciaId={2}
                         defaultSelectedIds={[
-                            5561, 5566, 5567, 5573, 5576, 5604,
+                            5732, 5741, 5744, 5775, 5777, 5737,
                         ]}
                     />
                 </TabsContent>
                 <TabsContent value="classc">
                     <SeasonViewer
                         client:load
-                        lang ={lang}
+                        lang={lang}
                         allSeasonData={allSeasons}
                         licenciaId={3}
                         defaultSelectedIds={[
-                            5579, 5584, 5587, 5588, 5612, 5613, 5577,
+                            5747, 5752, 5758, 5746,
                         ]}
                     />
                 </TabsContent>
                 <TabsContent value="classb">
                     <SeasonViewer
                         client:load
-                        lang ={lang}
+                        lang={lang}
                         allSeasonData={allSeasons}
                         licenciaId={4}
                         defaultSelectedIds={[
-                            5591, 5592, 5593, 5595, 5620, 5621,
+                            5759, 5760, 5764, 5766, 5768,
                         ]}
                     />
                 </TabsContent>
                 <TabsContent value="classa">
                     <SeasonViewer
                         client:load
-                        lang ={lang}
+                        lang={lang}
                         allSeasonData={allSeasons}
                         licenciaId={5}
-                        defaultSelectedIds={[5597, 5598, 5622, 5623]}
+                        defaultSelectedIds={[5769, 5770, 5795, 5796]}
                     />
                 </TabsContent>
                 <TabsContent value="all">
                     <SeasonViewer
                         client:load
-                        lang ={lang}
+                        lang={lang}
                         allSeasonData={allSeasons}
                         defaultSelectedIds={[
-                            5566, 5567, 5591, 5592, 5597, 5598, 5604,
+                            5727, 5747, 5760, 5770, 5777, 5744,
                         ]}
                     />
                 </TabsContent>

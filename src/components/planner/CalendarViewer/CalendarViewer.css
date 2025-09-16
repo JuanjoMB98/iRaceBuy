@@ -1,0 +1,35 @@
+.m-seasonContainer,
+.m-seasonContainer__header,
+.m-seasonContainer__content
+{
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    flex: 1;
+}
+.m-seasonContainer{
+    flex-direction: column;
+}
+.m-seasonContainer__header{
+    flex-direction: row;
+}
+
+.m-seasonContainer__content{
+    flex-direction: row;
+}
+
+
+@media (max-width: 768px) {
+    .m-seasonContainer__header {
+        padding: 16px;
+        flex-direction: column;
+    }
+    .m-seasonContainer__content {
+        padding: 16px;
+        flex-direction: column;
+    }
+    .-bentoContainer{
+        width: auto;
+    }
+}

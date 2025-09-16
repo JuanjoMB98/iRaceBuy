@@ -1,10 +1,10 @@
 import "./SeasonViewer.css";
 
 import { useState, useEffect } from "react";
-import CategoryPill from "../CategoryPill/CategoryPill.jsx";
-import SeasonFilter from "../SeasonFilter/SeasonFilter.jsx";
-import RaceTable from "../RaceTable/RaceTable.jsx";
-import RecomendedTracks from "../RecomendedTracks/RecomendedTracks.jsx";
+import CategoryPill from "@components/CategoryPill/CategoryPill.jsx";
+import SeasonFilter from "@buyGuide/SeasonFilter/SeasonFilter.jsx";
+import RaceTable from "@buyGuide/RaceTable/RaceTable.jsx";
+import RecomendedTracks from "@buyGuide/RecomendedTracks/RecomendedTracks.jsx";
 
 export default function SeasonViewerWrapper({
     allSeasonData,
@@ -35,9 +35,9 @@ export default function SeasonViewerWrapper({
     }, []);
 
     const filteredSeasons =
-        activeSeasonIds.length === 0
-            ? []
-            : allSeasonData.filter((s) => activeSeasonIds.includes(s.id));
+    activeSeasonIds.length === 0
+    ? []
+    : allSeasonData.filter((s) => activeSeasonIds.includes(s.id));
 
     return (
         <>
@@ -53,6 +53,7 @@ export default function SeasonViewerWrapper({
                             licenciaId={licenciaId}
                             selectedIds={activeSeasonIds} // CONTROLADO
                         />
+                        
                     )}
                 </div>
 
