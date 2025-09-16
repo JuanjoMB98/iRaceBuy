@@ -1,9 +1,9 @@
 import "./RecomendedTracks.css";
 
-import Icon from "../Icon.astro";
+import Icon from "@components/Icon.astro";
 import React, { useState } from "react";
 import { toggleCollapse } from "./RecomendedTracks.js";
-import { useTranslations } from "../../locales/utils";
+import { useTranslations } from "@locales/utils.js";
 
 export default function RaceTable({ filteredSeasons, lang }) {
     const t = useTranslations(lang);
@@ -77,9 +77,7 @@ export default function RaceTable({ filteredSeasons, lang }) {
                             </clipPath>
                         </defs>
                     </svg>
-                    <span>
-                    {t("smallerContainer")}
-                    </span>
+                    <span>{t("smallerContainer")}</span>
                 </button>
                 <h3 className="m-bentoContainerHeader__title">
                     {t("recomendedTracks.title")}
@@ -110,12 +108,8 @@ export default function RaceTable({ filteredSeasons, lang }) {
                             />
                         </div>
                         <span className="m-featuredTrack__times">
-                            <strong>
-                            {item.timesThisSeason}
-                            </strong>
-                            <span>
-                             {t("times")}
-                            </span>
+                            <strong>{item.timesThisSeason}</strong>
+                            <span>{t("times")}</span>
                         </span>
                         <span className="m-featuredTrack__title">
                             {item.track}

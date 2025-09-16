@@ -1,13 +1,13 @@
 ---
 // #region Traducciones
-import { getLangFromUrl, useTranslations } from "../locales/utils";
+import { getLangFromUrl, useTranslations } from "@locales/utils";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 // endregion
 
 import BaseLayout from "../layouts/BaseLayout.astro";
-import LicenseBox from "../components/LicenseBox.astro";
-import TutorialButton from "../components/VirtualTour/VirtualTour.jsx";
+import LicenseBox from "@components/LicenseBox.astro";
+import TutorialButton from "@components/VirtualTour/VirtualTour.jsx";
 ---
 
 <BaseLayout canonical={"https://iracebuy.com/" + lang + "/buyGuide/"}>

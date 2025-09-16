@@ -1,5 +1,5 @@
 import "./SeasonFilter.css";
-import { useTranslations } from "../../locales/utils";
+import { useTranslations } from "@locales/utils";
 
 import Select, { components } from "react-select";
 

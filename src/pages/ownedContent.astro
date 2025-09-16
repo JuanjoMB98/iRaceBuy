@@ -11,9 +11,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import OwnedContentFilter from "../components/OwnedContentFilter/OwnedContentFilter.jsx";
 // import TutorialButton from "../components/VirtualTour/VirtualTour.jsx";
 
-// import { test } from "../functions/prepareDataSeason";
+import { test } from "../functions/prepareDataSeason";
 
-// test()
+test()
 ---
 
 <BaseLayout canonical={"https://iracebuy.com/" + lang + "/ownedContent/"}>
@@ -22,10 +22,10 @@ import OwnedContentFilter from "../components/OwnedContentFilter/OwnedContentFil
     </h1>
     <div class="o-pageHeader">
         <div class="o-pageHeader__headerContainer">
-            <h1 class="m-pageHeader__title">
+            <h2 class="m-pageHeader__title">
                 {t("iRacingOwnedContent")}
-            </h1>
-            <h2 class="m-pageHeader__subtitle">
+            </h2>
+            <h3 class="m-pageHeader__subtitle">
                 {t("ownedContent.title")}
             </h2>
         </div>

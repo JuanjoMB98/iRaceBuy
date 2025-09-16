@@ -1,0 +1,15 @@
+---
+// #region Traducciones
+import { getLangFromUrl, useTranslations } from "@locales/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+// endregion
+import { getSeason } from "../functions/seasonsUtils.ts";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CalendarViewer from "@planner/CalendarViewer/CalendarViewer.jsx";
+// import TutorialButton from "@components/VirtualTour/VirtualTour.jsx";
+
+const calendarSeasons = getSeason();
+
+---
+

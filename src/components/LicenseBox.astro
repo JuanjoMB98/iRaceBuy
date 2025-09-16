@@ -1,22 +1,17 @@
 ---
 // #region Traducciones
-import { getLangFromUrl } from "../locales/utils";
+import { getLangFromUrl } from "@locales/utils";
 const lang = getLangFromUrl(Astro.url);
 // endregion
 
 import { getSeason } from "../functions/seasonsUtils.ts";
-import SeasonWrap from "./SeasonWrap/SeasonWrap.jsx";
+import SeasonWrap from "@buyGuide/SeasonWrap/SeasonWrap.jsx";
 
 // btener los datos
 
 const allSeasons = getSeason();
 
 // Temporadas cargadas
-
 ---
 
-<SeasonWrap
-    client:load
-    lang={lang}
-    allSeasons={allSeasons}
-/>
+<SeasonWrap client:load lang={lang} allSeasons={allSeasons} />
