@@ -104,6 +104,7 @@ export default function CalendarTable({ filteredSeasons, lang }) {
                             </div>
 
                             {trofeo.calendario.map((week, i) => (
+                                
                                 <div className="m-season__track" key={i}>
                                     <div
                                         className="m-seasonTrack__item"
@@ -113,6 +114,41 @@ export default function CalendarTable({ filteredSeasons, lang }) {
                                             week.track_id
                                         )}
                                     >
+                                        <div className="m-seasonContainer">
+                                            <div className="a-featuredTrack__map">
+                                                <img
+                                                    type="image/svg+xml"
+                                                    src={week.mapUrl}
+                                                    alt=""
+                                                    loading="lazy"
+                                                />
+                                            </div>
+
+                                            <div>
+                                                {week.rainChance}
+                                            </div>
+
+                                            {week.isRainProbable && (
+                                                <span
+                                                    className="m-seasonTrackItem__rain"
+                                                    title={t(
+                                                        "raceTable.rainProbable"
+                                                    )}
+                                                >
+                                                    🌧️
+                                                </span>
+                                            )}
+                                            {week.isFreeTrack && (
+                                                <span
+                                                    className="m-seasonTrackItem__free"
+                                                    title={t(
+                                                        "raceTable.freeTrack"
+                                                    )}
+                                                >
+                                                    🆓
+                                                </span>
+                                            )}
+                                        </div>
                                         <span className="m-seasonTrackItem__title">
                                             {week.track}
                                         </span>

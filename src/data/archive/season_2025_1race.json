@@ -1,0 +1,273 @@
+"season_id": 5737,
+    "season_name": "Rain Master - 2025 Season 4",
+    "active": true,
+    "allowed_season_members": null,
+    "car_class_ids": [
+      2708
+    ],
+    "car_switching": false,
+    "car_types": [
+      {
+        "car_type": "audi"
+      },
+      {
+        "car_type": "chevy"
+      },
+      {
+        "car_type": "gt"
+      },
+      {
+        "car_type": "gt3"
+      },
+      {
+        "car_type": "gtd"
+      },
+      {
+        "car_type": "huracan"
+      },
+      {
+        "car_type": "road"
+      },
+      {
+        "car_type": "sports"
+      },
+      {
+        "car_type": "sportscar"
+      }
+    ],
+    "caution_laps_do_not_count": false,
+    "complete": false,
+    "connection_black_flag": true,
+    "consec_caution_within_nlaps": 2,
+    "consec_cautions_single_file": false,
+    "cross_license": false,
+    "distributed_matchmaking": false,
+    "driver_change_rule": 0,
+    "driver_changes": false,
+    "drops": 4,
+    "enable_pitlane_collisions": false,
+    "fixed_setup": true,
+    "green_white_checkered_limit": 0,
+    "grid_by_class": false,
+    "hardcore_level": 1,
+    "has_supersessions": false,
+    "ignore_license_for_practice": true,
+    "incident_limit": 17,
+    "incident_warn_mode": 0,
+    "incident_warn_param1": 0,
+    "incident_warn_param2": 0,
+    "is_heat_racing": false,
+    "license_group": 2,
+    "license_group_types": [
+      {
+        "license_group_type": 2
+      }
+    ],
+    "lucky_dog": false,
+    "max_team_drivers": 1,
+    "max_weeks": 12,
+    "min_team_drivers": 1,
+    "multiclass": false,
+    "must_use_diff_tire_types_in_race": false,
+    "next_race_session": null,
+    "num_fast_tows": 1,
+    "num_opt_laps": 0,
+    "official": true,
+    "op_duration": 120,
+    "open_practice_session_type_id": 170,
+    "qualifier_must_start_race": false,
+    "race_week": 0,
+    "race_week_to_make_divisions": 0,
+    "reg_user_count": 0,
+    "region_competition": true,
+    "restrict_by_member": false,
+    "restrict_to_car": false,
+    "restrict_viewing": false,
+    "schedule_description": "Races every hour at :15",
+    "schedules": [
+      {
+        "season_id": 5737,
+        "race_week_num": 0,
+        "car_restrictions": [
+          {
+            "car_id": 132,
+            "max_dry_tire_sets": 0,
+            "max_pct_fuel_fill": 100,
+            "power_adjust_pct": 0,
+            "race_setup_id": 270555,
+            "weight_penalty_kg": 0
+          },
+          {
+            "car_id": 133,
+            "max_dry_tire_sets": 0,
+            "max_pct_fuel_fill": 100,
+            "power_adjust_pct": 0,
+            "race_setup_id": 264305,
+            "weight_penalty_kg": 0
+          },
+          {
+            "car_id": 156,
+            "max_dry_tire_sets": 0,
+            "max_pct_fuel_fill": 100,
+            "power_adjust_pct": 0,
+            "race_setup_id": 264421,
+            "weight_penalty_kg": 0
+          },
+          {
+            "car_id": 169,
+            "max_dry_tire_sets": 0,
+            "max_pct_fuel_fill": 100,
+            "power_adjust_pct": 0,
+            "race_setup_id": 270977,
+            "weight_penalty_kg": 0
+          },
+          {
+            "car_id": 173,
+            "max_dry_tire_sets": 0,
+            "max_pct_fuel_fill": 100,
+            "power_adjust_pct": 0,
+            "race_setup_id": 270833,
+            "weight_penalty_kg": 0
+          },
+          {
+            "car_id": 176,
+            "max_dry_tire_sets": 0,
+            "max_pct_fuel_fill": 100,
+            "power_adjust_pct": 0,
+            "race_setup_id": 270519,
+            "weight_penalty_kg": 0
+          },
+          {
+            "car_id": 184,
+            "max_dry_tire_sets": 0,
+            "max_pct_fuel_fill": 100,
+            "power_adjust_pct": 0,
+            "race_setup_id": 270573,
+            "weight_penalty_kg": 0
+          },
+          {
+            "car_id": 185,
+            "max_dry_tire_sets": 0,
+            "max_pct_fuel_fill": 100,
+            "power_adjust_pct": 0,
+            "race_setup_id": 270864,
+            "weight_penalty_kg": 0
+          },
+          {
+            "car_id": 188,
+            "max_dry_tire_sets": 0,
+            "max_pct_fuel_fill": 100,
+            "power_adjust_pct": 0,
+            "race_setup_id": 270928,
+            "weight_penalty_kg": 0
+          },
+          {
+            "car_id": 194,
+            "max_dry_tire_sets": 0,
+            "max_pct_fuel_fill": 100,
+            "power_adjust_pct": 0,
+            "race_setup_id": 270476,
+            "weight_penalty_kg": 0
+          }
+        ],
+        "category": "sports_car",
+        "category_id": 5,
+        "enable_pitlane_collisions": false,
+        "full_course_cautions": false,
+        "practice_length": 3,
+        "qual_attached": true,
+        "qualify_laps": 2,
+        "qualify_length": 8,
+        "race_lap_limit": null,
+        "race_time_descriptors": [
+          {
+            "day_offset": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "first_session_time": "00:15:00",
+            "repeat_minutes": 60,
+            "repeating": true,
+            "session_minutes": 29,
+            "start_date": "2025-09-16",
+            "super_session": false
+          }
+        ],
+        "race_time_limit": 15,
+        "race_week_car_class_ids": [],
+        "race_week_cars": [],
+        "restart_type": "Double-file Back",
+        "schedule_name": "GR Cup - every hour 15 past",
+        "season_name": "Rain Master - 2025 Season 4",
+        "series_id": 559,
+        "series_name": "Rain Master Challenge",
+        "short_parade_lap": false,
+        "special_event_type": null,
+        "start_date": "2025-09-16",
+        "start_type": "Rolling",
+        "start_zone": false,
+        "track": {
+          "category": "road",
+          "category_id": 2,
+          "config_name": "Grand Prix",
+          "track_id": 509,
+          "track_name": "Algarve International Circuit"
+        },
+        "track_state": {
+          "leave_marbles": false
+        },
+        "warmup_length": 0,
+        "weather": {
+          "allow_fog": false,
+          "forecast_options": {
+            "allow_fog": false,
+            "forecast_type": 1,
+            "precipitation": 4,
+            "skies": 0,
+            "stop_precip": 0,
+            "temperature": 0,
+            "weather_seed": 3420875855939419,
+            "wind_dir": 0,
+            "wind_speed": 0
+          },
+          "precip_option": 8,
+          "rel_humidity": 72,
+          "simulated_start_time": "2025-09-20T14:00:00",
+          "simulated_time_multiplier": 1,
+          "simulated_time_offsets": [
+            15,
+            35
+          ],
+          "skies": 2,
+          "temp_units": 0,
+          "temp_value": 73,
+          "time_of_day": 0,
+          "track_water": 0,
+          "version": 1,
+          "weather_summary": {
+            "max_precip_rate": 7.7,
+            "max_precip_rate_desc": "Heavy",
+            "precip_chance": 100,
+            "skies_high": 3,
+            "skies_low": 2,
+            "temp_high": 22.8,
+            "temp_low": 21.8,
+            "temp_units": 1,
+            "wind_dir": 0,
+            "wind_high": 28,
+            "wind_low": 23.7,
+            "wind_units": 1
+          },
+          "weather_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/non_expiring/weather-forecast/season/5737/rw0_evt5.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250916T143853Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20250916%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=de6c5877eb7475b8840e25f1121b5298d2cc1f255205db5053e204cf1bd9061a",
+          "wind_dir": 0,
+          "wind_units": 0,
+          "wind_value": 14
+        },
+        "week_end_time": "2025-09-22T23:58:00Z"
+      },
+      

@@ -13,3 +13,70 @@ const calendarSeasons = getSeason();
 
 ---
 
+<BaseLayout canonical={"https://iracebuy.com/" + lang + "/planner/"}>
+
+    <h1 class="-hidden">
+        {t("heroTitle")}
+    </h1>
+
+    <div class="o-pageHeader">
+        <div class="o-pageHeader__headerContainer">
+            <h2 class="m-pageHeader__title">
+                {t("iRacingCalendarPlanner")}
+            </h2>
+            <h3 class="m-pageHeader__subtitle">
+                {t("planner.subtitle")}
+            </h3>
+        </div>
+        <p class="m-pageHeader__description">
+            {t("planner.description")}
+        </p>
+    </div>
+
+    <CalendarViewer 
+                        client:load
+                        lang={lang}
+                        allSeasonData={calendarSeasons}
+                    />
+
+    <style>
+        .o-pageHeader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+            margin-bottom: 3.5rem;
+        }
+        .o-pageHeader__headerContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .o-pageHeader .m-pageHeader__title {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            letter-spacing: -0.04em;
+            color: var(--plannerColor);
+        }
+        .o-pageHeader .m-pageHeader__subtitle {
+            font-weight: 600;
+            letter-spacing: -0.04em;
+            font-size: 52px;
+        }
+        .m-pageHeader__description {
+            text-wrap: wrap;
+            text-wrap-style: balance;
+            font-size: 20px;
+        }
+        .o-pageHeader .a-button {
+            --btnBackground: #fff;
+            --btnTextColor: #fff;
+        }
+    </style>
+</BaseLayout>

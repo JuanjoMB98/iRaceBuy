@@ -66,6 +66,7 @@ function getSeasonSchedule(season): any {
             (week.track.config_name ? " - " + week.track.config_name : ""),
             isFreeTrack: isFreeContent(week.track.track_id),
             mapUrl: getTrackMapActiveUrl(week.track.track_id),
+            rainChance: week.weather?.weather_summary?.precip_chance ?? null,
         });
     });
 
