@@ -10,11 +10,9 @@ import CalendarViewer from "@planner/CalendarViewer/CalendarViewer.jsx";
 // import TutorialButton from "@components/VirtualTour/VirtualTour.jsx";
 
 const calendarSeasons = getSeason();
-
 ---
 
 <BaseLayout canonical={"https://iracebuy.com/" + lang + "/planner/"}>
-
     <h1 class="-hidden">
         {t("heroTitle")}
     </h1>
@@ -33,12 +31,21 @@ const calendarSeasons = getSeason();
         </p>
     </div>
 
-    <CalendarViewer 
-                        client:load
-                        lang={lang}
-                        allSeasonData={calendarSeasons}
-                    />
+    <CalendarViewer
+        client:only="react"
+        lang={lang}
+        allSeasonData={calendarSeasons}
+        licenciaId={null}
+    />
 
+    <div class="o-seoText">
+        <p>
+            {t("planner.seoText1")}
+        </p>
+        <p>
+            {t("planner.seoText2")}
+        </p>
+    </div>
     <style>
         .o-pageHeader {
             display: flex;

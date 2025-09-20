@@ -1,6 +1,5 @@
 import "./CalendarFilter.css";
 import { useTranslations } from "@locales/utils";
-
 import Select, { components } from "react-select";
 
 export default function CalendarFilter({
@@ -19,6 +18,7 @@ export default function CalendarFilter({
         sports_car: "Road",
         formula_car: "Formula",
     };
+
     const OptionWithLogo = (props) => (
         <components.Option {...props}>
             <div className="m-optionSelect">
@@ -62,14 +62,15 @@ export default function CalendarFilter({
         options,
     }));
     const allOptions = groupedOptions.flatMap((group) => group.options);
-    // Opciones seleccionadas según selectedIds
+    // Opciones seleccionadas según selectedIds (prop controlada)
     const selectedOptions = allOptions.filter((opt) =>
         selectedIds.includes(opt.value)
     );
+    // Notifica al padre los cambios
     const handleChange = (selected) => {
+        const ids = (selected || []).map((opt) => opt.value);
         if (onChange) {
-            onChange((selected || []).map((opt) => opt.value));
-            // console.log("Selected options:", selected.map(opt => opt.value));
+            onChange(ids);
         }
     };
     const customStyles = {
@@ -117,6 +118,7 @@ export default function CalendarFilter({
     const MenuListWithClass = (props) => (
         <components.MenuList {...props} className="o-menuList" />
     );
+
     return (
         <>
             <section className="o-filterContainer -bentoContainer">
@@ -125,7 +127,7 @@ export default function CalendarFilter({
                         {t("seasonFilter.title")}
                     </h3>
                     <p className="m-bentoContainerHeader__subtitle">
-                        {t("seasonFilter.description")}
+                        {t("calendarFilter.description")}
                     </p>
                 </div>
 
