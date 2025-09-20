@@ -60,12 +60,14 @@ function getSeasonSchedule(season): any {
             raceWeek: week.race_week_num,
             startDate: week.start_date,
             series_name: week.series_name,
+            series_id: "w"+week.race_week_num+"s"+week.series_id,
             track_id: week.track.track_id,
             track:
             week.track.track_name +
             (week.track.config_name ? " - " + week.track.config_name : ""),
             isFreeTrack: isFreeContent(week.track.track_id),
             mapUrl: getTrackMapActiveUrl(week.track.track_id),
+            rainChance: week.weather?.weather_summary?.precip_chance ?? null,
         });
     });
 
@@ -104,6 +106,13 @@ function getSeasonLogo(season): any {
     return logoFilename;
 }
 
+function getSeasonFrecuency(season): any {
+
+    let serieFrecuency = season.schedules[0].race_time_descriptors[0].repeat_minutes ?? 0;
+    
+    return serieFrecuency;
+}
+
 // Función para preparar la base de datos con nombres e IDs relacionados
 export function prepararDB(datos: any[]): void {
     // Inicializamos la base de datos
@@ -117,6 +126,7 @@ export function prepararDB(datos: any[]): void {
         aux["tipo"] = getSeasonType(season);
         aux["licencia"] = getLicenseGroup(season);
         aux["logo"] = getSeasonLogo(season);
+        aux["frecuency"] = getSeasonFrecuency(season);
         aux["calendario"] = getSeasonSchedule(season);
         db.push(aux);
     });
@@ -151,8 +161,6 @@ export function prepararTrackDB(datos: any[]): void {
     for (let key in folderMap) {
         db.push(folderMap[key]);
     }
-
-    // console.log(db);
 
     guardarJSON("src/data/tracksFormated.json", db);
 }

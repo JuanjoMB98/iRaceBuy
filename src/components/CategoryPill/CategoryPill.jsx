@@ -45,7 +45,7 @@ export default function CategoryPill({ licenseID, lang }) {
           style={{ "--licenseColorHSLA": licenseColorHSLA }}
       >
           <div className="pill">
-              <h2 className="text">{license}</h2>
+              <p className="text">{license}</p>
           </div>
       </div>
   );
