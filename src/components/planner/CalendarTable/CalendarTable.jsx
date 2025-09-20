@@ -289,7 +289,7 @@ export default function CalendarTable({ filteredSeasons, lang }) {
                                             data-trackid={week.track_id}
                                         >
                                             <div className="m-calendarWeek__container">
-                                                <div className="a-featuredTrack__map">
+                                                <div className="m-calendarWeek__map">
                                                     <img
                                                         type="image/svg+xml"
                                                         src={week.mapUrl}
