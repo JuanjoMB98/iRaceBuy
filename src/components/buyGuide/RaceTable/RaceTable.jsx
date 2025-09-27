@@ -106,7 +106,7 @@ export default function RaceTable({ filteredSeasons, lang }) {
                             {trofeo.calendario.map((week, i) => (
                                 <div className="m-season__track" key={i}>
                                     <div
-                                        className="m-seasonTrack__item"
+                                        className="m-seasonTrack__item js-trackHover"
                                         data-trackid={week.track_id}
                                         data-isfreetrack={week.isFreeTrack}
                                         data-owned={ownedTrackIds.includes(

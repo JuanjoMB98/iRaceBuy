@@ -95,7 +95,7 @@ export default function RaceTable({ filteredSeasons, lang }) {
                 {topTracks.map((item) => (
                     <li
                         key={item.track_id}
-                        className="m-featuredTrack__item"
+                        className="m-featuredTrack__item js-trackHover"
                         data-trackid={item.track_id}
                         data-isfreetrack={item.isFreeTrack}
                     >
