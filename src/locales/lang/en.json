@@ -94,6 +94,7 @@
     "alert.actualizacionPendiente": "Content is not updated yet because iRacing hasn’t published it in their official API.",
     "alert.calendarioActualizado": "Calendar updated.",
     "alert.actualizacionCompletada": "Season 4 iRacing content is now available on iRaceBuy.",
-
+    
+    "helpMe": "Support iRaceBuy",
     "footer.copyright": "® Designed & Developed in Spain by Juniors Masters 2025"
 }
