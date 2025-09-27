@@ -1,12 +1,12 @@
 function setupTrackHover() {
-    $("body").on("mouseenter", "[data-trackid]", function () {
+    $("body").on("mouseenter", "[data-trackid].js-trackHover", function () {
         const id = $(this).data("trackid");
-        $(`[data-trackid='${id}']`).addClass("is-hovered");
+        $(`[data-trackid='${id}'].js-trackHover`).addClass("is-hovered");
     });
 
-    $("body").on("mouseleave", "[data-trackid]", function () {
+    $("body").on("mouseleave", "[data-trackid].js-trackHover", function () {
         const id = $(this).data("trackid");
-        $(`[data-trackid='${id}']`).removeClass("is-hovered");
+        $(`[data-trackid='${id}'].js-trackHover`).removeClass("is-hovered");
     });
 }
 
@@ -15,8 +15,6 @@ function toggleTrackSuggestedBuy() {
         const container = $(e.target).closest("[data-trackid]");
         const id = container.data("trackid");
         const isFreeTrack = container.data("isfreetrack");
-
-        console.log("Track clicked:", id);
 
         if (!isFreeTrack) {
             $(`[data-trackid='${id}']`).toggleClass("-suggestedBuy");

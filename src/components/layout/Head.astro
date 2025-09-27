@@ -87,32 +87,8 @@ const {
 </script>
 <script  defer is:inline type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 <script is:inline defer src="/scripts/main.js"></script>
-<script
-    async
-    is:inline
-    src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
-></script>
-<script is:inline>
-    window.addEventListener("DOMContentLoaded", function () {
-        if (window.kofiWidgetOverlay) {
-            window.kofiWidgetOverlay.draw("juanjomb98", {
-                type: "floating-chat",
-                "floating-chat.donateButton.text": "Support me",
-                "floating-chat.donateButton.background-color": "#ff5f5f",
-                "floating-chat.donateButton.text-color": "#fff",
-            });
-        }
-        // Espera un poco a que el iframe se genere
-        setTimeout(function () {
-            var kofiIframe = document.querySelector(
-                "iframe[id^='kofi-wo-container']"
-            );
-            if (kofiIframe) {
-                kofiIframe.setAttribute("title", "Ko-fi Support Chat Widget");
-            }
-        }, 1000); // 1 segundo suele ser suficiente, ajusta si es necesario
-    });
-</script>
+
+
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
