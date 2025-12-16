@@ -1,18 +1,18 @@
 {
     "nav.home": "Home",
     "nav.buyGuide": "Buy Guide",
-    "nav.planner": "Calendar Planner",
+    "nav.planner": "Schedule Planner",
     "nav.ownedContent": "Manage Your Content",
 
     "iRacingPurchasePlanner": "iRacing Purchase Guide",
-    "iRacingCalendarPlanner": "iRacing Calendar Planner",
+    "iRacingCalendarPlanner": "iRacing Schedule Planner",
     "iRacingOwnedContent": "Manage Your iRacing Content",
 
-    "heroTitle": "Organize Your iRacing Calendar and Optimize Your Purchases",
-    "heroDescription": "Discover the easiest way to plan your iRacing seasons, manage your calendar, and save money on tracks. With iracebuy.com, you have the ultimate tool to visualize your schedule and make smarter purchase decisions.",
+    "heroTitle": "Organize Your iRacing Schedule and Optimize Your Purchases",
+    "heroDescription": "Discover the easiest way to plan your iRacing seasons, manage your Schedule, and save money on tracks. With iracebuy.com, you have the ultimate tool to visualize your schedule and make smarter purchase decisions.",
 
     "cta.purchase": "Optimize Your Purchases",
-    "cta.planner": "Organize Your Calendar",
+    "cta.planner": "Organize Your Schedule",
     "cta.tutorial": "Show Me How to Use It",
     "cta.contactMe": "Contact Me",
     "coomingSoon": "The planner is coming soon!",
@@ -23,8 +23,8 @@
     "partners.subtitle": "Without you, this site would probably just be another forgotten page on the internet. Your support is what truly keeps it alive.",
 
     "purchase.subtitle": "Optimize Your Track Investment",
-    "purchase.content": "Stop overspending on iRacing content you don’t need. With the iRacing Purchase Planner, you can analyze the series you've selected and see the full calendar with all tracks each week. Easily identify which tracks appear most frequently and decide which ones are worth buying based on your interests. Plan your iRacing season purchases smartly, save money, and stay competitive.",
-    "purchase.list.1": "Discover which tracks appear most in your iRacing calendar",
+    "purchase.content": "Stop overspending on iRacing content you don’t need. With the iRacing Purchase Planner, you can analyze the series you've selected and see the full Schedule with all tracks each week. Easily identify which tracks appear most frequently and decide which ones are worth buying based on your interests. Plan your iRacing season purchases smartly, save money, and stay competitive.",
+    "purchase.list.1": "Discover which tracks appear most in your iRacing Schedule",
     "purchase.list.2": "Get recommendations on what to buy next",
     "purchase.list.3": "Optimize your iRacing budget and avoid unnecessary purchases",
     "purchase.list.4": "Updated information each season",
@@ -33,7 +33,7 @@
     "purchase.tutorial.1.description": "Select the class that interests you most. To view all series together, click <strong>All Categories</strong>.",
     "purchase.tutorial.2.title": "2. Add Seasons",
     "purchase.tutorial.2.description": "Here you can add or remove the seasons you want to plan. <strong>Customize it as you like!</strong>",
-    "purchase.tutorial.3.title": "3. Review the Calendar",
+    "purchase.tutorial.3.title": "3. Review the Schedule",
     "purchase.tutorial.3.description": "Check all the weeks and tracks of the selected series. <br><em>Click on tracks to mark them as purchased or pending.</em>",
     "purchase.tutorial.4.title": "4. Featured Tracks",
     "purchase.tutorial.4.description": "Here you’ll see the tracks that appear most frequently among all selected series. Use this to optimize your purchases!",
@@ -45,22 +45,22 @@
     "seasonFilter.title": "🔎 Select the Seasons You Want to Race",
     "seasonFilter.description": "This is just my choice for this season, but you can remove or add the iRacing series you like to race the most.",
 
-    "raceTable.title": "📅 Calendar",
-    "raceTable.description": "Here you can see the calendar of the selected seasons. Hover over the calendar to highlight tracks and click on them to mark which ones you own or are considering buying — making your planning easier.",
+    "raceTable.title": "📅 Schedule",
+    "raceTable.description": "Here you can see the Schedule of the selected seasons. Hover over the Schedule to highlight tracks and click on them to mark which ones you own or are considering buying — making your planning easier.",
 
     "recomendedTracks.title": "🏁 Recommended Tracks",
     "recomendedTracks.description": "These are the tracks that appear most frequently in the selected series. Use this information to optimize your purchases and focus on tracks that provide the best return on investment.",
 
-    "planner.title": "Organize Your iRacing Calendar",
-    "planner.description": "Plan your iRacing season with iRaceBuy's interactive calendar. Set rain alerts, mark your favorite races, and hide ones you’re not interested in for more efficient tracking.",
-    "planner.subtitle": "Organize Your iRacing Calendar",
-    "planner.content": "With the iRacing Calendar Organizer, you can easily select the series that interest you and customize your race season. Hide weeks from any series you don’t want to participate in to keep your calendar clean. Check rain probabilities instantly for each week and prepare for changing track conditions. Highlight your favorite weeks and never miss an important race. Take full control of your iRacing season and manage your races efficiently and personally.",
-    "planner.list.1": "Get a clean and organized calendar",
+    "planner.title": "Organize Your iRacing Schedule",
+    "planner.description": "Plan your iRacing season with iRaceBuy's interactive Schedule. Set rain alerts, mark your favorite races, and hide ones you’re not interested in for more efficient tracking.",
+    "planner.subtitle": "Organize Your iRacing Schedule",
+    "planner.content": "With the iRacing Schedule Organizer, you can easily select the series that interest you and customize your race season. Hide weeks from any series you don’t want to participate in to keep your Schedule clean. Check rain probabilities instantly for each week and prepare for changing track conditions. Highlight your favorite weeks and never miss an important race. Take full control of your iRacing season and manage your races efficiently and personally.",
+    "planner.list.1": "Get a clean and organized Schedule",
     "planner.list.2": "See rain probabilities for each week instantly",
     "planner.list.3": "Highlight your favorite weeks from each series",
     "planner.list.4": "Select only what you want",
-    "planner.seoText1": "With the iRaceBuy calendar, organizing your iRacing season has never been easier. Thanks to our features, you can: Set rain alerts: adjust the rain threshold and receive notifications when rainy conditions are predicted, so you’re prepared for every race. Mark favorites: select your favorite races and track them quickly. Hide races: remove races you’re not interested in, keeping your planning clear and focused on what matters.",
-    "planner.seoText2": "Our interactive calendar lets you plan your season efficiently, save time, and maximize your iRacing experience. Both beginner drivers and advanced simracers can benefit from intelligent planning, avoiding surprises and optimizing every session.",
+    "planner.seoText1": "With the iRaceBuy Schedule, organizing your iRacing season has never been easier. Thanks to our features, you can: Set rain alerts: adjust the rain threshold and receive notifications when rainy conditions are predicted, so you’re prepared for every race. Mark favorites: select your favorite races and track them quickly. Hide races: remove races you’re not interested in, keeping your planning clear and focused on what matters.",
+    "planner.seoText2": "Our interactive Schedule lets you plan your season efficiently, save time, and maximize your iRacing experience. Both beginner drivers and advanced simracers can benefit from intelligent planning, avoiding surprises and optimizing every session.",
     "calendarFilter.description": "You can write with the keyboard to reduce the number of series that appear in the selector.",
     "raceCalendar.description": "Here you can view the selected seasons' schedule. Hover over to highlight tracks",
     "raceTable.rainThreshold": "Rain alert at",
@@ -71,7 +71,7 @@
     "ownedContent.selectTitle": "✨ Manage Your Content",
     "ownedContent.selectSubtitle": "Free content is already selected. Add the content you’ve purchased to improve recommendations and web experience.",
     "ownedContent.selectPlaceholder": "Type to filter",
-    "ownedContent.seoText1": "iRaceBuy helps you manage all your iRacing content easily and efficiently. Add the cars and tracks you’ve already purchased to improve recommendations and plan your season calendar.",
+    "ownedContent.seoText1": "iRaceBuy helps you manage all your iRacing content easily and efficiently. Add the cars and tracks you’ve already purchased to improve recommendations and plan your season Schedule.",
     "ownedContent.seoText2": "Our tool allows you to identify the most important content per series, optimize your purchases, and avoid unnecessary spending. Whether you want to buy only what you need, save money in iRacing, or maximize your racing simulation investment, iRaceBuy provides a reliable planner and guide for all simracers.",
 
     "contact.title": "Let's Connect",
@@ -79,7 +79,7 @@
     "contact.aboutMe": "I’m a passionate iRacing driver who, like many others, spent a lot of time looking for purchase guides and planning each season properly. That’s when I realized there was a need for a clear, centralized, and easy-to-use tool, so I created iRaceBuy.com. I’m not especially fast (and my profile shows it 😅), but I am a safe, consistent driver, and above all, committed to the community. This project was born from real simracing experience, created for those of us who share this passion, with the sole goal of offering something truly useful to other simracers.",
 
     "buyGuide.description": "Easily organize your iRacing seasons and make smarter purchases. Plan, compare, and compete with confidence!",
-    "buyGuide.seoText": "iRacing purchase guide, how to buy tracks and cars in iRacing, best iRacing purchases, optimize iRacing purchases, save money in iRacing, buying tips for iRacing, which tracks to buy in iRacing, iRacing purchase planner, iRacing shopping calendar, iRacing buying recommendations, beginner's guide to iRacing, plan your iRacing season, buy cheap iRacing content, avoid unnecessary iRacing purchases, maximize iRacing investment, buy only what you need in iRacing, iRacing buy guide, iRacing purchase planner, how to choose the best tracks in iRacing, organize iRacing purchases, ultimate guide to buying in iRacing.",
+    "buyGuide.seoText": "iRacing purchase guide, how to buy tracks and cars in iRacing, best iRacing purchases, optimize iRacing purchases, save money in iRacing, buying tips for iRacing, which tracks to buy in iRacing, iRacing purchase planner, iRacing shopping Schedule, iRacing buying recommendations, beginner's guide to iRacing, plan your iRacing season, buy cheap iRacing content, avoid unnecessary iRacing purchases, maximize iRacing investment, buy only what you need in iRacing, iRacing buy guide, iRacing purchase planner, how to choose the best tracks in iRacing, organize iRacing purchases, ultimate guide to buying in iRacing.",
     "buyGuide.seoText1": "On this page, you’ll find all the information on how to buy smartly in iRacing, which tracks and cars are most important based on series, how to use the iRacing Purchase Planner to save money and optimize your experience, and the best strategies to invest in iRacing content without overspending.",
 
     "classD": "Class D",
@@ -90,9 +90,9 @@
 
     "cookie.text": "I use cookies to save your content and analyze traffic.",
 
-    "alert.calendarioPendiente": "Calendar pending update",
-    "alert.actualizacionPendiente": "Content is not updated yet because iRacing hasn’t published it in their official API.",
-    "alert.calendarioActualizado": "Calendar updated.",
+    "alert.calendarioPendiente": "Schedule pending update",
+    "alert.actualizacionPendiente": "Content is not updated yet because I’m having some issues with the new API iRacing.",
+    "alert.calendarioActualizado": "Schedule updated.",
     "alert.actualizacionCompletada": "Season 4 iRacing content is now available on iRaceBuy.",
     
     "helpMe": "Support iRaceBuy",
