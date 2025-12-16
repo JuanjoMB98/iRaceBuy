@@ -92,7 +92,7 @@
     "cookie.text": "Utilizo las cookies para guardar tu contenido y analizar el tráfico.",
     
     "alert.calendarioPendiente" : "Calendario pendiente de actualizar",
-    "alert.actualizacionPendiente" : "El contenido todavía no está actualizado porque iRacing aún no lo ha publicado en su API oficial.",
+    "alert.actualizacionPendiente" : "El contenido todavía no está actualizado porque tengo problemas con la API de iRacing.",
     "alert.calendarioActualizado" : "Calendario actualizado.",
     "alert.actualizacionCompletada" : "El contenido de la Season 4 de iRacing ya está en iRaceBuy.",
 
