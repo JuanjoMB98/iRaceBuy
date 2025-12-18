@@ -4,7 +4,7 @@ import { useTranslations } from "../../locales/utils";
 import Select, { components } from "react-select";
 
 import { useState, useEffect } from "react";
-import tracksFormated from "../../data/tracksFormated.json";
+import tracksFormated from "../../data/JM_tracks.json";
 export default function OwnedContentFilter({
     lang,
     selectedIds = [],

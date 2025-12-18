@@ -1,7 +1,7 @@
 import { leerJSON, guardarJSON } from "./prepareDataSeason";
 
 export function getSeason(newParams = {}): any {
-    const season = leerJSON("src/data/seasonData.json");
+    const season = leerJSON("src/data/JM_seasonData.json");
 
     const defaultParams = {
         id: [], // { id: ["4865", "4805"] }

@@ -15,16 +15,16 @@ export function guardarJSON(path: string, data: any[]): void {
 
 
 // https://members-ng.iracing.com/data/series/seasons
-const data = leerJSON("src/data/actualSeason.json");
+const data = leerJSON("src/data/API_currentSeason.json");
 
 // https://members-ng.iracing.com/data/track/assets
-const tracksData = leerJSON("src/data/tracksData.json");
+const tracksData = leerJSON("src/data/API_tracksAssets.json");
 
 // https://members-ng.iracing.com/data/track/get
-const tracksAllInfo = leerJSON("src/data/tracksAllInfo.json");
+const tracksAllInfo = leerJSON("src/data/API_tracks.json");
 
 //https://members-ng.iracing.com/data/series/assets/
-const seriesLogos = leerJSON("src/data/seriesLogos.json");
+const seriesLogos = leerJSON("src/data/API_seriesLogos.json");
 
 
 function getSeasonID(season): number {
@@ -133,7 +133,7 @@ export function prepararDB(datos: any[]): void {
 
     // console.log(db);
 
-    guardarJSON("src/data/seasonData.json", db);
+    guardarJSON("src/data/JM_seasonData.json", db);
 }
 
 export function prepararTrackDB(datos: any[]): void {
@@ -141,7 +141,7 @@ export function prepararTrackDB(datos: any[]): void {
     const db = [];
     const folderMap = {};
 
-    datos.forEach(track => {
+    datos.forEach((track) => {
         const folder = track.folder.trim();
 
         if (!folderMap[folder]) {
@@ -162,7 +162,7 @@ export function prepararTrackDB(datos: any[]): void {
         db.push(folderMap[key]);
     }
 
-    guardarJSON("src/data/tracksFormated.json", db);
+    guardarJSON("src/data/JM_tracks.json", db);
 }
 
 // Función para contar objetos de primer nivel
@@ -172,7 +172,7 @@ export function contarObjetos(datos: any[]): number {
 
 // Función para guardar datos en un archivo JSON
 export function test(): void {
-    // prepararDB(data);
-    // prepararTrackDB(tracksAllInfo)
+    prepararDB(data);
+    prepararTrackDB(tracksAllInfo);
     // getSeasonLogo(week);
 }

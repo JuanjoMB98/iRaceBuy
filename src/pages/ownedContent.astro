@@ -5,15 +5,10 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 // endregion
 
-// import { getTracks } from "../functions/seasonsUtils.ts";
-
 import BaseLayout from "../layouts/BaseLayout.astro";
 import OwnedContentFilter from "../components/OwnedContentFilter/OwnedContentFilter.jsx";
 // import TutorialButton from "../components/VirtualTour/VirtualTour.jsx";
 
-import { test } from "../functions/prepareDataSeason";
-
-test()
 ---
 
 <BaseLayout canonical={"https://iracebuy.com/" + lang + "/ownedContent/"}>
