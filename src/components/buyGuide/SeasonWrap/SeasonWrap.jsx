@@ -43,7 +43,7 @@ export default function TabsEnclosedPillsExample({ allSeasons, lang }) {
                         lang={lang}
                         allSeasonData={allSeasons}
                         licenciaId={1}
-                        defaultSelectedIds={[5727, 5771, 5772, 5728]}
+                        defaultSelectedIds={[5893, 5894, 5937, 5938]}
                     />
                 </TabsContent>
                 <TabsContent value="classd">
@@ -52,9 +52,7 @@ export default function TabsEnclosedPillsExample({ allSeasons, lang }) {
                         lang={lang}
                         allSeasonData={allSeasons}
                         licenciaId={2}
-                        defaultSelectedIds={[
-                            5732, 5741, 5744, 5775, 5777, 5737,
-                        ]}
+                        defaultSelectedIds={[5898, 5903, 5907, 5943, 5941]}
                     />
                 </TabsContent>
                 <TabsContent value="classc">
@@ -63,9 +61,7 @@ export default function TabsEnclosedPillsExample({ allSeasons, lang }) {
                         lang={lang}
                         allSeasonData={allSeasons}
                         licenciaId={3}
-                        defaultSelectedIds={[
-                            5747, 5752, 5758, 5746,
-                        ]}
+                        defaultSelectedIds={[5912, 5913, 5918, 5922, 5924]}
                     />
                 </TabsContent>
                 <TabsContent value="classb">
@@ -74,9 +70,7 @@ export default function TabsEnclosedPillsExample({ allSeasons, lang }) {
                         lang={lang}
                         allSeasonData={allSeasons}
                         licenciaId={4}
-                        defaultSelectedIds={[
-                            5759, 5760, 5764, 5766, 5768,
-                        ]}
+                        defaultSelectedIds={[5925, 5926, 5930, 5932, 5934]}
                     />
                 </TabsContent>
                 <TabsContent value="classa">
@@ -85,7 +79,7 @@ export default function TabsEnclosedPillsExample({ allSeasons, lang }) {
                         lang={lang}
                         allSeasonData={allSeasons}
                         licenciaId={5}
-                        defaultSelectedIds={[5769, 5770, 5795, 5796]}
+                        defaultSelectedIds={[5935, 5936, 5961, 5962]}
                     />
                 </TabsContent>
                 <TabsContent value="all">
@@ -93,9 +87,7 @@ export default function TabsEnclosedPillsExample({ allSeasons, lang }) {
                         client:load
                         lang={lang}
                         allSeasonData={allSeasons}
-                        defaultSelectedIds={[
-                            5727, 5747, 5760, 5770, 5777, 5744,
-                        ]}
+                        defaultSelectedIds={[5893, 5925, 5926, 5936, 5943, 5946, 5935]}
                     />
                 </TabsContent>
             </TabsContents>
