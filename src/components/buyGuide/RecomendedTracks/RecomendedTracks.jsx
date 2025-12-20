@@ -4,11 +4,20 @@ import Icon from "@components/Icon.astro";
 import React, { useState } from "react";
 import { toggleCollapse } from "./RecomendedTracks.js";
 import { useTranslations } from "@locales/utils.js";
+import tracksFormated from "@/data/JM_tracks.json";
 
 export default function RaceTable({ filteredSeasons, lang }) {
     const t = useTranslations(lang);
 
     const [collapsed, setCollapsed] = useState(false);
+
+    // tracksFormated.json cargado como array
+    const variantToCircuitMap = new Map();
+    tracksFormated.forEach((circuit) => {
+        circuit.variantIds.forEach((variantId) => {
+            variantToCircuitMap.set(variantId, circuit);
+        });
+    });
 
     const trackMap = new Map();
     // Recorremos todos los campeonatos
@@ -31,33 +40,48 @@ export default function RaceTable({ filteredSeasons, lang }) {
             }
         }
     }
-    const topTracks = Array.from(trackMap.values())
-        .sort((a, b) => b.timesThisSeason - a.timesThisSeason)
-        .slice(0, 8); // Top 5
 
+    // Agrupar las variantes de cada circuito
+    const groupedTracks = new Map();
+    trackMap.forEach((track) => {
+        const circuit = variantToCircuitMap.get(track.track_id);
+
+        // Si no existe en el json, lo ignoramos o lo tratamos como único
+        if (!circuit) return;
+
+        const circuitId = circuit.id;
+
+        if (!groupedTracks.has(circuitId)) {
+            groupedTracks.set(circuitId, {
+                id: circuit.id,
+                name: circuit.name,
+                timesThisSeason: track.timesThisSeason,
+                isFreeTrack: circuit.isFreeTrack || false,
+                price: circuit.price,
+                mapUrl: circuit.track,
+            });
+        } else {
+            groupedTracks.get(circuitId).timesThisSeason += track.timesThisSeason;
+        }
+    });
+
+    const topTracks = Array.from(groupedTracks.values())
+    .sort((a, b) => b.timesThisSeason - a.timesThisSeason)
+    .slice(0, 8); // Top 5
+    
     const handleToggle = () => {
         setCollapsed(toggleCollapse);
     };
 
     return (
-        <aside
-            className={`o-recomendedTracks -bentoContainer js-recomendedTracks ${
-                collapsed ? " -collapsed" : ""
-            }`}
-        >
+        <aside className={`o-recomendedTracks -bentoContainer js-recomendedTracks ${collapsed ? " -collapsed" : ""}`}>
             <div className="m-bentoContainer__header">
                 <button
                     onClick={handleToggle}
                     className="a-button -purple -small"
                     aria-label="Compress Recomended Tracks"
                 >
-                    <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 25 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="16" height="16" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_186_5122)">
                             <path
                                 fill-rule="evenodd"
@@ -68,23 +92,14 @@ export default function RaceTable({ filteredSeasons, lang }) {
                         </g>
                         <defs>
                             <clipPath id="clip0_186_5122">
-                                <rect
-                                    width="24"
-                                    height="24"
-                                    fill="white"
-                                    transform="translate(0.0683594)"
-                                />
+                                <rect width="24" height="24" fill="white" transform="translate(0.0683594)" />
                             </clipPath>
                         </defs>
                     </svg>
                     <span>{t("smallerContainer")}</span>
                 </button>
-                <h3 className="m-bentoContainerHeader__title">
-                    {t("recomendedTracks.title")}
-                </h3>
-                <p className="m-bentoContainerHeader__subtitle">
-                    {t("recomendedTracks.description")}
-                </p>
+                <h3 className="m-bentoContainerHeader__title">{t("recomendedTracks.title")}</h3>
+                <p className="m-bentoContainerHeader__subtitle">{t("recomendedTracks.description")}</p>
             </div>
 
             <hr className="a-separator" />
@@ -94,26 +109,19 @@ export default function RaceTable({ filteredSeasons, lang }) {
                     que tengan la seasons seleccionadas y imprimir "week 1" , Week 2 --> */}
                 {topTracks.map((item) => (
                     <li
-                        key={item.track_id}
+                        key={item.id}
                         className="m-featuredTrack__item js-trackHover"
-                        data-trackid={item.track_id}
+                        data-trackid={item.id}
                         data-isfreetrack={item.isFreeTrack}
                     >
                         <div className="a-featuredTrack__map">
-                            <img
-                                type="image/svg+xml"
-                                src={item.mapUrl}
-                                alt=""
-                                loading="lazy"
-                            />
+                            <img type="image/svg+xml" src={item.mapUrl} alt="" loading="lazy" />
                         </div>
                         <span className="m-featuredTrack__times">
                             <strong>{item.timesThisSeason}</strong>
                             <span>{t("times")}</span>
                         </span>
-                        <span className="m-featuredTrack__title">
-                            {item.track}
-                        </span>
+                        <span className="m-featuredTrack__title">{item.name}</span>
                     </li>
                 ))}
             </ul>
