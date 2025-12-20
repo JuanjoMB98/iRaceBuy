@@ -103,7 +103,7 @@ export default function RaceTable({ filteredSeasons, lang }) {
                                         data-isfreetrack={week.isFreeTrack}
                                         data-owned={ownedTrackIds.includes(week.track_id)}
                                     >
-                                        <span className="m-seasonTrackItem__title">{week.track}</span>
+                                        <span className="m-seasonTrackItem__title" title={week.track}>{week.track}</span>
                                     </div>
                                 </div>
                             ))}
