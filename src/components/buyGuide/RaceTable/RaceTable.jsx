@@ -1,6 +1,7 @@
 import "./RaceTable.css";
 import { useRef, useState, useEffect } from "react";
 import { useTranslations } from "@locales/utils";
+import tracksFormated from "@/data/JM_tracks.json";
 
 export default function RaceTable({ filteredSeasons, lang }) {
     const t = useTranslations(lang);
@@ -10,16 +11,11 @@ export default function RaceTable({ filteredSeasons, lang }) {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            setOwnedTrackIds(
-                JSON.parse(localStorage.getItem("ownedTracks") || "[]")
-            );
+            setOwnedTrackIds(JSON.parse(localStorage.getItem("ownedTracks") || "[]"));
         }
     }, []);
 
-    const maxRaceWeek = filteredSeasons.reduce(
-        (max, s) => Math.max(max, s.calendario.length),
-        0
-    );
+    const maxRaceWeek = filteredSeasons.reduce((max, s) => Math.max(max, s.calendario.length), 0);
 
     // Ref y lógica para scroll arrastrando
     const scrollRef = useRef(null);
@@ -49,15 +45,18 @@ export default function RaceTable({ filteredSeasons, lang }) {
         scrollRef.current.scrollLeft = scrollLeft - walk;
     };
 
+    const variantToCircuitMap = new Map();
+    tracksFormated.forEach((circuit) => {
+        circuit.variantIds.forEach((variantId) => {
+            variantToCircuitMap.set(variantId, circuit.id);
+        });
+    });
+
     return (
         <section className="o-raceTable -bentoContainer">
             <div className="m-bentoContainer__header">
-                <h3 className="m-bentoContainerHeader__title">
-                    {t("raceTable.title")}
-                </h3>
-                <p className="m-bentoContainerHeader__subtitle">
-                    {t("raceTable.description")}
-                </p>
+                <h3 className="m-bentoContainerHeader__title">{t("raceTable.title")}</h3>
+                <p className="m-bentoContainerHeader__subtitle">{t("raceTable.description")}</p>
             </div>
 
             <hr className="a-separator" />
@@ -92,30 +91,19 @@ export default function RaceTable({ filteredSeasons, lang }) {
                     {filteredSeasons.map((trofeo) => (
                         <div className="m-raceTable__item" key={trofeo.id}>
                             <div className="m-season__info">
-                                <img
-                                    className="m-season__logo"
-                                    src={trofeo.logo}
-                                    alt=""
-                                    draggable="false"
-                                />
-                                <span className="m-season__name">
-                                    {trofeo.nombre}
-                                </span>
+                                <img className="m-season__logo" src={trofeo.logo} alt="" draggable="false" />
+                                <span className="m-season__name">{trofeo.nombre}</span>
                             </div>
 
                             {trofeo.calendario.map((week, i) => (
                                 <div className="m-season__track" key={i}>
                                     <div
                                         className="m-seasonTrack__item js-trackHover"
-                                        data-trackid={week.track_id}
+                                        data-trackid={variantToCircuitMap.get(week.track_id) ?? week.track_id}
                                         data-isfreetrack={week.isFreeTrack}
-                                        data-owned={ownedTrackIds.includes(
-                                            week.track_id
-                                        )}
+                                        data-owned={ownedTrackIds.includes(week.track_id)}
                                     >
-                                        <span className="m-seasonTrackItem__title">
-                                            {week.track}
-                                        </span>
+                                        <span className="m-seasonTrackItem__title">{week.track}</span>
                                     </div>
                                 </div>
                             ))}
