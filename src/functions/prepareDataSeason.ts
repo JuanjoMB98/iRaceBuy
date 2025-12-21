@@ -147,7 +147,7 @@ export function prepararTrackDB(datos: any[]): void {
         if (!folderMap[folder]) {
             folderMap[folder] = {
                 id: track.track_id, // Primer id como principal
-                name: track.track_name,
+                name: track.track_name.replace(/^\[(Legacy|Retired)\]\s*/, ""),
                 variantIds: [],
                 isFreeTrack: isFreeContent(track.track_id),
                 price: track.price || 0,
@@ -174,5 +174,4 @@ export function contarObjetos(datos: any[]): number {
 export function test(): void {
     prepararDB(data);
     prepararTrackDB(tracksAllInfo);
-    // getSeasonLogo(week);
 }
