@@ -5,6 +5,8 @@ import { test } from '../functions/prepareDataSeason';
 // endregion
 
 import NoIndexLayout from "../layouts/NoIndexLayout.astro";
+
+test();
 ---
 
 <!-- http://localhost:4321/updateData -->
@@ -13,11 +15,10 @@ import NoIndexLayout from "../layouts/NoIndexLayout.astro";
 
     <h1>Update iRacing Data</h1>
 
-    {await downloadData("series/seasons", "currentSeason")}
+    <!-- {await downloadData("series/seasons", "currentSeason")}
     {await downloadData("track/get", "tracks")}
     {await downloadData("track/assets", "tracksAssets")}
-    {await downloadData("series/assets", "seriesLogos")}
+    {await downloadData("series/assets", "seriesLogos")} -->
     
-    {await test()}
 
 </NoIndexLayout>
