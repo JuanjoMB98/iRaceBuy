@@ -95,6 +95,7 @@
     "alert.actualizacionPendiente" : "El contenido todavía no está actualizado porque tengo problemas con la API de iRacing.",
     "alert.calendarioActualizado" : "Calendario actualizado.",
     "alert.actualizacionCompletada" : "El contenido de la Season 1 de iRacing ya está en iRaceBuy.",
+    "alert.actualizacionCompletada2" : "El contenido de la Season 2 de iRacing ya está en iRaceBuy.",
 
     "helpMe": "Apoya iRaceBuy",
     "footer.copyright": "® Diseñado & Desarrollado en España por Juniors Masters 2025"
