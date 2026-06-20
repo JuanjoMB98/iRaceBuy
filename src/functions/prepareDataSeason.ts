@@ -1,3 +1,4 @@
+import { log } from "console";
 import * as fs from "fs";
 import path from "path";
 
@@ -172,6 +173,7 @@ export function contarObjetos(datos: any[]): number {
 
 // Función para guardar datos en un archivo JSON
 export function test(): void {
+    console.log("Preparando base de datos...");
     prepararDB(data);
     prepararTrackDB(tracksAllInfo);
 }

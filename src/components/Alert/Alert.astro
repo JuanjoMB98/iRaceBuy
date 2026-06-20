@@ -11,12 +11,13 @@ interface Props {
     label?: string;
     text?: string;
     alertClass?: string;
+    expiresAt?: string;
 }
 
-const { label, text, alertClass } = Astro.props as Props;
+const { label, text, alertClass, expiresAt } = Astro.props as Props;
 ---
 
-<div class={"a-alert " + alertClass}>
+<div class={"a-alert " + alertClass} data-expires-at={expiresAt}>
     <div class="a-alertContent">
         {
             label && (
@@ -30,3 +31,15 @@ const { label, text, alertClass } = Astro.props as Props;
         </p>
     </div>
 </div>
+
+<script>
+    const alertEl = document.querySelector(".a-alert[data-expires-at]");
+
+    if (alertEl) {
+        const expiresAt = alertEl.getAttribute("data-expires-at");
+
+        if (expiresAt && new Date(expiresAt).getTime() <= Date.now()) {
+            alertEl.remove();
+        }
+    }
+</script>
