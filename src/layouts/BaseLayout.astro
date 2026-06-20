@@ -37,7 +37,12 @@ const { title, description, canonical } = Astro.props;
         <div class="wrap">
             <main>
                 <!-- <Alert text="alert.actualizacionPendiente"  alertClass="-red" label="alert.calendarioPendiente"/> -->
-                <Alert text="alert.actualizacionCompletada2"  alertClass="-green" label="alert.calendarioActualizado"/>
+                <Alert
+                    text="alert.actualizacionCompletada2"
+                    alertClass="-green"
+                    label="alert.calendarioActualizado"
+                    expiresAt="2026-07-20T23:59:59+02:00"
+                />
 
                 <slot/>
             </main>
