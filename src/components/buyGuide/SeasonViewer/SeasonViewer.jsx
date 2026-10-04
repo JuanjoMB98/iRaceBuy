@@ -9,7 +9,7 @@ import RecomendedTracks from "@buyGuide/RecomendedTracks/RecomendedTracks.jsx";
 export default function SeasonViewerWrapper({
     allSeasonData,
     licenciaId,
-    defaultSelectedIds = [], // Ahora es una prop,
+    defaultSelectedSeriesIds = [],
     lang,
 }) {
     const seasonList = allSeasonData.map(
@@ -21,6 +21,10 @@ export default function SeasonViewerWrapper({
             logo,
         })
     );
+
+    const defaultSelectedIds = allSeasonData
+        .filter((season) => defaultSelectedSeriesIds.includes(season.seriesId))
+        .map((season) => season.id);
 
     const [activeSeasonIds, setActiveSeasonIds] = useState(defaultSelectedIds);
 

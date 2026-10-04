@@ -1,6 +1,4 @@
-import { log } from "console";
 import * as fs from "fs";
-import path from "path";
 
 //CONTROLADOR DE ARCHIVOS
 
@@ -15,17 +13,18 @@ export function guardarJSON(path: string, data: any[]): void {
 }
 
 
-// https://members-ng.iracing.com/data/series/seasons
-const data = leerJSON("src/data/API_currentSeason.json");
-
-// https://members-ng.iracing.com/data/track/assets
-const tracksData = leerJSON("src/data/API_tracksAssets.json");
-
-// https://members-ng.iracing.com/data/track/get
-const tracksAllInfo = leerJSON("src/data/API_tracks.json");
-
-//https://members-ng.iracing.com/data/series/assets/
-const seriesLogos = leerJSON("src/data/API_seriesLogos.json");
+function getSourceData() {
+    return {
+        // https://members-ng.iracing.com/data/series/seasons
+        data: leerJSON("src/data/API_currentSeason.json"),
+        // https://members-ng.iracing.com/data/track/assets
+        tracksData: leerJSON("src/data/API_tracksAssets.json"),
+        // https://members-ng.iracing.com/data/track/get
+        tracksAllInfo: leerJSON("src/data/API_tracks.json"),
+        // https://members-ng.iracing.com/data/series/assets/
+        seriesLogos: leerJSON("src/data/API_seriesLogos.json"),
+    };
+}
 
 
 function getSeasonID(season): number {
@@ -51,7 +50,7 @@ function getLicenseGroup(season): string {
     // 5 => clase A
 }
 
-function getSeasonSchedule(season): any {
+function getSeasonSchedule(season, tracksData, tracksAllInfo): any {
     const seasonSchedule = season.schedules;
 
     const weaklySerie = [];
@@ -66,8 +65,8 @@ function getSeasonSchedule(season): any {
             track:
             week.track.track_name +
             (week.track.config_name ? " - " + week.track.config_name : ""),
-            isFreeTrack: isFreeContent(week.track.track_id),
-            mapUrl: getTrackMapActiveUrl(week.track.track_id),
+            isFreeTrack: isFreeContent(week.track.track_id, tracksAllInfo),
+            mapUrl: getTrackMapActiveUrl(week.track.track_id, tracksData),
             rainChance: week.weather?.weather_summary?.precip_chance ?? null,
         });
     });
@@ -75,7 +74,7 @@ function getSeasonSchedule(season): any {
     return weaklySerie;
 }
 
-export function getTrackMapActiveUrl(trackId: number): string | null {
+export function getTrackMapActiveUrl(trackId: number, tracksData = getSourceData().tracksData): string | null {
 
     let actualTrack = tracksData[trackId];
     let trackMapUrl = "";
@@ -87,13 +86,13 @@ export function getTrackMapActiveUrl(trackId: number): string | null {
     return trackMapUrl;
 }
 
-export function isFreeContent(trackId: number): boolean {
+export function isFreeContent(trackId: number, tracksAllInfo = getSourceData().tracksAllInfo): boolean {
 
     const track = tracksAllInfo.find(t => t.track_id === trackId);
     return track?.free_with_subscription;
 }   
 
-function getSeasonLogo(season): any {
+function getSeasonLogo(season, seriesLogos): any {
 
     let serieId = season.series_id;
     let iracingLink = "https://images-static.iracing.com/img/logos/series/";
@@ -108,14 +107,11 @@ function getSeasonLogo(season): any {
 }
 
 function getSeasonFrecuency(season): any {
-
-    let serieFrecuency = season.schedules[0].race_time_descriptors[0].repeat_minutes ?? 0;
-    
-    return serieFrecuency;
+    return season.schedules?.[0]?.race_time_descriptors?.[0]?.repeat_minutes ?? 0;
 }
 
 // Función para preparar la base de datos con nombres e IDs relacionados
-export function prepararDB(datos: any[]): void {
+export function prepararDB(datos: any[], tracksData, tracksAllInfo, seriesLogos): void {
     // Inicializamos la base de datos
     const db = [];
 
@@ -123,12 +119,13 @@ export function prepararDB(datos: any[]): void {
         let aux = {};
 
         aux["id"] = getSeasonID(season);
+        aux["seriesId"] = season.series_id;
         aux["nombre"] = getSeasonName(season);
         aux["tipo"] = getSeasonType(season);
         aux["licencia"] = getLicenseGroup(season);
-        aux["logo"] = getSeasonLogo(season);
+        aux["logo"] = getSeasonLogo(season, seriesLogos);
         aux["frecuency"] = getSeasonFrecuency(season);
-        aux["calendario"] = getSeasonSchedule(season);
+        aux["calendario"] = getSeasonSchedule(season, tracksData, tracksAllInfo);
         db.push(aux);
     });
 
@@ -137,7 +134,7 @@ export function prepararDB(datos: any[]): void {
     guardarJSON("src/data/JM_seasonData.json", db);
 }
 
-export function prepararTrackDB(datos: any[]): void {
+export function prepararTrackDB(datos: any[], tracksData, tracksAllInfo): void {
     // Inicializamos la base de datos
     const db = [];
     const folderMap = {};
@@ -150,17 +147,28 @@ export function prepararTrackDB(datos: any[]): void {
                 id: track.track_id, // Primer id como principal
                 name: track.track_name.replace(/^\[(Legacy|Retired)\]\s*/, ""),
                 variantIds: [],
-                isFreeTrack: isFreeContent(track.track_id),
+                isFreeTrack: isFreeContent(track.track_id, tracksAllInfo),
                 price: track.price || 0,
-                track: getTrackMapActiveUrl(track.track_id),
+                track: getTrackMapActiveUrl(track.track_id, tracksData),
+                sourceRetired: track.retired || false,
             };
+        } else if (folderMap[folder].sourceRetired && !track.retired) {
+            // Las variantes heredadas suelen aparecer antes en la API, pero sus
+            // mapas pueden dejar de estar disponibles. Preferimos una variante activa.
+            folderMap[folder].id = track.track_id;
+            folderMap[folder].name = track.track_name.replace(/^(\[Legacy\]|\[Retired\])\s*/, "");
+            folderMap[folder].isFreeTrack = isFreeContent(track.track_id, tracksAllInfo);
+            folderMap[folder].price = track.price || 0;
+            folderMap[folder].track = getTrackMapActiveUrl(track.track_id, tracksData);
+            folderMap[folder].sourceRetired = false;
         }
         folderMap[folder].variantIds.push(track.track_id);
     });
 
     // Convertimos el objeto a array
     for (let key in folderMap) {
-        db.push(folderMap[key]);
+        const { sourceRetired, ...trackData } = folderMap[key];
+        db.push(trackData);
     }
 
     guardarJSON("src/data/JM_tracks.json", db);
@@ -174,6 +182,7 @@ export function contarObjetos(datos: any[]): number {
 // Función para guardar datos en un archivo JSON
 export function test(): void {
     console.log("Preparando base de datos...");
-    prepararDB(data);
-    prepararTrackDB(tracksAllInfo);
+    const { data, tracksData, tracksAllInfo, seriesLogos } = getSourceData();
+    prepararDB(data, tracksData, tracksAllInfo, seriesLogos);
+    prepararTrackDB(tracksAllInfo, tracksData, tracksAllInfo);
 }

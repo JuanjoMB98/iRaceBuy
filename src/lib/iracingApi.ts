@@ -50,8 +50,6 @@ async function getAccessToken(): Promise<string> {
     body.append("client_secret", maskSecret);
     body.append("scope", "iracing.auth");
 
-    console.log(body);
-    
 
     // 4️⃣ Request token
     const res = await fetch(TOKEN_URL, {

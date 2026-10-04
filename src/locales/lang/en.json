@@ -91,11 +91,12 @@
     "cookie.text": "I use cookies to save your content and analyze traffic.",
 
     "alert.calendarioPendiente": "Schedule pending update",
-    "alert.actualizacionPendiente": "Content is not updated yet because I’m having some issues with the new API iRacing.",
+    "alert.actualizacionPendiente": "The next season's content will be available very soon.",
     "alert.calendarioActualizado": "Schedule updated.",
     "alert.actualizacionCompletada": "Season 1 iRacing content is now available on iRaceBuy.",
-    "alert.actualizacionCompletada2": "Season 3 iRacing content is now available on iRaceBuy.",
+    "alert.actualizacionCompletada2": "Season 4 iRacing content is now available on iRaceBuy.",
     
     "helpMe": "Support iRaceBuy",
+    "helpMeMessage": "iRaceBuy has stayed alive thanks to your support. I am no longer receiving contributions and, without them, I may not be able to keep maintaining it.",
     "footer.copyright": "® Designed & Developed in Spain by Juniors Masters 2025"
 }

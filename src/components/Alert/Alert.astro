@@ -11,13 +11,19 @@ interface Props {
     label?: string;
     text?: string;
     alertClass?: string;
+    startsAt?: string;
     expiresAt?: string;
 }
 
-const { label, text, alertClass, expiresAt } = Astro.props as Props;
+const { label, text, alertClass, startsAt, expiresAt } = Astro.props as Props;
 ---
 
-<div class={"a-alert " + alertClass} data-expires-at={expiresAt}>
+<div
+    class={"a-alert " + alertClass}
+    data-starts-at={startsAt}
+    data-expires-at={expiresAt}
+    hidden
+>
     <div class="a-alertContent">
         {
             label && (
@@ -33,13 +39,18 @@ const { label, text, alertClass, expiresAt } = Astro.props as Props;
 </div>
 
 <script>
-    const alertEl = document.querySelector(".a-alert[data-expires-at]");
-
-    if (alertEl) {
+    document.querySelectorAll(".a-alert").forEach((alertEl) => {
+        const startsAt = alertEl.getAttribute("data-starts-at");
         const expiresAt = alertEl.getAttribute("data-expires-at");
+        const now = Date.now();
 
-        if (expiresAt && new Date(expiresAt).getTime() <= Date.now()) {
+        if (
+            (startsAt && new Date(startsAt).getTime() > now) ||
+            (expiresAt && new Date(expiresAt).getTime() <= now)
+        ) {
             alertEl.remove();
+        } else if (alertEl instanceof HTMLElement) {
+            alertEl.hidden = false;
         }
-    }
+    });
 </script>
