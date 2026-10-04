@@ -7,7 +7,7 @@ import CalendarTable from "@planner/CalendarTable/CalendarTable.jsx";
 export default function CalendarViewer({
     allSeasonData,
     licenciaId,
-    defaultSelectedIds = [], // Ahora es una prop,
+    defaultSelectedSeriesIds = [],
     lang,
 }) {
     const seasonList = allSeasonData.map(
@@ -21,11 +21,36 @@ export default function CalendarViewer({
         })
     );
 
+    const defaultSelectedIds = allSeasonData
+        .filter((season) => defaultSelectedSeriesIds.includes(season.seriesId))
+        .map((season) => season.id);
+    const currentSeasonLabel =
+        allSeasonData
+            .find((season) => defaultSelectedSeriesIds.includes(season.seriesId))
+            ?.nombre.match(/\d{4} Season \d/)?.[0] ?? "current";
+    const defaultsVersionKey = "calendarDefaultsVersion";
+
     // Estado controlado y persistente en localStorage
     const [calendarSeasonIds, setActiveSeasonIds] = useState(() => {
         if (typeof window !== "undefined") {
+            const defaultsVersion = localStorage.getItem(defaultsVersionKey);
+
+            // Al llegar una temporada nueva, sustituimos los IDs anteriores
+            // (incluida una selección vacía guardada antes de tener defaults).
+            if (defaultsVersion !== currentSeasonLabel) {
+                localStorage.setItem(defaultsVersionKey, currentSeasonLabel);
+                return defaultSelectedIds;
+            }
+
             const stored = localStorage.getItem("calendarSeasonIds");
-            if (stored) return JSON.parse(stored);
+            if (stored) {
+                const storedIds = JSON.parse(stored);
+                const hasCurrentSeason = storedIds.some((id) =>
+                    allSeasonData.some((season) => season.id === id)
+                );
+
+                if (storedIds.length === 0 || hasCurrentSeason) return storedIds;
+            }
         }
         return defaultSelectedIds;
     });

@@ -6,6 +6,13 @@ import { test } from '../functions/prepareDataSeason';
 
 import NoIndexLayout from "../layouts/NoIndexLayout.astro";
 
+await Promise.all([
+    downloadData("series/seasons", "currentSeason"),
+    downloadData("track/get", "tracks"),
+    downloadData("track/assets", "tracksAssets"),
+    downloadData("series/assets", "seriesLogos"),
+]);
+
 test();
 ---
 
@@ -15,10 +22,6 @@ test();
 
     <h1>Update iRacing Data</h1>
 
-    <!-- {await downloadData("series/seasons", "currentSeason")}
-    {await downloadData("track/get", "tracks")}
-    {await downloadData("track/assets", "tracksAssets")}
-    {await downloadData("series/assets", "seriesLogos")} -->
-    
+    <p>Season data updated successfully.</p>
 
 </NoIndexLayout>

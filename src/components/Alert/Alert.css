@@ -45,6 +45,9 @@
     text-align: center;
     margin-bottom: 32px;
 }
+.a-alert[hidden] {
+    display: none !important;
+}
 .a-alertLabel{
     font-size: 14px;
 }
